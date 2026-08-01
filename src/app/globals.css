@@ -72,6 +72,11 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
+/* 底部 TabBar 内容留白（TabBar 高约 56px + 安全区） */
+@utility tab-bar-offset {
+  padding-bottom: calc(96px + env(safe-area-inset-bottom));
+}
+
 @utility no-scrollbar {
   scrollbar-width: none;
   &::-webkit-scrollbar {

@@ -54,7 +54,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-[560px] flex-col bg-ios-background">
-      <main className={cn("flex-1", showTabBar ? "pb-24 safe-bottom" : "")}>{children}</main>
+      <main className={cn("flex-1", showTabBar && "tab-bar-offset")}>{children}</main>
       {showTabBar && <TabBar />}
       <ServiceWorkerRegister />
     </div>
