@@ -120,7 +120,8 @@ class QuestionHubDB extends Dexie {
 export const db = new QuestionHubDB();
 
 export async function listBanks(): Promise<BankRecord[]> {
-  return db.banks.orderBy("importedAt").toArray();
+  const banks = await db.banks.toArray();
+  return banks.sort((a, b) => a.importedAt - b.importedAt);
 }
 
 export async function listQuestions(bankId: string): Promise<QuestionRecord[]> {
