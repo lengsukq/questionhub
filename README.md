@@ -71,3 +71,13 @@ tests/unit/                    # 单元测试
 - 学习数据完全保存在当前设备的 IndexedDB 中，可通过「我的」页导出备份。
 - 导入题库需符合 QuestionBank Schema（顶层含 `schemaVersion`、`subjects`、`questions`）。
 - 题库内容质量标记（`needsReview`）仅作展示，不影响本地练习。
+
+## 部署
+
+项目已连接 GitHub 仓库与 Vercel 自动部署。推送 `main` 分支即会自动触发线上部署。
+
+```bash
+git push origin main
+```
+
+线上地址：<https://questionhub-two.vercel.app>
