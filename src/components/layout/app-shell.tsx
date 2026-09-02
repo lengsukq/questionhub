@@ -14,7 +14,17 @@ import { cn } from "@/lib/utils";
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { ready, loading, error, activeBankId, banks, initialize } = useBankStore();
+  const {
+    ready,
+    loading,
+    error,
+    activeBankId,
+    banks,
+    importingAll,
+    importProgress,
+    initialize,
+    importAllBuiltinBanks,
+  } = useBankStore();
 
   useEffect(() => {
     void initialize();
@@ -55,8 +65,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     );
   }
 
-  // 3. 库中完全无题库（极端空库引导态）
-  if (banks.length === 0 || !activeBankId) {
+  // 3. 库中完全无题库时（非题库中心与设置页展示极简空库引导）
+  if ((banks.length === 0 || !activeBankId) && pathname !== "/banks" && pathname !== "/settings") {
     return (
       <div className="relative flex min-h-dvh items-center justify-center p-6 bg-ios-background">
         <div className="ambient-bg" />
@@ -66,16 +76,39 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </div>
           <h1 className="mt-5 text-[20px] font-extrabold text-ios-label">欢迎使用 QuestionHub</h1>
           <p className="mt-2 text-[13px] leading-relaxed text-ios-label-secondary">
-            本地尚未检测到可用题库，请点击下方前往题库中心导入或初始化内置题库。
+            系统已为你准备好 9 套 2026 押题客观题（共 433 题），支持一键开启或导入自定义 JSON。
           </p>
-          <Button
-            size="lg"
-            className="mt-6 w-full justify-center shadow-lg"
-            onClick={() => router.push("/banks")}
-          >
-            <FileUp className="h-4 w-4" />
-            前往题库中心
-          </Button>
+
+          <div className="mt-6 flex w-full flex-col gap-3">
+            <Button
+              size="lg"
+              className="w-full justify-center shadow-lg"
+              disabled={importingAll}
+              onClick={() => void importAllBuiltinBanks()}
+            >
+              {importingAll ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  正在导入 ({importProgress?.current}/{importProgress?.total})…
+                </>
+              ) : (
+                <>
+                  <Sparkles className="h-4 w-4" />
+                  一键导入 9 套系统精选题库
+                </>
+              )}
+            </Button>
+
+            <Button
+              variant="secondary"
+              size="lg"
+              className="w-full justify-center"
+              onClick={() => router.push("/banks")}
+            >
+              <FileUp className="h-4 w-4" />
+              前往题库中心挑选
+            </Button>
+          </div>
         </Card>
       </div>
     );
