@@ -138,9 +138,13 @@ export const useBankStore = create<BankState>((set, get) => ({
     if (bank?.isDefault) {
       throw new Error("内置默认题库不可删除");
     }
-    await db.transaction("rw", [db.banks, db.questions], async () => {
+    await db.transaction("rw", [db.banks, db.questions, db.attempts, db.questionStats, db.sessions], async () => {
       await db.banks.delete(bankId);
       await db.questions.where("bankId").equals(bankId).delete();
+      await db.attempts.where("bankId").equals(bankId).delete();
+      await db.questionStats.where("bankId").equals(bankId).delete();
+      const sessions = await db.sessions.where("bankId").equals(bankId).toArray();
+      if (sessions.length > 0) await db.sessions.bulkDelete(sessions.map((s) => s.id));
     });
     await get().refreshBanks();
   },

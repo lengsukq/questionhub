@@ -65,7 +65,7 @@ export interface PracticeSessionRecord {
 }
 
 export interface AttemptRecord {
-  /** 主键，格式 `${sessionId}:${questionId}` */
+  /** 主键，格式 `${sessionId}:${bankId}:${questionId}`（兼容旧 `${sessionId}:${questionId}` 数据） */
   id: string;
   sessionId: string;
   bankId: string;

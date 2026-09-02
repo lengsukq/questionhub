@@ -156,7 +156,7 @@ function PracticePageInner() {
       setAttempts((map) => {
         const next = new Map(map);
         next.set(key, {
-          id: `${session.id}:${currentQuestion.originalId}`,
+          id: `${session.id}:${bankId}:${currentQuestion.originalId}`,
           sessionId: session.id,
           bankId,
           questionId: currentQuestion.originalId,
@@ -188,7 +188,7 @@ function PracticePageInner() {
       setAttempts((map) => {
         const next = new Map(map);
         next.set(key, {
-          id: `${session.id}:${currentQuestion.originalId}`,
+          id: `${session.id}:${bankId}:${currentQuestion.originalId}`,
           sessionId: session.id,
           bankId,
           questionId: currentQuestion.originalId,

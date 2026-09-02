@@ -116,7 +116,7 @@ async function saveAttempt(input: SaveAttemptInput): Promise<void> {
   const questionPersistId = getQuestionPersistId(input.question);
   const now = Date.now();
   const attempt: AttemptRecord = {
-    id: `${input.sessionId}:${questionPersistId}`,
+    id: `${input.sessionId}:${input.bankId}:${questionPersistId}`,
     sessionId: input.sessionId,
     bankId: input.bankId,
     questionId: questionPersistId,
