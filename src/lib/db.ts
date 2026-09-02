@@ -39,6 +39,8 @@ export type PracticeMode =
 
 export interface PracticeConfig {
   bankId: string;
+  /** 多题库练习时，参与的题库 id 列表（单题库时为 undefined，兼容旧数据） */
+  bankIds?: string[];
   subjectId?: string;
   unit?: QuestionUnit;
   chapters?: string[];
@@ -126,6 +128,12 @@ export async function listBanks(): Promise<BankRecord[]> {
 
 export async function listQuestions(bankId: string): Promise<QuestionRecord[]> {
   return db.questions.where("bankId").equals(bankId).toArray();
+}
+
+export async function listQuestionsByBankIds(bankIds: string[]): Promise<QuestionRecord[]> {
+  if (bankIds.length === 0) return [];
+  if (bankIds.length === 1) return listQuestions(bankIds[0]);
+  return db.questions.where("bankId").anyOf(bankIds).toArray();
 }
 
 export async function getQuestion(

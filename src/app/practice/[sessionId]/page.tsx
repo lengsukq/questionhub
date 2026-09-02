@@ -18,6 +18,7 @@ import {
   db,
   getQuestionsByIds,
   getStat,
+  questionKey,
   type AttemptRecord,
   type PracticeSessionRecord,
   type QuestionRecord,
@@ -78,9 +79,15 @@ function PracticePageInner() {
       const sessionRecord = await db.sessions.get(sessionId);
       if (cancelled || !sessionRecord) return;
 
+      const bankIds =
+        sessionRecord.config.bankIds && sessionRecord.config.bankIds.length > 0
+          ? sessionRecord.config.bankIds
+          : [sessionRecord.bankId];
       const [attemptList, statList] = await Promise.all([
         getAttemptsForSession(sessionId),
-        db.questionStats.where("bankId").equals(sessionRecord.bankId).toArray(),
+        bankIds.length === 1
+          ? db.questionStats.where("bankId").equals(bankIds[0]).toArray()
+          : db.questionStats.where("bankId").anyOf(bankIds).toArray(),
       ]);
       const questionList = await getQuestionsByIds(sessionRecord.questionRefs);
       if (cancelled) return;
@@ -94,8 +101,16 @@ function PracticePageInner() {
 
       setSession(sessionRecord);
       setQuestions(questionList);
-      setAttempts(new Map(attemptList.map((attempt) => [attempt.questionId, attempt])));
-      setFavorites(new Set(statList.filter((stat) => stat.isFavorite).map((stat) => stat.questionId)));
+      setAttempts(
+        new Map(
+          attemptList.map((attempt) => [questionKey(attempt.bankId, attempt.questionId), attempt]),
+        ),
+      );
+      setFavorites(
+        new Set(
+          statList.filter((stat) => stat.isFavorite).map((stat) => questionKey(stat.bankId, stat.questionId)),
+        ),
+      );
       setIndex(startIndex);
       questionStartRef.current = Date.now();
     })();
@@ -111,7 +126,9 @@ function PracticePageInner() {
   }, []);
 
   const currentQuestion = questions[index];
-  const currentAttempt = currentQuestion ? attempts.get(currentQuestion.originalId) : undefined;
+  const currentAttempt = currentQuestion
+    ? attempts.get(questionKey(currentQuestion.bankId, currentQuestion.originalId))
+    : undefined;
   const isSubjective = currentQuestion ? isSubjectiveType(currentQuestion.type) : false;
   const hasAnswered = Boolean(currentAttempt);
 
@@ -127,19 +144,21 @@ function PracticePageInner() {
     setSubmitting(true);
     try {
       const durationMs = Date.now() - questionStartRef.current;
+      const bankId = currentQuestion.bankId;
       const result = await submitAnswer(
         session,
         currentQuestion,
-        session.bankId,
+        bankId,
         selection,
         durationMs,
       );
+      const key = questionKey(bankId, currentQuestion.originalId);
       setAttempts((map) => {
         const next = new Map(map);
-        next.set(currentQuestion.originalId, {
+        next.set(key, {
           id: `${session.id}:${currentQuestion.originalId}`,
           sessionId: session.id,
-          bankId: session.bankId,
+          bankId,
           questionId: currentQuestion.originalId,
           userAnswer: selection,
           correctness: result.correctness,
@@ -163,13 +182,15 @@ function PracticePageInner() {
     setSubmitting(true);
     try {
       const durationMs = Date.now() - questionStartRef.current;
-      await selfRateSubjective(session, currentQuestion, session.bankId, rating, durationMs);
+      const bankId = currentQuestion.bankId;
+      await selfRateSubjective(session, currentQuestion, bankId, rating, durationMs);
+      const key = questionKey(bankId, currentQuestion.originalId);
       setAttempts((map) => {
         const next = new Map(map);
-        next.set(currentQuestion.originalId, {
+        next.set(key, {
           id: `${session.id}:${currentQuestion.originalId}`,
           sessionId: session.id,
-          bankId: session.bankId,
+          bankId,
           questionId: currentQuestion.originalId,
           userAnswer: null,
           correctness: "ungraded",
@@ -208,12 +229,13 @@ function PracticePageInner() {
 
   const handleToggleFavorite = async () => {
     if (!currentQuestion) return;
-    const bankId = session?.bankId ?? currentQuestion.bankId;
+    const bankId = currentQuestion.bankId;
     const favorite = await toggleFavorite(bankId, currentQuestion.originalId);
+    const key = questionKey(bankId, currentQuestion.originalId);
     setFavorites((set) => {
       const next = new Set(set);
-      if (favorite) next.add(currentQuestion.originalId);
-      else next.delete(currentQuestion.originalId);
+      if (favorite) next.add(key);
+      else next.delete(key);
       return next;
     });
   };
@@ -221,7 +243,7 @@ function PracticePageInner() {
   const openNote = () => {
     if (!currentQuestion) return;
     setNoteText("");
-    void getStat(session?.bankId ?? currentQuestion.bankId, currentQuestion.originalId).then((stat) => {
+    void getStat(currentQuestion.bankId, currentQuestion.originalId).then((stat) => {
       setNoteText(stat?.note ?? "");
     });
     setNoteOpen(true);
@@ -229,7 +251,7 @@ function PracticePageInner() {
 
   const saveNote = async () => {
     if (!currentQuestion || !session) return;
-    await setNote(session.bankId, currentQuestion.originalId, noteText);
+    await setNote(currentQuestion.bankId, currentQuestion.originalId, noteText);
     setNoteOpen(false);
   };
 
@@ -249,7 +271,7 @@ function PracticePageInner() {
 
   const total = questions.length;
   const isLast = index === total - 1;
-  const isFavorite = favorites.has(currentQuestion.originalId);
+  const isFavorite = favorites.has(questionKey(currentQuestion.bankId, currentQuestion.originalId));
 
   return (
     <div className="flex min-h-dvh flex-col bg-ios-background">

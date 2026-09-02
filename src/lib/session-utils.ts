@@ -19,9 +19,18 @@ export interface CreateSessionInput extends PracticeConfig {
   title: string;
 }
 
+function getQuestionPersistId(question: Question): string {
+  return (question as { originalId?: string }).originalId ?? question.id;
+}
+
 export async function createPracticeSession(input: CreateSessionInput): Promise<PracticeSessionRecord> {
-  const allQuestions = await db.questions.where("bankId").equals(input.bankId).toArray();
+  const bankIds = input.bankIds && input.bankIds.length > 0 ? input.bankIds : [input.bankId];
+  const allQuestions =
+    bankIds.length === 1
+      ? await db.questions.where("bankId").equals(bankIds[0]).toArray()
+      : await db.questions.where("bankId").anyOf(bankIds).toArray();
   const { refs, matchedCount } = selectQuestions(allQuestions, input);
+  const count = Math.min(input.count, refs.length);
 
   const session: PracticeSessionRecord = {
     id: nanoid(12),
@@ -30,11 +39,12 @@ export async function createPracticeSession(input: CreateSessionInput): Promise<
     mode: input.mode,
     config: {
       bankId: input.bankId,
+      bankIds: bankIds.length > 1 ? bankIds : undefined,
       subjectId: input.subjectId,
       unit: input.unit,
       chapters: input.chapters,
       types: input.types,
-      count: Math.min(input.count, refs.length),
+      count,
       order: input.order,
     },
     questionRefs: refs,
@@ -103,12 +113,13 @@ interface SaveAttemptInput {
 }
 
 async function saveAttempt(input: SaveAttemptInput): Promise<void> {
+  const questionPersistId = getQuestionPersistId(input.question);
   const now = Date.now();
   const attempt: AttemptRecord = {
-    id: `${input.sessionId}:${input.question.id}`,
+    id: `${input.sessionId}:${questionPersistId}`,
     sessionId: input.sessionId,
     bankId: input.bankId,
-    questionId: input.question.id,
+    questionId: questionPersistId,
     userAnswer: input.userAnswer,
     correctness: input.correctness,
     selfRating: input.selfRating,
@@ -129,7 +140,8 @@ async function updateStat(
   selfRating: SelfRating | undefined,
   now: number,
 ): Promise<void> {
-  const stat = (await getStat(bankId, question.id)) ?? createEmptyStat(bankId, question.id);
+  const questionPersistId = getQuestionPersistId(question);
+  const stat = (await getStat(bankId, questionPersistId)) ?? createEmptyStat(bankId, questionPersistId);
   const previousStreak = stat.streak;
 
   if (correctness === "incorrect") {

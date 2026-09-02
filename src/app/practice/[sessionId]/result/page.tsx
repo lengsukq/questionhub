@@ -12,7 +12,7 @@ import {
   XCircle,
   PenLine,
 } from "lucide-react";
-import { db, getQuestionsByIds, type AttemptRecord, type PracticeSessionRecord, type QuestionRecord } from "@/lib/db";
+import { db, getQuestionsByIds, questionKey, type AttemptRecord, type PracticeSessionRecord, type QuestionRecord } from "@/lib/db";
 import { getAttemptsForSession } from "@/lib/session-utils";
 import { formatDuration } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -46,6 +46,11 @@ export default function ResultPage() {
       cancelled = true;
     };
   }, [sessionId]);
+
+  const attemptMap = useMemo(
+    () => new Map(attempts.map((a) => [questionKey(a.bankId, a.questionId), a])),
+    [attempts],
+  );
 
   const summary = useMemo(() => {
     const correct = attempts.filter((attempt) => attempt.correctness === "correct").length;
@@ -136,10 +141,10 @@ export default function ResultPage() {
           </h2>
           <Card className="overflow-hidden">
             {questions.map((question, index) => {
-              const attempt = attempts.find((item) => item.questionId === question.originalId);
+              const attempt = attemptMap.get(questionKey(question.bankId, question.originalId));
               return (
                 <Link
-                  key={question.originalId}
+                  key={questionKey(question.bankId, question.originalId)}
                   href={`/practice/${sessionId}?view=${index}`}
                   className={cn(
                     "row-active flex items-center gap-3 px-4 py-3.5",
