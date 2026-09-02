@@ -220,11 +220,14 @@ function PracticePageInner() {
     questionStartRef.current = Date.now();
   };
 
-  const handlePrev = () => {
-    if (index === 0) return;
-    setIndex(index - 1);
+  const handlePrev = async () => {
+    if (index === 0 || !session) return;
+    const prevIndex = index - 1;
+    await db.sessions.update(session.id, { currentIndex: prevIndex });
+    setIndex(prevIndex);
     setSelection(null);
     setRevealed(false);
+    questionStartRef.current = Date.now();
   };
 
   const handleToggleFavorite = async () => {

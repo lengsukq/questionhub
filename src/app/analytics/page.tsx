@@ -79,8 +79,6 @@ export default function AnalyticsPage() {
     const map = new Map<string, ChapterMastery>();
 
     for (const question of questions) {
-      const stat = statMap.get(question.originalId);
-      if (!stat || stat.attemptCount === 0) continue;
       const subjectName = bank?.subjects.find((subject) => subject.id === question.subjectId)?.name ?? question.subjectId;
       const key = `${question.subjectId}:${question.chapter}`;
       const entry = map.get(key) ?? {
@@ -91,12 +89,17 @@ export default function AnalyticsPage() {
         correct: 0,
       };
       entry.count += 1;
-      entry.answered += 1;
-      entry.correct += stat.correctCount;
+      const stat = statMap.get(question.originalId);
+      if (stat && stat.attemptCount > 0) {
+        entry.answered += 1;
+        entry.correct += stat.correctCount;
+      }
       map.set(key, entry);
     }
 
-    return [...map.values()].sort((a, b) => b.count - a.count);
+    return [...map.values()]
+      .filter((entry) => entry.answered > 0)
+      .sort((a, b) => b.count - a.count);
   }, [questions, stats, bank]);
 
   const maxTrend = Math.max(1, ...trend.map((day) => day.count));

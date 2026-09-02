@@ -80,7 +80,6 @@ function SetupPageInner() {
     if (selectedBankIds.length === 0) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setQuestions([]);
-      setQuestions([]);
       return;
     }
     let cancelled = false;
