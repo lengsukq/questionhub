@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Library, Repeat, User } from "lucide-react";
+import { BarChart3, Home, Library, Repeat, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const tabs = [
   { href: "/", label: "首页", icon: Home },
   { href: "/banks", label: "题库", icon: Library },
   { href: "/review", label: "复习", icon: Repeat },
-  { href: "/settings", label: "我的", icon: User },
+  { href: "/analytics", label: "数据", icon: BarChart3 },
+  { href: "/settings", label: "我的", icon: Settings },
 ];
 
 export function TabBar() {
@@ -18,9 +19,9 @@ export function TabBar() {
   return (
     <nav
       aria-label="底部导航"
-      className="glass fixed bottom-0 left-1/2 z-40 w-full max-w-[560px] -translate-x-1/2 border-t border-ios-separator/60"
+      className="fixed bottom-4 left-1/2 z-40 w-[calc(100%-2rem)] max-w-[480px] -translate-x-1/2 lg:hidden"
     >
-      <div className="safe-bottom grid grid-cols-4">
+      <div className="glass-dock flex items-center justify-around rounded-full px-2 py-1.5 shadow-2xl">
         {tabs.map(({ href, label, icon: Icon }) => {
           const isActive =
             href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -30,12 +31,23 @@ export function TabBar() {
               href={href}
               aria-current={isActive ? "page" : undefined}
               className={cn(
-                "flex flex-col items-center gap-1 pb-1.5 pt-2 text-[10px] font-medium transition-colors",
-                isActive ? "text-ios-blue" : "text-ios-label-tertiary",
+                "group relative flex flex-1 flex-col items-center justify-center rounded-full py-2 transition-all duration-200 active:scale-95",
+                isActive
+                  ? "text-ios-blue font-semibold"
+                  : "text-ios-label-tertiary hover:text-ios-label-secondary",
               )}
             >
-              <Icon className="h-6 w-6" strokeWidth={isActive ? 2.4 : 2} />
-              {label}
+              {isActive && (
+                <span className="absolute inset-0 -z-10 rounded-full bg-ios-blue/10 dark:bg-ios-blue/20 transition-all duration-300" />
+              )}
+              <Icon
+                className={cn(
+                  "h-5 w-5 transition-transform duration-200",
+                  isActive ? "scale-110 text-ios-blue" : "text-ios-label-tertiary group-hover:text-ios-label-secondary",
+                )}
+                strokeWidth={isActive ? 2.4 : 1.9}
+              />
+              <span className="mt-0.5 text-[10px] tracking-tight">{label}</span>
             </Link>
           );
         })}

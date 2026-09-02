@@ -9,6 +9,7 @@ import {
   FileUp,
   HardDriveDownload,
   Info,
+  Plus,
   Trash2,
   Upload,
 } from "lucide-react";
@@ -17,7 +18,6 @@ import { parseAndValidate, type ValidationReport } from "@/lib/import-question-b
 import type { QuestionBankInput } from "@/lib/question-bank-schema";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Sheet } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -98,92 +98,154 @@ export default function BanksPage() {
   };
 
   return (
-    <div className="safe-top">
-      <PageHeader title="题库" onBack={() => router.push("/")} />
+    <div className="min-h-dvh safe-top">
+      <PageHeader
+        title="题库中心"
+        subtitle="管理与切换本地题库，支持一键导入 JSON 题库"
+        right={
+          <Button
+            size="sm"
+            onClick={() => {
+              resetImport();
+              setImportOpen(true);
+            }}
+          >
+            <Plus className="h-4 w-4" />
+            导入题库
+          </Button>
+        }
+      />
 
-      <div className="space-y-3 px-4 pt-4">
-        {banks.map((bank) => {
-          const isActive = bank.id === activeBankId;
-          return (
-            <Card key={bank.id} className={cn(isActive && "ring-1 ring-ios-blue/40")}>
-              <div className="flex items-center justify-between px-4 pt-4">
-                <div className="flex items-center gap-2">
-                  <span className={cn(
-                    "flex h-9 w-9 items-center justify-center rounded-xl",
-                    isActive ? "bg-ios-blue/10 text-ios-blue" : "bg-ios-surface-tertiary text-ios-label-secondary",
-                  )}>
-                    <HardDriveDownload className="h-5 w-5" />
-                  </span>
-                  <div>
-                    <p className="text-[16px] font-semibold">{bank.name}</p>
-                    <p className="text-[12px] text-ios-label-secondary">
-                      {bank.questionCount} 题 · 导入于 {new Date(bank.importedAt).toLocaleDateString("zh-CN")}
-                    </p>
-                  </div>
-                </div>
-                {isActive && <Badge color="blue">使用中</Badge>}
-                {bank.isDefault && !isActive && <Badge color="gray">内置</Badge>}
-              </div>
-
-              <div className="flex flex-wrap gap-1.5 px-4 pt-3">
-                {bank.subjects.map((subject) => (
-                  <span
-                    key={subject.id}
-                    className="rounded-lg bg-ios-surface-secondary px-2 py-1 text-[12px] text-ios-label-secondary dark:bg-ios-surface-tertiary"
-                  >
-                    {subject.name}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex items-center justify-between px-4 pb-4 pt-3">
-                {isActive ? (
-                  <Link
-                    href={`/banks/${bank.id}`}
-                    className="flex items-center text-[14px] font-medium text-ios-blue"
-                  >
-                    进入题库 <ChevronRight className="h-4 w-4" />
-                  </Link>
-                ) : (
-                  <div className="flex items-center gap-3">
-                    <button
-                      onClick={() => setActiveBank(bank.id)}
-                      className="text-[14px] font-medium text-ios-blue"
-                    >
-                      切换到此题库
-                    </button>
-                    {!bank.isDefault && (
-                      <button
-                        onClick={() => handleRemove(bank.id)}
-                        className="flex items-center gap-1 text-[13px] text-ios-red"
-                      >
-                        <Trash2 className="h-3.5 w-3.5" /> 删除
-                      </button>
-                    )}
+      <div className="mx-auto max-w-6xl px-4 py-6">
+        {/* 题库卡片响应式网格 */}
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {banks.map((bank) => {
+            const isActive = bank.id === activeBankId;
+            return (
+              <Card
+                key={bank.id}
+                className={cn(
+                  "relative overflow-hidden flex flex-col justify-between p-6 transition-all duration-300",
+                  isActive
+                    ? "border-ios-blue/40 bg-gradient-to-br from-ios-blue/8 via-ios-surface to-ios-surface ring-2 ring-ios-blue/30 shadow-lg shadow-ios-blue/5"
+                    : "hover:border-ios-blue/30 hover:shadow-md",
+                )}
+              >
+                {/* 绝对定位印章标志（完全不占据布局空间） */}
+                {isActive && (
+                  <div className="pointer-events-none absolute right-4 top-4 z-10 select-none">
+                    <div className="rotate-6 rounded-xl border-2 border-dashed border-ios-blue/60 bg-ios-blue/10 px-2.5 py-1 text-[11px] font-black tracking-wider text-ios-blue shadow-xs backdrop-blur-xs">
+                      ✓ 使用中
+                    </div>
                   </div>
                 )}
-              </div>
-            </Card>
-          );
-        })}
 
-        <button
-          onClick={() => {
-            resetImport();
-            setImportOpen(true);
-          }}
-          className="row-active flex w-full items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-ios-blue/30 py-5 text-[15px] font-medium text-ios-blue"
-        >
-          <FileUp className="h-5 w-5" />
-          导入新题库
-        </button>
+                <div className="space-y-4">
+                  {/* 头部标题与图标：独占完整宽度 */}
+                  <div className="flex items-start gap-3">
+                    <span
+                      className={cn(
+                        "flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border transition-all mt-0.5",
+                        isActive
+                          ? "border-ios-blue/30 bg-ios-blue text-white shadow-md shadow-ios-blue/25"
+                          : "border-ios-separator/60 bg-ios-surface-tertiary/60 text-ios-label-secondary",
+                      )}
+                    >
+                      <HardDriveDownload className="h-5 w-5" />
+                    </span>
+                    <div className={cn("min-w-0 flex-1", isActive && "pr-14")}>
+                      <h3 className="line-clamp-2 text-[15px] font-bold leading-snug text-ios-label break-words">
+                        {bank.name}
+                      </h3>
+                      <p className="mt-1 text-[12px] text-ios-label-secondary">
+                        {bank.questionCount} 道题目
+                      </p>
+                    </div>
+                  </div>
 
-        <p className="px-2 pb-2 text-[12px] leading-relaxed text-ios-label-tertiary">
-          支持导入符合 QuestionBank Schema 的 JSON 题库文件（需包含顶层 questions 数组）。导入后数据保存在当前设备浏览器中。
-        </p>
+                  {/* 科目标签 */}
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {bank.subjects.map((subject) => (
+                      <span
+                        key={subject.id}
+                        className="rounded-lg bg-ios-surface-secondary px-2.5 py-1 text-[11px] font-medium text-ios-label-secondary dark:bg-ios-surface-tertiary/70"
+                      >
+                        {subject.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 底部操作区 */}
+                <div className="mt-6 flex items-center justify-between border-t border-ios-separator/40 pt-4">
+                  {isActive ? (
+                    <>
+                      <div className="flex items-center gap-2 text-[12px] font-bold text-ios-blue">
+                        <span className="relative flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-ios-blue opacity-75" />
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-ios-blue" />
+                        </span>
+                        <span>当前使用中</span>
+                      </div>
+
+                      <Link
+                        href={`/banks/${bank.id}`}
+                        className="squircle-press flex items-center gap-1 rounded-xl bg-ios-blue px-3.5 py-1.5 text-[12px] font-bold text-white shadow-sm shadow-ios-blue/25 hover:bg-ios-blue-hover"
+                      >
+                        进入章节 <ChevronRight className="h-3.5 w-3.5" />
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <button
+                        onClick={() => setActiveBank(bank.id)}
+                        className="squircle-press flex items-center gap-1 rounded-xl border border-ios-blue/30 bg-ios-blue/5 px-3 py-1.5 text-[12px] font-bold text-ios-blue hover:bg-ios-blue/10 active:scale-95 cursor-pointer"
+                      >
+                        设为当前题库
+                      </button>
+
+                      {!bank.isDefault ? (
+                        <button
+                          onClick={() => handleRemove(bank.id)}
+                          className="squircle-press flex items-center gap-1 rounded-xl p-1.5 text-[12px] text-ios-red/80 hover:bg-ios-red/10 hover:text-ios-red cursor-pointer"
+                          title="删除题库"
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </button>
+                      ) : (
+                        <span className="text-[11px] font-medium text-ios-label-tertiary">
+                          内置题库
+                        </span>
+                      )}
+                    </>
+                  )}
+                </div>
+              </Card>
+            );
+          })}
+
+          {/* 快捷导入卡片 */}
+          <button
+            onClick={() => {
+              resetImport();
+              setImportOpen(true);
+            }}
+            className="squircle-press flex min-h-[190px] flex-col items-center justify-center gap-3 rounded-[24px] border-2 border-dashed border-ios-blue/30 bg-ios-blue/5 p-6 text-center text-ios-blue transition-all hover:border-ios-blue/60 hover:bg-ios-blue/10 cursor-pointer"
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-ios-blue/10">
+              <FileUp className="h-6 w-6" />
+            </div>
+            <div>
+              <p className="text-[15px] font-bold">导入新题库文件</p>
+              <p className="mt-0.5 text-[12px] text-ios-label-tertiary">
+                支持 JSON 结构题库 · 纯本地离线存储
+              </p>
+            </div>
+          </button>
+        </div>
       </div>
 
-      {/* 导入弹层 */}
+      {/* 导入弹窗 */}
       <Sheet
         open={importOpen}
         onClose={() => {
@@ -191,17 +253,21 @@ export default function BanksPage() {
           resetImport();
         }}
         title="导入题库"
+        description="选择符合 QuestionBank Schema 的 JSON 题库文件"
       >
         {phase === "idle" && (
-          <div className="flex flex-col items-center gap-4 py-6">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-ios-blue/10">
-              <Upload className="h-8 w-8 text-ios-blue" />
+          <div className="flex flex-col items-center gap-5 py-6">
+            <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-ios-blue/10 text-ios-blue shadow-inner">
+              <Upload className="h-10 w-10" />
             </div>
-            <p className="text-center text-[15px] text-ios-label-secondary">
-              选择 JSON 格式的题库文件
-              <br />
-              将校验结构并生成导入报告
-            </p>
+            <div className="text-center">
+              <p className="text-[15px] font-semibold text-ios-label">
+                选择本地 JSON 格式题库
+              </p>
+              <p className="mt-1 text-[13px] text-ios-label-secondary">
+                系统将自动校验题目结构、题型分类与选项格式
+              </p>
+            </div>
             <input
               ref={fileInputRef}
               type="file"
@@ -209,97 +275,115 @@ export default function BanksPage() {
               className="hidden"
               onChange={handleFileChange}
             />
-            <Button onClick={() => fileInputRef.current?.click()}>选择文件</Button>
+            <Button
+              size="lg"
+              className="w-full max-w-xs justify-center"
+              onClick={() => fileInputRef.current?.click()}
+            >
+              浏览并选择文件
+            </Button>
           </div>
         )}
 
         {(phase === "parsing" || phase === "importing") && (
-          <div className="flex flex-col items-center gap-3 py-10">
-            <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-ios-surface-tertiary border-t-ios-blue" />
-            <p className="text-[14px] text-ios-label-secondary">
-              {phase === "parsing" ? "正在解析并校验题库…" : "正在导入题库…"}
+          <div className="flex flex-col items-center gap-4 py-12">
+            <div className="h-10 w-10 animate-spin rounded-full border-[3px] border-ios-surface-tertiary border-t-ios-blue" />
+            <p className="text-[14px] font-medium text-ios-label-secondary">
+              {phase === "parsing" ? "正在解析并校验题库结构…" : "正在导入题库至本地数据库…"}
             </p>
           </div>
         )}
 
         {phase === "parsed" && report && (
-          <div className="space-y-4 py-2">
-            <div className="flex items-start gap-3 rounded-2xl bg-ios-green/8 p-4">
+          <div className="space-y-5 py-2">
+            <div className="flex items-start gap-3 rounded-2xl border border-ios-green/30 bg-ios-green/10 p-4">
               <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-ios-green" />
               <div>
-                <p className="text-[15px] font-semibold">校验通过</p>
-                <p className="mt-1 text-[13px] leading-relaxed text-ios-label-secondary">
-                  {report.questionCount} 道题 · {Object.keys(report.typeCounts).length} 种题型
+                <p className="text-[15px] font-bold text-ios-green">题库结构校验通过</p>
+                <p className="mt-1 text-[13px] text-ios-label-secondary">
+                  共计收录 {report.questionCount} 道题 · 包含 {Object.keys(report.typeCounts).length} 种题型
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-1.5">
-              {Object.entries(report.typeCounts).map(([type, count]) => (
-                <span key={type} className="rounded-lg bg-ios-surface-secondary px-2 py-1 text-[12px] dark:bg-ios-surface-tertiary">
-                  {typeLabel(type)} {count} 题
-                </span>
-              ))}
+            {/* 题型分布药丸 */}
+            <div>
+              <p className="mb-2 text-[12px] font-semibold text-ios-label-secondary">题型构成明细</p>
+              <div className="flex flex-wrap gap-2">
+                {Object.entries(report.typeCounts).map(([type, count]) => (
+                  <span
+                    key={type}
+                    className="rounded-xl border border-white/60 bg-ios-surface/80 px-3 py-1.5 text-[12px] font-semibold text-ios-label dark:border-white/10"
+                  >
+                    {typeLabel(type)}: <span className="text-ios-blue font-bold">{count}</span> 题
+                  </span>
+                ))}
+              </div>
             </div>
 
             {report.warnings.length > 0 && (
-              <div className="rounded-2xl bg-ios-orange/8 p-4">
-                <div className="flex items-center gap-2 text-[14px] font-medium text-ios-orange">
+              <div className="rounded-2xl border border-ios-orange/30 bg-ios-orange/10 p-4">
+                <div className="flex items-center gap-2 text-[13px] font-bold text-ios-orange">
                   <Info className="h-4 w-4" />
-                  {report.warnings.length} 条提示（可忽略）
+                  包含 {report.warnings.length} 条提示（不影响正常使用）
                 </div>
-                <details className="mt-2">
-                  <summary className="cursor-pointer text-[13px] text-ios-orange">查看详情</summary>
-                  <ul className="mt-2 max-h-48 space-y-1 overflow-y-auto">
-                    {report.warnings.slice(0, 30).map((warning, index) => (
-                      <li key={index} className="text-[12px] leading-relaxed text-ios-label-secondary">
-                        {warning}
-                      </li>
+                <details className="mt-2 text-[12px] text-ios-label-secondary">
+                  <summary className="cursor-pointer font-medium text-ios-orange">展开查看详情</summary>
+                  <ul className="mt-2 max-h-36 space-y-1 overflow-y-auto pl-4 list-disc">
+                    {report.warnings.slice(0, 20).map((w, idx) => (
+                      <li key={idx}>{w}</li>
                     ))}
                   </ul>
                 </details>
               </div>
             )}
 
-            <Button className="w-full" onClick={handleImport}>
-              确认导入
+            <Button size="lg" className="w-full justify-center shadow-lg" onClick={handleImport}>
+              确认导入至本地
             </Button>
           </div>
         )}
 
         {phase === "error" && (
-          <div className="space-y-4 py-2">
-            <div className="rounded-2xl bg-ios-red/8 p-4 text-[14px] leading-relaxed text-ios-red">
+          <div className="space-y-4 py-4">
+            <div className="rounded-2xl border border-ios-red/30 bg-ios-red/10 p-4 text-[14px] leading-relaxed text-ios-red">
               {importError}
             </div>
-            <Button variant="secondary" className="w-full" onClick={resetImport}>
+            <Button variant="secondary" size="lg" className="w-full justify-center" onClick={resetImport}>
               重新选择文件
             </Button>
           </div>
         )}
 
         {phase === "done" && (
-          <div className="flex flex-col items-center gap-4 py-6">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-ios-green/10">
-              <CheckCircle2 className="h-9 w-9 text-ios-green" />
+          <div className="flex flex-col items-center gap-5 py-8">
+            <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-ios-green/15 text-ios-green shadow-inner">
+              <CheckCircle2 className="h-9 w-9" />
             </div>
-            <p className="text-center text-[16px] font-semibold">
-              「{importedName}」导入成功
-            </p>
+            <div className="text-center">
+              <p className="text-[17px] font-extrabold text-ios-label">
+                「{importedName}」导入成功
+              </p>
+              <p className="mt-1 text-[13px] text-ios-label-secondary">
+                题库已安全存储至本地，可立即开启练习
+              </p>
+            </div>
             <div className="flex w-full gap-3">
               <Button
                 variant="secondary"
-                className="flex-1"
+                size="lg"
+                className="flex-1 justify-center"
                 onClick={() => setImportOpen(false)}
               >
                 完成
               </Button>
               <Button
-                className="flex-1"
+                size="lg"
+                className="flex-1 justify-center"
                 onClick={() => {
-                  const bank = useBankStore.getState().banks.find((item) => item.name === importedName);
+                  const b = useBankStore.getState().banks.find((item) => item.name === importedName);
                   setImportOpen(false);
-                  if (bank) router.push(`/banks/${bank.id}`);
+                  if (b) router.push(`/banks/${b.id}`);
                 }}
               >
                 进入题库
@@ -314,12 +398,12 @@ export default function BanksPage() {
 
 function typeLabel(type: string): string {
   const labels: Record<string, string> = {
-    single_choice: "单选",
-    multiple_choice: "多选",
-    true_false: "判断",
-    short_answer: "简答",
-    comprehensive: "综合",
-    calculation_analysis: "计算",
+    single_choice: "单选题",
+    multiple_choice: "多选题",
+    true_false: "判断题",
+    short_answer: "简答题",
+    comprehensive: "综合题",
+    calculation_analysis: "计算分析题",
   };
   return labels[type] ?? type;
 }

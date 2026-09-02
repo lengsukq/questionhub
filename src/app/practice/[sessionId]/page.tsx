@@ -1,18 +1,15 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import {
   Bookmark,
-  Check,
-  CheckCircle2,
   ChevronLeft,
   ChevronRight,
-  Clock,
-  Flag,
-  Info,
-  X,
-  XCircle,
+  Edit3,
+  Keyboard,
+  LayoutGrid,
+  Send,
 } from "lucide-react";
 import {
   db,
@@ -33,20 +30,29 @@ import {
 } from "@/lib/session-utils";
 import { isSubjectiveType } from "@/lib/grading";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { Sheet } from "@/components/ui/sheet";
 import { Textarea } from "@/components/ui/textarea";
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import {
-  QUESTION_TYPE_LABELS,
-  type Question,
-  type QuestionType,
-  type SelfRating,
-} from "@/types/question-bank";
+import type { SelfRating } from "@/types/question-bank";
+
+import { PracticeHeader } from "@/components/practice/practice-header";
+import { QuestionCard } from "@/components/practice/question-card";
+import { OptionList } from "@/components/practice/option-list";
+import { SubjectivePanel } from "@/components/practice/subjective-panel";
+import { ExplanationCard } from "@/components/practice/explanation-card";
+import { QuestionNavigator } from "@/components/practice/question-navigator";
+import { usePracticeKeyboard } from "@/components/practice/use-practice-keyboard";
 
 export default function PracticePage() {
   return (
-    <Suspense fallback={null}>
+    <Suspense
+      fallback={
+        <div className="flex min-h-dvh items-center justify-center">
+          <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-ios-surface-tertiary border-t-ios-blue" />
+        </div>
+      }
+    >
       <PracticePageInner />
     </Suspense>
   );
@@ -70,9 +76,11 @@ function PracticePageInner() {
   const [noteOpen, setNoteOpen] = useState(false);
   const [noteText, setNoteText] = useState("");
   const [elapsed, setElapsed] = useState(0);
+  const [navSheetOpen, setNavSheetOpen] = useState(false);
 
   const questionStartRef = useRef(0);
 
+  // 初始化会话与题目
   useEffect(() => {
     let cancelled = false;
     void (async () => {
@@ -83,6 +91,7 @@ function PracticePageInner() {
         sessionRecord.config.bankIds && sessionRecord.config.bankIds.length > 0
           ? sessionRecord.config.bankIds
           : [sessionRecord.bankId];
+
       const [attemptList, statList] = await Promise.all([
         getAttemptsForSession(sessionId),
         bankIds.length === 1
@@ -93,7 +102,10 @@ function PracticePageInner() {
       if (cancelled) return;
 
       const viewValue = searchParams.get("view");
-      const fallbackStart = Math.min(sessionRecord.currentIndex, Math.max(0, questionList.length - 1));
+      const fallbackStart = Math.min(
+        sessionRecord.currentIndex,
+        Math.max(0, questionList.length - 1),
+      );
       const startIndex =
         viewValue !== null
           ? Math.min(Number(viewValue) || 0, Math.max(0, questionList.length - 1))
@@ -103,12 +115,14 @@ function PracticePageInner() {
       setQuestions(questionList);
       setAttempts(
         new Map(
-          attemptList.map((attempt) => [questionKey(attempt.bankId, attempt.questionId), attempt]),
+          attemptList.map((a) => [questionKey(a.bankId, a.questionId), a]),
         ),
       );
       setFavorites(
         new Set(
-          statList.filter((stat) => stat.isFavorite).map((stat) => questionKey(stat.bankId, stat.questionId)),
+          statList
+            .filter((stat) => stat.isFavorite)
+            .map((stat) => questionKey(stat.bankId, stat.questionId)),
         ),
       );
       setIndex(startIndex);
@@ -121,7 +135,7 @@ function PracticePageInner() {
 
   // 计时器
   useEffect(() => {
-    const timer = setInterval(() => setElapsed((value) => value + 1), 1000);
+    const timer = setInterval(() => setElapsed((v) => v + 1), 1000);
     return () => clearInterval(timer);
   }, []);
 
@@ -132,12 +146,12 @@ function PracticePageInner() {
   const isSubjective = currentQuestion ? isSubjectiveType(currentQuestion.type) : false;
   const hasAnswered = Boolean(currentAttempt);
 
-  const handleSelect = (value: unknown) => {
+  const handleSelect = useCallback((value: unknown) => {
     if (hasAnswered) return;
     setSelection(value);
-  };
+  }, [hasAnswered]);
 
-  const handleSubmit = async () => {
+  const handleSubmit = useCallback(async () => {
     if (!session || !currentQuestion || submitting || hasAnswered) return;
     if (!isSubjective && selection === null) return;
 
@@ -170,12 +184,32 @@ function PracticePageInner() {
     } finally {
       setSubmitting(false);
     }
-  };
+  }, [session, currentQuestion, submitting, hasAnswered, isSubjective, selection]);
 
-  const handleRevealSubjective = () => {
-    if (hasAnswered) return;
-    setRevealed(true);
-  };
+  const handleNext = useCallback(async () => {
+    if (!session) return;
+    const nextIndex = index + 1;
+    if (nextIndex >= questions.length) {
+      await completeSession(session.id);
+      router.replace(`/practice/${session.id}/result`);
+      return;
+    }
+    await db.sessions.update(session.id, { currentIndex: nextIndex });
+    setIndex(nextIndex);
+    setSelection(null);
+    setRevealed(false);
+    questionStartRef.current = Date.now();
+  }, [session, index, questions.length, router]);
+
+  const handlePrev = useCallback(async () => {
+    if (index === 0 || !session) return;
+    const prevIndex = index - 1;
+    await db.sessions.update(session.id, { currentIndex: prevIndex });
+    setIndex(prevIndex);
+    setSelection(null);
+    setRevealed(false);
+    questionStartRef.current = Date.now();
+  }, [index, session]);
 
   const handleSelfRate = async (rating: SelfRating) => {
     if (!session || !currentQuestion || submitting) return;
@@ -205,39 +239,24 @@ function PracticePageInner() {
     }
   };
 
-  const handleNext = async () => {
-    if (!session) return;
-    const nextIndex = index + 1;
-    if (nextIndex >= questions.length) {
-      await completeSession(session.id);
-      router.replace(`/practice/${session.id}/result`);
-      return;
-    }
-    await db.sessions.update(session.id, { currentIndex: nextIndex });
-    setIndex(nextIndex);
+  const handleJumpToIndex = (newIndex: number) => {
+    if (!session || newIndex < 0 || newIndex >= questions.length) return;
+    setIndex(newIndex);
     setSelection(null);
     setRevealed(false);
+    setNavSheetOpen(false);
     questionStartRef.current = Date.now();
-  };
-
-  const handlePrev = async () => {
-    if (index === 0 || !session) return;
-    const prevIndex = index - 1;
-    await db.sessions.update(session.id, { currentIndex: prevIndex });
-    setIndex(prevIndex);
-    setSelection(null);
-    setRevealed(false);
-    questionStartRef.current = Date.now();
+    void db.sessions.update(session.id, { currentIndex: newIndex });
   };
 
   const handleToggleFavorite = async () => {
     if (!currentQuestion) return;
     const bankId = currentQuestion.bankId;
-    const favorite = await toggleFavorite(bankId, currentQuestion.originalId);
+    const fav = await toggleFavorite(bankId, currentQuestion.originalId);
     const key = questionKey(bankId, currentQuestion.originalId);
-    setFavorites((set) => {
-      const next = new Set(set);
-      if (favorite) next.add(key);
+    setFavorites((prev) => {
+      const next = new Set(prev);
+      if (fav) next.add(key);
       else next.delete(key);
       return next;
     });
@@ -253,10 +272,22 @@ function PracticePageInner() {
   };
 
   const saveNote = async () => {
-    if (!currentQuestion || !session) return;
+    if (!currentQuestion) return;
     await setNote(currentQuestion.bankId, currentQuestion.originalId, noteText);
     setNoteOpen(false);
   };
+
+  // 绑定键盘快捷键
+  usePracticeKeyboard({
+    question: currentQuestion,
+    hasAnswered,
+    selection,
+    onSelect: handleSelect,
+    onSubmit: () => void handleSubmit(),
+    onNext: () => void handleNext(),
+    onPrev: () => void handlePrev(),
+    isNoteOpen: noteOpen,
+  });
 
   const elapsedText = useMemo(() => {
     const minutes = Math.floor(elapsed / 60);
@@ -272,435 +303,227 @@ function PracticePageInner() {
     );
   }
 
-  const total = questions.length;
-  const isLast = index === total - 1;
-  const isFavorite = favorites.has(questionKey(currentQuestion.bankId, currentQuestion.originalId));
+  const isFavorite = favorites.has(
+    questionKey(currentQuestion.bankId, currentQuestion.originalId),
+  );
+  const isLast = index === questions.length - 1;
 
   return (
     <div className="flex min-h-dvh flex-col bg-ios-background">
-      {/* 顶部 */}
-      <header className="glass sticky top-0 z-30 border-b border-ios-separator/60 safe-top">
-        <div className="flex h-12 items-center justify-between px-2">
-          <button
-            onClick={() => router.back()}
-            aria-label="返回"
-            className="flex h-9 w-9 items-center justify-center rounded-full text-ios-blue active:bg-ios-blue/10"
-          >
-            <ChevronLeft className="h-6 w-6" strokeWidth={2.5} />
-          </button>
-          <div className="flex items-center gap-1.5 text-[14px] font-medium text-ios-label-secondary">
-            <span className="tabular-nums text-ios-label">
-              {index + 1}
-            </span>
-            / {total}
-          </div>
-          <div className="flex items-center gap-1 text-[13px] tabular-nums text-ios-label-secondary">
-            <Clock className="h-3.5 w-3.5" />
-            {elapsedText}
-          </div>
-        </div>
-        <div className="h-1 w-full bg-ios-surface-tertiary">
-          <div
-            className="h-full bg-ios-blue transition-all duration-300"
-            style={{ width: `${(index / Math.max(1, total)) * 100}%` }}
-          />
-        </div>
-      </header>
+      {/* 顶部导航 */}
+      <PracticeHeader
+        currentIndex={index}
+        total={questions.length}
+        elapsedText={elapsedText}
+        title={session.title}
+        onOpenNavigator={() => setNavSheetOpen(true)}
+      />
 
-      {/* 题目内容 */}
-      <div className="flex-1 overflow-y-auto px-4 pt-4">
-        <div className="mb-3 flex items-center gap-2">
-          <Badge color={badgeColor(currentQuestion.type)}>{QUESTION_TYPE_LABELS[currentQuestion.type]}</Badge>
-          <span className="text-[12px] text-ios-label-secondary">{currentQuestion.chapter}</span>
-          {currentQuestion.quality?.needsReview && (
-            <span className="ml-auto flex items-center gap-1 text-[11px] text-ios-orange">
-              <Flag className="h-3 w-3" /> 待复核
-            </span>
-          )}
-        </div>
+      {/* 主体响应式双栏工作区 */}
+      <div className="mx-auto w-full max-w-6xl flex-1 px-4 py-4 lg:py-6">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
+          {/* 左侧主答题区 */}
+          <div className="space-y-4 lg:col-span-8">
+            <QuestionCard question={currentQuestion} />
 
-        <CardShell>
-          <p className="text-[17px] font-medium leading-relaxed">{currentQuestion.stem}</p>
-        </CardShell>
-
-        {/* 客观题选项 */}
-        {!isSubjective && (
-          <div className="mt-3 space-y-2.5">
-            {currentQuestion.type === "true_false" ? (
-              <TrueFalseOptions
-                answer={currentQuestion.answer.value as boolean}
+            {!isSubjective && (
+              <OptionList
+                question={currentQuestion}
+                selection={selection}
                 hasAnswered={hasAnswered}
                 userAnswer={currentAttempt?.userAnswer}
-                onSelect={(value) => handleSelect(value)}
+                onSelect={handleSelect}
               />
-            ) : (
-              currentQuestion.options.map((option) => {
-                const userKeys = toKeyArray(currentAttempt?.userAnswer);
-                const correctKeys = toKeyArray(currentQuestion.answer.value);
-                const selected = toKeyArray(selection).includes(option.key);
-                return (
-                  <button
-                    key={option.key}
-                    disabled={hasAnswered}
-                    onClick={() => handleSelect(selectOption(currentQuestion.type, selection, option.key))}
-                    className={cn(
-                      "flex w-full items-start gap-3 rounded-2xl border-2 bg-ios-surface p-4 text-left transition-all active:scale-[0.99]",
-                      optionState(hasAnswered, userKeys, correctKeys, option.key),
-                      !hasAnswered && selected && "border-ios-blue bg-ios-blue/5",
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        "flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-[12px] font-semibold",
-                        !hasAnswered && selected
-                          ? "border-ios-blue bg-ios-blue text-white"
-                          : "border-ios-separator text-ios-label-secondary",
-                      )}
-                    >
-                      {option.key}
-                    </span>
-                    <span className="flex-1 text-[15px] leading-relaxed">{option.text}</span>
-                    {hasAnswered && userKeys.includes(option.key) && (
-                      <span className="shrink-0">
-                        {userKeys.includes(option.key) && correctKeys.includes(option.key) ? (
-                          <CheckCircle2 className="h-5 w-5 text-ios-green" />
-                        ) : (
-                          <XCircle className="h-5 w-5 text-ios-red" />
-                        )}
-                      </span>
-                    )}
-                  </button>
-                );
-              })
             )}
-          </div>
-        )}
 
-        {/* 主观题 */}
-        {isSubjective && (
-          <div className="mt-3">
-            <CardShell className="border-2 border-dashed border-ios-separator">
-              <p className="text-[14px] leading-relaxed text-ios-label-secondary">
-                本题为主观题，建议先在纸上完整作答，再对照参考答案与解析自评。
-              </p>
-            </CardShell>
-          </div>
-        )}
-
-        {/* 提交后的解析 */}
-        {hasAnswered && (
-          <AnswerPanel
-            question={currentQuestion}
-            attempt={currentAttempt!}
-          />
-        )}
-
-        <div className="h-4" />
-      </div>
-
-      {/* 底部操作栏 */}
-      <div className="border-t border-ios-separator/60 bg-ios-background/95 backdrop-blur-lg safe-bottom">
-        <div className="mx-auto flex max-w-[560px] items-center gap-2 px-4 py-3">
-          <button
-            onClick={handleToggleFavorite}
-            aria-label="收藏"
-            className={cn(
-              "flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition-colors",
-              isFavorite ? "bg-ios-orange/15 text-ios-orange" : "bg-ios-surface-tertiary text-ios-label-secondary",
-            )}
-          >
-            <Bookmark className="h-5 w-5" fill={isFavorite ? "currentColor" : "none"} />
-          </button>
-          <button
-            onClick={openNote}
-            aria-label="笔记"
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-ios-surface-tertiary text-ios-label-secondary"
-          >
-            <Flag className="h-5 w-5" />
-          </button>
-
-          <div className="flex flex-1 gap-2">
-            {!hasAnswered && index > 0 && (
-              <Button variant="secondary" size="default" className="flex-1" onClick={handlePrev}>
-                上一题
-              </Button>
-            )}
-            {!hasAnswered && (
-              <>
-                {isSubjective ? (
-                  <Button variant="secondary" size="default" className="flex-1" onClick={handleRevealSubjective}>
-                    查看参考答案
-                  </Button>
-                ) : (
-                  <Button
-                    size="default"
-                    className="flex-1"
-                    disabled={selection === null || submitting}
-                    onClick={handleSubmit}
-                  >
-                    提交答案
-                  </Button>
-                )}
-              </>
-            )}
-            {hasAnswered && (
-              <Button size="default" className="flex-1" onClick={handleNext} disabled={submitting}>
-                {isLast ? "查看结果" : "下一题"}
-                <ChevronRight className="h-5 w-5" />
-              </Button>
-            )}
-            {!hasAnswered && isSubjective && revealed && (
-              <SelfRatingBar
+            {isSubjective && (
+              <SubjectivePanel
+                hasAnswered={hasAnswered}
+                revealed={revealed}
                 submitting={submitting}
+                selfRating={currentAttempt?.selfRating}
+                onReveal={() => setRevealed(true)}
                 onRate={(rating) => void handleSelfRate(rating)}
               />
             )}
+
+            {/* 解析卡片 */}
+            {(hasAnswered || (isSubjective && revealed)) && (
+              <ExplanationCard
+                question={currentQuestion}
+                attempt={currentAttempt}
+                revealed={revealed}
+              />
+            )}
+
+            {/* 移动端留白 */}
+            <div className="h-20 lg:hidden" />
+          </div>
+
+          {/* 右侧桌面 Studio 辅助面板 (PC/Tablet 专享) */}
+          <div className="hidden lg:col-span-4 lg:block">
+            <div className="sticky top-20 space-y-4">
+              {/* 答题卡总览 */}
+              <Card className="p-5">
+                <div className="mb-3 flex items-center justify-between">
+                  <h3 className="text-[15px] font-bold text-ios-label">答题卡总览</h3>
+                  <span className="text-[12px] text-ios-label-secondary">
+                    已答 {attempts.size} / {questions.length}
+                  </span>
+                </div>
+                <QuestionNavigator
+                  questions={questions}
+                  attempts={attempts}
+                  currentIndex={index}
+                  onSelectIndex={handleJumpToIndex}
+                />
+              </Card>
+
+              {/* 快捷操作与快捷键提示 */}
+              <Card className="p-5">
+                <h4 className="flex items-center gap-1.5 text-[14px] font-bold text-ios-label">
+                  <Keyboard className="h-4 w-4 text-ios-blue" />
+                  键盘极速刷题
+                </h4>
+                <div className="mt-3 space-y-2 text-[12px] text-ios-label-secondary">
+                  <div className="flex items-center justify-between">
+                    <span>选择选项</span>
+                    <kbd className="rounded-lg bg-ios-surface-tertiary px-2 py-0.5 font-mono font-bold text-ios-label">
+                      A / B / C / D
+                    </kbd>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>提交 / 下一题</span>
+                    <kbd className="rounded-lg bg-ios-surface-tertiary px-2 py-0.5 font-mono font-bold text-ios-label">
+                      Enter ↵
+                    </kbd>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>切换上一题 / 下一题</span>
+                    <kbd className="rounded-lg bg-ios-surface-tertiary px-2 py-0.5 font-mono font-bold text-ios-label">
+                      ← / →
+                    </kbd>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* 笔记弹层 */}
-      <Sheet open={noteOpen} onClose={() => setNoteOpen(false)} title="题目笔记">
+      {/* 底部悬浮/吸底操作栏 */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-ios-separator/60 bg-ios-surface/90 backdrop-blur-2xl safe-bottom">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+          {/* 左侧收藏与笔记小工具 */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={handleToggleFavorite}
+              aria-label="收藏题目"
+              className={cn(
+                "squircle-press flex h-11 w-11 items-center justify-center rounded-2xl border transition-all",
+                isFavorite
+                  ? "border-ios-orange/40 bg-ios-orange/15 text-ios-orange shadow-sm"
+                  : "border-white/60 bg-ios-surface/80 text-ios-label-secondary hover:text-ios-label dark:border-white/10 dark:bg-ios-surface/50",
+              )}
+              title="收藏题目"
+            >
+              <Bookmark className="h-5 w-5" fill={isFavorite ? "currentColor" : "none"} />
+            </button>
+
+            <button
+              onClick={openNote}
+              aria-label="添加笔记"
+              className="squircle-press flex h-11 w-11 items-center justify-center rounded-2xl border border-white/60 bg-ios-surface/80 text-ios-label-secondary hover:text-ios-label active:scale-95 dark:border-white/10 dark:bg-ios-surface/50"
+              title="题目笔记"
+            >
+              <Edit3 className="h-5 w-5" />
+            </button>
+
+            {/* 移动端答题卡按钮 */}
+            <button
+              onClick={() => setNavSheetOpen(true)}
+              aria-label="查看答题卡"
+              className="squircle-press flex h-11 w-11 items-center justify-center rounded-2xl border border-white/60 bg-ios-surface/80 text-ios-label-secondary hover:text-ios-label active:scale-95 lg:hidden dark:border-white/10 dark:bg-ios-surface/50"
+              title="查看答题卡"
+            >
+              <LayoutGrid className="h-5 w-5" />
+            </button>
+          </div>
+
+          {/* 右侧主控行动按钮 */}
+          <div className="flex flex-1 items-center justify-end gap-3 max-w-md">
+            {index > 0 && (
+              <Button
+                variant="secondary"
+                size="default"
+                className="flex-1 sm:flex-initial"
+                onClick={handlePrev}
+              >
+                <ChevronLeft className="h-4 w-4" />
+                上一题
+              </Button>
+            )}
+
+            {!hasAnswered && !isSubjective && (
+              <Button
+                size="default"
+                className="flex-1"
+                disabled={selection === null || submitting}
+                onClick={() => void handleSubmit()}
+              >
+                <Send className="h-4 w-4" />
+                提交答案
+              </Button>
+            )}
+
+            {hasAnswered && (
+              <Button
+                size="default"
+                className="flex-1"
+                disabled={submitting}
+                onClick={() => void handleNext()}
+              >
+                {isLast ? "完成练习" : "下一题"}
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* 移动端答题卡 Sheet */}
+      <Sheet
+        open={navSheetOpen}
+        onClose={() => setNavSheetOpen(false)}
+        title="答题卡总览"
+        description={`已答 ${attempts.size} / ${questions.length} 题`}
+      >
+        <QuestionNavigator
+          questions={questions}
+          attempts={attempts}
+          currentIndex={index}
+          onSelectIndex={handleJumpToIndex}
+        />
+      </Sheet>
+
+      {/* 笔记弹窗 */}
+      <Sheet
+        open={noteOpen}
+        onClose={() => setNoteOpen(false)}
+        title="题目笔记"
+        description="记录本题的解题思路、易错点或口诀，离线同步保存在本地"
+      >
         <Textarea
           value={noteText}
-          onChange={(event) => setNoteText(event.target.value)}
-          placeholder="记录本题的易错点、记忆口诀或知识点…"
+          onChange={(e) => setNoteText(e.target.value)}
+          placeholder="写下你的思路总结、核心公式或关键知识点…"
           rows={6}
           className="mb-4"
         />
-        <Button className="w-full" onClick={saveNote}>
+        <Button className="w-full" size="lg" onClick={saveNote}>
           保存笔记
         </Button>
       </Sheet>
     </div>
   );
-}
-
-/* ---------- 子组件 ---------- */
-
-function CardShell({ children, className }: { children: React.ReactNode; className?: string }) {
-  return (
-    <div className={cn("rounded-2xl bg-ios-surface p-4 shadow-sm shadow-black/[0.03]", className)}>
-      {children}
-    </div>
-  );
-}
-
-function TrueFalseOptions({
-  answer,
-  hasAnswered,
-  userAnswer,
-  onSelect,
-}: {
-  answer: boolean;
-  hasAnswered: boolean;
-  userAnswer: unknown;
-  onSelect: (value: boolean) => void;
-}) {
-  const options: Array<{ value: boolean; label: string }> = [
-    { value: true, label: "正确" },
-    { value: false, label: "错误" },
-  ];
-  const user = hasAnswered ? Boolean(userAnswer) : null;
-
-  return (
-    <div className="grid grid-cols-2 gap-3">
-      {options.map((option) => {
-        const isSelected = !hasAnswered && userAnswer === option.value;
-        const isUserChoice = hasAnswered && user === option.value;
-        const isCorrectChoice = hasAnswered && answer === option.value;
-        return (
-          <button
-            key={option.label}
-            disabled={hasAnswered}
-            onClick={() => onSelect(option.value)}
-            className={cn(
-              "flex h-16 items-center justify-center rounded-2xl border-2 bg-ios-surface text-[17px] font-semibold transition-all active:scale-[0.98]",
-              isSelected && "border-ios-blue bg-ios-blue/5 text-ios-blue",
-              isUserChoice && isCorrectChoice && "border-ios-green bg-ios-green/8 text-ios-green",
-              isUserChoice && !isCorrectChoice && "border-ios-red bg-ios-red/8 text-ios-red",
-              hasAnswered && !isUserChoice && isCorrectChoice && "border-ios-green/50 bg-ios-green/5 text-ios-green",
-            )}
-          >
-            {isUserChoice && isCorrectChoice && <Check className="mr-1 h-5 w-5" />}
-            {isUserChoice && !isCorrectChoice && <X className="mr-1 h-5 w-5" />}
-            {option.label}
-          </button>
-        );
-      })}
-    </div>
-  );
-}
-
-function SelfRatingBar({
-  submitting,
-  onRate,
-}: {
-  submitting: boolean;
-  onRate: (rating: SelfRating) => void;
-}) {
-  const options: Array<{ value: SelfRating; label: string }> = [
-    { value: 0, label: "不会" },
-    { value: 1, label: "模糊" },
-    { value: 2, label: "掌握" },
-  ];
-  return (
-    <div className="flex flex-1 gap-2">
-      {options.map((option) => (
-        <Button
-          key={option.value}
-          variant="secondary"
-          size="default"
-          className="flex-1"
-          disabled={submitting}
-          onClick={() => onRate(option.value)}
-        >
-          {option.label}
-        </Button>
-      ))}
-    </div>
-  );
-}
-
-function AnswerPanel({
-  question,
-  attempt,
-}: {
-  question: Question;
-  attempt: AttemptRecord;
-}) {
-  const isObjective = !isSubjectiveType(question.type);
-  const correctText = formatAnswerText(question);
-
-  return (
-    <div className="mt-3 space-y-3">
-      {isObjective ? (
-        <div
-          className={cn(
-            "flex items-center gap-2 rounded-2xl p-4",
-            attempt.correctness === "correct" ? "bg-ios-green/8" : "bg-ios-red/8",
-          )}
-        >
-          {attempt.correctness === "correct" ? (
-            <CheckCircle2 className="h-6 w-6 shrink-0 text-ios-green" />
-          ) : (
-            <XCircle className="h-6 w-6 shrink-0 text-ios-red" />
-          )}
-          <div>
-            <p className={cn("text-[15px] font-semibold", attempt.correctness === "correct" ? "text-ios-green" : "text-ios-red")}>
-              {attempt.correctness === "correct" ? "回答正确" : "回答错误"}
-            </p>
-            <p className="mt-0.5 text-[13px] text-ios-label-secondary">
-              正确答案：{correctText}
-            </p>
-          </div>
-        </div>
-      ) : (
-        <div className="rounded-2xl bg-ios-purple/8 p-4">
-          <p className="text-[15px] font-semibold text-ios-purple">参考答案</p>
-          <p className="mt-2 text-[14px] leading-relaxed text-ios-label">{correctText}</p>
-          <p className="mt-3 text-[13px] text-ios-label-secondary">
-            自评：{selfRatingLabel(attempt.selfRating)}
-          </p>
-        </div>
-      )}
-
-      <ExplanationCard question={question} />
-    </div>
-  );
-}
-
-function ExplanationCard({ question }: { question: Question }) {
-  if (question.explanationStatus === "source_not_provided") {
-    return (
-      <div className="rounded-2xl bg-ios-surface p-4">
-        <div className="flex items-center gap-2 text-[14px] font-semibold text-ios-label-secondary">
-          <Info className="h-4 w-4" />
-          原答案书未提供独立解析
-        </div>
-      </div>
-    );
-  }
-  if (question.explanationStatus === "ocr_failed") {
-    return (
-      <div className="rounded-2xl bg-ios-surface p-4">
-        <div className="flex items-center gap-2 text-[14px] font-semibold text-ios-label-secondary">
-          <Info className="h-4 w-4" />
-          原书存在解析，但当前未能识别
-        </div>
-      </div>
-    );
-  }
-  if (!question.explanation) {
-    return null;
-  }
-  return (
-    <div className="rounded-2xl bg-ios-surface p-4">
-      <p className="mb-2 text-[14px] font-semibold text-ios-blue">原书解析</p>
-      <p className="text-[14px] leading-relaxed text-ios-label">{question.explanation}</p>
-    </div>
-  );
-}
-
-/* ---------- 工具函数 ---------- */
-
-function badgeColor(type: QuestionType): "blue" | "green" | "orange" | "purple" {
-  switch (type) {
-    case "single_choice":
-      return "blue";
-    case "multiple_choice":
-      return "green";
-    case "true_false":
-      return "orange";
-    default:
-      return "purple";
-  }
-}
-
-function toKeyArray(value: unknown): string[] {
-  if (Array.isArray(value)) return value.map((item) => String(item).toUpperCase());
-  if (typeof value === "string") return [value.toUpperCase()];
-  return [];
-}
-
-function selectOption(type: QuestionType, selection: unknown, key: string): unknown {
-  if (type === "multiple_choice") {
-    const current = Array.isArray(selection) ? [...selection] : [];
-    if (current.includes(key)) return current.filter((item) => item !== key);
-    return [...current, key];
-  }
-  return key;
-}
-
-function optionState(
-  hasAnswered: boolean,
-  userKeys: string[],
-  correctKeys: string[],
-  key: string,
-): string {
-  if (!hasAnswered) return "border-ios-separator";
-  const isUser = userKeys.includes(key);
-  const isCorrect = correctKeys.includes(key);
-  if (isUser && isCorrect) return "border-ios-green bg-ios-green/8";
-  if (isUser) return "border-ios-red bg-ios-red/8";
-  if (isCorrect) return "border-ios-green/40 bg-ios-green/5";
-  return "border-ios-separator opacity-70";
-}
-
-function formatAnswerText(question: Question): string {
-  const { type, answer } = question;
-  if (type === "true_false") {
-    return answer.display ? String(answer.display) : answer.value ? "正确" : "错误";
-  }
-  if (Array.isArray(answer.value)) {
-    return answer.display ? String(answer.display) : answer.value.join("");
-  }
-  return answer.display ? String(answer.display) : String(answer.value);
-}
-
-function selfRatingLabel(rating?: SelfRating): string {
-  if (rating === 0) return "不会";
-  if (rating === 1) return "模糊";
-  if (rating === 2) return "掌握";
-  return "未自评";
 }

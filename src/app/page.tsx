@@ -5,21 +5,24 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
   ArrowRight,
+  Bookmark,
   ChevronRight,
   Flame,
   Library,
   Play,
   Repeat,
   Sparkles,
-  Bookmark,
+  TrendingUp,
   XCircle,
 } from "lucide-react";
 import { useBankStore } from "@/stores/bank-store";
 import { getActiveSession, getDueStats, type PracticeSessionRecord } from "@/lib/db";
 import { createPracticeSession } from "@/lib/session-utils";
 import { getDailyTrend, getTodayStats, type DayStat } from "@/lib/queries";
-import { Card } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
 export default function HomePage() {
@@ -48,7 +51,7 @@ export default function HomePage() {
   }, [activeBankId]);
 
   useEffect(() => {
-    // 从 IndexedDB 加载首页概览数据（外部数据源）
+    // 从 IndexedDB 加载首页概览数据
     // eslint-disable-next-line react-hooks/set-state-in-effect
     void refresh();
   }, [refresh]);
@@ -73,157 +76,241 @@ export default function HomePage() {
   const maxTrend = Math.max(1, ...trend.map((day) => day.count));
 
   return (
-    <div className="px-4 pt-4 safe-top">
-      {/* 顶部问候 */}
-      <div className="mb-4 flex items-center justify-between">
+    <div className="px-4 pt-4 lg:px-8 lg:pt-8 safe-top">
+      {/* 顶部问候栏 */}
+      <div className="mb-6 flex items-center justify-between">
         <div>
-          <p className="text-[15px] font-medium text-ios-label-secondary">
+          <p className="text-[13px] font-semibold text-ios-blue uppercase tracking-wider">
             {new Date().toLocaleDateString("zh-CN", {
               month: "long",
               day: "numeric",
               weekday: "long",
             })}
           </p>
-          <h1 className="mt-0.5 text-[28px] font-bold tracking-tight">题集</h1>
+          <h1 className="mt-0.5 text-[26px] font-extrabold tracking-tight text-ios-label sm:text-[32px]">
+            今日刷题空间
+          </h1>
         </div>
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ios-blue shadow-md shadow-ios-blue/30">
-          <span className="text-[18px] font-bold text-white">题</span>
+
+        {/* 移动端 Logo 徽章 */}
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-tr from-ios-blue to-ios-indigo shadow-lg shadow-ios-blue/25 lg:hidden">
+          <span className="text-[20px] font-bold text-white">题</span>
         </div>
       </div>
 
-      {/* 继续练习 */}
-      {activeSession && (
-        <Card className="mb-3 overflow-hidden">
-          <div className="flex items-center justify-between px-4 pt-4">
-            <div className="flex items-center gap-2">
-              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-ios-blue/10">
-                <Play className="h-4 w-4 text-ios-blue" fill="currentColor" />
-              </span>
-              <span className="text-[15px] font-semibold">继续练习</span>
-            </div>
-            <Link
-              href={`/practice/${activeSession.id}`}
-              className="flex items-center gap-0.5 text-[14px] font-medium text-ios-blue"
-            >
-              继续 <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-          <div className="px-4 pb-4 pt-3">
-            <p className="mb-2 text-[14px] text-ios-label-secondary">
-              {activeSession.title} · 已完成 {activeSession.currentIndex}/{activeSession.questionRefs.length} 题
-            </p>
-            <Progress value={(activeSession.currentIndex / Math.max(1, activeSession.questionRefs.length)) * 100} />
-          </div>
-        </Card>
-      )}
+      {/* 响应式 Bento Grid 布局 */}
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-12">
+        {/* 左栏 (8列)：主行动卡片与快捷入口 */}
+        <div className="space-y-5 lg:col-span-8">
+          {/* 继续练习 Hero 卡片 */}
+          {activeSession ? (
+            <Card className="relative overflow-hidden border-ios-blue/30 bg-gradient-to-br from-ios-blue/8 via-ios-surface to-ios-surface p-6 shadow-lg shadow-ios-blue/5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-ios-blue text-white shadow-sm shadow-ios-blue/30">
+                      <Play className="h-4 w-4" fill="currentColor" />
+                    </span>
+                    <span className="text-[14px] font-bold text-ios-blue">正在进行的练习</span>
+                  </div>
+                  <h2 className="text-[20px] font-extrabold text-ios-label">
+                    {activeSession.title}
+                  </h2>
+                  <p className="text-[13px] text-ios-label-secondary">
+                    已完成进度 {activeSession.currentIndex} / {activeSession.questionRefs.length} 题
+                  </p>
+                </div>
 
-      {/* 今日状态 */}
-      <div className="mb-3 grid grid-cols-2 gap-3">
-        <Card className="p-4">
-          <div className="flex items-center gap-2 text-ios-label-secondary">
-            <Flame className="h-4 w-4 text-ios-orange" />
-            <span className="text-[13px]">今日做题</span>
-          </div>
-          <p className="mt-2 text-[26px] font-bold tabular-nums">
-            {todayStats.answered}
-            <span className="ml-1 text-[13px] font-medium text-ios-label-secondary">题</span>
-          </p>
-          <p className="mt-0.5 text-[12px] text-ios-label-secondary">
-            正确 {todayStats.correct} 题
-          </p>
-        </Card>
-        <Link href="/review?tab=due">
-          <Card className="p-4">
-            <div className="flex items-center gap-2 text-ios-label-secondary">
-              <Repeat className="h-4 w-4 text-ios-purple" />
-              <span className="text-[13px]">待复习</span>
-            </div>
-            <p className="mt-2 text-[26px] font-bold tabular-nums">
-              {dueCount}
-              <span className="ml-1 text-[13px] font-medium text-ios-label-secondary">题</span>
-            </p>
-            <p className="mt-0.5 text-[12px] text-ios-blue">去复习 →</p>
-          </Card>
-        </Link>
-      </div>
+                <Link href={`/practice/${activeSession.id}`}>
+                  <Button size="lg" className="w-full sm:w-auto shadow-md">
+                    继续刷题
+                    <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
 
-      {/* 当前题库 */}
-      <Card className="mb-3">
-        <div className="flex items-center justify-between px-4 pt-4">
-          <span className="text-[15px] font-semibold">当前题库</span>
-          <Link href="/banks" className="flex items-center text-[13px] text-ios-blue">
-            切换 <ChevronRight className="h-4 w-4" />
-          </Link>
-        </div>
-        <div className="px-4 pb-4 pt-3">
-          {activeBank ? (
-            <div className="flex flex-wrap gap-2">
-              <span className="rounded-xl bg-ios-blue/10 px-3 py-2 text-[14px] font-semibold text-ios-blue">
-                {activeBank.name}
-              </span>
-              {activeBank.subjects.map((subject) => (
-                <span
-                  key={subject.id}
-                  className="rounded-xl bg-ios-surface-secondary px-3 py-2 text-[13px] text-ios-label-secondary dark:bg-ios-surface-tertiary"
-                >
-                  {subject.name}
-                </span>
-              ))}
-            </div>
+              <div className="mt-5">
+                <Progress
+                  value={
+                    (activeSession.currentIndex /
+                      Math.max(1, activeSession.questionRefs.length)) *
+                    100
+                  }
+                  size="default"
+                />
+              </div>
+            </Card>
           ) : (
-            <Link href="/banks" className="text-[14px] text-ios-blue">
-              前往导入题库
-            </Link>
+            <Card className="relative overflow-hidden bg-gradient-to-br from-ios-blue/5 via-ios-surface to-ios-surface p-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="space-y-1">
+                  <Badge color="blue">开始学习</Badge>
+                  <h2 className="text-[20px] font-extrabold text-ios-label">
+                    开启今天的练习计划
+                  </h2>
+                  <p className="text-[13px] text-ios-label-secondary">
+                    {activeBank
+                      ? `当前题库：${activeBank.name}（共 ${activeBank.questionCount} 题）`
+                      : "暂无激活题库，请先导入题库"}
+                  </p>
+                </div>
+
+                <Link href={activeBankId ? `/banks/${activeBankId}` : "/banks"}>
+                  <Button size="lg" className="w-full sm:w-auto shadow-md">
+                    <Sparkles className="h-4 w-4" />
+                    进入章节刷题
+                  </Button>
+                </Link>
+              </div>
+            </Card>
           )}
-        </div>
-      </Card>
 
-      {/* 快捷入口 */}
-      <div className="mb-3 grid grid-cols-2 gap-3">
-        <Link href={activeBankId ? `/banks/${activeBankId}` : "/banks"}>
-          <QuickActionCard icon={Library} color="blue" title="章节练习" subtitle="按章节系统刷题" />
-        </Link>
-        <button onClick={startRandomPractice} disabled={loadingQuick} className="text-left">
-          <QuickActionCard icon={Sparkles} color="purple" title="随机练习" subtitle={loadingQuick ? "出题中…" : "10 题随机热身"} />
-        </button>
-        <Link href="/review?tab=wrong">
-          <QuickActionCard icon={XCircle} color="red" title="错题本" subtitle="重点攻克错题" />
-        </Link>
-        <Link href="/review?tab=favorite">
-          <QuickActionCard icon={Bookmark} color="orange" title="收藏" subtitle="标记重要题目" />
-        </Link>
-      </div>
-
-      {/* 7 天趋势 */}
-      <Card className="mb-3">
-        <div className="flex items-center justify-between px-4 pt-4">
-          <span className="text-[15px] font-semibold">近 7 天做题趋势</span>
-          <Link href="/analytics" className="flex items-center text-[13px] text-ios-blue">
-            数据 <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-        <div className="flex h-24 items-end justify-between gap-2 px-4 pb-4 pt-3">
-          {trend.map((day) => (
-            <div key={day.date} className="flex flex-1 flex-col items-center gap-1.5">
-              <span className="text-[11px] font-medium tabular-nums text-ios-label-secondary">
-                {day.count > 0 ? day.count : ""}
-              </span>
-              <div
-                className={cn(
-                  "w-full rounded-md transition-all",
-                  day.count > 0
-                    ? "bg-ios-blue"
-                    : "bg-ios-surface-tertiary",
-                )}
-                style={{ height: `${Math.max(6, (day.count / maxTrend) * 100)}%` }}
-              />
-              <span className="text-[10px] text-ios-label-tertiary">{day.label}</span>
+          {/* 快捷入口四宫格 */}
+          <div>
+            <h3 className="mb-3 px-1 text-[15px] font-bold text-ios-label">核心刷题模式</h3>
+            <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-4">
+              <Link href={activeBankId ? `/banks/${activeBankId}` : "/banks"} className="block">
+                <QuickActionCard
+                  icon={Library}
+                  color="blue"
+                  title="章节练习"
+                  subtitle="按章系统攻关"
+                />
+              </Link>
+              <button onClick={startRandomPractice} disabled={loadingQuick} className="block text-left w-full">
+                <QuickActionCard
+                  icon={Sparkles}
+                  color="purple"
+                  title="随机热身"
+                  subtitle={loadingQuick ? "出题中…" : "10 题随机练习"}
+                />
+              </button>
+              <Link href="/review?tab=wrong" className="block">
+                <QuickActionCard
+                  icon={XCircle}
+                  color="red"
+                  title="错题攻坚"
+                  subtitle="自动收录错题"
+                />
+              </Link>
+              <Link href="/review?tab=favorite" className="block">
+                <QuickActionCard
+                  icon={Bookmark}
+                  color="orange"
+                  title="重点收藏"
+                  subtitle="标记关键考点"
+                />
+              </Link>
             </div>
-          ))}
+          </div>
         </div>
-      </Card>
 
-      <div className="h-4" />
+        {/* 右栏 (4列)：数据指标与趋势 */}
+        <div className="space-y-5 lg:col-span-4">
+          {/* 今日做题 & 待复习 */}
+          <div className="grid grid-cols-2 gap-3.5">
+            <Card className="p-4">
+              <div className="flex items-center gap-1.5 text-ios-orange">
+                <Flame className="h-4 w-4" />
+                <span className="text-[12px] font-semibold">今日做题</span>
+              </div>
+              <p className="mt-2 text-[26px] font-extrabold tabular-nums text-ios-label">
+                {todayStats.answered}
+                <span className="ml-1 text-[13px] font-medium text-ios-label-secondary">题</span>
+              </p>
+              <p className="mt-0.5 text-[11px] text-ios-label-tertiary">
+                正确 {todayStats.correct} 题
+              </p>
+            </Card>
+
+            <Link href="/review?tab=due" className="block">
+              <Card className="p-4 hover:border-ios-purple/30 transition-all">
+                <div className="flex items-center gap-1.5 text-ios-purple">
+                  <Repeat className="h-4 w-4" />
+                  <span className="text-[12px] font-semibold">待复习</span>
+                </div>
+                <p className="mt-2 text-[26px] font-extrabold tabular-nums text-ios-label">
+                  {dueCount}
+                  <span className="ml-1 text-[13px] font-medium text-ios-label-secondary">题</span>
+                </p>
+                <p className="mt-0.5 text-[11px] font-semibold text-ios-blue flex items-center gap-0.5">
+                  去复习 <ChevronRight className="h-3 w-3" />
+                </p>
+              </Card>
+            </Link>
+          </div>
+
+          {/* 当前题库详情 */}
+          <Card>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-[15px]">当前激活题库</CardTitle>
+              <Link href="/banks" className="flex items-center text-[12px] font-semibold text-ios-blue">
+                管理 <ChevronRight className="h-3.5 w-3.5" />
+              </Link>
+            </CardHeader>
+            <CardContent>
+              {activeBank ? (
+                <div className="space-y-2.5">
+                  <div className="rounded-2xl border border-ios-blue/20 bg-ios-blue/8 p-3">
+                    <p className="text-[14px] font-bold text-ios-blue">{activeBank.name}</p>
+                    <p className="mt-0.5 text-[11px] text-ios-label-tertiary">
+                      共收录 {activeBank.questionCount} 道题
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {activeBank.subjects.map((sub) => (
+                      <span
+                        key={sub.id}
+                        className="rounded-lg bg-ios-surface-secondary px-2 py-0.5 text-[11px] font-medium text-ios-label-secondary"
+                      >
+                        {sub.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link href="/banks" className="text-[13px] text-ios-blue">
+                  前往导入或选择题库 →
+                </Link>
+              )}
+            </CardContent>
+          </Card>
+
+          {/* 近 7 天趋势柱状图 */}
+          <Card>
+            <CardHeader className="pb-2">
+              <CardTitle className="flex items-center gap-1.5 text-[15px]">
+                <TrendingUp className="h-4 w-4 text-ios-blue" />
+                7 天做题趋势
+              </CardTitle>
+              <Link href="/analytics" className="text-[12px] font-semibold text-ios-blue">
+                详情
+              </Link>
+            </CardHeader>
+            <CardContent>
+              <div className="flex h-28 items-end justify-between gap-2 pt-2">
+                {trend.map((day) => (
+                  <div key={day.date} className="flex flex-1 flex-col items-center gap-1.5">
+                    <span className="text-[10px] font-bold tabular-nums text-ios-label-secondary">
+                      {day.count > 0 ? day.count : ""}
+                    </span>
+                    <div
+                      className={cn(
+                        "w-full rounded-full transition-all duration-500",
+                        day.count > 0
+                          ? "bg-gradient-to-t from-ios-blue to-ios-indigo"
+                          : "bg-ios-surface-tertiary/60",
+                      )}
+                      style={{ height: `${Math.max(8, (day.count / maxTrend) * 100)}%` }}
+                    />
+                    <span className="text-[10px] text-ios-label-tertiary">{day.label}</span>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
     </div>
   );
 }
@@ -239,21 +326,29 @@ function QuickActionCard({
   title: string;
   subtitle: string;
 }) {
-  const colorClasses = {
-    blue: "bg-ios-blue/10 text-ios-blue",
-    purple: "bg-ios-purple/10 text-ios-purple",
-    red: "bg-ios-red/10 text-ios-red",
-    orange: "bg-ios-orange/10 text-ios-orange",
-  } as const;
+  const colorMap = {
+    blue: "bg-ios-blue/10 text-ios-blue border-ios-blue/20",
+    purple: "bg-ios-purple/10 text-ios-purple border-ios-purple/20",
+    red: "bg-ios-red/10 text-ios-red border-ios-red/20",
+    orange: "bg-ios-orange/10 text-ios-orange border-ios-orange/20",
+  };
 
   return (
-    <Card className="row-active flex h-[92px] flex-col justify-between p-4">
-      <span className={cn("flex h-9 w-9 items-center justify-center rounded-xl", colorClasses[color])}>
+    <Card
+      variant="interactive"
+      className="flex h-[112px] flex-col justify-between p-4"
+    >
+      <span
+        className={cn(
+          "flex h-9 w-9 items-center justify-center rounded-2xl border shadow-xs",
+          colorMap[color],
+        )}
+      >
         <Icon className="h-5 w-5" />
       </span>
       <div>
-        <p className="text-[15px] font-semibold">{title}</p>
-        <p className="text-[12px] text-ios-label-secondary">{subtitle}</p>
+        <p className="text-[14px] font-bold text-ios-label">{title}</p>
+        <p className="text-[11px] text-ios-label-secondary">{subtitle}</p>
       </div>
     </Card>
   );

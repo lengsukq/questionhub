@@ -8,12 +8,22 @@ interface SheetProps {
   open: boolean;
   onClose: () => void;
   title?: string;
+  description?: string;
   children: ReactNode;
   className?: string;
+  maxWidth?: string;
 }
 
-/** iOS 风格底部弹层 */
-export function Sheet({ open, onClose, title, children, className }: SheetProps) {
+/** 响应式弹窗/抽屉（Mobile 底部滑出抽屉，Pad/PC 居中大圆角模态框） */
+export function Sheet({
+  open,
+  onClose,
+  title,
+  description,
+  children,
+  className,
+  maxWidth = "max-w-lg",
+}: SheetProps) {
   const sheetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,31 +42,61 @@ export function Sheet({ open, onClose, title, children, className }: SheetProps)
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true">
+    <div
+      className="fixed inset-0 z-50 flex items-end justify-center md:items-center p-0 md:p-4"
+      role="dialog"
+      aria-modal="true"
+    >
+      {/* 遮罩层 */}
       <button
-        aria-label="关闭"
-        className="absolute inset-0 bg-black/40 backdrop-blur-[2px] animate-in fade-in"
+        aria-label="关闭遮罩"
+        className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300"
         onClick={onClose}
       />
+
+      {/* 弹窗主体 */}
       <div
         ref={sheetRef}
         className={cn(
-          "relative flex max-h-[85dvh] w-full max-w-[560px] flex-col rounded-t-[20px] bg-ios-surface dark:bg-ios-surface-secondary animate-in slide-in-from-bottom-4",
+          "relative z-10 flex max-h-[88dvh] w-full flex-col overflow-hidden bg-ios-surface/95 backdrop-blur-2xl shadow-2xl transition-all duration-300",
+          // Mobile 样式（底部大圆角抽屉）
+          "rounded-t-[32px] border-t border-white/80 dark:border-white/10 dark:bg-ios-surface/90",
+          // Pad / PC 样式（居中大圆角模态框）
+          "md:rounded-[28px] md:border md:border-white/80 md:dark:border-white/10",
+          maxWidth,
           className,
         )}
       >
-        <div className="mx-auto mt-2.5 h-1 w-9 rounded-full bg-ios-separator" />
-        <div className="flex items-center justify-between px-5 pb-2 pt-3">
-          <h2 className="text-[17px] font-semibold">{title}</h2>
+        {/* 移动端顶部拉手 */}
+        <div className="mx-auto mt-3 h-1.2 w-10 rounded-full bg-ios-separator md:hidden" />
+
+        {/* 头部 */}
+        <div className="flex items-center justify-between px-6 pt-5 pb-3">
+          <div>
+            {title && (
+              <h2 className="text-[18px] font-bold tracking-tight text-ios-label">
+                {title}
+              </h2>
+            )}
+            {description && (
+              <p className="mt-0.5 text-[12px] text-ios-label-secondary">
+                {description}
+              </p>
+            )}
+          </div>
           <button
             onClick={onClose}
             aria-label="关闭弹层"
-            className="flex h-8 w-8 items-center justify-center rounded-full bg-ios-surface-tertiary text-ios-label-secondary dark:bg-ios-surface-tertiary"
+            className="squircle-press flex h-8 w-8 items-center justify-center rounded-full bg-ios-surface-tertiary text-ios-label-secondary hover:bg-ios-surface-tertiary/90 active:scale-95"
           >
             <X className="h-4 w-4" />
           </button>
         </div>
-        <div className="overflow-y-auto px-5 pb-8 safe-bottom">{children}</div>
+
+        {/* 内容区 */}
+        <div className="flex-1 overflow-y-auto px-6 pb-8 safe-bottom">
+          {children}
+        </div>
       </div>
     </div>
   );
