@@ -2,7 +2,7 @@
  * App Shell 缓存：离线时应用壳与默认题库可继续使用。
  * 策略：导航请求网络优先 + 缓存回退；静态资源 stale-while-revalidate。
  */
-const CACHE_NAME = "questionhub-v1";
+const CACHE_NAME = "questionhub-v2";
 const APP_SHELL = [
   "/",
   "/data/question-bank.json",
