@@ -1,0 +1,1645 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:49:42.260839+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年4月30日，甲公司与乙公司签订一份不可撤销的转让合同，计划将其不再使用的厂房转让给乙公司。合同约定，厂房转让价格为2700万元，该厂房所有权的转移手续将于2026年11月30日前办理完成。甲公司厂房于2020年12月达到预定可使用状态并投入使用，成本为6000万元，预计使用年限10年，预计净残值为零，采用年限平均法计提折旧，截至2026年4月30日，甲公司与乙公司签订转让合同时未计提减值准备。假定不考虑其他因素，甲公司在2026年应对该厂房计提的折旧额及划分为持有待售类别时应记入“资产减值损失”的金额分别是（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "200，100"
+        },
+        {
+          "key": "B",
+          "text": "200，0"
+        },
+        {
+          "key": "C",
+          "text": "550，0"
+        },
+        {
+          "key": "D",
+          "text": "550，250"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "2026年4月30日，甲公司该厂房满足划分为持有待售类别。划分为持有待售类别前，厂房的账面价值$=6000-6000\\div(10\\times12)\\times(5\\times12+4)=2800$（万元），2026年1月至4月累计折旧额$=6000\\div(10\\times12)\\times4=200$（万元）；划分为持有待售类别时，应按照账面价值（2800万元）与公允价值减去出售费用后的净额（2700万元）两者孰低进行初始计量，差额100万元（$2800-2700$）计入当期损益（资产减值损失）；划分为持有待售类别后，不应计提折旧。综上，选项A当选。\n\n相关会计分录如下：\n\n借：持有待售资产--固定资产 2800\n\n累计折旧 3200【$6000\\div(10\\times12)\\times(5\\times12+4)$】\n\n贷：固定资产 6000\n\n借：资产减值损失 100\n\n贷：持有待售资产减值准备 100",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司持有合营企业乙公司35%的股权，拟出售30%的股权，符合持有待售类别划分条件。出售后，甲公司持有乙公司剩余5%的股权，对乙公司不具有重大影响。下列会计处理的表述中，不正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司应当对划分为持有待售类别的30%的股权停止采用权益法核算"
+        },
+        {
+          "key": "B",
+          "text": "甲公司应当对剩余5%的股权在30%的股权出售前仍采用权益法核算"
+        },
+        {
+          "key": "C",
+          "text": "甲公司应当对剩余5%的股权在30%的股权出售后按照金融工具准则相关规定进行会计处理"
+        },
+        {
+          "key": "D",
+          "text": "甲公司应当对划分为持有待售类别的30%的股权在出售前仍采用权益法核算"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "划分为持有待售类别前，甲公司对其合营企业乙公司的35%的股权采用权益法核算；其中30%的股权划分为持有待售类别后，30%的股权应当停止采用权益法核算，按照《持有待售的非流动资产、处置组和终止经营》准则相关规定进行会计处理；对于剩余5%的股权应当在30%的股权出售前仍采用权益法核算，出售后按照金融工具准则相关规定进行会计处理。选项D当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项非流动资产或处置组，应划分为持有待售类别的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司专为转售而取得一项非流动资产，在取得当日满足预计出售在1年内完成的规定条件，且预计6个月内很可能满足持有待售类别的其他条件"
+        },
+        {
+          "key": "B",
+          "text": "甲公司计划从M地迁移至N地办公，遂与乙公司签订了M地办公楼的转让合同，并约定将办公楼腾空后将其交付给乙公司，且腾空办公楼所需时间是正常且符合交易惯例的"
+        },
+        {
+          "key": "C",
+          "text": "甲公司计划将其一条生产线出售给其关联方乙公司，双方于2026年5月15日签订转让合同，约定1年后交付乙公司"
+        },
+        {
+          "key": "D",
+          "text": "甲公司计划将其停止使用的一台生产设备于1年内对外出售"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "企业专为转售取得的非流动资产或处置组，在取得日满足预计出售在一年内完成，且短期内（通常3个月）很可能满足划分为持有待售类别的其他条件，才可划分为持有待售类别，选项A不当选；企业的非流动资产或处置组要满足划分为持有待售类别，应同时满足：（1）当前状态可立即出售（选项C不当选）；（2）出售极可能发生（选项D不当选）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司计划出售一项闲置的固定资产，该固定资产于2026年9月30日满足划分为持有待售类别的条件，当日该固定资产的公允价值为500万元，预计将发生出售费用5万元。该固定资产于2021年12月1日以银行存款1000万元购入，购入后立即投入使用，预计使用寿命10年，预计净残值为0，采用年限平均法计提折旧。不考虑其他因素，2026年12月31日，该持有待售资产的账面价值是（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "495"
+        },
+        {
+          "key": "B",
+          "text": "500"
+        },
+        {
+          "key": "C",
+          "text": "520"
+        },
+        {
+          "key": "D",
+          "text": "525"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "2026年9月30日划分为持有待售类别时，该固定资产的账面价值$=1000-1000\\div10\\times(4+9/12)=525$（万元），公允价值减去出售费用后的净额$=500-5=495$（万元），以两者中的较低者计量，即495万元。划分为持有待售的非流动资产不计提折旧或摊销，2026年12月31日，该持有待售资产的账面价值是495万元，选项A当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列选项中，符合终止经营定义的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司决定关闭其某业务分部，要求该分部在完成现有业务后不再承接新的业务"
+        },
+        {
+          "key": "B",
+          "text": "甲公司决定关闭其主营放贷业务的子公司，该子公司自 2026 年 1 月 1 日起，不再放出新的贷款，但仍会继续收回未结贷款的本金和利息，直到原设定的贷款期结束"
+        },
+        {
+          "key": "C",
+          "text": "甲公司在全国拥有 1 000 家规模相同的零售门店，甲公司决定将位于某市的 10 家门店中的一家门店出售，并于 2026 年 10 月 1 日与乙公司签订了转让协议"
+        },
+        {
+          "key": "D",
+          "text": "乙公司业务是甲公司一项独立的主要业务，但由于经营不善，甲公司决定停止乙公司业务，至 2026 年 9 月 30 日，乙公司除一些债权尚未收回，其他所有经营活动已经结束"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项A、B，其主要业务尚未结束，后续还会产生经营收入，不符合终止经营定义；选项C，不代表甲公司的一项独立的主要业务或一个单独的主要经营地区，不符合终止经营定义；选项D，乙公司是甲公司的一项独立的主要业务，业务已停止，虽尚有部分债权未收回，但不构成上述业务的延续，符合终止经营定义，选项D当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-006",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司计划将整套钢铁生产厂房和设备出售给非关联方乙公司，双方已于 2026 年 1 月 10 日签订了转让合同。因该厂区的污水排放系统存在缺陷，对周边环境造成污染。下列情形中，甲公司仍满足将上述处置组划分为持有待售类别的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "签订转让合同时，甲公司不知晓土地污染情况，2026 年 3 月 5 日，乙公司检查时发现污染并要求甲公司进行补救，甲公司积极采取措施，预计至 2027 年 1 月 31 日前能够就该问题得到成功整治"
+        },
+        {
+          "key": "B",
+          "text": "签订转让合同时，甲公司知晓土地污染情况，在转让合同中附带条款，承诺将自 2026 年 2 月 1 日起开展污染清理工作，预计将在 2026 年 12 月 31 日前完成清理工作"
+        },
+        {
+          "key": "C",
+          "text": "签订转让合同时，甲公司知晓土地污染情况，在协议中标明甲公司不承担清除污染义务，只在确定转让价格时考虑了该污染因素，预计转让将于 2026 年 12 月 31 日前完成"
+        },
+        {
+          "key": "D",
+          "text": "签订转让合同时，甲公司不知晓土地污染情况，2026 年 2 月 1 日，乙公司发现了该污染问题并要求甲公司进行补救，甲公司积极采取措施，预计至 2027 年 5 月 31 日前能够就该问题得到成功整治"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "双方签订转让合同时，甲公司知晓该污染问题并需要进行整治工作，不满足当前状态下即可立即出售的条件，选项B不当选；双方签订转让合同时，甲公司虽然不知道该污染问题，知晓后也采取积极补救措施，但该问题预计并不能在一年内消除，不满足延长一年期限的例外条款，选项D不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-007",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列有关持有待售的非流动资产或处置组的计量，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "持有待售的非流动资产不应计提折旧或摊销，也不应计提减值准备"
+        },
+        {
+          "key": "B",
+          "text": "划分为持有待售类别后确认的商誉减值损失不得转回"
+        },
+        {
+          "key": "C",
+          "text": "持有待售的处置组中包含金融工具的，应当首先按照金融工具准则相关规定计量"
+        },
+        {
+          "key": "D",
+          "text": "持有待售的非流动资产后续资产负债表日公允价值减去出售费用后的净额增加的，以前减记的金额允许在划分为持有待售类别后确认的资产减值损失金额内转回"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "持有待售的非流动资产不应计提折旧或摊销，但在资产负债表日重新计量时该资产的账面价值高于公允价值减去出售费用后的净额的，应当将账面价值减记至公允价值减去出售费用后的净额，减记的金额确认为资产减值损失，同时计提持有待售资产减值准备，选项A不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-008",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业将自有固定资产划分为持有待售资产，需要满足的条件有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "该固定资产已无使用价值"
+        },
+        {
+          "key": "B",
+          "text": "根据类似交易中出售此类资产或处置组的惯例，在当前状况下即可立即出售"
+        },
+        {
+          "key": "C",
+          "text": "出售极可能发生，预计出售将在一年内完成"
+        },
+        {
+          "key": "D",
+          "text": "出售可能发生，预计出售将在近期完成"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "同时满足下列条件的非流动资产应当划分为持有待售类别：（1）可立即出售，即根据类似交易中出售此类资产或处置组的惯例，在当前状况下即可立即出售；（2）出售极可能发生，即企业已经就一项出售计划作出决议且获得确定的购买承诺，预计出售将在一年内完成。选项 B、C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-009",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司的下列各项业务中涉及的可立即出售的设备，应划分为持有待售资产的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年 1 月 1 日，甲公司与乙公司签订不可撤销的销售协议，约定于当年 5 月 1 日将 A 设备销售给乙公司"
+        },
+        {
+          "key": "B",
+          "text": "2024 年 12 月 1 日，甲公司与丙公司签订不可撤销的销售协议，约定于 2026 年 1 月 1 日将 B 设备销售给丙公司"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 11 月 1 日，甲公司计划于次年 2 月 1 日将设备 C 销售给丁公司"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 1 月 1 日，甲公司与戊公司签订不可撤销的销售协议，约定于当年 12 月 31 日将 D 设备销售给戊公司"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "选项 B，销售协议约定的期限超过了一年，不符合持有待售条件；选项 C，并没有签订正式的协议，不符合持有待售条件。选项 B、C 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-010",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 12 月 31 日，甲公司以 4 800 万元取得一栋写字楼并立即投入使用，预计使用年限为 10 年，预计净残值为零，采用年限平均法计提折旧。2026 年 6 月 30 日，甲公司与乙公司签订协议，约定 3 个月内以 4 600 万元的价格将该写字楼出售给乙公司，当日该写字楼符合划分为持有待售类别的条件。2026 年 10 月 1 日，因乙公司受疫情影响出现财务困难，双方协商解除该协议。甲公司继续积极寻求购买方，2026 年 12 月 31 日，甲公司与丙公司签订协议，约定 3 个月内以 4 500 万元的价格将该写字楼出售。不考虑其他因素，下列各项关于甲公司会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年度，计提持有待售资产折旧 480 万元"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 6 月 30 日，确认持有待售资产初始入账金额 4 560 万元"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 12 月 31 日，计提持有待售资产减值准备 60 万元"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 6 月 30 日，确认固定资产处置损益 40 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "选项 A，划分为持有待售资产后不计提折旧，2026 年度划分为持有待售资产前计提的折旧$=4 800/10×6/12=240$（万元）；选项 B，2026 年 6 月 30 日，确认持有待售资产初始入账金额$=4 800-4 800/10×6/12=4 560$（万元）；选项 C，2026 年 12 月 31 日，计提持有待售资产减值准备$=4 560-4 500=60$（万元）；选项 D，2026 年 6 月 30 日，应将固定资产账面价值转入持有待售资产，不确认固定资产处置损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-011",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于持有待售资产的后续计量，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果后续资产负债表日持有待售的非流动资产公允价值减去出售费用后的净额增加，以前减记的所有金额都应予以恢复"
+        },
+        {
+          "key": "B",
+          "text": "如果后续资产负债表日持有待售的非流动资产公允价值减去出售费用后的净额增加，应在划分为持有待售类别后确认的资产减值损失金额内转回以前减记的金额"
+        },
+        {
+          "key": "C",
+          "text": "无论是划分为持有待售类别以前确认的减值金额还是划分为持有待售类别以后确认的减值金额，都不得转回"
+        },
+        {
+          "key": "D",
+          "text": "在资产负债表日重新计量持有待售的非流动资产时，如果其账面价值高于公允价值减去出售费用后的净额，应当将二者的差额确认为资产减值损失"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "如果后续资产负债表日持有待售的非流动资产公允价值减去出售费用后的净额增加，以前减记的金额应当予以恢复，并在划分为持有待售类别后确认的资产减值损失金额内转回，转回金额计入当期损益，但在划分为持有待售类别前确认的资产减值损失不得转回。选项 A、C 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-012",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于终止经营的列报，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业应当在利润表中分别列示持续经营损益和终止经营损益"
+        },
+        {
+          "key": "B",
+          "text": "终止经营的相关损益应当作为终止经营损益列报"
+        },
+        {
+          "key": "C",
+          "text": "列报的终止经营损益应当仅包含认定为终止经营后的报告期间"
+        },
+        {
+          "key": "D",
+          "text": "不符合终止经营定义的持有待售的非流动资产或处置组的处置损益，应当在利润表中作为持续经营损益列报"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "终止经营的相关损益应当作为终止经营损益列报，列报的终止经营损益应当包含整个报告期间，而不仅包含认定为终止经营后的报告期间，选项 C 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-013",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "终止经营，是指企业满足下列条件之一的、能够单独区分的组成部分，且该组成部分已经处置或划分为持有待售类别。其中，这里的条件包括（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "该组成部分代表一项独立的主要业务或一个单独的主要经营地区"
+        },
+        {
+          "key": "B",
+          "text": "该组成部分是拟对一项独立的主要业务或一个单独的主要经营地区进行处置的一项相关联计划的一部分"
+        },
+        {
+          "key": "C",
+          "text": "该组成部分是专为转售而取得的子公司"
+        },
+        {
+          "key": "D",
+          "text": "该组成部分是专为转售而取得的分公司"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "终止经营，是指企业满足下列条件之一的、能够单独区分的组成部分，且该组成部分已经处置或划分为持有待售类别：（1）该组成部分代表一项独立的主要业务或一个单独的主要经营地区；（2）该组成部分是拟对一项独立的主要业务或一个单独的主要经营地区进行处置的一项相关联计划的一部分；（3）该组成部分是专为转售而取得的子公司。选项 A、B、C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-014",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，计提减值准备后不得转回的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定资产被划分为持有待售类别后计提的减值准备"
+        },
+        {
+          "key": "B",
+          "text": "处置组被划分为持有待售类别后，对处置组中商誉计提的减值准备"
+        },
+        {
+          "key": "C",
+          "text": "存货跌价准备"
+        },
+        {
+          "key": "D",
+          "text": "固定资产被划分为持有待售类别前计提的减值准备"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "如果后续资产负债表日持有待售的非流动资产或处置组的公允价值减出售费用后的净额增加，以前减记的金额应当予以恢复，但在划分为持有待售类别前对其计提的减值准备不能转回，选项 A 不当选、选项 D 当选；持有待售的处置组中商誉计提的减值准备，如果后续资产负债表日其公允价值减出售费用后的净额增加，已抵减商誉的账面价值不得转回，选项 B 当选；以前减记存货价值的影响因素已经消失的，减记的金额应当予以恢复，选项 C 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-015",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "对于拟结束使用的非流动资产或处置组，不应当将其划分为持有待售类别"
+        },
+        {
+          "key": "B",
+          "text": "企业在处置终止经营的过程中产生的增量费用，应当作为终止经营损益列报"
+        },
+        {
+          "key": "C",
+          "text": "有些情况下，由于发生一些企业无法控制的原因导致出售未能在一年内完成，则已分类为持有待售的非流动资产或处置组必须进行重分类"
+        },
+        {
+          "key": "D",
+          "text": "持有待售的非流动资产或处置组在终止确认时，应将尚未确认的利得或损失转入其他综合收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "选项 A，拟结束使用的非流动资产或处置组，不划分为持有待售类别，原因是企业对该非流动资产或处置组的使用实质上几乎贯穿了其整个经济使用寿命期，其账面价值并非主要通过出售收回，而是主要通过持续使用收回。选项 B，企业在处置终止经营的过程中可能附带产生一些增量费用，如果不进行该项处置就不会产生这些费用，企业应当将这些增量费用作为终止经营损益列报。选项 C，由于发生一些企业无法控制的原因导致出售未能在一年内完成，则已分类为持有待售的非流动资产或处置组可能需要进行重分类，也可能在满足特定条件后允许放松一年期限条件，继续划分为持有待售类别。选项 D，企业终止确认持有待售的非流动资产或处置组时，应当将尚未确认的利得或损失转入当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-true_false-016",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "判断题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于企业专为转售而新取得的非流动资产，如果在取得日满足“预计出售将在一年内完成”的规定条件，则在取得当日就应当将其划分为持有待售类别。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "【解析】对于企业专为转售而新取得的非流动资产或处置组，如果在取得日满足“预计出售将在一年内完成”的规定条件，且短期（通常为三个月）内很可能满足划分为持有待售类别的其他条件，企业应当在取得日将其划分为持有待售类别。这些“其他条件”包括：根据类似交易中出售此类资产或处置组的惯例，在当前状况下即可立即出售；企业已经就一项出售计划作出决议且获得确定的购买承诺。有关规定要求企业相关权力机构或者监管部门批准后可出售的，应当已经获得批准。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-true_false-017",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "判断题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对于不符合终止经营定义的持有待售的非流动资产或处置组，其减值损失和转回金额及处置损益应当作为持续经营损益列报；终止经营的减值损失和转回金额等经营损益及处置损益应当作为终止经营损益列报。（ ）\n\n**第二十一章 企业合并与合并财务报表**",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-018",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日，A公司以1 000万元投资于B公司，持股比例为10%，采用权益法核算。当日B公司可辨认净资产的公允价值为10 000万元，公允价值与账面价值相等。2026年12月31日，A公司以8 000万元从B公司其他股东处购买了B公司40%的股权，能够对B公司实施控制。假定2026年12月31日，A公司持有B公司10%股权的公允价值为2 000万元，B公司可辨认净资产公允价值为12 000万元。不考虑其他因素，2026年12月31日合并资产负债表中应确认商誉的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "3 000"
+        },
+        {
+          "key": "B",
+          "text": "3 200"
+        },
+        {
+          "key": "C",
+          "text": "4 000"
+        },
+        {
+          "key": "D",
+          "text": "4 200"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "①合并成本=购买日之前所持被购买方的股权于购买日的公允价值+购买日新购入股权所支付对价的公允价值=$2 000+8 000=10 000$（万元）；②合并商誉=合并成本-被购买方可辨认净资产公允价值×持股比例=$10 000-12 000\\times50\\%=4 000$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-019",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司于2026年5月31日以固定资产换取乙公司80%的股权。为核实乙公司的资产价值，甲公司聘请专业资产评估机构对乙公司的资产进行评估，支付评估费用50万元；该项固定资产原价为500万元，已计提折旧100万元，公允价值800万元。假定合并前甲乙公司不存在任何关联方关系，乙公司当日可辨认净资产公允价值为900万元，不考虑其他因素，甲公司因该项投资产生的合并商誉是（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "50"
+        },
+        {
+          "key": "B",
+          "text": "80"
+        },
+        {
+          "key": "C",
+          "text": "130"
+        },
+        {
+          "key": "D",
+          "text": "650"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "甲公司长期股权投资初始投资成本为付出固定资产的公允价值800万元，商誉=$800-900\\times80\\%=80$（万元）。选项B当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-020",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于甲公司2026年发生的交易或事项中，其会计处理会影响当年度甲公司合并所有者权益变动表留存收益项目本年年初金额的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "上年未资产的流动性与非流动性划分发生重要差错，本年予以更正"
+        },
+        {
+          "key": "B",
+          "text": "收购受同一母公司控制的乙公司60%股权（至收购时已设立5年，持续盈利且未向投资者分配），交易符合作为同一控制下企业合并处理的条件"
+        },
+        {
+          "key": "C",
+          "text": "自公开市场进一步购买联营企业股权，将持股比例自25%增加到53%并能够对其实施控制 4 学会计就到之了课堂"
+        },
+        {
+          "key": "D",
+          "text": "根据外在条件变化，将原作为使用寿命不确定的无形资产调整为使用寿命为 10 年并按直线法摊销"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "同一控制下企业合并，合并报表中应当将合并前子公司留存收益中归属于母公司部分予以恢复，借记资本公积，贷记留存收益，选项B正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 10 月 12 日，甲公司向其子公司乙公司销售一批商品，不含增值税的销售价格为 3 000 万元，增值税税额为 390 万元，款项尚未收到；该批商品成本为 2 200 万元，未计提存货跌价准备，至当年 12 月 31 日，乙公司已将该批商品对外销售 80%，不考虑其他因素，甲公司在编制 2026 年 12 月 31 日合并资产负债表时，“存货”项目应抵销的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "160"
+        },
+        {
+          "key": "B",
+          "text": "440"
+        },
+        {
+          "key": "C",
+          "text": "600"
+        },
+        {
+          "key": "D",
+          "text": "640"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "应抵销的“存货”项目金额=$(3 000-2 200)\\times20\\%=160$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-022",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司从本集团内另一企业处购入乙公司 80%有表决权的股份，构成同一控制下企业合并。2026 年度，乙公司实现净利润 800 万元，宣告分配现金股利 250 万元。2026 年 12 月 31 日，甲公司个别资产负债表中所有者权益总额为 9 000 万元。不考虑其他因素，甲公司 2026 年 12 月 31 日合并资产负债表中归属于母公司所有者权益的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "9 550"
+        },
+        {
+          "key": "B",
+          "text": "9 440"
+        },
+        {
+          "key": "C",
+          "text": "9 640"
+        },
+        {
+          "key": "D",
+          "text": "10 050"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "2026年12月31日合并资产负债表中归属于母公司的所有者权益=$9 000+(800-250)\\times80\\%=9 440$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-023",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司是乙公司的母公司。2025 年 6 月 30 日，甲公司将其生产成本为 120 万元的 W 产品以 200 万元的价格销售给乙公司，乙公司将 W 产品作为固定资产核算，预计使用 5 年，预计净残值为 0，采用年限平均法计提折旧。不考虑其他因素，该固定资产在甲公司 2026 年 12 月 31 日合并资产负债表中列示的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "72"
+        },
+        {
+          "key": "B",
+          "text": "84"
+        },
+        {
+          "key": "C",
+          "text": "160"
+        },
+        {
+          "key": "D",
+          "text": "140"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "方法一：合并报表角度不认可内部交易，认定该固定资产的原值仍是120万元，所以该固定资产在甲公司2026年12月31日合并资产负债表中列示的金额=$120-120/5\\times1.5=84$（万元）。\n\n方法二：2026年12月31日乙公司个别报表中固定资产列示金额=$200-200/5\\times1.5=140$（万元）；\n\n2026年12月31日编制合并报表时，应做的抵销分录为：\n\n借：未分配利润--年初 80【200-120】\n\n贷：固定资产--原价 80\n\n借：固定资产--累计折旧 8【$80\\div5\\div2$】\n\n贷：未分配利润--年初 8\n\n借：固定资产--累计折旧 16【$80/5$】\n\n贷：管理费用等 16\n\n则该固定资产在甲公司2026年12月31日合并资产负债表中列示的金额=个别报表列示金额140-抵销金额（$80-8-16$）=84（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-024",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于非同一控制下企业合并会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "以实际支付合并款项的时间确定为购买日"
+        },
+        {
+          "key": "B",
+          "text": "合并发生的各项直接相关费用计入合并成本"
+        },
+        {
+          "key": "C",
+          "text": "合并财务报表中合并成本高于合并取得的可辨认净资产公允价值份额的差额作为商誉处理"
+        },
+        {
+          "key": "D",
+          "text": "合并财务报表中合并成本低于合并取得的可辨认净资产公允价值份额的差额作为当期损益处理"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "购买日指购买方实际取得对被购买方控制权的日期，选项A不当选；合并发生的各项直接相关费用计入当期损益，选项B不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-025",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司以银行存款 80 万元以及账面价值 200 万元、公允价值 250 万元的无形资产为对价对同一集团内乙公司进行吸收合并。合并日，乙公司资产的账面价值为 2 100 万元，公允价值为 2 200 万元，其差额是由于乙公司一项固定资产公允价值与账面价值不一致所致。负债的账面价值为 1 800 万元，等于公允价值。不考虑其他因素，下列表述不正确的有（ ）。\n5 学会计就到之了课堂",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司应确认无形资产处置损益 50 万元"
+        },
+        {
+          "key": "B",
+          "text": "甲公司吸收合并业务取得净资产的入账价值为 400 万元"
+        },
+        {
+          "key": "C",
+          "text": "甲公司吸收合并业务影响所有者权益的金额为 20 万元"
+        },
+        {
+          "key": "D",
+          "text": "甲公司吸收合并业务影响当期损益的金额为 70 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "同一控制下的吸收合并，付出对价按照账面价值结转，不需要确认资产处置损益，选项A错误；同一控制下的吸收合并，合并方取得的资产、负债应当按照相关资产、负债在被\n\n合并方的原账面价值入账，选项 B 错误；付出对价账面价值与乙公司净资产账面价值的差额应调整资本公积，影响所有者权益的金额=（2 100-1 800）-（80+200）=20（万元），影响损益的金额=0，因此选项 C 正确，选项 D 错误。\n\n相关会计分录如下：\n\n借：乙公司资产 2 100\n\n贷：乙公司负债 1 800\n\n银行存款 80\n\n无形资产 200\n\n资本公积--资本溢价 20",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-single_choice-026",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "单项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司持有乙公司 60%有表决权的股份，能够对乙公司实施控制。2026 年度，甲公司收到乙公司发放的现金股利 48 万元，甲公司个别现金流量表中“取得投资收益收到的现金”项目的列报金额为 300 万元，乙公司个别现金流量表中“取得投资收益收到的现金”项目的列报金额为 90 万元。不考虑其他因素，甲公司 2026 年度合并现金流量表中“取得投资收益收到的现金”项目的列报金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "306"
+        },
+        {
+          "key": "B",
+          "text": "342"
+        },
+        {
+          "key": "C",
+          "text": "354"
+        },
+        {
+          "key": "D",
+          "text": "390"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "母公司编制合并现金流量表时，与子公司之间产生的现金流量应当抵销。本题中“甲公司收到乙公司发放的现金股利 48 万元”应抵销，甲公司 2026 年度合并现金流量表中“取得投资收益收到的现金”项目的列报金额=300+90-48=342（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-027",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "非同一控制下企业合并成本小于合并中取得的被购买方可辨认净资产公允价值份额的部分，正确的会计处理有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "在吸收合并的情况下，应计入购买方的合并当期的个别利润表"
+        },
+        {
+          "key": "B",
+          "text": "在控股合并的情况下，应体现在合并当期期末的合并利润表中"
+        },
+        {
+          "key": "C",
+          "text": "在吸收合并的情况下，应体现在合并当期的合并利润表中"
+        },
+        {
+          "key": "D",
+          "text": "在控股合并的情况下，应计入购买方的合并当期的个别利润表"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "企业合并成本小于合并中取得的被购买方净资产公允价值份额的部分，应计入合并当期损益。在吸收合并的情况下，上述企业合并成本小于合并中取得的被购买方可辨认净资产公允价值份额的差额，应计入购买方的合并当期的个别利润表；在控股合并的情况下，上述差额应体现在合并当期的合并利润表中，不影响购买方的个别利润表。\n\n提示：（1）选项 B 中，购买日编制合并报表的时候，应编制合并资产负债表，不编制合并利润表，因此该差额体现在资产负债表留存收益中。当期期末是会编制合并利润表的，所以这个营业外收入直接反映在当期期末合并利润表中的营业外收入项目中。（2）吸收合并不需要编合并报表，因为吸收合并后，被合并的公司已经注销，不存在了，所以也就没有所谓的合并报表了。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-028",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "相对于个别财务报表，下列各项中，仅属于企业合并财务报表项目的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "少数股东权益"
+        },
+        {
+          "key": "B",
+          "text": "债权投资"
+        },
+        {
+          "key": "C",
+          "text": "少数股东损益"
+        },
+        {
+          "key": "D",
+          "text": "投资收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "债权投资和投资收益在个别财务报表和合并财务报表中均要列示。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-029",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "母公司在编制合并财务报表前，对子公司所采用会计政策与其不一致的情形进行的下列会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "按照子公司的会计政策另行编报母公司的财务报表"
+        },
+        {
+          "key": "B",
+          "text": "要求子公司按照母公司的会计政策另行编报子公司的财务报表"
+        },
+        {
+          "key": "C",
+          "text": "按照母公司自身的会计政策对子公司财务报表进行必要的调整"
+        },
+        {
+          "key": "D",
+          "text": "按照子公司的会计政策对母公司自身财务报表进行必要的调整"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "编制财务报表前，应当尽可能统一母公司和子公司的会计政策，统一要求子公司所采用的会计政策与母公司保持一致，选项 B 和 C 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-030",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，企业编制合并财务报表时，需要进行抵销处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "母公司对子公司长期股权投资与对应子公司所有者权益中所享有的份额"
+        },
+        {
+          "key": "B",
+          "text": "子公司对母公司销售商品价款中包含的未实现内部销售利润"
+        },
+        {
+          "key": "C",
+          "text": "母公司和子公司之间的债权与债务"
+        },
+        {
+          "key": "D",
+          "text": "母公司向子公司转让无形资产价款中包含的未实现内部销售利润"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-031",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项交易费用中，应当于发生时直接计入当期损益的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "发行权益性证券作为合并对价的，与发行权益性证券相关的手续费"
+        },
+        {
+          "key": "B",
+          "text": "同一控制下企业合并中发生的审计费用"
+        },
+        {
+          "key": "C",
+          "text": "以发行债券方式进行的企业合并，与发行债券相关的佣金"
+        },
+        {
+          "key": "D",
+          "text": "非同一控制下企业合并中发生的资产评估费用"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "发行权益性证券作为合并对价的，与发行权益性证券相关的佣金、手续费从发行收入中扣减，即冲减资本公积（股本溢价），溢价不足冲减则冲减留存收益，选项 A 不当选；以发行债券方式进行的企业合并，与发行债券相关的佣金、手续费应计入负债的初始计量金额中，选项 C 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-multiple_choice-032",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "多项选择题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项表述中，不正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "同一控制下企业合并，需要确认最终控制方收购被合并方产生的商誉"
+        },
+        {
+          "key": "B",
+          "text": "合并财务报表中，少数股东权益项目的列报金额不能为负数"
+        },
+        {
+          "key": "C",
+          "text": "在编制合并财务报表时，抵销母子公司间未实现内部销售损益形成的暂时性差异不应确认递延所得税"
+        },
+        {
+          "key": "D",
+          "text": "母公司编制合并报表时，应将非全资子公司向其出售资产所发生的未实现内部交易损益全额抵销归属于母公司所有者的净利润"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "选项 B，在合并财务报表中，少数股东权益的列报金额可以为负数。选项 C，在编制合并财务报表时，抵销母子公司间未实现内部销售损益形成的暂时性差异应确认相关递延所得税。选项 D，编制合并报表时，逆流交易的未实现损益应按照母公司持股比例抵减归属于母公司所有者的净利润。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-true_false-033",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "判断题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "母公司对子公司的债权投资与子公司应付债券抵销时出现的差额，应当计入合并利润表的投资收益或财务费用项目。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "合并报表中债权投资与应付债券抵销时：\n\n借：应付债券【个别报表的摊余成本】\n\n投资收益【借方差额】\n\n贷：债权投资【个别报表的摊余成本】\n\n财务费用【贷方差额】",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-true_false-034",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "判断题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "母公司在编制合并资产负债表时，子公司持有的母公司的长期股权投资应当视为企业集团的库存股。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "合并财务报表准则规定，子公司持有母公司的长期股权投资，应当视为企业集团的库存股，作为所有者权益的减项，在合并资产负债表中所有者权益项目下以“减：库存股”项目列示。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock07-true_false-035",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十章 持有待售的非流动资产、处置组和终止经营",
+      "section": "判断题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "母公司在报告期内处置子公司时，该子公司从期初到处置日的收入和费用不应纳入母公司的合并利润表。（ ）\n\n7 学会计就到之了课堂\n\n**",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "母公司在报告期内处置子公司以及业务，应当将该子公司以及业务期初至处置日的收入、费用、利润纳入合并利润表。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（7）609931.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（7）609931.md",
+    "pdfIndex": 7,
+    "chapterHint": "押题客观题（7）- 第20-21章",
+    "totalQuestions": 35,
+    "missingAnswers": []
+  }
+}

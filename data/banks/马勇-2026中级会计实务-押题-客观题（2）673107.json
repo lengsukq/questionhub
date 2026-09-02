@@ -1,0 +1,2680 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:43:16.988684+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×26年1月1日，甲公司将自用的写字楼转换为以成本模式进行后续计量的投资性房地产。转换当日写字楼的账面余额为5 000万元，已计提折旧500万元，已计提固定资产减值准备400万元，公允价值为4 200万元。甲公司将该写字楼转为投资性房地产核算时的初始入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "5 000"
+        },
+        {
+          "key": "B",
+          "text": "4 600"
+        },
+        {
+          "key": "C",
+          "text": "4 200"
+        },
+        {
+          "key": "D",
+          "text": "4 100"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "自用写字楼转换为以成本模式进行后续计量的投资性房地产，应以转换当日写字楼的账面价值 4 100 万元（5 000-500-400）作为投资性房地产的初始入账价值。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年7月1日，甲公司将一项按照成本模式进行后续计量的投资性房地产转换为固定资产。该资产在转换前的账面原价为4 000万元，已计提折旧200万元，已计提减值准备100万元，转换日的公允价值为3 850万元，假定不考虑其他因素，转换日甲公司应借记“固定资产”科目的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "3 700"
+        },
+        {
+          "key": "B",
+          "text": "3 800"
+        },
+        {
+          "key": "C",
+          "text": "3 850"
+        },
+        {
+          "key": "D",
+          "text": "4 000"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "转换日甲公司应按转换前投资性房地产原价 4 000 万元借记“固定资产”科目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司对投资性房地产以成本模式进行后续计量，2026年1月10日甲公司以银行存款9 600万元购入一栋写字楼并立即以经营租赁方式出租，甲公司预计该写字楼的使用寿命为40年，预计净残值为120万元，采用年限平均法计提折旧。不考虑相关税费及其他因素，2026年甲公司应对该写字楼计提折旧金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "240"
+        },
+        {
+          "key": "B",
+          "text": "220"
+        },
+        {
+          "key": "C",
+          "text": "217.25"
+        },
+        {
+          "key": "D",
+          "text": "237"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2026 年应计提折旧的金额=（9 600-120）/40/12×11=217.25（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×25年12月31日，甲公司以银行存款12 000万元外购一栋写字楼并立即出租给乙公司使用，租期5年，每年末收取租金1 000万元。该写字楼的预计使用年限为20年，预计净残值为零，采用年限平均法计提折旧。甲公司对投资性房地产采用成本模式进行后续计量。2×26年12月31日，该写字楼出现减值迹象，可收回金额为11 200万元。不考虑其他因素，与该写字楼相关的交易或事项对甲公司2×26年度营业利润的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "400"
+        },
+        {
+          "key": "B",
+          "text": "800"
+        },
+        {
+          "key": "C",
+          "text": "200"
+        },
+        {
+          "key": "D",
+          "text": "1 000"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "（1）2×26 年写字楼计提折旧金额=12 000/20=600（万元），计入其他业务成本；\n\n（2）2×26 年年末，减值测试前写字楼的账面价值=12 000-600=11 400（万元），大于其可收回金额，应计提减值准备=11 400-11 200=200（万元），计入资产减值损失；\n\n（3）2×26 年确认租金收入 1 000 万元，计入其他业务收入。\n\n综上，与该写字楼相关的交易或事项对甲公司 2×26 年度营业利润的影响金额=-600-200+1 000=200（万元），选项 C 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司将原自用的办公楼用于出租，以赚取租金收入。租赁期开始日，该办公楼账面原价为14 000万元，已计提折旧为5 600万元，公允价值为12 000万元。甲公司对投资性房地产采用公允价值模式进行后续计量。甲公司上述自用办公楼转换为投资性房地产时公\n允价值大于原账面价值的差额在财务报表中列示的项目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "资本公积"
+        },
+        {
+          "key": "B",
+          "text": "营业收入"
+        },
+        {
+          "key": "C",
+          "text": "其他综合收益"
+        },
+        {
+          "key": "D",
+          "text": "公允价值变动收益"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "自用房地产转换为以公允价值模式进行后续计量的投资性房地产，转换日公允价值大于原账面价值的差额计入其他综合收益，公允价值小于原账面价值之间的差额计入公允价值变动损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-006",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "单项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "自用房地产转换为采用公允价值模式计量的投资性房地产，转换日该房地产公允价值小于账面价值的差额，正确的会计处理是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "计入其他综合收益"
+        },
+        {
+          "key": "B",
+          "text": "计入期初留存收益"
+        },
+        {
+          "key": "C",
+          "text": "计入公允价值变动损益"
+        },
+        {
+          "key": "D",
+          "text": "计入营业外收入"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "自用房地产转换为公允价值模式计量的投资性房地产时，转换日公允价值小于账面价值的差额记入“公允价值变动损益”科目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-007",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "单项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对其分类为投资性房地产的写字楼进行日常维护所发生的相关支出，应当计入的财务报表项目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "管理费用"
+        },
+        {
+          "key": "B",
+          "text": "营业外支出"
+        },
+        {
+          "key": "C",
+          "text": "营业成本"
+        },
+        {
+          "key": "D",
+          "text": "投资收益"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "投资性房地产日常维护所发生的相关支出，应计入“其他业务成本”科目，在利润表中列示于“营业成本”项目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-008",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于投资性房地产的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业拥有并自行经营的饭店"
+        },
+        {
+          "key": "B",
+          "text": "企业以经营租赁方式租出的写字楼"
+        },
+        {
+          "key": "C",
+          "text": "房地产开发企业正在开发的商品房"
+        },
+        {
+          "key": "D",
+          "text": "非房地产开发企业持有拟增值后转让的土地使用权"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "选项 A，属于自用房地产；选项 C，属于作为存货的房地产，均不符合投资房地产的定义。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-009",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，应作为投资性房地产核算的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "已出租的土地使用权"
+        },
+        {
+          "key": "B",
+          "text": "以经营租赁方式租入再转租的建筑物"
+        },
+        {
+          "key": "C",
+          "text": "持有并准备增值后转让的土地使用权"
+        },
+        {
+          "key": "D",
+          "text": "出租给本企业职工居住的自建宿舍楼"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "选项 B，以经营租赁方式租入的建筑物，不具有所有权，再转租的建筑物不能作为投资性房地产核算；选项 D，出租给职工的自建宿舍楼，作为自有固定资产核算，不属于投资性房地产。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-010",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业将自用房地产转换为以公允价值模式计量的投资性房地产时，转换日公允价值与原账面价值的差额，可能影响的财务报表项目有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "资本公积"
+        },
+        {
+          "key": "B",
+          "text": "投资收益"
+        },
+        {
+          "key": "C",
+          "text": "公允价值变动收益"
+        },
+        {
+          "key": "D",
+          "text": "其他综合收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "企业将自用房地产转换为以公允价值模式计量的投资性房地产时，转换日公允价值与原账面价值的差额，如果是借方差额，则计入公允价值变动损益，如果是贷方差额，则计入其他综合收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-011",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "投资性房地产的后续计量从成本模式转为公允价值模式的，转换日投资性房地产的公允价值与其账面价值的差额，对下列财务报表项目产生影响的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "其他综合收益"
+        },
+        {
+          "key": "B",
+          "text": "资本公积"
+        },
+        {
+          "key": "C",
+          "text": "未分配利润"
+        },
+        {
+          "key": "D",
+          "text": "盈余公积"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "投资性房地产后续计量由成本模式转为公允价值模式属于会计政策变更，公允价值与账面价值的差额应调整期初留存收益（盈余公积和未分配利润）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-012",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列有关投资性房地产后续计量会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "不同企业可以分别采用成本模式或公允价值模式"
+        },
+        {
+          "key": "B",
+          "text": "满足特定条件时可以采用公允价值模式"
+        },
+        {
+          "key": "C",
+          "text": "同一企业可以分别采用成本模式和公允价值模式"
+        },
+        {
+          "key": "D",
+          "text": "同一企业不得同时采用成本模式和公允价值模式"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "本题考核投资性房地产的后续计量原则。同一企业不得同时采用成本模式和公允价值模式进行后续计量，所以选项 C 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-013",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中对企业以成本模式计量的投资性房地产会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "年末无需对其预计使用寿命进行复核"
+        },
+        {
+          "key": "B",
+          "text": "计提的减值准备，在以后的会计期间不允许转回"
+        },
+        {
+          "key": "C",
+          "text": "存在减值迹象时，应当进行减值测试"
+        },
+        {
+          "key": "D",
+          "text": "应当按期计提折旧或摊销"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "选项 A，成本模式计量的投资性房地产，应当按期计提折旧或摊销，年末需要对其预计使用寿命、预计净残值、折旧或摊销方法等进行复核。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-014",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于企业投资性房地产后续计量的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "采用公允价值模式计量的，不得计提折旧或摊销"
+        },
+        {
+          "key": "B",
+          "text": "由成本模式转为公允价值模式的，应作为会计政策变更处理"
+        },
+        {
+          "key": "C",
+          "text": "采用成本模式计量的，不得确认减值损失"
+        },
+        {
+          "key": "D",
+          "text": "已经采用公允价值模式计量的投资性房地产，不得从公允价值模式转为成本模式"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "选项 A，采用公允价值模式计量的投资性房地产，不计提折旧或摊销、不确认减值；选项 B、D，投资性房地产可以从成本模式转为公允价值模式计量（属于会计政策变更），但是不得从公允价值模式转为成本模式计量；选项 C，采用成本模式进行后续计量的投资性房地产，存在减值迹象时，应进行减值测试，确定发生减值的，应当计提减值准备。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-015",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于企业投资性房地产会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "自行建造的投资性房地产，按达到预定可使用状态前所发生的必要支出进行初始计量"
+        },
+        {
+          "key": "B",
+          "text": "以成本模式进行后续计量的投资性房地产，计提的减值准备以后会计期间可以转回"
+        },
+        {
+          "key": "C",
+          "text": "投资性房地产后续计量由成本模式转为公允价值模式时，其公允价值与账面价值的差额应计入当期损益"
+        },
+        {
+          "key": "D",
+          "text": "满足投资性房地产确认条件的后续支出，应予以资本化"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "选项 B，投资性房地产计提的减值准备以后持有期间不得转回；选项 C，成本模式计量的投资性房地产转换为公允价值模式计量应作为会计政策变更处理，公允价值与账面价值的差额，调整留存收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-016",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "多项选择题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于投资性房地产会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业对采用成本模式计量的投资性房地产进行再开发，且将来仍作为投资性房地产的，再开发期间应当对该资产继续计提折旧或摊销"
+        },
+        {
+          "key": "B",
+          "text": "企业将其自有写字楼的部分楼层以经营租赁方式对外出租，因自用部分与出租部分不能单独计量，为此甲公司将该写字楼整体确定为固定资产"
+        },
+        {
+          "key": "C",
+          "text": "自用房地产转为以成本模式计量的投资性房地产，不影响损益金额"
+        },
+        {
+          "key": "D",
+          "text": "自用房地产转为以公允价值模式计量的投资性房地产时形成的其他综合收益，在处置时转入留存收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "选项 A，企业对某项投资性房地产进行改扩建等再开发且将来仍作为投资性房地产的，再开发期间应继续将其作为投资性房地产，不计提折旧或摊销。选项 C，自用房地产转为成本模式计量的投资性房地产时，对应科目等额结转，不产生差额，不影响损益金额。选项 D，自用房地产转为公允价值模式计量的投资性房地产时形成的其他综合收益，在处置时转入其他业务成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-true_false-017",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "判断题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "采用公允价值模式对投资性房地产进行后续计量的企业，对于在建投资性房地产，如果其公允价值无法可靠确定，但预期完工后公允价值能够可靠取得的，应当先以成本计量，待完工后，再以公允价值计量。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "采用公允价值模式对投资性房地产进行后续计量的企业，对于在建投资性房地产，如果其公允价值无法可靠确定，但预期完工后公允价值能够持续可靠取得的，应当以成本计量，待公允价值能够可靠计量时或其完工后（两者孰早），再以公允价值计量。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-true_false-018",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第五章 投资性房地产",
+      "section": "判断题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "房地产企业将经营出租的房地产收回进行二次开发后用于对外出售的，应该在收回时将其从投资性房地产转为存货。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "房地产企业将用于经营出租的房地产重新开发用于对外销售，从投资性房地产转为存货，这种情况下，转换日为租赁期满，企业董事会或类似机构作出书面决议明确表明将其重新开发用于对外销售的日期。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-019",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 1 月 1 日，甲公司以土地使用权自非关联方换入乙公司 60%的股权，取得控制权，土地使用权原值 5 200 万元，摊销 200 万元，公允价值 5 500 万元，乙公司可辨认净资产账面价值 8 000 万元，公允价值 10 000 万元，不考虑其他因素，该业务对甲公司个别利润表中当期利润总额的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "减少 200"
+        },
+        {
+          "key": "B",
+          "text": "增加 500"
+        },
+        {
+          "key": "C",
+          "text": "增加 800"
+        },
+        {
+          "key": "D",
+          "text": "增加 1 000"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "非同一控制下企业合并取得长期股权投资，投出的土地使用权应确认资产处置损益，公允价值 5 500 万元与账面价值 5 000 万元（5 200－200）的差额 500 万元，确认资产处置损益，增加当期利润。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-020",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 31 日，甲公司以专利技术自非关联方乙公司换入 70%的股权，取得控制权。专利技术原值为 1 200 万元，累计摊销 200 万元，公允价值为 1 500 万元。乙公司可辨认净资产账面价值为 800 万元，公允价值为 1 000 万元。不考虑其他因素，该业务对甲公司个别利润表中当期利润总额的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "减少 90"
+        },
+        {
+          "key": "B",
+          "text": "增加 500"
+        },
+        {
+          "key": "C",
+          "text": "增加 100"
+        },
+        {
+          "key": "D",
+          "text": "增加 300"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "非同一控制下企业合并取得长期股权投资，投出的专利技术的公允价值 1 500 万元与账面价值 1 000 万元（1 200－200）的差额 500 万元应确认为资产处置损益，增加当期利润。选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司发行 1 500 万股普通股股票从非关联方取得乙公司 80%的股权，发行的股票每股面值 1 元，取得股权当日，每股公允价值 6 元，为发行股票支付给券商佣金 300 万元。相关手续于当日完成，甲公司取得了乙公司的控制权，该企业合并并不属于反向购买。乙公司 2026 年 1 月 1 日所有者权益账面价值总额为 12 000 万元，可辨认净资产的公允价值与账面价值相同。不考虑其他因素，甲公司应确认的长期股权投资初始投资成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "9 000"
+        },
+        {
+          "key": "B",
+          "text": "9 600"
+        },
+        {
+          "key": "C",
+          "text": "8 700"
+        },
+        {
+          "key": "D",
+          "text": "9 300"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "非同一控制下企业合并，长期股权投资初始投资成本＝支付对价公允价值＝$1 500×6=9 000$（万元）；为发行股票支付的佣金、手续费冲减“资本公积--股本溢价”。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-022",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 5 月 1 日，甲公司以增发 1 000 万股普通股和一台设备为对价，取得乙公司 25%的股权。普通股面值为每股 1 元，公允价值为每股 10 元。为增发股票支付佣金和手续费 400 万元。甲公司付出该设备的账面价值为 1 000 万元，公允价值为 1 200 万元，当日乙公司可辨认净资产公允价值为 40 000 万元。投资后甲公司能够对乙公司施加重大影响，不考虑其他因素，甲公司该项长期股权投资的初始投资成本是（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "10 000"
+        },
+        {
+          "key": "B",
+          "text": "11 000"
+        },
+        {
+          "key": "C",
+          "text": "11 200"
+        },
+        {
+          "key": "D",
+          "text": "11 600"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "长期股权投资的初始投资成本＝$1 000×10+1 200=11 200$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-023",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司以银行存款 1 000 万元及一项土地使用权取得其母公司控制的乙公司 80%的股权，并于当日起能够对乙公司实施控制。合并日，该土地使用权的账面价值为 3 200 万元，公允价值为 4 000 万元；乙公司在母公司合并报表中的净资产的账面价\n值为6 000万元，公允价值为6 250万元。假定甲公司与乙公司的会计年度和采用的会计政策相同，不考虑其他因素，甲公司下列会计处理中正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "确认长期股权投资5 000万元，不确认资本公积"
+        },
+        {
+          "key": "B",
+          "text": "确认长期股权投资5 000万元，确认资本公积800万元"
+        },
+        {
+          "key": "C",
+          "text": "确认长期股权投资4 800万元，确认资本公积600万元"
+        },
+        {
+          "key": "D",
+          "text": "确认长期股权投资4 800万元，冲减资本公积200万元"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "长期股权投资＝$6 000×80\\%=4 800$（万元），资本公积＝$4 800-（1 000+3 200）=600$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-024",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日甲公司取得乙公司30%的股权，从而能够对乙公司施加重大影响，甲公司支付价款3 000万元。当日乙公司可辨认净资产账面价值为8 000万元，公允价值为9 000万元（差异源于一台管理用固定资产账面价值为500万元，公允价值为800万元，剩余使用年限5年，预计净残值为零，采用年限平均法计提折旧；一批存货账面价值为800万元，公允价值为1 500万元）。2026年乙公司实现净利润800万元（上述存货已对外出售80%）。不考虑其他因素，2026年12月31日，甲公司长期股权投资的账面价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "3 000"
+        },
+        {
+          "key": "B",
+          "text": "3 240"
+        },
+        {
+          "key": "C",
+          "text": "3 054"
+        },
+        {
+          "key": "D",
+          "text": "3 180"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2026 年 12 月 31 日，长期股权投资的账面价值＝$3 000+ [800-（800-500）÷5-（1$\n\n$500-800)\\times80\\%]\\times30\\%=3 054$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-025",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司持有乙公司20%的有表决权股份，能够对乙公司施加重大影响。2026年甲、乙公司之间发生以下内部交易：①8月，乙公司将其成本为900万元的某商品以1 500万元的价格出售给甲公司，甲公司将取得的商品作为存货，至年末甲公司将该批商品出售70%。②9月，甲公司将其账面价值为800万元的商品以1 200万元的价格出售给乙公司，乙公司将取得的商品作为管理用固定资产，预计使用寿命为10年，净残值为0。假定2026年乙公司实现净利润3 000万元，不考虑其他因素，甲公司当年应确认的投资收益为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "600"
+        },
+        {
+          "key": "B",
+          "text": "400"
+        },
+        {
+          "key": "C",
+          "text": "486"
+        },
+        {
+          "key": "D",
+          "text": "492"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2026年乙公司经调整后的净利润$=3 000-600+600\\times70\\%-400+400\\div10\\times3/12=3 000-600+420-400+10=2 430$（万元），甲公司应确认的投资收益$=2 430\\times20\\%=486$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-026",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年5月10日，甲公司将其持有的一项以权益法核算的长期股权投资全部出售，取得价款1 200万元，当日办妥相关手续。出售时，该项长期股权投资的账面价值为1 100万元，其中投资成本为600万元，损益调整为300万元，可重分类进损益的其他综合收益为150万元，其他权益变动50万元。不考虑增值税等相关税费及其他因素，甲公司处置该项股权投资应确认的投资收益为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "100"
+        },
+        {
+          "key": "B",
+          "text": "250"
+        },
+        {
+          "key": "C",
+          "text": "300"
+        },
+        {
+          "key": "D",
+          "text": "600"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "甲公司处置该项股权投资应确认的投资收益$=1 200-1 100+150+50=300$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-027",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司2026年1月1日以3 000万元的价格购入乙公司30%的股权，另支付相关费用10万元。购入时乙公司可辨认净资产的公允价值为11 000万元（假定乙公司各项可辨认资产、负债的公允价值与账面价值相等）。乙公司2026年实现净利润600万元。甲公司取得该项投资后对乙公司具有重大影响。假定不考虑其他因素，该项投资对甲公司2026年度利润总额的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "470"
+        },
+        {
+          "key": "B",
+          "text": "180"
+        },
+        {
+          "key": "C",
+          "text": "290"
+        },
+        {
+          "key": "D",
+          "text": "480"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "该项投资对甲公司2026年度利润总额的影响金额$=[11 000\\times30\\%-(3 000+10)]+600\\times30\\%=470$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-028",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月2日，甲公司以银行存款2 000万元取得乙公司30%的股权，投资时乙公司可辨认净资产公允价值及账面价值的总额均为8 000万元。甲公司取得投资后可派人参与乙公司生产经营决策，但无法对乙公司实施控制。2026年5月9日，乙公司宣告分配现金股利400万元。2026年度，乙公司实现净利润800万元。不考虑所得税等因素，该项投资对甲公司2026年度损益的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "240"
+        },
+        {
+          "key": "B",
+          "text": "640"
+        },
+        {
+          "key": "C",
+          "text": "860"
+        },
+        {
+          "key": "D",
+          "text": "400"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "该项投资对甲公司2026年度损益的影响金额$=(8 000\\times30\\%-2 000)+800\\times30\\%=640$（万元）。甲公司账务处理如下：\n\n（1）2026年1月2日，取得乙公司30%的股权：\n\n借：长期股权投资--投资成本 2 000\n\n贷：银行存款 2 000\n\n初始投资成本2 000万元小于应享有的被投资方可辨认净资产公允价值份额2 400万元（$8 000\\times30\\%$），差额400万元应调整长期股权投资初始投资成本：\n\n借：长期股权投资--投资成本 400\n\n贷：营业外收入 400\n\n（2）2026年5月9日，乙公司宣告分配现金股利：\n\n借：应收股利 120【$400\\times30\\%$】\n\n贷：长期股权投资--损益调整 120\n\n（3）2026年度乙公司实现净利润：\n\n借：长期股权投资--损益调整 240【$800\\times30\\%$】\n\n贷：投资收益 240",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-029",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年5月1日，甲公司对乙公司的投资比例为30%，对乙公司具有重大影响，作为长期股权投资核算，其账面价值为5 800万元（其中投资成本为5 000万元，损益调整为200万元，其他综合收益为500万元，其他权益变动为100万元），当日该30%投资的公允价值为6 000万元。同日，甲公司以一批库存商品作为对价追加对乙公司的投资，该批库存商品的成本为5 200万元，公允价值为6 000万元，投资后甲公司占乙公司有表决权股份的60%，能够控制乙公司。甲公司和乙公司在交易前不存在任何关联方关系。不考虑其他因素，甲公司取得乙公司60%股权的初始投资成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "10 200"
+        },
+        {
+          "key": "B",
+          "text": "11 000"
+        },
+        {
+          "key": "C",
+          "text": "11 800"
+        },
+        {
+          "key": "D",
+          "text": "12 000"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "购买日初始投资成本=购买日之前所持被购买方的股权投资的账面价值+购买日新增投资成本$=5 800+6 000=11 800$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-030",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "M公司2×24年初以银行存款680万元作为对价取得N公司30%的股权。2×24年N公司亏损800万元；2×25年N公司亏损2 000万元；2×26年N公司实现净利润600万元。不考虑其他因素，则2×26年M公司计入投资收益的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "48"
+        },
+        {
+          "key": "B",
+          "text": "32"
+        },
+        {
+          "key": "C",
+          "text": "20"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "$2\\times24$年M公司应确认的投资收益$=-800\\times30\\%=-240$（万元），$2\\times25$年M公司按持股比例，本应分担的亏损额$=-2 000\\times30\\%=-600$（万元），但真正应确认入账的投资损失金额，应以长期股权投资的账面价值减至零为限：$680-240-600=-160$（万元），尚有160万元投资损失未确认入账。$2\\times26$年应确认的投资收益$=600\\times30\\%-160=20$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-031",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司持有乙公司40%的股权，对乙公司具有重大影响，截至2×25年12月31日，长期股权投资账面价值为1 250万元，明细科目为投资成本800万元，损益调整250万元，其他权益变动200万元。2×26年1月5日，甲公司处置了所持有的乙公司股权中的75%，处置价款为1 000万元，处置之后对乙公司不再具有重大影响，剩余股权投资的公允价值为350万元，甲公司将其划分为以公允价值计量且其变动计入当期损益的金融资产核算。甲公司因该业务影响损益的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "262.5"
+        },
+        {
+          "key": "B",
+          "text": "300"
+        },
+        {
+          "key": "C",
+          "text": "212.5"
+        },
+        {
+          "key": "D",
+          "text": "350"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "对损益的影响金额$=1 000+350-1 250+200=300$（万元）。\n\n借：银行存款 1 000\n\n交易性金融资产 350\n\n贷：长期股权投资 1 250\n\n投资收益 100\n\n借：资本公积--其他资本公积 200\n\n贷：投资收益 200",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-032",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "单项选择题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×26 年甲公司的合营企业乙公司发生的下列交易或事项中，将对甲公司当年投资收益产生影响的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "乙公司宣告分配现金股利"
+        },
+        {
+          "key": "B",
+          "text": "乙公司持有的其他债权投资公允价值上升"
+        },
+        {
+          "key": "C",
+          "text": "乙公司股东大会通过发放股票股利的议案"
+        },
+        {
+          "key": "D",
+          "text": "乙公司当年发生的电视台广告费"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "甲公司采用权益法核算对乙公司的长期股权投资。\n\n选项A，甲公司账务处理如下：\n\n学会会计就到之了课堂\n\n借：应收股利\n\n贷：长期股权投资--损益调整\n\n不影响甲公司当年投资收益。\n\n选项 B，甲公司账务处理如下：\n\n借：长期股权投资--其他综合收益\n\n贷：其他综合收益\n\n不影响甲公司当年投资收益。\n\n选项 C，属于乙公司所有者权益内部增减变动，不影响其所有者权益总额，甲公司不做账务处理。\n\n选项 D，乙公司应将当年发生的广告费计入当期损益，影响其净利润，甲公司按照享有的乙公司净利润份额确认投资收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-033",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "多项选择题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于同一控制下企业合并形成的长期股权投资会计处理表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "合并方发生的评估咨询费用，应计入当期损益"
+        },
+        {
+          "key": "B",
+          "text": "与发行债务工具作为合并对价直接相关的交易费用，应计入债务工具的初始确认金额"
+        },
+        {
+          "key": "C",
+          "text": "与发行权益工具作为合并对价直接相关的交易费用，应计入当期损益"
+        },
+        {
+          "key": "D",
+          "text": "合并成本与合并对价账面价值之间的差额，应计入其他综合收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "选项 C，与发行权益工具作为合并对价直接相关的交易费用，应冲减资本公积，资本公积不足冲减的，冲减留存收益；选项 D，合并成本与合并对价账面价值之间的差额，应计入资本公积，资本公积不足冲减的，冲减留存收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-034",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "多项选择题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于企业对长期股权投资会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "取得合营企业股权时，支付的手续费计入长期股权投资的初始投资成本"
+        },
+        {
+          "key": "B",
+          "text": "以发行债券的方式取得子公司股权时，债券的发行费用计入长期股权投资的初始投资成本"
+        },
+        {
+          "key": "C",
+          "text": "以定向增发普通股的方式取得联营企业股权时，普通股的发行费用计入长期股权投资的初始投资成本"
+        },
+        {
+          "key": "D",
+          "text": "以合并方式取得子公司股权时，支付的法律服务费计入管理费用"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "选项 A，非企业合并方式下取得长期股权投资，支付的手续费等直接相关费用计入长期股权投资的初始投资成本；选项 B，以发行债券的方式取得子公司股权时，债券的发行费用记入“应付债券--利息调整”科目，不计入长期股权投资的初始投资成本；选项 C，以定向增发普通股的方式取得联营企业股权时，普通股的发行费用应冲减“资本公积--股本溢价”，不足冲减的，依次冲减盈余公积和未分配利润，不计入长期股权投资的初始投资成本；选项 D，企业合并方式取得子公司股权时，支付的审计、法律服务、评估咨询等中介费用计入管理费用。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-035",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "多项选择题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业采用权益法核算长期股权投资时，下列各项中，影响长期股权投资账面价值的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "被投资单位发行一般公司债券"
+        },
+        {
+          "key": "B",
+          "text": "被投资单位其他综合收益变动"
+        },
+        {
+          "key": "C",
+          "text": "被投资单位以盈余公积转增资本"
+        },
+        {
+          "key": "D",
+          "text": "被投资单位实现净利润"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "选项 A 和 C，不影响被投资单位的所有者权益总额，投资方不需要调整长期股权投资的账面价值；选项 B，借记长期股权投资--其他综合收益，贷记其他综合收益（或反向）；选项 D，借记长期股权投资--损益调整，贷记投资收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-036",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "多项选择题",
+      "number": 36,
+      "globalIndex": 36,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业采用成本法核算长期股权投资进行的下列会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "按持股比例计算享有被投资方实现净利润的份额调增长期股权投资的账面价值"
+        },
+        {
+          "key": "B",
+          "text": "按追加投资的金额调增长期股权投资的成本"
+        },
+        {
+          "key": "C",
+          "text": "按持股比例计算应享有被投资方其他债权投资公允价值上升的份额确认投资收益"
+        },
+        {
+          "key": "D",
+          "text": "按持股比例计算应享有被投资方宣告发放现金股利的份额确认投资收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "选项 A、C，都是权益法核算下的处理，成本法下不做处理，其中选项 C，权益法下是确认其他综合收益，而不是投资收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-037",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "多项选择题",
+      "number": 37,
+      "globalIndex": 37,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司以银行存款 3 950 万元取得乙公司 30%的股权，另以银行存款支付直接相关费用 50 万元，相关手续于当日完成，甲公司能够对乙公司施加重大影响。当日，乙公司可辨认净资产的账面价值为 14 000 万元，各项可辨认资产、负债的公允价值均与其账面价值相同。乙公司 2026 年实现净利润 2 000 万元，其他债权投资的公允价值上升 100 万元。不考虑其他因素，下列甲公司 2026 年与该投资相关的会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "确认营业外收入 200 万元"
+        },
+        {
+          "key": "B",
+          "text": "确认财务费用 50 万元"
+        },
+        {
+          "key": "C",
+          "text": "确认其他综合收益 30 万元"
+        },
+        {
+          "key": "D",
+          "text": "确认投资收益 600 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项 A，甲公司取得长期股权投资的初始投资成本$=3 950+50=4 000$（万元），享有乙公司可辨认净资产公允价值份额$=14 000\\times30\\%=4 200$（万元），前者小于后者，产生负商誉，差额 200 万元计入营业外收入，所以正确；选项 B，直接相关费用 50 万元计入初始投资成本，不计入财务费用，所以不正确。选项 D，2026 年末，甲公司确认乙公司实现的净利润份额$=2000\\times30\\%=600$（万元），计入投资收益；选项 C，2026 年末，甲公司确认乙公司其他综合收益变动份额$=100\\times30\\%=30$（万元），所以正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-038",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "多项选择题",
+      "number": 38,
+      "globalIndex": 38,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司长期股权投资账面价值为 2 000 万元。当日，甲公司将持有的乙公司 80%股权中的一半以 1 200 万元出售给非关联方，剩余股权对乙公司具有重大影响。甲公司原取得乙公司股权时，乙公司可辨认净资产的账面价值为 2 200 万元，各项可辨认资产、负债的公允价值与其账面价值相同。自甲公司取得乙公司股权投资至处置投资日，乙公司实现净利润 1 500 万元，增加其他综合收益 300 万元。假定按照净利润的 10%提取法定盈余公积，不考虑增值税等相关税费及其他因素。下列关于 2026 年 1 月 1 日甲公司个别财务报表中对长期股权投资的会计处理表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "增加盈余公积 60 万元"
+        },
+        {
+          "key": "B",
+          "text": "增加未分配利润 540 万元"
+        },
+        {
+          "key": "C",
+          "text": "增加投资收益 320 万元"
+        },
+        {
+          "key": "D",
+          "text": "增加其他综合收益 120 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "会计分录如下：\n\n借：银行存款 1 200\n\n贷：长期股权投资 1 000【2 000/2】\n\n投资收益 200\n\n借：长期股权投资--损益调整 600\n\n--其他综合收益 120\n\n贷：盈余公积 60【$1 500\\times40\\%\\times10\\%$】\n\n利润分配--未分配利润 540【1 500×40%×90%】\n其他综合收益 120【300×40%】",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-039",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "多项选择题",
+      "number": 39,
+      "globalIndex": 39,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 1 月 1 日，甲公司以银行存款 2 500 万元自非关联方处取得乙公司 5%的股权，甲公司将其指定为以公允价值计量且其变动计入其他综合收益的非交易性权益工具投资。2025 年 12 月 31 日，该股权的公允价值为 4 000 万元。2026 年 1 月 1 日，甲公司以银行存款 40 000 万元自另一非关联方处取得乙公司 50%的股权，取得该部分股权后，甲公司能够对乙公司实施控制。当日，甲公司原持有的股权公允价值仍为 4 000 万元，乙公司可辨认净资产账面价值和公允价值均为 60 000 万元。下列各项关于甲公司 2026 年 1 月 1 日的会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "留存收益增加 1 500 万元"
+        },
+        {
+          "key": "B",
+          "text": "其他综合收益减少 1 500 万元"
+        },
+        {
+          "key": "C",
+          "text": "长期股权投资增加 42 500 万元"
+        },
+        {
+          "key": "D",
+          "text": "其他权益工具投资减少 4 000 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "甲公司相关会计分录如下（假设甲公司按照净利润的 10%提取法定盈余公积）：\n2025年1月1日：\n借：其他权益工具投资--成本 2 500\n贷：银行存款 2 500\n2025年12月31日：\n借：其他权益工具投资--公允价值变动 1 500【4 000-2 500】\n贷：其他综合收益 1 500\n2026年1月1日：\n借：长期股权投资 44 000【4 000+40 000】\n贷：其他权益工具投资--成本 2 500\n--公允价值变动 1 500\n银行存款 40 000\n同时，\n借：其他综合收益 1 500\n贷：盈余公积 150\n利润分配--未分配利润 1 350\n综上所述，选项A、B、D当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-true_false-040",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "判断题",
+      "number": 40,
+      "globalIndex": 40,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业长期股权投资的初始投资成本，不包括支付的价款中包含的被投资单位已宣告但尚未发放的现金股利或利润。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "取得长期股权投资时，购买价款中包含的被投资单位已宣告但尚未发放的现金股利或利润，应单独确认为“应收股利”，不计入长期股权投资的初始投资成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-true_false-041",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "判断题",
+      "number": 41,
+      "globalIndex": 41,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业采用权益法核算长期股权投资的，在确认投资收益时，不需考虑顺流交易产生的未实现内部交易利润。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "权益法核算的长期股权投资计算投资收益时，应考虑未实现的内部交易损益的金额。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-true_false-042",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "判断题",
+      "number": 42,
+      "globalIndex": 42,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业部分处置采用权益法核算的长期股权投资，剩余股权仍采用权益法核算的，原权益法核算的其他综合收益无须进行结转。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "企业部分处置采用权益法核算的长期股权投资，剩余股权仍采用权益法核算的，原权益法核算的其他综合收益应当采用与被投资单位直接处置相关资产或负债相同的基础处理并按比例进行结转。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-true_false-043",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第六章 长期股权投资和合营安排",
+      "section": "判断题",
+      "number": 43,
+      "globalIndex": 43,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "指定为以公允价值计量且其变动计入其他综合收益的非交易性权益工具投资转为权益法核算的长期股权投资，原计入其他综合收益的累计公允价值变动应转入投资收益。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "其他权益工具投资转为长期股权投资核算时，其公允价值与账面价值之间的差额以及原计入其他综合收益的累计公允价值变动应当直接转入留存收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-044",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "单项选择题",
+      "number": 44,
+      "globalIndex": 44,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 31 日，企业某项固定资产的公允价值为 1 000 万元。预计处置费用为 100 万元，预计未来现金流量的现值为 960 万元。当日，该项固定资产的可收回金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "860"
+        },
+        {
+          "key": "B",
+          "text": "900"
+        },
+        {
+          "key": "C",
+          "text": "960"
+        },
+        {
+          "key": "D",
+          "text": "1 000"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "可收回金额为公允价值减去处置费用后的净额与预计未来现金流量的现值两者之间较高者，其中公允价值减去处置费用后的净额=1 000-100=900（万元），预计未来现金流量现值为960万元，所以该固定资产的可收回金额为960万元，选项C正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-045",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "单项选择题",
+      "number": 45,
+      "globalIndex": 45,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 7 月 1 日，甲公司购入行政管理用 M 软件，其初始入账成本为 300 万元，预计使用寿命为 5 年，预计净残值为零，采用直线法摊销。2026 年 12 月 31 日，M 软件出现减值迹象，经减值测试，该软件的公允价值为 200 万元，预计处置费用为 2 万元，预计未来现金流量的现值为 180 万元。不考虑其他因素。2026 年 12 月 31 日，甲公司应对 M 软件确认的减值损失金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "12"
+        },
+        {
+          "key": "B",
+          "text": "10"
+        },
+        {
+          "key": "C",
+          "text": "17"
+        },
+        {
+          "key": "D",
+          "text": "30"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "2026年12月31日，减值前M软件的账面价值=300-300÷5×1.5=210（万元），M软件的可收回金额应按照该资产的公允价值减去处置费用后的金额198万元（200-2）与资产预计未来现金流量的现值180万元两者中的较高者确定，即可收回金额为198万元。该资产的账面价值大于可收回金额，发生减值，2026年12月31日，甲公司应对M软件确认的减值损失金额=210-198=12（万元），选项A当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-046",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "单项选择题",
+      "number": 46,
+      "globalIndex": 46,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 31 日，甲公司某项固定资产计提减值准备前的账面价值为 1 000 万元，公允价值为 980 万元，预计处置费用为 80 万元，预计未来现金流量的现值为 1 050 万元。2026 年 12 月 31 日，甲公司应对该项固定资产计提的减值准备为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "20"
+        },
+        {
+          "key": "C",
+          "text": "50"
+        },
+        {
+          "key": "D",
+          "text": "100"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "该固定资产公允价值减去处置费用后的净额=980-80=900（万元），预计未来现金\n\n16 学会计就到之了课堂\n\n流量现值为 1 050 万元，可收回金额为两者中较高者，所以可收回金额为 1 050 万元，大于账面价值 1 000 万元，表明该固定资产未发生减值，不需计提减值准备。\n\n或：题中已经直接给出预计未来现金流量现值 1 050 万元，高于账面价值，故可直接判定该项资产未发生减值。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-047",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "单项选择题",
+      "number": 47,
+      "globalIndex": 47,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "A 公司 2021 年 12 月购入一项固定资产，当日交付使用，原价为 6 200 万元，预计使用年限为 10 年，预计净残值为 200 万元。采用年限平均法计提折旧。2025 年年末，A 公司对该项固定资产的减值测试表明，其可收回金额为 3 200 万元，预计使用年限和净残值不变。2026 年度该项固定资产应计提的折旧额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "600"
+        },
+        {
+          "key": "B",
+          "text": "610"
+        },
+        {
+          "key": "C",
+          "text": "500"
+        },
+        {
+          "key": "D",
+          "text": "520"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2025 年年末减值测试前固定资产账面价值$=6 200-(6 200-200)\\div10\\times4=3 800$（万元），可收回金额为 3 200 万元，则账面价值应该减计至 3 200 万元；2026 年度该项固定资产应计提的折旧额$=(3 200-200)/6=500$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-048",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "单项选择题",
+      "number": 48,
+      "globalIndex": 48,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 20 日，甲公司自行研发的某项非专利技术已经达到预定可使用状态，累计研究支出为 80 万元，累计开发支出为 230 万元（其中，符合资本化条件的支出为 200 万元）；但使用寿命不能合理确定。2026 年 12 月 31 日，该项非专利技术的公允价值减去处置费用后的净额为 180 万元，未来现金流量现值为 178 万元。假定不考虑相关税费，甲公司应就该项非专利技术计提的减值准备为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "20"
+        },
+        {
+          "key": "B",
+          "text": "70"
+        },
+        {
+          "key": "C",
+          "text": "100"
+        },
+        {
+          "key": "D",
+          "text": "150"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "无形资产入账价值$=200$ 万元；因其使用寿命不能合理确定，不进行摊销，所以期末减值测试前账面价值为 200 万元；无形资产可收回金额$=180$ 万元；应计提的减值准备$=20$ 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-049",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "单项选择题",
+      "number": 49,
+      "globalIndex": 49,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于企业为固定资产减值测试目的预计未来现金流量的表述中，不正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "预计未来现金流量包括与所得税相关的现金流量"
+        },
+        {
+          "key": "B",
+          "text": "预计未来现金流量应当以固定资产的当前状况为基础"
+        },
+        {
+          "key": "C",
+          "text": "预计未来现金流量不包括与筹资活动相关的现金流量"
+        },
+        {
+          "key": "D",
+          "text": "预计未来现金流量不包括与固定资产改良相关的现金流量"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "企业为固定资产减值测试目的预计未来现金流量不应当包括筹资活动和与所得税收付有关的现金流量，因此选项 A 是错误的。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-single_choice-050",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "单项选择题",
+      "number": 50,
+      "globalIndex": 50,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司对一个资产组进行减值测试，该资产组由一项账面价值为 2 100 万元的无形资产和一项账面价值为 700 万元的固定资产组成。当日，该资产组公允价值减去处置费用后的净额为 2 100 万元，预计未来现金流量的现值为 2 200 万元。该项固定资产的公允价值减去处置费用后的净额为 560 万元，无形资产的公允价值减去处置费用后的净额和预计未来现金流量的现值均无法合理估计。不考虑其他因素。下列各项关于该资产组减值会计处理的表述中，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定资产应确认减值损失 150 万元"
+        },
+        {
+          "key": "B",
+          "text": "无形资产应确认减值损失 460 万元"
+        },
+        {
+          "key": "C",
+          "text": "资产组的可收回金额为 2 100 万元"
+        },
+        {
+          "key": "D",
+          "text": "资产组应确认减值损失 700 万元"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "资产组的可收回金额，应当按照该资产组的公允价值减去处置费用后的净额（2 100 万元）与其预计未来现金流量的现值（2 200 万元）两者较高者确定，即 2 200 万元，选项 C 不当选；因该资产组的账面价值 2 800 万元（2 100+700），大于其可收回金额 2 200 万元，发生减值，资产组应确认减值损失 600 万元（2 800-2 200），选项 D 不当选；根据资产组中各资产账面价值比重计算的固定资产应分摊的减值损失$=600\\times700/(2 100+700)=150$（万元），但由于固定资产的可收回金额为 560 万元，最多只能确认资产减值损失 140 万元（700—560），选项 A 不当选；剩余减值损失 460 万元（600—140）由无形资产分摊，选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-051",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "多项选择题",
+      "number": 51,
+      "globalIndex": 51,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项已计提的资产减值准备，在未来会计期间不得转回的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "长期股权投资减值准备"
+        },
+        {
+          "key": "B",
+          "text": "无形资产减值准备"
+        },
+        {
+          "key": "C",
+          "text": "固定资产减值准备"
+        },
+        {
+          "key": "D",
+          "text": "存货跌价准备"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "长期股权投资、无形资产、固定资产减值准备，一经计提，在持有期间不得转回。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-052",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "多项选择题",
+      "number": 52,
+      "globalIndex": 52,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项资产中，企业应采用可收回金额与账面价值孰低的方法进行减值测试的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "债权投资"
+        },
+        {
+          "key": "B",
+          "text": "固定资产"
+        },
+        {
+          "key": "C",
+          "text": "长期股权投资"
+        },
+        {
+          "key": "D",
+          "text": "存货"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "选项 A，债权投资按预期信用损失法计提减值；选项 B、C，固定资产、长期股权投资适用《企业会计准则第 8 号--资产减值》，应按可收回金额与账面价值孰低的方法进行减值测试；选项 D，存货期末按成本与可变现净值孰低计量。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-053",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "多项选择题",
+      "number": 53,
+      "globalIndex": 53,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列资产中，资产减值损失一经确认，在以后会计期间不得转回的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "在建工程"
+        },
+        {
+          "key": "B",
+          "text": "长期股权投资"
+        },
+        {
+          "key": "C",
+          "text": "其他债权投资"
+        },
+        {
+          "key": "D",
+          "text": "以成本模式计量的投资性房地产"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "选项 C，其他债权投资价值回升时，其减值可以通过“信用减值损失”转回。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-054",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "多项选择题",
+      "number": 54,
+      "globalIndex": 54,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于资产减值迹象的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业所有者权益的账面价值远高于其市值"
+        },
+        {
+          "key": "B",
+          "text": "计划提前处置资产"
+        },
+        {
+          "key": "C",
+          "text": "有证据表明资产已经陈旧过时"
+        },
+        {
+          "key": "D",
+          "text": "企业经营所处的经济环境在当期发生重大变化且对企业产生不利影响"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "以上选项均属于资产减值的迹象。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-055",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "多项选择题",
+      "number": 55,
+      "globalIndex": 55,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项资产中，无论是否发生减值迹象，企业均应于每年进行减值测试的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "使用寿命确定的无形资产 学会会计就到之了课堂"
+        },
+        {
+          "key": "B",
+          "text": "商誉"
+        },
+        {
+          "key": "C",
+          "text": "以成本模式计量的投资性房地产"
+        },
+        {
+          "key": "D",
+          "text": "使用寿命不确定的无形资产"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "资产即使未存在减值迹象，至少每年进行减值测试的有：（1）使用寿命不确定的无形资产；（2）尚未达到预定用途的无形资产；（3）商誉。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-056",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "多项选择题",
+      "number": 56,
+      "globalIndex": 56,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业在资产减值测试时，下列各项关于预计资产未来现金流量的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "包括资产处置时取得的净现金流量"
+        },
+        {
+          "key": "B",
+          "text": "不包括与所得税收付有关的现金流量"
+        },
+        {
+          "key": "C",
+          "text": "包括将来可能会发生的、尚未作出承诺的重组事项"
+        },
+        {
+          "key": "D",
+          "text": "不包括与资产改良支出有关的现金流量"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "资产预计未来现金流量应当考虑的因素有：资产持续使用过程中预计产生的现金流入；实现资产持续使用过程中产生的现金流入所必需的预计现金流出；资产使用寿命结束时，处置资产所收到或者支付的净现金流量；预计资产未来现金流量不应当包括筹资活动和与所得税收付相关的现金流量；企业应当以资产的当前状况为基础，不应当包括与将来可能会发生的、尚未作出承诺的重组事项或者与资产改良有关的预计未来现金流量。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock02-multiple_choice-057",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第七章 资产减值",
+      "section": "多项选择题",
+      "number": 57,
+      "globalIndex": 57,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于资产组或资产减值的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "在资产减值测试中，计算资产未来现金流量现值时所采用的折现率应当是反映当前市场货币时间价值和资产特定风险的税前利率"
+        },
+        {
+          "key": "B",
+          "text": "企业对其资产进行减值测试，如果使用资产所收到的未来现金流量为外币时，首先应将外币预计其未来现金流量换算为本位币，再将本位币计量的未来现金流量折现"
+        },
+        {
+          "key": "C",
+          "text": "资产组一经确定，在各个会计期间应当保持一致，不得随意变更"
+        },
+        {
+          "key": "D",
+          "text": "包含商誉的资产组发生的减值损失，应按商誉的账面价值和资产组内其他资产账面价值的比例进行分摊"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "选项 B，企业使用的资产所收到的未来现金流量为外币时，应按以下顺序确定资产未来现金流量的现值：首先，以结算货币为基础预计其未来现金流量，并按其适用的折现率计算\n\n资产的现值；其次，将该外币现值按计算资产未来现金流量现值当日的即期汇率进行折算，从而折现成按照记账本位币表示的资产未来现金流量的现值；即“先折现，再汇兑”。选项 D，包含商誉的资产组发生的减值损失，应先抵减分摊到资产组中商誉的账面价值；然后再根据资产组内其他资产的账面价值所占比例，抵减其他各项资产的账面价值。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（2）673107.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（2）673107.md",
+    "pdfIndex": 2,
+    "chapterHint": "押题客观题（2）- 第05-07章",
+    "totalQuestions": 57,
+    "missingAnswers": []
+  }
+}

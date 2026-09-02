@@ -1,0 +1,1448 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:43:17.006879+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于企业会计政策变更的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "使用寿命确定的无形资产的摊销年限由 10 年变更为 6 年"
+        },
+        {
+          "key": "B",
+          "text": "劳务合同履约进度的确定方法由已经发生的成本占估计总成本的比例改为已完工作的测量"
+        },
+        {
+          "key": "C",
+          "text": "固定资产的净残值率由 7%改为 4%"
+        },
+        {
+          "key": "D",
+          "text": "投资性房地产的后续计量由成本模式转为公允价值模式"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 ABC，属于会计估计变更。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项属于会计政策变更的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "长期股权投资的核算因增加投资份额由权益法改为成本法"
+        },
+        {
+          "key": "B",
+          "text": "资产负债表日将奖励积分的预计兑换率由 45%变为 90%"
+        },
+        {
+          "key": "C",
+          "text": "固定资产折旧方法由年限平均法改为年数总和法"
+        },
+        {
+          "key": "D",
+          "text": "与资产相关的政府补助由总额法改为净额法"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 A，属于本期发生的交易或者事项与以前相比具有本质差别而采用新的会计政策，不属于会计政策变更；选项 B 和 C，属于会计估计变更。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于企业会计政策变更的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "将政府补助的会计处理方法由净额法变更为总额法"
+        },
+        {
+          "key": "B",
+          "text": "将固定资产的折旧方法由年数总和法变更为年限平均法"
+        },
+        {
+          "key": "C",
+          "text": "将产品保修费用的计提比例由销售收入的 1.5%变更为 1%"
+        },
+        {
+          "key": "D",
+          "text": "将无形资产的摊销方法由直线法变更为产量法"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项 B、C、D，属于会计估计变更。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于会计政策变更的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "存货的计价方法由先进先出法改为移动加权平均法"
+        },
+        {
+          "key": "B",
+          "text": "将成本模式计量的投资性房地产的净残值率由 5%变为 3%"
+        },
+        {
+          "key": "C",
+          "text": "固定资产的折旧方法由年限平均法改为年数总和法"
+        },
+        {
+          "key": "D",
+          "text": "将无形资产的预计使用年限由 10 年变更为 6 年"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项 B、C 和 D 属于会计估计变更。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各事项中，属于企业会计估计变更的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "无形资产摊销方法由年限平均法变为产量法"
+        },
+        {
+          "key": "B",
+          "text": "发出存货的计量方法由移动加权平均法改为先进先出法"
+        },
+        {
+          "key": "C",
+          "text": "投资性房地产的后续计量由成本模式变为公允价值模式"
+        },
+        {
+          "key": "D",
+          "text": "政府补助的会计处理方法由总额法变为净额法"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项 B、C、D 属于会计政策变更。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-006",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "单项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 31 日，甲公司发现应自 2025 年 12 月开始计提折旧的一项固定资产从 2026 年 1 月才开始计提折旧，导致 2025 年度管理费用少记 200 万元，被认定为重大差错，税务部门允许调整 2026 年度的应交所得税。甲公司适用的企业所得税税率为 25%，无其他纳税调整事项，甲公司利润表中的 2025 年度净利润为 500 万元，并按 10%提取了法定盈余公积，不考虑其他因素，甲公司更正该差错时应将 2026 年 12 月 31 日资产负债表未分配利润项目年初余额调减（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "15"
+        },
+        {
+          "key": "B",
+          "text": "50"
+        },
+        {
+          "key": "C",
+          "text": "135"
+        },
+        {
+          "key": "D",
+          "text": "150"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2026 年 12 月 31 日资产负债表未分配利润项目年初余额调减金额=$200\\times(1-25\\%)\\times(1-10\\%)=135$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-007",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于会计政策及其变更的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "会计政策涉及会计原则、会计基础和具体会计处理方法"
+        },
+        {
+          "key": "B",
+          "text": "变更会计政策表明以前会计期间采用的会计政策存在错误"
+        },
+        {
+          "key": "C",
+          "text": "变更会计政策应能够更好地反映企业的财务状况和经营成果"
+        },
+        {
+          "key": "D",
+          "text": "本期发生的交易或事项与前期相比具有本质差别而采用新的会计政策，不属于会计政策变更"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "会计政策变更，并不意味着以前期间的会计政策是错误的，只是由于情况发生了变化，或者掌握了新的信息、积累了更多的经验，使得变更后的会计政策能够更好地反映企业的财务状况、经营成果和现金流量，选项 B 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-008",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项，属于会计估计的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "收入确认时合同履约进度的确定"
+        },
+        {
+          "key": "B",
+          "text": "固定资产预计使用寿命的确定"
+        },
+        {
+          "key": "C",
+          "text": "无形资产预计净残值的确定"
+        },
+        {
+          "key": "D",
+          "text": "投资性房地产按照公允价值计量"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项 D，投资性房地产后续计量属于会计政策。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-009",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于企业会计估计的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-010",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，企业需要进行会计估计的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-011",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司适用的企业所得税税率为 25%，甲公司对发出存货的计价采用先进先出法核算。2025 年 12 月 31 日，M 商品的账面价值为 360 万元。2026 年 1 月 1 日，甲公司将发出存货的计价方法由先进先出法改为月末一次加权平均法。如果甲公司一直采用月末一次加权平均法核算，则 2025 年 12 月 31 日 M 商品的账面价值应为 375 万元。假定税法对发出 M 商品的计价方法为先进先出法。不考虑其他因素，下列关于甲公司 2026 年 1 月 1 日对该项变更进行的会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "应采用追溯调整法进行会计处理"
+        },
+        {
+          "key": "B",
+          "text": "调增库存商品 15 万元"
+        },
+        {
+          "key": "C",
+          "text": "调增递延所得税负债 3.75 万元"
+        },
+        {
+          "key": "D",
+          "text": "调增所得税费用 3.75 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "甲公司变更发出存货的计价方法属于会计政策变更，应采用追溯调整法进行会计处理，由此导致的税会差异应当确认递延所得税。变更后，存货的账面价值为 375 万元，计税基础为 360 万元，资产的账面价值大于计税基础，产生应纳税暂时性差异=$375-360=15$（万元），应确认递延所得税负债=$15\\times25\\%=3.75$（万元）。\n\n甲公司的追溯调整分录如下：\n\n借：库存商品                15\n\n贷：递延所得税负债            3.75\n\n利润分配--未分配利润      11.25",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-012",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 31 日，甲公司发现 2024 年 12 月收到投资者投入的一项行政管理用固定资产尚未入账，投资合同约定该固定资产价值为 1 000 万元（与公允价值相同）；该固定资产预计使用年限为 5 年，预计净残值为零，采用年限平均法计提折旧。甲公司将漏记该固定资产事项认定为重要的前期差错。不考虑其他因素，下列关于该项会计差错更正的会计处理表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "增加固定资产原价 1 000 万元"
+        },
+        {
+          "key": "B",
+          "text": "增加累计折旧 400 万元"
+        },
+        {
+          "key": "C",
+          "text": "增加 2026 年度管理费用 200 万元"
+        },
+        {
+          "key": "D",
+          "text": "减少 2026 年年初留存收益 200 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "甲公司账务处理如下：\n\n（1）固定资产入账：\n\n借：固定资产                1 000\n\n贷：实收资本等                1 000\n\n（2）补提折旧：\n\n借：以前年度损益调整--管理费用   200\n\n管理费用                 200\n\n贷：累计折旧                  400【$1 000/5\\times2$】\n\n（3）将以前年度损益调整转入留存收益（假定按照 10%计提盈余公积）：\n\n借：盈余公积                  20\n\n学会会计就到之了课堂\n\n利润分配—未分配利润 180\n\n贷：以前年度损益调整 200",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-013",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列用以更正能够确定累积影响数的重要前期差错的方法中，不正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "追溯重述法"
+        },
+        {
+          "key": "B",
+          "text": "追溯调整法"
+        },
+        {
+          "key": "C",
+          "text": "红字更正法"
+        },
+        {
+          "key": "D",
+          "text": "未来适用法"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "用以更正能够确定累积影响数的重要前期差错方法为追溯重述法，选项 B、C 和 D 不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-014",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "多项选择题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在相关资料均能有效获得的情况下，对上年度财务报告批准报出后发生的下列事项，企业应当采用追溯调整法或追溯重述法进行会计处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "公布上年度利润分配方案"
+        },
+        {
+          "key": "B",
+          "text": "债权投资因管理模式发生变更重分类为其他债权投资"
+        },
+        {
+          "key": "C",
+          "text": "发现上年度金额重大的应费用化的借款费用计入了在建工程成本"
+        },
+        {
+          "key": "D",
+          "text": "发现上年度对使用寿命不确定且金额重大的无形资产按 10 年平均摊销"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "选项 A 和 B 属于当期发生新事项，作为当期事项在当期处理；选项 C 和 D 属于本年发现以前年度的重大差错应当采用追溯重述法调整。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-true_false-015",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "判断题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对政策变更采用追溯调整法时，应当按照会计政策变更的累积影响数调整变更当期期初的留存收益。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "采用追溯调整法进行会计处理，将会计政策变更累积影响数调整列报前期最早期初留存收益，其他相关项目的期初余额和列报前期披露的其他比较数据也应当一并调整。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-true_false-016",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "判断题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业难以将某项变更区分为会计政策变更还是会计估计变更的，应将其作为会计政策变更处理。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "企业难以将某项变更区分为会计政策变更还是会计估计变更的，应将其作为会计估计变更处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-true_false-017",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十二章 会计政策、会计估计变更和差错更正",
+      "section": "判断题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "发现以前会计期间的会计估计存在错误的，应按会计估计变更的规定进行会计处理。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "发现以前会计期间的会计估计存在错误的，应按前期差错更正的规定进行会计处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-018",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "单项选择题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业下列各项资产负债表日后事项中，属于调整事项的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "发现报告年度重要会计差错"
+        },
+        {
+          "key": "B",
+          "text": "董事会通过利润分配方案"
+        },
+        {
+          "key": "C",
+          "text": "处置子公司"
+        },
+        {
+          "key": "D",
+          "text": "发生重大诉讼"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项 B、C、D，属于资产负债表日后非调整事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-019",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "单项选择题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在资产负债表日后至财务报表批准报出日之间发生的下列事项中，属于资产负债表日后非调整事项的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "批准并宣告发放现金股利"
+        },
+        {
+          "key": "B",
+          "text": "发现了财务报表舞弊"
+        },
+        {
+          "key": "C",
+          "text": "发现原预计的资产减值损失严重不足"
+        },
+        {
+          "key": "D",
+          "text": "实际支付的诉讼费赔偿额与原预计金额有较大差异"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "资产负债表日后事项期间，企业利润分配方案中拟分配的以及经审议批准宣告发放的股利或利润的，该事项在资产负债表日或资产负债表日以前并不存在，属于资产负债表日后非调整事项，不调整资产负债表日财务报表的相关项目金额，因此选项 A 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-020",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "单项选择题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2025 年度财务报告批准报出日为 2026 年 4 月 25 日，甲公司发生下列事项，属于资产负债表日后调整事项的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年 4 月 12 日，发现上一年少计提存货跌价准备"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 3 月 1 日，定向增发股票 学会会计就到之了课堂"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 3 月 7 日，发生重大灾害导致一条生产线报废"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 4 月 28 日，因一项非专利技术纠纷引起诉讼"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项 B 和 C，属于资产负债表日后非调整事项；选项 D，属于本期新发生的事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2025 年度财务报告批准报出日为 2026 年 4 月 1 日，下列事项中属于资产负债表日后调整事项的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年 3 月 11 日，甲公司上月销售产品因质量问题被客户退回"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 3 月 5 日，甲公司用 3 000 万元盈余公积转增资本"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 2 月 8 日，甲公司发生火灾造成重大损失 600 万元"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 3 月 20 日，注册会计师发现甲公司 2025 年度存在重大会计舞弊"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "资产负债表日后调整事项是指对资产负债表日已经存在的情况提供了新的或进一步证据的事项。选项 A 是 2026 年 2 月销售的产品因质量问题被客户退回，不是资产负债表日前已经存在的事项；选项 B 和 C 属于资产负债表日后非调整事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-022",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "单项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2025 年度财务报告于 2026 年 4 月 20 日经董事会批准对外公布。2026 年 3 月 31 日，甲公司发现上年度自行研发的财务软件产生的费用化支出 600 万元误计入了软件成本，该软件于 2025 年 7 月 1 日达到预定用途，预计使用年限为 5 年，预计净残值为零，采用直线法进行摊销。甲公司按照净利润的 10%提取法定盈余公积。不考虑所得税等因素的影响，上述事项对甲公司 2026 年资产负债表中“未分配利润”项目年初余额的影响为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "-486"
+        },
+        {
+          "key": "B",
+          "text": "-480"
+        },
+        {
+          "key": "C",
+          "text": "-600"
+        },
+        {
+          "key": "D",
+          "text": "-432"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "上述事项对甲公司 2026 年资产负债表中“未分配利润”项目年初余额的影响=$(-600+600\\div5\\times6/12)\\times(1-10\\%)=-486$（万元），选项 A 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-023",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "单项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对资产负债表日后调整事项进行会计处理时，下列报告年度财务报表项目中，不应调整的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "损益类项目"
+        },
+        {
+          "key": "B",
+          "text": "应收账款项目"
+        },
+        {
+          "key": "C",
+          "text": "货币资金项目"
+        },
+        {
+          "key": "D",
+          "text": "所有者权益类项目"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "日后调整事项中涉及的货币资金，是本年度的现金流量，不影响报告年度的货币资金项目，所以不能调整报告年度资产负债表的货币资金项目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-single_choice-024",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "单项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 12 月 31 日，甲公司对一起未决诉讼确认的预计负债为 800 万元。2026 年 3 月 6 日，法院对该起诉讼判决，甲公司应赔偿乙公司 600 万元；甲公司和乙公司均不再上诉。甲公司的所得税税率为 25%，按净利润的 10%提取法定盈余公积，2025 年年度财务报告批准报出日为 2026 年 3 月 31 日，预计未来期间能够取得足够的应纳税所得额用以抵扣可抵扣暂时性差异。不考虑其他因素，该事项导致甲公司 2025 年 12 月 31 日资产负债表“未分配利润”项目“期末余额”调整增加的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "135"
+        },
+        {
+          "key": "B",
+          "text": "150"
+        },
+        {
+          "key": "C",
+          "text": "180"
+        },
+        {
+          "key": "D",
+          "text": "200"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "该事项导致甲公司 2025 年 12 月 31 日资产负债表中“未分配利润”项目“期末余额”调整增加的金额=$(800-600)\\times(1-25\\%)\\times(1-10\\%)=135$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-025",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "多项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2026 年发生的下列各项资产负债表日后事项中，属于调整事项的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因火灾导致原材料发生重大损失"
+        },
+        {
+          "key": "B",
+          "text": "外汇汇率发生重大变化导致外币存款出现巨额汇兑损失"
+        },
+        {
+          "key": "C",
+          "text": "2025 年 12 月已全额确认收入的商品因质量问题被全部退回"
+        },
+        {
+          "key": "D",
+          "text": "发现 2025 年确认的存货减值损失出现重大差错"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "选项 A、B，属于资产负债表日后非调整事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-026",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "多项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项企业日后期间发生的事项中，属于日后非调整事项的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因发生火灾导致厂房毁损"
+        },
+        {
+          "key": "B",
+          "text": "发现报告年度财务报表重大差错"
+        },
+        {
+          "key": "C",
+          "text": "资本公积转增资本"
+        },
+        {
+          "key": "D",
+          "text": "发行债券"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项 B，属于日后调整事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-027",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "多项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在资产负债表日后至财务报告批准报出日前发生的下列事项中，属于资产负债表日后调整事项的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因汇率发生重大变化导致企业持有的外币资金出现重大汇兑损失"
+        },
+        {
+          "key": "B",
+          "text": "企业报告年度销售给某主要客户的一批产品因存在质量缺陷被退回"
+        },
+        {
+          "key": "C",
+          "text": "报告年度未决诉讼经人民法院判决败诉，企业需要赔偿的金额大幅超过已确认的预计负债"
+        },
+        {
+          "key": "D",
+          "text": "企业获悉某主要客户在报告年度发生重大火灾，需要大额补提报告年度应收该客户账款的坏账准备"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "选项 A，因汇率发生重大变化导致企业持有的外币资金出现重大汇兑损失属于资产负债表日后非调整事项。\n\n7 学会计就到之了课堂",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-028",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "多项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于资产负债表日后事项的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "影响重大的资产负债表日后非调整事项应在附注中披露"
+        },
+        {
+          "key": "B",
+          "text": "对资产负债表日后调整事项应当调整资产负债表日财务报表有关项目"
+        },
+        {
+          "key": "C",
+          "text": "资产负债表日后事项包括资产负债表日至财务报告批准报出日之间发生的全部事项"
+        },
+        {
+          "key": "D",
+          "text": "判断资产负债表日后调整事项的标准在于该事项对资产负债表日存在的情况提供了新的或进一步的证据"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "资产负债表日后事项，是指资产负债表日至财务报告批准报出日之间发生的有利或不利事项，而非全部事项，选项 C 不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-multiple_choice-029",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "多项选择题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于企业资产负债表日后事项会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "调整事项涉及损益的，应调整报告年度利润表相关项目的金额"
+        },
+        {
+          "key": "B",
+          "text": "重要的非调整事项应当在报告年度财务报表附注中披露"
+        },
+        {
+          "key": "C",
+          "text": "发生在报告年度企业所得税汇算清缴后涉及损益的调整事项，不应调整报告年度的应纳所得税税额"
+        },
+        {
+          "key": "D",
+          "text": "调整事项涉及现金收支的，应调整报告年度资产负债表的货币资金项目金额"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项 D，调整事项涉及现金收支的，应作为当期事项处理，不应调整报告年度资产负债表的货币资金项目金额。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-true_false-030",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "判断题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业涉及现金收支的资产负债表日后调整事项，应当调整报告年度资产负债表货币资金项目的金额。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "资产负债表日后调整事项涉及现金收支调整的，不应当调整报告年度的货币资金项目金额。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock08-true_false-031",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十三章 资产负债表日后事项",
+      "section": "判断题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "资产负债表日至财务报告批准报出日之间，股东大会批准了董事会拟定的股利分配方案，企业应将该事项作为资产负债表日后调整事项处理。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "资产负债表日至财务报告批准报出日之间，股东大会批准了董事会拟定的股利分配方案，并不会使企业在资产负债表日形成现时义务，支付义务在资产负债表日尚不存在，企业应将该事项作为资产负债表日后非调整事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（8）450370.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（8）450370.md",
+    "pdfIndex": 8,
+    "chapterHint": "押题客观题（8）- 第22-23章",
+    "totalQuestions": 31,
+    "missingAnswers": []
+  }
+}

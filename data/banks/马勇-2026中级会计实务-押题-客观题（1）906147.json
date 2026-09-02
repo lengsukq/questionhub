@@ -1,0 +1,3403 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:43:16.984176+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业前后各期采用的会计政策应保持一致，不得随意变更，体现的会计信息质量要求是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "可比性"
+        },
+        {
+          "key": "B",
+          "text": "可靠性"
+        },
+        {
+          "key": "C",
+          "text": "可理解性"
+        },
+        {
+          "key": "D",
+          "text": "相关性"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "可比性要求同一企业不同时期发生的相同或者相似的交易或事项，应当采用一致的会计政策，不得随意变更。确需变更的，应当在附注中说明。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司在编制 2026 年年度财务报表的时候，发现 2025 年度某销售用的固定资产未折旧，应计提折旧金额为 5 万元，甲公司直接将该 5 万元计入了 2026 年的销售费用。甲公司 2025 年和 2026 年的净利润分别为 8 000 万元和 12 000 万元。甲公司上述会计处理体现的会计信息质量要求是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "相关性"
+        },
+        {
+          "key": "B",
+          "text": "重要性"
+        },
+        {
+          "key": "C",
+          "text": "可比性"
+        },
+        {
+          "key": "D",
+          "text": "实质重于形式"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "折旧金额 5 万元相对于净利润来说整体影响不大，可作为不重要的前期差错处理，故将折旧金额直接计入当期销售费用体现的是重要性会计信息质量要求。选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-003",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "多项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "《会计人员职业道德规范》将新时代会计人员职业道德要求提炼为三条核心表述，即（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "坚持诚信，守法奉公"
+        },
+        {
+          "key": "B",
+          "text": "坚持准则，守责敬业"
+        },
+        {
+          "key": "C",
+          "text": "坚持学习，守正创新"
+        },
+        {
+          "key": "D",
+          "text": "坚持奉献，守住底线"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "《会计人员职业道德规范》将新时代会计人员职业道德要求提炼为三条核心表述，即坚持诚信，守法奉公；坚持准则，守责敬业；坚持学习，守正创新。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-004",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "多项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "国家统一的会计制度，是指国务院财政部门根据《会计法》制定的关于（ ）的制度。",
+      "options": [
+        {
+          "key": "A",
+          "text": "会计核算"
+        },
+        {
+          "key": "B",
+          "text": "会计监督"
+        },
+        {
+          "key": "C",
+          "text": "会计机构和会计人员"
+        },
+        {
+          "key": "D",
+          "text": "会计工作管理"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "国家统一的会计制度，是指国务院财政部门根据《会计法》制定的关于会计核算、会计监督、会计机构和会计人员以及会计工作管理的制度。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-005",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "多项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，体现实质重于形式要求的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "具有融资性质的分期付款购入固定资产以现购价作为入账成本"
+        },
+        {
+          "key": "B",
+          "text": "母子公司形成的企业集团编制合并财务报表"
+        },
+        {
+          "key": "C",
+          "text": "采用年数总和法计提固定资产折旧"
+        },
+        {
+          "key": "D",
+          "text": "周转材料采用一次摊销法摊销"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "选项 C，体现了谨慎性要求；选项 D，体现的是重要性要求。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-006",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "多项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项交易事项中，体现会计核算谨慎性要求的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "或有事项确认负债、资产条件的差异"
+        },
+        {
+          "key": "B",
+          "text": "采用双倍余额递减法对固定资产计提折旧"
+        },
+        {
+          "key": "C",
+          "text": "对固定资产计提减值准备"
+        },
+        {
+          "key": "D",
+          "text": "对交易性金融资产期末采用公允价值计量"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "谨慎性要求企业保持应有的谨慎，不高估资产或收益、低估负债或费用，选项 D 不体现这个要求。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-007",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "多项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于利得的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "出租无形资产取得的收益"
+        },
+        {
+          "key": "B",
+          "text": "投资者的出资额大于其在被投资单位注册资本中所占份额的金额"
+        },
+        {
+          "key": "C",
+          "text": "生产经营过程中正常出售固定资产产生的净收益"
+        },
+        {
+          "key": "D",
+          "text": "其他债权投资公允价值上升"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "选项 A，出租无形资产取得的收益，应计入其他业务收入，不属于利得；选项 B，投资者的出资额大于其在被投资单位注册资本中所占份额的金额，应计入资本公积（资本溢价），不属于利得；选项 C，生产经营过程中正常出售固定资产产生的净收益计入资产处置损益，属于计入当期损益的利得；选项 D，其他债权投资公允价值上升计入其他综合收益，属于直接计入所有者权益的利得。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-008",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "多项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业发生的下列各项交易或事项中，影响营业利润的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因正常出售办公大楼产生的净损失"
+        },
+        {
+          "key": "B",
+          "text": "行政管理用办公楼发生的日常维修费"
+        },
+        {
+          "key": "C",
+          "text": "设备因洪水浸泡产生的毁损损失"
+        },
+        {
+          "key": "D",
+          "text": "因丧失使用功能导致设备报废产生的净损失"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "选项 A，计入资产处置损益，影响营业利润；选项 B，计入管理费用，影响营业利润；选项 C、D，计入营业外支出，不影响营业利润。综上所述，选项 A、B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-009",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "多项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于企业可持续信息披露的核心要素的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "治理"
+        },
+        {
+          "key": "B",
+          "text": "战略"
+        },
+        {
+          "key": "C",
+          "text": "风险和机遇管理"
+        },
+        {
+          "key": "D",
+          "text": "指标和目标"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "企业披露的可持续信息应当包括下列四个核心要素：（1）治理，即企业管理和监督可持续风险和机遇的治理架构、控制措施和程序；（2）战略，即企业管理可持续风险和机遇的规划、策略和方法；（3）风险和机遇管理，即企业用于识别、评估、排序和监控可持续风险和机遇的流程；（4）指标和目标，即企业衡量可持续风险和机遇管理绩效的指标，以及企业已设定的目标和国家法律法规、战略规划要求企业实现的目标及其进展。选项 A、B、C、D 均当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-010",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "判断题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "允许商品流通企业将采购商品过程中发生的金额较小的运杂费直接计入当期损益，体现了会计信息的重要性质量要求。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-011",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第一章 总论",
+      "section": "判断题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "符合《中小企业划型标准规定》且具有金融性质的小企业适用于小企业会计准则。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "以下三类小企业不适用于小企业会计准则：（1）股票或债券在市场上公开交易的小企业；（2）金融机构或其他具有金融性质的小企业；（3）企业集团内的母公司和子公司。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-012",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，不应计入外购存货成本的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "购入商品运输过程中发生的保险费用"
+        },
+        {
+          "key": "B",
+          "text": "进口商品支付的关税"
+        },
+        {
+          "key": "C",
+          "text": "运输途中发生的合理损耗"
+        },
+        {
+          "key": "D",
+          "text": "验收入库后发生的仓储费用"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 D，存货验收入库后发生的仓储费用应计入管理费用，不计入存货成本；如果是存货采购过程中发生的仓储费等，应计入存货成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-013",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "某企业外购一批存货，购买价款为 100 万元，发生其他相关税费 2 万元，运输途中发生合理损失 5 万元，则该批存货的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "100"
+        },
+        {
+          "key": "B",
+          "text": "102"
+        },
+        {
+          "key": "C",
+          "text": "107"
+        },
+        {
+          "key": "D",
+          "text": "97"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "存货的入账价值 $=100+2=102$（万元）。运输途中发生的合理损失应计入存货总成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-014",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "某企业为增值税一般纳税人，本期购入一批商品 100 千克，进货价格为 100 万元，增值税进项税额为 13 万元，发生的运输费用为 5 万元（不含税），运输费发票上注明的增值税税额为 0.45 万元，入库前的挑选整理费用为 1 万元。所购商品到达后验收发现商品短缺\n25%，其中合理损失15%，另10%的短缺无法查明原因。该批商品的单位成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "1.06"
+        },
+        {
+          "key": "C",
+          "text": "1.2"
+        },
+        {
+          "key": "D",
+          "text": "1.272"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "运输途中的合理损耗要计入存货成本，不从采购成本中扣除，但无法查明原因的损耗需要从采购成本中扣除。所以该批商品的总成本$=(100+5+1)\\times(1-10\\%)=95.4$（万元），该批商品的入库总数量$=100\\times(1-25\\%)=75$（千克），该批商品的单位成本$=95.4\\div75=1.272$（万元/千克）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-015",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司向乙公司发出一批实际成本为30万元的原材料，另支付加工费6万元（不含增值税），委托乙公司加工一批适用消费税税率为10%的应税消费品，加工完成收回后，全部用于连续生产应税消费品，乙公司代扣代缴的消费税准予后续抵扣。甲公司和乙公司均系增值税一般纳税人，销售商品适用的增值税税率均为13%。不考虑其他因素，甲公司收回的该批应税消费品的实际成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "36"
+        },
+        {
+          "key": "B",
+          "text": "33.9"
+        },
+        {
+          "key": "C",
+          "text": "40"
+        },
+        {
+          "key": "D",
+          "text": "40.8"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "委托加工物资收回后用于连续生产应税消费品的，所纳消费税税款准予按规定抵扣，不计入委托加工物资的成本，所以甲公司收回的该批应税消费品的实际成本$=30+6=36$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-016",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司主要从事X产品的生产和销售，生产X产品使用的主要材料Y材料全部从外部购入，2026年12月31日，在甲公司财务报表中库存Y材料的成本为5 600万元，若将全部库存Y材料加工成X产品，甲公司估计还需发生成本1 800万元。预计加工而成的X产品售价总额为7 000万元，预计的销售费用及相关税费总额为300万元，若将库存Y材料全部予以出售，其市场价格为5 000万元。假定甲公司持有Y材料的目的系用于X产品的生产，不考虑其他因素，甲公司在对Y材料进行期末计算时确定的可变现净值是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "5 000万元"
+        },
+        {
+          "key": "B",
+          "text": "4 900万元"
+        },
+        {
+          "key": "C",
+          "text": "7 000万元"
+        },
+        {
+          "key": "D",
+          "text": "5 600万元"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "Y材料的可变现净值$=7\\ 000-300-1\\ 800=4\\ 900$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-017",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司2025年12月10日签订一项不可撤销合同，合同约定产品的售价是205元/件，销售数量1 000件，2026年1月15日交货。2025年年末甲公司剩余存货1 500件，成本200元/件，市场销售价格191元/件，预计销售费用均为1元/件。该批存货未计提过存货跌价准备，则2025年年末甲公司应计提的存货跌价准备为（ ）元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "15 000"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "1 000"
+        },
+        {
+          "key": "D",
+          "text": "5 000"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "①有合同的1 000件产品可变现净值$=1\\ 000\\times(205-1)=204\\ 000$（元），高于该部分产品成本200 000（$1\\ 000\\times200$）元，不需要计提减值准备；\n\n②无合同的500件产品可变现净值$=500\\times(191-1)=95\\ 000$（元），低于该部分产品成本100 000（$500\\times200$）元，应计提存货跌价准备$=100\\ 000-95\\ 000=5\\ 000$（元）；因此，选项D正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-018",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年12月31日，甲公司某批商品的库存数量为300件，成本为19.6万元/件，市场售价为19.7万元/件。其中已有100件与第三方签订销售合同，合同价款为20万元/件。甲公司预计上述商品的销售费用均为0.3万元/件。不考虑其他因素，2026年12月31日，甲公司该批商品在资产负债表中的列报金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "5 850"
+        },
+        {
+          "key": "B",
+          "text": "5 840"
+        },
+        {
+          "key": "C",
+          "text": "5 860"
+        },
+        {
+          "key": "D",
+          "text": "5 880"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "甲公司该批商品的库存数量大于签订合同的数量，应区分有合同部分和无合同部分分别进行会计处理：（1）有合同的100件商品的成本$=100\\times19.6=1\\ 960$（万元），可变现净值$=100\\times(20-0.3)=1\\ 970$（万元），成本小于可变现净值，商品未发生减值，期末按照成本1 960万元计量。（2）无合同的200件商品的成本$=200\\times19.6=3\\ 920$（万元），可变现净值$=200\\times(19.7-0.3)=3\\ 880$（万元），成本大于可变现净值，发生减值，期末按照可变现净值3 880万元计量。2026年12月31日，甲公司该批商品在资产负债表中的列报金额$=1\\ 960+3\\ 880=5\\ 840$（万元），选项B当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-019",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年12月31日，甲公司库存丙材料的实际成本为100万元。不含增值税的销售价格为80万元，拟全部用于生产1万件丁产品。将该批材料加工成丁产品尚需投入的成本总额为40万元。由于丙材料市场价格持续下降，丁产品每件不含增值税的市场价格由原160元下降为110元。估计销售该批丁产品将发生销售费用及相关税费合计为2万元。不考虑其他因素，2026年12月31日，甲公司该批丙材料的账面价值应为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "68"
+        },
+        {
+          "key": "B",
+          "text": "70"
+        },
+        {
+          "key": "C",
+          "text": "80"
+        },
+        {
+          "key": "D",
+          "text": "100"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "丁产品的成本$=100+40=140$（万元），可变现净值$=110-2=108$（万元），可变现净值小于成本，材料应以可变现净值计量；材料的可变现净值$=110-40-2=68$（万元），则2026年12月31日丙材料的账面价值为68万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-020",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司持有一批P材料，专门用于生产W产品。2026年12月31日，该批P材料的成本为40万元，市场价格为38万元，甲公司前期未对该批P材料计提存货跌价准备。甲公司预计将该批P材料生产成W产品尚需投入20万元，所生产的W产品的市场销售价格为56万元，预计销售费用为1万元。不考虑其他因素，甲公司2026年12月31日P材料的账面价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "40"
+        },
+        {
+          "key": "B",
+          "text": "38"
+        },
+        {
+          "key": "C",
+          "text": "35"
+        },
+        {
+          "key": "D",
+          "text": "36"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "甲公司持有P材料的目的是生产W产品。W产品的成本$=40+20=60$（万元），W产品的可变现净值$=56-1=55$（万元），成本大于可变现净值，W产品发生减值，因此判断P材料发生减值。2026年12月31日P材料的账面价值应当按照可变现净值35万元（$56-20-1$）计量，选项C当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日，甲公司M产品和N产品的存货跌价准备余额分别为6万元和8万元。2026年12月31日，M、N产品的市场价格有所回升，M产品的市场售价为598万元，成本为600万元；N产品的市场售价为608万元，成本为500万元。不考虑相关税费及其他因素的影响，2026年12月31日，甲公司M、N产品应转回的存货跌价准备金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "12"
+        },
+        {
+          "key": "B",
+          "text": "14"
+        },
+        {
+          "key": "C",
+          "text": "8"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "（1）M产品：成本600万元，可变现净值598万元，存货跌价准备余额6万元，应转回存货跌价准备金额$=6-(600-598)=4$（万元）；（2）N产品：成本500万元，可变现净值608万元，存货跌价准备余额8万元应全部转回。综上所述，甲公司M、N产品应转回的存货跌价准备金额$=4+8=12$（万元），选项A当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-022",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "多项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列项目不应在资产负债表存货项目中列示的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "房地产开发企业用于在建商品房的土地使用权"
+        },
+        {
+          "key": "B",
+          "text": "接受来料加工的原材料"
+        },
+        {
+          "key": "C",
+          "text": "为建造工程而准备的各种物资"
+        },
+        {
+          "key": "D",
+          "text": "委托其他单位加工物资"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "选项B，不属于本单位的存货；选项C，应该计入工程物资，不属于存货。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-023",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "多项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业为外购存货发生的下列各项支出中，应计入存货成本的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "入库前的挑选整理费"
+        },
+        {
+          "key": "B",
+          "text": "运输途中的合理损耗"
+        },
+        {
+          "key": "C",
+          "text": "不能抵扣的增值税进项税额"
+        },
+        {
+          "key": "D",
+          "text": "运输途中因自然灾害发生的损失"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "自然灾害损失（即非常损失）不属于合理损耗，应作为营业外支出，不计入存货成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-024",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "多项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业委托外单位加工存货发生的下列各项支出中，应计入收回的委托加工存货入账价值的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "收回委托加工存货时支付的运输费"
+        },
+        {
+          "key": "B",
+          "text": "发出并耗用的原材料成本"
+        },
+        {
+          "key": "C",
+          "text": "支付的加工费"
+        },
+        {
+          "key": "D",
+          "text": "支付给受托方的可抵扣增值税"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项D，支付给受托方的可抵扣的增值税计入“应交税费—应交增值税（进项税额）”，不计入收回的委托加工存货入账价值。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-025",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "多项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为增值税一般纳税人。2×25年2月1日，甲公司委托乙公司加工一批M产品（属于应税消费品的非黄金饰品）。2×25年3月15日，甲公司收回该批产品后直接对外销售。下列各项中，应计入甲公司M产品成本的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "支付的不含税加工费6万元"
+        },
+        {
+          "key": "B",
+          "text": "发出用于委托加工的原材料30万元"
+        },
+        {
+          "key": "C",
+          "text": "支付与加工费相关的增值税0.78万元"
+        },
+        {
+          "key": "D",
+          "text": "支付的消费税4万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "委托外单位加工完成的存货，以实际耗用的原材料或者半成品、加工费、运输费、装卸费等费用以及按规定应计入成本的税金，作为实际成本，选项 A、B 当选；可抵扣的增值税不计入委托加工存货成本，选项 C 不当选；委托加工存货收回后用于直接对外销售的（即以不高于受托方计税价格出售），消费税应计入成本，选项 D 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-026",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "多项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于需要加工才能对外销售的在产品，下列各项中，属于在确定其可变现净值时应考虑的因素有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "在产品已经发生的生产成本"
+        },
+        {
+          "key": "B",
+          "text": "在产品加工成产成品后对外销售的预计销售价格"
+        },
+        {
+          "key": "C",
+          "text": "在产品未来加工成产成品估计将要发生的加工成本"
+        },
+        {
+          "key": "D",
+          "text": "在产品加工成产成品后对外销售预计发生的销售费用"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "用于生产产品的存货的可变现净值=产品的估计售价-进一步加工成本-产品估计销售税费。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-027",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "多项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于存货会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "存货采购过程中发生的合理损耗计入存货采购成本"
+        },
+        {
+          "key": "B",
+          "text": "存货跌价准备通常应当按照单个存货项目计提，也可分类计提"
+        },
+        {
+          "key": "C",
+          "text": "按存货类别计提跌价准备的，转出其中某种存货时暂不结转相应存货跌价准备"
+        },
+        {
+          "key": "D",
+          "text": "发出原材料采用计划成本核算的应于资产负债表日调整为实际成本"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "选项 C，如果按存货类别计提存货跌价准备的，应当按照发生销售等而转出存货的成本占该存货未转出前该类别存货成本的比例结转相应的存货跌价准备。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-028",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "多项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列有关存货会计处理的表述中正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "管理不善造成的存货净损失计入管理费用"
+        },
+        {
+          "key": "B",
+          "text": "对于盘亏的存货属于自然灾害原因造成的存货毁损，应将其净损失计入管理费用"
+        },
+        {
+          "key": "C",
+          "text": "存货的加工成本是指加工过程中实际发生的人工成本和按照一定方法分配的制造费用"
+        },
+        {
+          "key": "D",
+          "text": "进口关税应计入存货成本"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项 B，对于盘亏的存货属于自然灾害造成的存货毁损，应将其净损失计入营业外支出。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-029",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "判断题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业接受投资者投入存货的成本，应当按照合同或协议约定的价值确定，但投资合同或协议约定的价值不公允的除外。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "投资合同或协议约定价值不公允的，存货按照其公允价值作为入账价值，公允价值与投资合同或协议约定价值之间的差额计入资本公积。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-030",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "判断题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业通过提供劳务取得存货的成本，按提供劳务人员的直接人工和其他直接费用以及可归属于该存货的间接费用确定。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-031",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "判断题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业为执行销售合同而持有的存货，其可变现净值应以合同价格为基础计算。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-032",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二章 存货",
+      "section": "判断题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业的存货跌价准备一经计提，即使减记存货价值的影响因素已经消失，原已计提的存货跌价准备也不得转回。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "如果减记存货价值的影响因素已经消失，可以转回以前因该因素计提的存货跌价准备。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-033",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "A 公司为增值税一般纳税人，适用税率 13%，采用自营方式建造一条生产线，实际领用工程物资 250 万元（不含增值税）。另外领用本公司外购的产品一批，账面价值即取得成本为 140 万元，市场价格为 150 万元，未计提存货跌价准备；发生的在建工程人员工资和福利费分别为 190 万元和 40 万元。假定该生产线已达到预定可使用状态，不考虑其他因素。该固定资产的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "620"
+        },
+        {
+          "key": "B",
+          "text": "851.8"
+        },
+        {
+          "key": "C",
+          "text": "520"
+        },
+        {
+          "key": "D",
+          "text": "751"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "固定资产的入账价值$=250+140+190+40=620$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-034",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司系增值税一般纳税人。2026 年 1 月 10 日购入一台需安装的生产设备，取得的增值税专用发票上注明的价款为 200 万元，增值税税额为 26 万元；支付设备安装费取得的增值税专用发票上注明的安装费为 2 万元，增值税税额为 0.18 万元。2026 年 1 月 20 日，该设备安装完毕并达到预定可使用状态。不考虑其他因素，该设备达到预定可使用状态时的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "228.18"
+        },
+        {
+          "key": "B",
+          "text": "200"
+        },
+        {
+          "key": "C",
+          "text": "202"
+        },
+        {
+          "key": "D",
+          "text": "226"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "甲公司系增值税一般纳税人，增值税进项税额可以抵扣，不计入固定资产成本。该设备达到预定可使用状态时的入账价值$=200+2=202$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-035",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为增值税一般纳税人，2026 年 1 月 15 日购入一台生产设备并立即投入使用。取得增值税专用发票上注明价款 500 万元，增值税税额 65 万元。当日预付未来一年的设备维修费，取得增值税专用发票上注明的价款为 10 万元，增值税税额为 1.3 万元，不考虑其他因素，该设备的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "500"
+        },
+        {
+          "key": "B",
+          "text": "510"
+        },
+        {
+          "key": "C",
+          "text": "565"
+        },
+        {
+          "key": "D",
+          "text": "576.3"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "预付的设备未来一年的维修费应确认为预付账款，实际发生维修支出时再确认制造费用，该项设备的入账价值为 500 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-036",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 36,
+      "globalIndex": 36,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲企业购入三项没有单独标价的固定资产 A、B、C，均不需要安装。实际支付的价款总额为 100 万元。其中固定资产 A 的公允价值为 60 万元，固定资产 B 的公允价值为 40 万元，固定资产 C 的公允价值为 20 万元（假定不考虑增值税）。固定资产 A 的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "60"
+        },
+        {
+          "key": "B",
+          "text": "50"
+        },
+        {
+          "key": "C",
+          "text": "100"
+        },
+        {
+          "key": "D",
+          "text": "120"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "以一笔款项购入多项没有单独标价的固定资产，应当按照各项固定资产公允价值比例对总成本进行分配，分别确定各项固定资产的成本。固定资产 A 的入账价值$=100 \\times 60/(60+40+20)=50$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-037",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 37,
+      "globalIndex": 37,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于自行建造固定资产会计处理的表述中，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "为建造固定资产支付的职工薪酬计入当期损益"
+        },
+        {
+          "key": "B",
+          "text": "固定资产的建造成本不包括工程完工前盘亏的工程物资净损失"
+        },
+        {
+          "key": "C",
+          "text": "工程完工前因正常原因造成的单项工程报废净损失计入营业外支出"
+        },
+        {
+          "key": "D",
+          "text": "已达到预定可使用状态但未办理竣工决算的固定资产按暂估价值入账"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 A，为建造固定资产支付的职工薪酬，应计入建造固定资产的成本；选项 BC，应计入建造成本中。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-038",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 38,
+      "globalIndex": 38,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "经国家审批，某企业计划建造一个核电站，其主体设备核反应堆将会对当地的生态环境产生一定的影响。根据法律规定，企业应在该项设备使用期满后将其拆除，并对造成的污染进行整治。2026年1月1日，该项设备建造完成并交付使用，建造成本共计200 000万元。预计使用年限为20年，预计弃置费用为10 000万元。当日弃置费用的现值为1 486.4万元。假定折现率（实际利率）为10%，不考虑其他因素。则2026年1月1日固定资产入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "201 486.4"
+        },
+        {
+          "key": "B",
+          "text": "200 000"
+        },
+        {
+          "key": "C",
+          "text": "1 486.4"
+        },
+        {
+          "key": "D",
+          "text": "210 000"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "企业应当按照弃置费用的现值计入相关固定资产成本，同时确认相关的预计负债。固定资产入账价值$=200\\ 000+1\\ 486.4=201\\ 486.4$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-039",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 39,
+      "globalIndex": 39,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2024年6月20日甲公司以银行存款1 500万元外购一条生产线并立即投入使用，预计使用年限为15年，预计净残值为零，采用年限平均法计提折旧。2025年12月31日，估计该生产线可收回金额为1 209万元，预计尚可使用年限为13年，预计净残值为零，仍采用年限平均法计提折旧。不考虑其他因素，2026年末该资产的账面价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 407"
+        },
+        {
+          "key": "B",
+          "text": "1 209"
+        },
+        {
+          "key": "C",
+          "text": "1 250"
+        },
+        {
+          "key": "D",
+          "text": "1 116"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "2025 年末生产线计提减值前的账面价值$=1\\ 500-1\\ 500/15 \\times 1.5=1\\ 350$（万元），可收回金额为 1 209 万元，资产的账面价值大于可收回金额，发生减值。计提减值后，2025 年末生产线的账面价值应为 1 209 万元。固定资产发生减值后，应视为一个新固定资产的出现，按新的折旧指标计提折旧，所以 2026 年末该资产的账面价值$=1\\ 209-1\\ 209/13=1\\ 116$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-040",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 40,
+      "globalIndex": 40,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "某公司购进设备一台，该设备的入账价值为100万元，预计净残值为5.60万元，预计使用年限为5年。在采用双倍余额递减法计提折旧的情况下，该项设备第三年应提折旧额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "24"
+        },
+        {
+          "key": "B",
+          "text": "14.40"
+        },
+        {
+          "key": "C",
+          "text": "20"
+        },
+        {
+          "key": "D",
+          "text": "8"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "第一年折旧$=100\\times40\\%=40$（万元），第二年折旧$=(100-40)\\times40\\%=24$（万元），第三年折旧$=(100-40-24)\\times40\\%=14.4$（万元）。第四、五年折旧$=(100-40-24-14.4-5.6)/2=8$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-041",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 41,
+      "globalIndex": 41,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司2025年10月29日购入一条不需安装的生产线。原价为726万元，预计使用年限为5年，预计净残值为6万元，按年数总和法计提折旧。该固定资产2026年应计提的折旧额是（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "240"
+        },
+        {
+          "key": "B",
+          "text": "232"
+        },
+        {
+          "key": "C",
+          "text": "192"
+        },
+        {
+          "key": "D",
+          "text": "234"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "2025年10月29日购入，应从2025年11月份开始计提折旧。2025年11月至2026年10月属于第一个折旧年度，2026年11月至2027年10月属于第二个折旧年度，所以2026年应计提的折旧额$=(726-6)\\times5/15\\times10/12+(726-6)\\times4/15\\times2/12=232$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-042",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 42,
+      "globalIndex": 42,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司某项固定资产已完成改造，累计发生的改造成本为400万元，拆除部分的原价为200万元。改造前，该项固定资产原价为800万元，已计提折旧250万元，不考虑其他因素，甲公司该项固定资产改造后的账面价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "750"
+        },
+        {
+          "key": "B",
+          "text": "812.5"
+        },
+        {
+          "key": "C",
+          "text": "950"
+        },
+        {
+          "key": "D",
+          "text": "1 000"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "固定资产改造后的账面价值$=(800-250)+400-200\\times(800-250)/800=812.5$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-043",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 43,
+      "globalIndex": 43,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司系增值税一般纳税人，2026年12月31日，甲公司出售一台原价为452万元，已提折旧364万元的生产设备，甲公司开具的增值税专用发票上注明的价款为150万元，增值税税额为19.5万元。出售该生产设备发生清理费用8万元（不考虑增值税），不考虑其他因素，甲公司出售该生产设备的净损益为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "54"
+        },
+        {
+          "key": "B",
+          "text": "86"
+        },
+        {
+          "key": "C",
+          "text": "62"
+        },
+        {
+          "key": "D",
+          "text": "78"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "甲公司出售该生产设备的净损益$=150-(452-364)-8=54$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-044",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 44,
+      "globalIndex": 44,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，应确认为房地产开发企业固定资产的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "作为本企业办公用房购入的写字楼"
+        },
+        {
+          "key": "B",
+          "text": "已完成开发并拟出售的商品房"
+        },
+        {
+          "key": "C",
+          "text": "以经营租赁方式租入的写字楼"
+        },
+        {
+          "key": "D",
+          "text": "以融资租赁方式整体出租的商铺"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项B，应作为房地产开发企业的存货；选项C，经营租赁方式租入的写字楼，应确认为使用权资产；选项D，以融资租赁方式整体出租的商铺，出租人应终止确认该项资产。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-045",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "单项选择题",
+      "number": 45,
+      "globalIndex": 45,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为增值税一般纳税人，2026年1月开始建造办公楼。下列各项中，应计入甲公司所建造办公楼成本的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "办公楼建造期间发生的工程物资报废净损失（非自然灾害导致）"
+        },
+        {
+          "key": "B",
+          "text": "办公楼开始建造前借入的专门借款发生的利息费用"
+        },
+        {
+          "key": "C",
+          "text": "为建造办公楼购入的工程物资支付的增值税进项税额"
+        },
+        {
+          "key": "D",
+          "text": "办公楼达到预定可使用状态后发生的相关费用"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项A，办公楼建造期间发生的工程物资报废净损失（非自然灾害导致），应计入在建工程核算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-046",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 46,
+      "globalIndex": 46,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "每年年末，企业应当对固定资产的下列项目进行复核的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "折旧方法"
+        },
+        {
+          "key": "B",
+          "text": "预计净残值"
+        },
+        {
+          "key": "C",
+          "text": "预计使用寿命"
+        },
+        {
+          "key": "D",
+          "text": "已计提折旧"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项A、B、C，企业至少应当于每年年度终了，对固定资产的使用寿命、预计净残值和折旧方法等进行复核，若发生变更，应按照会计估计变更处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-047",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 47,
+      "globalIndex": 47,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列有关企业固定资产确认的说法中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "已达到预定可使用状态但尚未办理竣工决算的在建工程，因成本不能可靠计量，不应确认为企业的固定资产"
+        },
+        {
+          "key": "B",
+          "text": "企业购入的环保设备，不能通过使用直接给企业带来经济利益的，不应作为固定资产进行管理和核算"
+        },
+        {
+          "key": "C",
+          "text": "固定资产的各组成部分具有不同使用寿命或者以不同方式为企业提供经济利益的，应当将各组成部分分别确认为单项固定资产"
+        },
+        {
+          "key": "D",
+          "text": "施工企业所持有的模板、挡板和脚手架等周转材料，由于数量多、单价低，考虑到成本效益原则，在实务中通常不应确认为固定资产"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "选项A，已达到预定可使用状态但尚未办理竣工决算的在建工程，应按暂估价值确认为企业的固定资产；选项B，企业购入环保设备应作为固定资产进行管理和核算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-048",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 48,
+      "globalIndex": 48,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列应计入自行建造固定资产成本的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "达到预定可使用状态前分摊的间接费用"
+        },
+        {
+          "key": "B",
+          "text": "为建造固定资产通过出让方式取得土地使用权而支付的土地出让金"
+        },
+        {
+          "key": "C",
+          "text": "达到预定可使用状态前满足资本化条件的借款费用"
+        },
+        {
+          "key": "D",
+          "text": "达到预定可使用状态前发生的工程用物资成本"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项B，为建造固定资产通过支付土地出让金方式取得土地使用权应确认为无形资产，不计入固定资产成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-049",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 49,
+      "globalIndex": 49,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，应当计入企业固定资产入账价值的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "满足资本化条件的固定资产改建支出"
+        },
+        {
+          "key": "B",
+          "text": "固定资产的预计弃置费用的现值"
+        },
+        {
+          "key": "C",
+          "text": "固定资产的日常维修费"
+        },
+        {
+          "key": "D",
+          "text": "固定资产建造期间因安全事故连续停工 4 个月的借款费用"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "固定资产的日常修理费用通常不满足资本化条件，应在发生时按照受益对象计入当期损益或计入相关资产的成本，选项C错误；固定资产建造期间发生安全事故属于非正常中断，且连续超过3个月，则该停工期间属于费用化期间，相关借款费用应予费用化，不影响建造资产的成本，选项D错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-050",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 50,
+      "globalIndex": 50,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业在固定资产发生资本化后续支出并达到预定可使用状态时进行的下列各项会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "重新预计净残值"
+        },
+        {
+          "key": "B",
+          "text": "重新确定折旧方法"
+        },
+        {
+          "key": "C",
+          "text": "重新确定入账价值"
+        },
+        {
+          "key": "D",
+          "text": "重新预计使用寿命"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "企业在固定资产发生资本化后续支出并达到预定可使用状态时，再从在建工程转为固定资产，并重新确定其使用寿命、预计净残值和折旧方法。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-051",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 51,
+      "globalIndex": 51,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于固定资产后续计量会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因更新改造停止使用的固定资产不再计提折旧"
+        },
+        {
+          "key": "B",
+          "text": "已达到预定可使用状态但尚未办理竣工决算的固定资产应计提折旧"
+        },
+        {
+          "key": "C",
+          "text": "专设销售机构发生的固定资产日常修理费用计入销售费用"
+        },
+        {
+          "key": "D",
+          "text": "行政管理部门发生的固定资产日常修理费用计入管理费用"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "选项A，更新改造停止使用的固定资产转入“在建工程”，不计提折旧；选项B，已达到预定可使用状态但尚未办理竣工决算的固定资产，应按照估计价值确定其成本，并计提折旧；选项C、D，固定资产日常维修费用通常不满足资本化条件，应在发生时按照受益对象计入当期损益或计入相关资产的成本，专设销售机构发生的固定资产日常修理费用计入销售费用，行政管理部门发生的固定资产日常修理费用计入管理费用。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-052",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 52,
+      "globalIndex": 52,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项资产的后续支出中，应予费用化处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "生产线的改良支出"
+        },
+        {
+          "key": "B",
+          "text": "办公楼的日常修理费"
+        },
+        {
+          "key": "C",
+          "text": "更新改造更换的发动机成本"
+        },
+        {
+          "key": "D",
+          "text": "机动车的交通事故责任强制保险费"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "固定资产的后续改良支出以及更新改造支出符合资本化的应计入固定资产的成本，选项A、C应予资本化，计入固定资产成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-053",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 53,
+      "globalIndex": 53,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于固定资产会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "未投入使用的固定资产不应计提折旧"
+        },
+        {
+          "key": "B",
+          "text": "特定固定资产弃置费用的现值应计入该资产的成本"
+        },
+        {
+          "key": "C",
+          "text": "固定资产发生的费用化后续支出应计入当期损益或计入相关资产的成本"
+        },
+        {
+          "key": "D",
+          "text": "预期通过使用或处置不能产生经济利益的固定资产应终止确认"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "未投入使用的固定资产应计提折旧，计入当期损益（管理费用），选项 A 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-054",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "多项选择题",
+      "number": 54,
+      "globalIndex": 54,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，影响固定资产处置损益的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定资产原价"
+        },
+        {
+          "key": "B",
+          "text": "固定资产清理费用"
+        },
+        {
+          "key": "C",
+          "text": "固定资产处置收入"
+        },
+        {
+          "key": "D",
+          "text": "固定资产减值准备"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "企业出售、转让、报废固定资产或发生固定资产毁损，应当将处置价款扣除账面价值和相关税费的金额计入当期损益。固定资产的账面价值为固定资产原值扣除累计折旧和累计减值准备后的金额，四个选项均正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-055",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "判断题",
+      "number": 55,
+      "globalIndex": 55,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业将固定资产达到预定可使用状态前试运行过程中产出的产品对外销售的，其销售收入和成本应计入当期损益。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-056",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "判断题",
+      "number": 56,
+      "globalIndex": 56,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "按暂估价值入账的固定资产在办理竣工决算后，企业应当根据暂估价值与竣工决算价值的差额调整原已计提的折旧金额。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "按暂估价值入账的固定资产在办理竣工决算后，应当按照暂估价值与竣工决算价值的差额调整固定资产的入账价值，但是不需要调整已经计提的折旧金额。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-057",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "判断题",
+      "number": 57,
+      "globalIndex": 57,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "特殊行业的特定固定资产存在弃置费用的，企业应将弃置费用的现值计入固定资产成本，同时确认相应的预计负债。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-058",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第三章 固定资产",
+      "section": "判断题",
+      "number": 58,
+      "globalIndex": 58,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于在用的机器设备，企业可以按其生产产品实现的收入为基础计提折旧。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "企业应当根据与固定资产有关的经济利益的预期消耗方式，合理选择折旧方法。企业不能以包括使用固定资产在内的经济活动所产生的收入为基础进行折旧。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-059",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "单项选择题",
+      "number": 59,
+      "globalIndex": 59,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 5 月 20 日，甲公司以银行存款 200 万元外购一项专利技术用于 W 产品的生产，另支付相关税费 1 万元，达到预定用途前的专业服务费 2 万元，宣传 W 产品广告费 4 万元。该专利技术的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "203"
+        },
+        {
+          "key": "B",
+          "text": "201"
+        },
+        {
+          "key": "C",
+          "text": "207"
+        },
+        {
+          "key": "D",
+          "text": "200"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "外购无形资产的成本，包括购买价款、相关税费以及直接归属于使该资产达到预定用途所发生的其他支出，所以专利权入账价值=200+1+2=203（万元），宣传 W 产品广告费 4 万元应当直接计入当期损益（销售费用）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-060",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "单项选择题",
+      "number": 60,
+      "globalIndex": 60,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业自行研发专利技术发生的下列各项支出中，应计入无形资产入账价值的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "研究阶段发生的支出"
+        },
+        {
+          "key": "B",
+          "text": "无法区分研究阶段和开发阶段的支出"
+        },
+        {
+          "key": "C",
+          "text": "为有效使用自行研发的专利技术而发生的培训费用"
+        },
+        {
+          "key": "D",
+          "text": "专利技术的注册登记费"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 A，研究阶段发生的支出应全部费用化，不计入无形资产成本；选项 B，无法区分研究阶段和开发阶段的支出应全部费用化，不计入无形资产成本；选项 C，不属于为使无形资产达到预定用途的合理必要支出，不计入无形资产成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-061",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "单项选择题",
+      "number": 61,
+      "globalIndex": 61,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 1 月 1 日，甲公司以银行存款 240 万元购入一项专利技术并立即投入使用，预计使用年限为 5 年、预计净残值为 0，采用直线法摊销。2026 年 1 月 1 日，甲公司和乙公司签订协议，甲公司将于 2028 年 1 月 1 日以 100 万元的价格向乙公司转让该专利技术，甲公司对该专利技术仍采用直线法摊销。不考虑其他因素，甲公司 2026 年应对该专利技术摊销的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "48"
+        },
+        {
+          "key": "B",
+          "text": "96"
+        },
+        {
+          "key": "C",
+          "text": "46"
+        },
+        {
+          "key": "D",
+          "text": "50"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2025 年末该专利技术的账面价值=240-240/5=192（万元），2026 年 1 月 1 日该专利技术预计净残值变更为 100 万元，应作为会计估计变更采用未来适用法处理，则甲公司 2026 年应对该专利技术摊销的金额=（192-100）/2=46（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-062",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "单项选择题",
+      "number": 62,
+      "globalIndex": 62,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 2 月 1 日，甲公司以 2 800 万元购入一项专门用于生产 H 设备的专利技术。该专利技术按产量法进行摊销，预计净残值为零，预计该专利技术可用于生产 500 台 H 设备。甲公司 2026 年共生产 90 台 H 设备。2026 年 12 月 31 日，经减值测试，该专利技术的可收回金额为 2 100 万元。不考虑增值税等相关税费及其他因素。甲公司 2026 年 12 月 31 日应该确认的资产减值损失金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "700"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "196"
+        },
+        {
+          "key": "D",
+          "text": "504"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2026 年 12 月 31 日，计提减值准备前该专利技术的账面价值=2 800-2 800/500×90=2 296（万元），应确认的资产减值损失金额=2 296-2 100=196（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-single_choice-063",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "单项选择题",
+      "number": 63,
+      "globalIndex": 63,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司于 2026 年 6 月 1 日以 60 万元的价格转让一项无形资产所有权，假设不考虑相关税费。该无形资产系 2023 年 6 月 1 日购入并投入使用，其入账价值为 300 万元，法律规定的有效年限为 6 年，预计使用年限为 5 年，该无形资产按照直线法摊销。转让该无形资产发生的净损益为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "53"
+        },
+        {
+          "key": "B",
+          "text": "－53"
+        },
+        {
+          "key": "C",
+          "text": "63"
+        },
+        {
+          "key": "D",
+          "text": "－60"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "转让净损益=60-（300-300/5/12×36）=-60（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-064",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 64,
+      "globalIndex": 64,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于企业土地使用权的会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "工业企业持有并准备增值后转让的土地使用权作为投资性房地产核算"
+        },
+        {
+          "key": "B",
+          "text": "工业企业将购入的用于建造办公楼的土地使用权作为无形资产核算"
+        },
+        {
+          "key": "C",
+          "text": "工业企业将以经营租赁方式租出的土地使用权作为无形资产核算"
+        },
+        {
+          "key": "D",
+          "text": "房地产开发企业将购入的用于建造商品房的土地使用权作为存货核算"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "工业企业将土地使用权以经营租赁方式出租作为投资性房地产核算，选项 C 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-065",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 65,
+      "globalIndex": 65,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 1 月 1 日，甲公司从乙公司购入一项无形资产，由于资金周转紧张，甲公司与乙公司协议以分期付款方式支付款项。协议约定：该无形资产作价 2 000 万元，甲公司每年年末付款 400 万元，分 5 年付清。假定银行同期贷款利率为 5%，5 年期 5%利率的年金现值系数为 4.3295。不考虑其他因素，下列甲公司与该无形资产相关的会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2025 年财务费用增加 86.59 万元"
+        },
+        {
+          "key": "B",
+          "text": "2026 年财务费用增加 70.92 万元"
+        },
+        {
+          "key": "C",
+          "text": "2025 年 1 月 1 日，确认无形资产 2 000 万元"
+        },
+        {
+          "key": "D",
+          "text": "2025 年 12 月 31 日，长期应付款的摊余成本为 2 000 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "2025 年财务费用增加=400×4.3295×5%=86.59（万元），选项 A 正确；2026 年财务费用增加=（1 731.8+86.59-400）×5%=70.92（万元），选项 B 正确；2025 年 1 月 1 日，确认无形资产=400×4.3295=1 731.8（万元），选项 C 错误；2025 年 12 月 31 日，长期应付款的摊余成本=1 731.8+86.59-400=1 418.39（万元），选项 D 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-066",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 66,
+      "globalIndex": 66,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于企业内部研发支出会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "开发阶段的支出，满足资本化条件的，应予以资本化"
+        },
+        {
+          "key": "B",
+          "text": "无法合理分配的多项开发活动所发生的共同支出，应全部予以费用化"
+        },
+        {
+          "key": "C",
+          "text": "无法区分研究阶段和开发阶段的支出，应全部予以费用化"
+        },
+        {
+          "key": "D",
+          "text": "研究阶段的支出，应全部予以费用化"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-067",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 67,
+      "globalIndex": 67,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项满足资本化条件的企业内部的研发支出，应予以资本化会计处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "开发过程中研发人员支出"
+        },
+        {
+          "key": "B",
+          "text": "开发过程中正常耗用的材料"
+        },
+        {
+          "key": "C",
+          "text": "开发过程中所用专利权的摊销"
+        },
+        {
+          "key": "D",
+          "text": "开发过程中固定资产的折旧"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "内部研发无形资产的构成因素有：无形资产耗费的材料、劳务成本、注册费、开发过程中使用的其他专利权和特许权的摊销、按照借款费用的处理原则可以资本化的利息费用等，所以本题选择 ABCD。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-068",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 68,
+      "globalIndex": 68,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于企业无形资产残值会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "无形资产残值的估计应以其处置时的可收回金额为基础"
+        },
+        {
+          "key": "B",
+          "text": "预计残值发生变化的，应对已计提的摊销金额进行调整"
+        },
+        {
+          "key": "C",
+          "text": "无形资产预计残值高于其账面价值时，不再摊销"
+        },
+        {
+          "key": "D",
+          "text": "资产负债表日应当对无形资产的残值进行复核"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "预计净残值发生变化的，属于会计估计变更，不能对已计提的摊销金额进行调整，选项 B 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-069",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 69,
+      "globalIndex": 69,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于使用寿命有限的无形资产摊销的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "自达到预定用途的下月起开始摊销"
+        },
+        {
+          "key": "B",
+          "text": "至少应于每年年末对使用寿命进行复核"
+        },
+        {
+          "key": "C",
+          "text": "有特定产量限制的经营特许权，应采用产量法进行摊销"
+        },
+        {
+          "key": "D",
+          "text": "无法可靠确定与其有关的经济利益预期消耗方式的，应采用直线法进行摊销"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "使用寿命有限的无形资产应自达到预定用途的当月开始摊销，选项 A 不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-070",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 70,
+      "globalIndex": 70,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于无形资产会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "使用寿命不确定的无形资产，至少应于每年年末进行减值测试"
+        },
+        {
+          "key": "B",
+          "text": "无形资产计提的减值准备后，在以后会计期间可以转回"
+        },
+        {
+          "key": "C",
+          "text": "使用寿命不确定的无形资产，不应计提摊销"
+        },
+        {
+          "key": "D",
+          "text": "使用寿命有限的无形资产，摊销方法由年限平均法变更为产量法时，按会计估计变更处理"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项 B，无形资产计提的减值准备在以后持有期间不可以转回。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-multiple_choice-071",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "多项选择题",
+      "number": 71,
+      "globalIndex": 71,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 5 月 1 日，甲公司以 800 万元的价格购入一项专有技术用于生产 M 产品，预计使用该专有技术可生产 1 000 万吨 M 产品，甲公司按照产量法对该专有技术进行摊销，预计净残值为 0。2025 年甲公司实际生产 60 万吨 M 产品，当年尚未对外出售。2026 年 1 月 1 日，甲公司改变经营战略，将 M 产品的未来产量调整为 800 万吨。2026 年甲公司实际生产 100 万吨 M 产品。2026 年 12 月 31 日，经减值测试，该专有技术的可收回金额为 600 万元。不考虑其他因素，下列各项关于甲公司该专有技术的会计处理中，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2025 年末因该专有技术的摊销而减少营业利润的金额为 48 万元"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 12 月 31 日，该专有技术应确认资产减值损失金额为 58 万元"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 12 月 31 日，该专有技术在资产负债表中的列报金额为 600 万元"
+        },
+        {
+          "key": "D",
+          "text": "2026 年该专有技术的摊销金额为 100 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "甲公司对该专有技术采用产量法进行摊销。2025 年该专有技术的摊销金额=800×60/1 000=48（万元），摊销计入制造费用，且生产的产品尚未对外销售，均不影响营业利润，选项 A 不当选；因 2026 年 1 月 1 日进行了会计估计变更，将预计产量由 1 000 万吨调整为 800 万吨，则 2026 年该专有技术的摊销金额=（800-48）×100/800=94（万元），选项 D 不当选；2026 年 12 月 31 日，减值测试前，该专有技术的账面价值=（800-48）-94=658（万元），大于可收回金额 600 万元，发生减值，应确认资产减值损失的金额为 58 万元（658-600），选项 B 当选；2026 年 12 月 31 日，该专有技术在资产负债表中的列报金额为 600 万元，选项 C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-072",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "判断题",
+      "number": 72,
+      "globalIndex": 72,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业将土地使用权用于自行开发建造自用厂房的，该土地使用权与厂房应分别进行摊销和计提折旧。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "土地使用权用于自行开发建造厂房等地上建筑物时，土地使用权通常应单独确认为无形资产，土地使用权与地上建筑物分别进行摊销和计提折旧。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-073",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "判断题",
+      "number": 73,
+      "globalIndex": 73,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "为使用企业内部开发的无形资产而发生的员工培训支出，不构成企业无形资产的开发成本。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "员工培训支出应计入管理费用，不计入无形资产成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock01-true_false-074",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第四章 无形资产",
+      "section": "判断题",
+      "number": 74,
+      "globalIndex": 74,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "无形资产预期不能为企业带来未来经济利益的，企业应当将其账面价值转入当期损益。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（1）906147.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（1）906147.md",
+    "pdfIndex": 1,
+    "chapterHint": "押题客观题（1）- 第01-04章",
+    "totalQuestions": 74,
+    "missingAnswers": []
+  }
+}
