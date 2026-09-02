@@ -33,7 +33,7 @@
 npm install
 
 # 准备默认题库（从 data/ 校验并复制到 public/data/）
-npm run question-bank:prepare
+npm run banks:prepare
 
 # 开发
 npm run dev
@@ -48,13 +48,14 @@ npm run build
 npm start
 ```
 
-首次打开应用时会自动把内置默认题库导入 IndexedDB（约 4MB）。之后可在「题库」页导入其他 JSON 题库文件。
+首次打开应用时会自动把 9 套马勇押题导入 IndexedDB。之后可在「题库」页导入其他 JSON 题库文件，多题库可在练习设置页勾选混合出题。
 
 ## 项目结构
 
 ```text
-data/question-bank.json        # 默认题库源文件
-public/data/question-bank.json # 构建产物（运行时加载）
+data/banks/*.json              # 默认题库源文件（9 套马勇押题）
+public/data/banks/*.json   # 构建产物（运行时加载）
+public/data/banks/manifest.json # 题库清单
 public/manifest.webmanifest    # PWA 清单
 public/sw.js                   # Service Worker
 scripts/                       # 题库准备/校验/图标生成脚本
