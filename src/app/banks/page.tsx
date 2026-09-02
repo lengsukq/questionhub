@@ -125,24 +125,15 @@ export default function BanksPage() {
               <Card
                 key={bank.id}
                 className={cn(
-                  "relative overflow-hidden flex flex-col justify-between p-6 transition-all duration-300",
+                  "flex flex-col justify-between p-6 transition-all duration-300",
                   isActive
                     ? "border-ios-blue/40 bg-gradient-to-br from-ios-blue/8 via-ios-surface to-ios-surface ring-2 ring-ios-blue/30 shadow-lg shadow-ios-blue/5"
                     : "hover:border-ios-blue/30 hover:shadow-md",
                 )}
               >
-                {/* 绝对定位印章标志（完全不占据布局空间） */}
-                {isActive && (
-                  <div className="pointer-events-none absolute right-4 top-4 z-10 select-none">
-                    <div className="rotate-6 rounded-xl border-2 border-dashed border-ios-blue/60 bg-ios-blue/10 px-2.5 py-1 text-[11px] font-black tracking-wider text-ios-blue shadow-xs backdrop-blur-xs">
-                      ✓ 使用中
-                    </div>
-                  </div>
-                )}
-
                 <div className="space-y-4">
                   {/* 头部标题与图标：独占完整宽度 */}
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3.5">
                     <span
                       className={cn(
                         "flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border transition-all mt-0.5",
@@ -153,7 +144,7 @@ export default function BanksPage() {
                     >
                       <HardDriveDownload className="h-5 w-5" />
                     </span>
-                    <div className={cn("min-w-0 flex-1", isActive && "pr-14")}>
+                    <div className="min-w-0 flex-1">
                       <h3 className="line-clamp-2 text-[15px] font-bold leading-snug text-ios-label break-words">
                         {bank.name}
                       </h3>
