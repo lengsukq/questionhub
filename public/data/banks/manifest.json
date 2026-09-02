@@ -1,0 +1,164 @@
+[
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（1）906147.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（1）906147",
+    "questionCount": 74,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 30,
+      "multiple_choice": 31,
+      "true_false": 13
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（2）673107.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（2）673107",
+    "questionCount": 57,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 28,
+      "multiple_choice": 23,
+      "true_false": 6
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（3）263526.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（3）263526",
+    "questionCount": 49,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 24,
+      "multiple_choice": 20,
+      "true_false": 5
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（4）252365.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（4）252365",
+    "questionCount": 51,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 30,
+      "multiple_choice": 17,
+      "true_false": 4
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（5）349819.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（5）349819",
+    "questionCount": 44,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 23,
+      "multiple_choice": 16,
+      "true_false": 5
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（6）830355.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（6）830355",
+    "questionCount": 57,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 24,
+      "multiple_choice": 24,
+      "true_false": 9
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（7）609931.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（7）609931",
+    "questionCount": 35,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 12,
+      "multiple_choice": 18,
+      "true_false": 5
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（8）450370.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（8）450370",
+    "questionCount": 31,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 13,
+      "multiple_choice": 13,
+      "true_false": 5
+    }
+  },
+  {
+    "file": "马勇-2026中级会计实务-押题-客观题（9）101835.json",
+    "name": "马勇-2026中级会计实务-押题-客观题（9）101835",
+    "questionCount": 35,
+    "subjects": [
+      {
+        "id": "accounting",
+        "name": "中级会计实务",
+        "year": 2026,
+        "exam": "中级会计资格考试"
+      }
+    ],
+    "typeCounts": {
+      "single_choice": 15,
+      "multiple_choice": 9,
+      "true_false": 11
+    }
+  }
+]

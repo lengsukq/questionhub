@@ -1,0 +1,2643 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:43:17.002594+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司系增值税一般纳税人。2025 年 12 月 31 日购入不需安装的设备一台，取得增值税专用发票注明价款 1 000 万元，增值税税额 130 万元。甲公司预计该设备尚可使用年限为 5 年，预计净残值为零，采用双倍余额递减法计提折旧。税法规定此类固定资产应按年限平均法计提折旧，预计净残值和使用年限与会计相同。则 2026 年 12 月 31 日该固定资产的计税基础为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 000"
+        },
+        {
+          "key": "B",
+          "text": "800"
+        },
+        {
+          "key": "C",
+          "text": "600"
+        },
+        {
+          "key": "D",
+          "text": "936"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "固定资产按税法规定在 2026 年应计提折旧金额$=1 000/5=200$（万元），则 2026 年 12 月 31 日该固定资产的计税基础$=1 000-200=800$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2025 年 12 月 31 日“预计负债—产品质量保证”科目贷方余额为 500 万元，2026 年实际发生产品质量保证费用 200 万元，2026 年计提产品质量保证费用 300 万元。税法规定，产品质量保证费用在实际发生时允许税前扣除，则 2026 年 12 月 31 日预计负债的计税基础为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "800"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "600"
+        },
+        {
+          "key": "D",
+          "text": "300"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "根据税法规定，产品质量保证费用在实际发生时允许税前扣除，则 2026 年 12 月 31 日预计负债的计税基础=账面价值（500-200+300）-未来期间可税前扣除金额（500-200+300）$=0$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 20 日，甲公司以每股 4 元的价格从股票市场购入 100 万股乙公司普通股股票，将其作为交易性金融资产。2026 年 12 月 31 日，甲公司持有乙公司普通股股票的公允价值为每股 6 元。不考虑其他因素，2026 年 12 月 31 日，甲公司该项业务应确认的应纳税暂时性差异为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "600"
+        },
+        {
+          "key": "C",
+          "text": "400"
+        },
+        {
+          "key": "D",
+          "text": "200"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "2026 年年末，交易性金融资产账面价值 600 万元，计税基础 400 万元，所以产生应纳税暂时性差异 200 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项负债中，其计税基础为零的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因欠税产生的应交税款滞纳金"
+        },
+        {
+          "key": "B",
+          "text": "因购入存货形成的应付账款"
+        },
+        {
+          "key": "C",
+          "text": "因确认保修费用形成的预计负债"
+        },
+        {
+          "key": "D",
+          "text": "为职工计提的应付养老保险金"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "负债的计税基础为负债账面价值减去以后可以税前列支的金额。选项 C，企业因保修费用确认的预计负债，税法允许在以后实际发生时税前列支，即该预计负债的计税基础=其账面价值-税前列支的金额=0。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 12 月 7 日，甲公司以银行存款 600 万元购入一台生产设备并立刻投入使用，该设备取得时的成本与计税基础一致。2026 年度甲公司对该固定资产计提折旧 200 万元，企业所得税纳税申报时允许税前扣除的折旧额为 120 万元。2026 年 12 月 31 日，甲公司估计该项固定资产的可收回金额为 460 万元，不考虑增值税相关税费及其他因素，2026 年 12 月 31 日，甲公司该项固定资产产生的暂时性差异为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "可抵扣暂时性差异 80 万元 版权所有 侵权必究"
+        },
+        {
+          "key": "B",
+          "text": "应纳税暂时性差异 60 万元"
+        },
+        {
+          "key": "C",
+          "text": "可抵扣暂时性差异 140 万元"
+        },
+        {
+          "key": "D",
+          "text": "应纳税暂时性差异 20 万元"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "2026 年年末固定资产账面价值$=600-200=400$（万元），计税基础$=600-120=480$（万元），资产账面价值小于计税基础，形成可抵扣暂时性差异 80 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-006",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 12 月 31 日，甲公司以银行存款 180 万元外购一台生产用设备并立即投入使用，预计使用年限为 5 年，预计净残值为 30 万元，采用年数总和法计提折旧。当日，该设备的初始入账金额与计税基础一致。根据税法规定，该设备在 2026 年至 2030 年每年可予税前扣除的折旧金额均为 36 万元。不考虑其他因素，2026 年 12 月 31 日，该设备的账面价值与计税基础之间形成的暂时性差异为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "36"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "24"
+        },
+        {
+          "key": "D",
+          "text": "14"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "2026 年 12 月 31 日，该设备的账面价值$=180-(180-30)\\times5/15=130$（万元），计税基础$=180-36=144$（万元），资产的账面价值小于计税基础，产生可抵扣暂时性差异 14 万元（144-130）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-007",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 10 月 18 日，甲公司以银行存款 3 000 万元购入乙公司的股票，分类为以公允价值计量且其变动计入当期损益的金融资产。2025 年 12 月 31 日该股票投资的公允价值为 3 200 万元，2026 年 12 月 31 日该股票投资的公允价值为 3 250 万元。甲公司适用的企业所得税税率为 25%。2026 年 12 月 31 日，该股票投资的计税基础为 3 000 万元。不考虑其他因素，2026 年 12 月 31 日甲公司因该股票投资公允价值变动应确认递延所得税负债的余额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "12.5"
+        },
+        {
+          "key": "B",
+          "text": "62.5"
+        },
+        {
+          "key": "C",
+          "text": "112.5"
+        },
+        {
+          "key": "D",
+          "text": "50"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "2026 年 12 月 31 日，交易性金融资产的期末账面价值为 3 250 万元，计税基础为 3 000 万元，资产账面价值大于计税基础，产生应纳税暂时性差异，应纳税暂时性差异期末余额$=3 250-3 000=250$（万元），应确认递延所得税负债的余额$=250\\times25\\%=62.5$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-008",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年，甲公司当期应交所得税为 15 800 万元，递延所得税资产本期净增加 320 万元（其中 20 万元对应其他综合收益），递延所得税负债未发生变化，不考虑其他因素，2026 年度利润表应列示的所得税费用为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "15 480"
+        },
+        {
+          "key": "B",
+          "text": "16 100"
+        },
+        {
+          "key": "C",
+          "text": "15 500"
+        },
+        {
+          "key": "D",
+          "text": "16 120"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2026 年度利润表应列示的所得税费用=应交所得税费用+递延所得税费用\n\n$=15 800-(320-20)=15 500$（万元）",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-009",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 31 日，甲公司因投资性房地产和其他债权投资的公允价值变动，分别确认了 10 万元的递延所得税资产和 20 万元的递延所得税负债。甲公司当期应交所得税的金额为 150 万元。假定不考虑其他因素，甲公司 2026 年度利润表“所得税费用”项目应列示的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "120"
+        },
+        {
+          "key": "B",
+          "text": "140"
+        },
+        {
+          "key": "C",
+          "text": "160"
+        },
+        {
+          "key": "D",
+          "text": "180"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "会计分录如下：\n\n借：所得税费用 140\n\n递延所得税资产 10\n\n贷：应交税费--应交所得税 150\n\n借：其他综合收益 20\n\n贷：递延所得税负债 20",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-010",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "单项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司对乙公司进行投资，占有表决权股份的 80%，从而能够控制乙公司。2026 年 5 月 2 日甲公司将成本为 800 万元的一批商品出售给乙公司，售价 1 000 万元（不含增\n值税）。至 2026 年 12 月 31 日，乙公司将该批商品已对外出售 60%。假定涉及商品未发生减值。甲、乙公司适用企业所得税税率均为 25%，且未来期间不会改变，均采用资产负债表债务法核算所得税。根据税法规定，企业存货应以历史成本作为计税基础。则甲公司 2026 年 12 月 31 日合并财务报表中，上述存货应确认的递延所得税资产为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "20"
+        },
+        {
+          "key": "B",
+          "text": "30"
+        },
+        {
+          "key": "C",
+          "text": "50"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "2026 年合并财务报表中应确认的递延所得税资产$=(1 000-800)\\times(1-60\\%)\\times25\\%=20$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-011",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "多项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对固定资产进行后续计量时，账面价值与计税基础不一致的原因有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-012",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "多项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，能够产生应纳税暂时性差异的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "账面价值大于其计税基础的资产"
+        },
+        {
+          "key": "B",
+          "text": "账面价值小于其计税基础的负债"
+        },
+        {
+          "key": "C",
+          "text": "超过税法扣除标准的业务宣传费"
+        },
+        {
+          "key": "D",
+          "text": "按税法规定可以结转以后年度的未弥补亏损"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "资产账面价值大于其计税基础、负债账面价值小于其计税基础，产生应纳税暂时性差异，选项 A 和 B 正确；选项 C 和 D 产生的为可抵扣暂时性差异。\n\n11 学会计就到之了课堂",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-013",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "多项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项资产和负债中，因账面价值与计税基础不一致形成暂时性差异的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "使用寿命不确定的无形资产"
+        },
+        {
+          "key": "B",
+          "text": "已计提减值准备的固定资产"
+        },
+        {
+          "key": "C",
+          "text": "已确认公允价值变动损益的交易性金融资产"
+        },
+        {
+          "key": "D",
+          "text": "因违反税法规定应缴纳但尚未缴纳的滞纳金"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项 A，使用寿命不确定的无形资产会计上不计提摊销，但税法规定会按一定方法进行摊销，会形成暂时性差异；选项 B，企业计提的资产减值准备在发生实质性损失之前税法不承认，因此不允许税前扣除，会形成暂时性差异；选项 C，交易性金融资产持有期间公允价值的变动税法上也不承认，会形成暂时性差异；选项 D，因违反税法规定应缴纳但尚未缴纳的滞纳金是企业的负债，税法不允许扣除，是永久性差异，不产生暂时性差异。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-014",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "多项选择题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于企业递延所得税负债会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "商誉初始确认时形成的应纳税暂时性差异应确认相应的递延所得税负债"
+        },
+        {
+          "key": "B",
+          "text": "与损益相关的应纳税暂时性差异确认的递延所得税负债应计入所得税费用"
+        },
+        {
+          "key": "C",
+          "text": "应纳税暂时性差异转回期间超过一年的，相应的递延所得税负债应以现值进行计量"
+        },
+        {
+          "key": "D",
+          "text": "递延所得税负债以相关应纳税暂时性差异转回期间适用的企业所得税税率计量"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "选项 A，商誉初始确认时形成的应纳税暂时性差异不应确认递延所得税负债；选项 C，无论应纳税暂时性差异转回期间如何，递延所得税负债都不要求折现。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-015",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "多项选择题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "A 公司 2025 年 12 月 1 日取得一项其他债权投资，取得成本为 5 000 万元。2025 年 12 月 31 日，该项其他债权投资的公允价值为 4 800 万元。2026 年 12 月 31 日，该项其他债权投资的公允价值为 5 200 万元。A 公司适用的所得税税率为 25%。则下列会计表述中正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2025 年 12 月 31 日 A 公司应确认递延所得税资产 50 万元"
+        },
+        {
+          "key": "B",
+          "text": "2025 年 12 月 31 日 A 公司确认递延所得税负债会减少所得税费用 50 万元"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 12 月 31 日 A 公司应转回递延所得税资产 50 万元"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 12 月 31 日 A 公司应确认递延所得税负债 50 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "2025 年 12 月 31 日 A 公司应编制与所得税相关的会计分录：\n借：递延所得税资产 50\n贷：其他综合收益 50\n2026 年 12 月 31 日 A 公司应编制与所得税相关的会计分录：\n借：其他综合收益 100\n贷：递延所得税负债 50\n递延所得税资产 50",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-016",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "多项选择题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2026 年取得营业收入 4 000 万元，发生广告费用 900 万元，截至 2026 年年末，广告费用尚未支付给广告公司。根据税法相关规定，企业发生的广告费不超过营业收入 15%的部分允许当期税前扣除，超过部分允许结转到以后纳税年度扣除。甲公司 2026 年适用的企业所得税税率为 25%，2026 年年末，甲公司被认定为高新技术企业，自 2027 年 1 月 1 日起适用的企业所得税税率为 15%，预计未来能够产生足够的应纳税所得额用以抵减可抵扣暂时性差异。不考虑其他因素，下列关于甲公司 2026 年对该项广告费确认相关递延所得税的会计处理中，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "确认所得税费用减少 45 万元"
+        },
+        {
+          "key": "B",
+          "text": "确认递延所得税资产增加 75 万元"
+        },
+        {
+          "key": "C",
+          "text": "确定该广告支出产生可抵扣暂时性差异为 300 万元"
+        },
+        {
+          "key": "D",
+          "text": "确定该广告费支出形成的负债的计税基础为 600 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "甲公司 2026 年因尚未支付的广告费形成负债的账面价值为 900 万元，计税基础＝账面价值－未来期间可税前扣除的金额＝900－（900－4 000×15%）＝600（万元），形成可抵扣暂时性差异 300 万元，应确认递延所得税资产金额＝300×15%＝45（万元），减少当期所得税费用 45 万元。综上所述，选项 A、C、D 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-017",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "判断题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "非同一控制下的企业合并中，购买日商誉的账面价值大于计税基础产生应纳税暂时性差异的，应当确认递延所得税负债。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "非同一控制下的企业合并中，购买日商誉的账面价值大于计税基础产生的应纳税暂时性差异，不应确认递延所得税负债。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-018",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "判断题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业应当在资产负债表日对递延所得税资产的账面价值进行复核。如果未来期间很可能无法取得足够的应纳税所得额用以利用递延所得税资产的利益，应当减记递延所得税资产的账面价值。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-019",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十七章 所得税",
+      "section": "判断题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "递延所得税负债应以相关应纳税暂时性差异产生当期适用的所得税税率计量。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "递延所得税负债应以相关应纳税暂时性差异转回期间适用的所得税税率计量。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-020",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业将收到的投资者以外币投入的资本折算为记账本位币时，应采用的折算汇率是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "投资合同约定的汇率"
+        },
+        {
+          "key": "B",
+          "text": "投资合同签订时的即期汇率"
+        },
+        {
+          "key": "C",
+          "text": "收到投资款时的即期汇率"
+        },
+        {
+          "key": "D",
+          "text": "收到投资款当月的平均汇率"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "企业收到投资者以外币投入的资本，无论是否有合同约定汇率，均不得采用合同约定汇率和即期汇率的近似汇率折算，而是采用交易发生日的即期汇率折算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲企业的记账本位币为人民币，2026 年分次收到某投资者以美元投入的资本 2 000 万美元，投资合同约定的汇率为 1 美元=6.94 元人民币。其中 2026 年 12 月 10 日收到第一笔投资 1 000 万美元，当日的即期汇率为 1 美元=6.93 元人民币；2026 年 12 月 20 日收到第二笔投资 1 000 万美元，当日的即期汇率为 1 美元=6.96 元人民币。2026 年 12 月 31 日的即期汇率为 1 美元=6.95 元人民币。2026 年 12 月 31 日，甲企业资产负债表中该投资者的所有者权益金额为人民币（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "13 890"
+        },
+        {
+          "key": "B",
+          "text": "13 880"
+        },
+        {
+          "key": "C",
+          "text": "13 900"
+        },
+        {
+          "key": "D",
+          "text": "13 700"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "资产负债表中该投资者的所有者权益金额＝1 000×6.93＋1 000×6.96＝13 890（万元人民币）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-022",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司以人民币作为记账本位币。2026 年 12 月 31 日，即期汇率为 1 美元=6.94 人民币元，甲公司银行存款美元账户借方余额为 1 500 万美元，应付账款美元账户贷方余\n额为 100 万美元。两者在汇率变动调整前折算的人民币余额分别为 10 350 万元和 690 万元。不考虑其他因素，2026 年 12 月 31 日因汇率变动对甲公司 2026 年 12 月营业利润的影响为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "增加 56 万元"
+        },
+        {
+          "key": "B",
+          "text": "减少 64 万元"
+        },
+        {
+          "key": "C",
+          "text": "减少 60 万元"
+        },
+        {
+          "key": "D",
+          "text": "增加 4 万元"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "银行存款确认的汇兑收益＝1 500×6.94－10 350＝60（万元），应付账款的汇兑损失＝100×6.94－690＝4（万元）；2026 年 12 月 31 日因汇率变动导致甲公司增加的营业利润＝60－4＝56（万元），选项 A 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-023",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司以人民币作为记账本位币，对期末存货按成本与可变现净值孰低计量。2026 年 5 月 1 日，甲公司进口一批商品，价款为 200 万美元，当日即期汇率为 1 美元=6.1 元人民币，货款以银行存款支付。2026 年 12 月 31 日，甲公司该批商品中仍有 50%尚未出售，可变现净值为 90 万美元，当日即期汇率为 1 美元=6.2 元人民币。不考虑其他因素，2026 年 12 月 31 日，因上述事项对甲公司利润总额的影响金额为（ ）万元人民币。",
+      "options": [
+        {
+          "key": "A",
+          "text": "减少 104"
+        },
+        {
+          "key": "B",
+          "text": "增加 104"
+        },
+        {
+          "key": "C",
+          "text": "增加 52"
+        },
+        {
+          "key": "D",
+          "text": "减少 52"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "期末结存商品可变现净值＝90×6.2＝558（万元人民币），期末存货成本＝200×6.1×50%＝610（万元人民币），期末存货应确认资产减值损失＝610－558＝52（万元人民币），减少利润总额 52 万元人民币，选项 D 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-024",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司的记账本位币为人民币，其外币交易采用交易日的即期汇率折算。2026 年 12 月 5 日，甲公司按每股 5 欧元的价格以银行存款购入乙公司股票 100 000 股，分类为以公允价值计量且其变动计入当期损益的金融资产，当日即期汇率为 1 欧元=7.85 元人民币。2026 年 12 月 31 日，乙公司股票的公允价值为每股 4 欧元，当日即期汇率为 1 欧元=7.9 元人民币。该金融资产投资对甲公司 2026 年营业利润的影响金额为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "减少 76.5 万元人民币"
+        },
+        {
+          "key": "B",
+          "text": "减少 28.5 万元人民币"
+        },
+        {
+          "key": "C",
+          "text": "增加 2.5 万元人民币"
+        },
+        {
+          "key": "D",
+          "text": "减少 79 万元人民币"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "外币项目以公允价值计量且其变动计入当期损益的金融资产的公允价值变动和汇\n\n兑差额统一计入公允价值变动损益。该金融资产投资对甲公司 2026 年营业利润的影响金额$=4 \\times 10 \\times 7.9 - 5 \\times 10 \\times 7.85 = -76.5$（万元人民币），选项 A 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-025",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 1 日，甲公司以 300 万港元取得乙公司在香港联交所挂牌交易的 H 股 100 万股，直接指定为以公允价值计量且其变动计入其他综合收益的金融资产核算。2026 年 12 月 31 日，上述股票的公允价值为 350 万港元。甲公司以人民币作为记账本位币，假定 2026 年 12 月 1 日和 31 日 1 港元即期汇率分别为 0.83 人民币元和 0.81 人民币元。不考虑其他因素，2026 年 12 月 31 日，甲公司因该资产计入所有者权益的金额为（ ）万人民币元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "34.5"
+        },
+        {
+          "key": "B",
+          "text": "40.5"
+        },
+        {
+          "key": "C",
+          "text": "41"
+        },
+        {
+          "key": "D",
+          "text": "41.5"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "计入所有者权益的金额$=350 \\times 0.81 - 300 \\times 0.83 = 34.5$（万人民币元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-026",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项外币资产发生的汇兑差额，不应计入财务费用的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "应收账款"
+        },
+        {
+          "key": "B",
+          "text": "银行存款"
+        },
+        {
+          "key": "C",
+          "text": "交易性金融资产"
+        },
+        {
+          "key": "D",
+          "text": "短期借款"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "交易性金融资产持有期间发生的汇兑差额应计入公允价值变动损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-027",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于外币财务报表折算，下列项目应当采用资产负债表日的即期汇率进行折算的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定资产"
+        },
+        {
+          "key": "B",
+          "text": "管理费用"
+        },
+        {
+          "key": "C",
+          "text": "营业收入"
+        },
+        {
+          "key": "D",
+          "text": "盈余公积"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "外币报表折算，资产负债表中的资产和负债项目，采用资产负债表日的即期汇率折算；选项 BC 不属于资产负债表的报表项目，选项 D 属于所有者权益项目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-028",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "单项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对外币财务报表进行折算时，下列各项中，应当采用交易发生日即期汇率折算的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定资产"
+        },
+        {
+          "key": "B",
+          "text": "未分配利润"
+        },
+        {
+          "key": "C",
+          "text": "实收资本"
+        },
+        {
+          "key": "D",
+          "text": "应付账款"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "选项 A、D，属于资产负债表中的资产和负债项目，采用资产负债表日的即期汇率折算；选项 B，“未分配利润”项目的金额是按照所有者权益变动表中相关项目计算得出，不按照特定的汇率直接折算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-029",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于企业在选择记账本位币时应当考虑的因素有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "融资活动获得的币种"
+        },
+        {
+          "key": "B",
+          "text": "保存从经营活动中收取款项所使用的币种"
+        },
+        {
+          "key": "C",
+          "text": "销售商品时计价和结算使用的币种"
+        },
+        {
+          "key": "D",
+          "text": "结算职工薪酬通常使用的币种"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "企业选定记账本位币，应当考虑下列因素：（1）该货币主要影响商品和劳务的销售价格，通常以该货币进行商品和劳务的计价及结算；（2）该货币主要影响商品和劳务所需人工、材料和其他费用，通常以该货币进行上述费用的计价和结算；（3）融资活动所获得的货币以及保存从经营活动中收取款项所使用的货币。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-030",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "关于记账本位币，以下表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "记账本位币是指企业经营所处的主要经济环境中的货币"
+        },
+        {
+          "key": "B",
+          "text": "企业变更记账本位币的，应当在附注中披露变更的理由"
+        },
+        {
+          "key": "C",
+          "text": "企业变更记账本位币产生的汇兑差额应当单独列示"
+        },
+        {
+          "key": "D",
+          "text": "企业主要经济环境发生重大变化，可以变更记账本位币"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "选项 C，企业变更记账本位币时不产生汇兑差额。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-031",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，可以使用即期汇率的近似汇率进行折算的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "接受投资收到的外币"
+        },
+        {
+          "key": "B",
+          "text": "购入原材料应支付的外币"
+        },
+        {
+          "key": "C",
+          "text": "取得借款收到的外币"
+        },
+        {
+          "key": "D",
+          "text": "销售商品应收取的外币"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "企业收到投资者以外币投入的资本，无论是否有合同约定汇率，均不得采用合同约定汇率和即期汇率的近似汇率折算，而是采用交易发生日的即期汇率折算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-032",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项外币金融资产事项中，会导致企业产生直接计入所有者权益利得或损失的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "以公允价值计量且其变动计入当期损益的债券投资的公允价值变动"
+        },
+        {
+          "key": "B",
+          "text": "以公允价值计量且其变动计入其他综合收益的债券投资的汇兑差额"
+        },
+        {
+          "key": "C",
+          "text": "指定为以公允价值计量且其变动计入其他综合收益的股票投资的公允价值变动"
+        },
+        {
+          "key": "D",
+          "text": "指定为以公允价值计量且其变动计入其他综合收益的股票投资的汇兑差额"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "直接计入所有者权益利得或损失指的是直接计入其他综合收益。选项 A，计入公允价值变动损益；选项 B，计入财务费用；选项 C 和 D，均计入其他综合收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-033",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项涉及外币业务的账户中，企业因汇率变动需于资产负债表日对其记账本位币余额进行调整的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定资产"
+        },
+        {
+          "key": "B",
+          "text": "长期借款"
+        },
+        {
+          "key": "C",
+          "text": "应收账款"
+        },
+        {
+          "key": "D",
+          "text": "应付债券"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "选项 A，固定资产是历史成本计量的非货币性资产，资产负债表日不需要调整其记账本位币金额。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-034",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司下列各项与外币交易相关的会计处理中，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "为建造固定资产借入外币专门借款，在资本化期间内，外币专门借款的本金及其利息的汇兑差额应当予以资本化，计入在建工程成本"
+        },
+        {
+          "key": "B",
+          "text": "对于以外币购入的存货，期末应将其可变现净值按照即期汇率进行折算，并以此为基础计提存货跌价准备"
+        },
+        {
+          "key": "C",
+          "text": "对于以外币计价的交易性金融资产，期末应将其公允价值按照即期汇率进行折算，并以此为基础确认公允价值变动损益"
+        },
+        {
+          "key": "D",
+          "text": "收到投资者以外币投入的资本，应按照合同约定汇率折算为实收资本"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "企业收到投资者以外币投入的资本，无论是否有合同约定汇率，均不得采用合同约定汇率和即期汇率的近似汇率折算，而应当采用交易发生日的即期汇率折算，选项 D 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-035",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于外币财务报表折算的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "应付债券采用资产负债表日的即期汇率进行折算"
+        },
+        {
+          "key": "B",
+          "text": "应付账款采用资产负债表日的即期汇率进行折算"
+        },
+        {
+          "key": "C",
+          "text": "固定资产采用资产负债表日的即期汇率进行折算"
+        },
+        {
+          "key": "D",
+          "text": "实收资本采用交易发生时的即期汇率进行折算"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "外币财务报表折算时，资产负债表中的资产和负债项目，采用资产负债表日的即期汇率进行折算，所有者权益项目除“未分配利润”项目外，其他项目采用发生时的即期汇率进行折算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-036",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 36,
+      "globalIndex": 36,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对外币财务报表进行折算时，下列各项中，应当采用资产负债表日的即期汇率进行折算的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "合同资产"
+        },
+        {
+          "key": "B",
+          "text": "其他综合收益"
+        },
+        {
+          "key": "C",
+          "text": "应付债券"
+        },
+        {
+          "key": "D",
+          "text": "营业收入"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "选项 A、C，属于资产负债表中的资产和负债项目，采用资产负债表日的即期汇率折算；选项 B，属于资产负债表中的所有者权益项目，采用发生时的即期汇率折算；选项 D，属于利润表中的收入项目，采用交易发生日的即期汇率折算，也可以采用按照系统合理的方法确定的、与交易发生日的即期汇率近似的汇率折算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-037",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 37,
+      "globalIndex": 37,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对境外经营财务报表折算时，下列各项中，应当采用资产负债表日即期汇率折算的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "固定资产"
+        },
+        {
+          "key": "B",
+          "text": "未分配利润"
+        },
+        {
+          "key": "C",
+          "text": "实收资本"
+        },
+        {
+          "key": "D",
+          "text": "应付账款"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "对企业外币财务报表进行折算时，资产负债表中的资产和负债项目，采用资产负债表日的即期汇率折算，所有者权益项目除“未分配利润”项目外，其他项目采用发生时的即期汇\n\n率折算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-038",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 38,
+      "globalIndex": 38,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于资产负债表外币折算的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "外币报表折算差额应在所有者权益项目下列示"
+        },
+        {
+          "key": "B",
+          "text": "采用历史成本计量的资产项目应按资产确认时的即期汇率折算"
+        },
+        {
+          "key": "C",
+          "text": "采用公允价值计量的资产项目应按资产负债表日即期汇率折算"
+        },
+        {
+          "key": "D",
+          "text": "“未分配利润”项目以外的其他所有者权益项目应按发生时的即期汇率折算"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "外币报表折算差额在资产负债表所有者权益项目下列示，选项 A 正确；资产负债表中的资产和负债项目，在外币报表进行折算时，采用资产负债表日的即期汇率折算，所有者权益项目除“未分配利润”项目外，其他项目采用发生时的即期汇率折算，选项 C 和 D 正确，选项 B 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-039",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "多项选择题",
+      "number": 39,
+      "globalIndex": 39,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业因经营所处的主要经济环境发生重大变化，确需变更记账本位币时，所有项目均应采用变更当日的即期汇率折算"
+        },
+        {
+          "key": "B",
+          "text": "外币货币性资产项目的汇兑差额，企业应当计入当期损益或在建工程等科目"
+        },
+        {
+          "key": "C",
+          "text": "对于在购买日以即期汇率折算入账的固定资产，资产负债表日无需再根据汇率变动调整汇兑损益"
+        },
+        {
+          "key": "D",
+          "text": "企业外币财务报表折算差额计入当期损益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项 C，对于以历史成本计量的外币非货币性项目，已在交易发生日按当日即期汇率折算，资产负债表日不应改变其原记账本位币金额，不产生汇兑差额。选项 D，企业外币财务报表折算差额应计入其他综合收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-040",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "判断题",
+      "number": 40,
+      "globalIndex": 40,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "业务收支以人民币以外的货币为主的企业，可以按规定选定其中一种货币作为记账本位币，但编制的财务会计报告应当折算为人民币金额。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "我国《会计法》规定，业务收支以人民币以外的货币为主的单位，可以按规定选定其中一种货币作为记账本位币，但是编报的财务会计报告应当折算为人民币。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-041",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "判断题",
+      "number": 41,
+      "globalIndex": 41,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在企业不提供资金的情况下，境外经营活动产生的现金流量难以偿还其现有债务和正常情况下可预期债务的，境外经营应当选择与企业记账本位币相同的货币作为记账本位币。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-042",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十八章 外币折算",
+      "section": "判断题",
+      "number": 42,
+      "globalIndex": 42,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业将境外经营全部处置时，应将原计入所有者权益的外币财务报表折算差额全额转入当期损益。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-043",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "单项选择题",
+      "number": 43,
+      "globalIndex": 43,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025年12月4日，甲公司和乙公司签订租赁协议，租入乙公司面积为100平方米的商铺进行时装出售，租赁期为2年，每月租金为3万元，约定2026—2027年每年年末支付当年租金。乙公司于2026年1月1日将房屋钥匙交付给甲公司，甲公司收到钥匙后，开始对商铺进行装修。考虑到装修期内甲公司没有实际销售额，乙公司同意给予3个月的免租期，起租日为2026年4月1日。该项租赁的租赁期开始日为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026年12月31日"
+        },
+        {
+          "key": "B",
+          "text": "2025年12月4日"
+        },
+        {
+          "key": "C",
+          "text": "2026年1月1日"
+        },
+        {
+          "key": "D",
+          "text": "2026年4月1日"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "租赁期开始日是指出租人提供租赁资产使其可供承租人使用的起始日期。由于承租人自 2026 年 1 月 1 日起就已拥有对商铺使用权的控制（钥匙交付并对商铺进行装修），因此租赁期开始日为 2026 年 1 月 1 日，即租赁期包含出租人给予承租人的免租期。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-044",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "单项选择题",
+      "number": 44,
+      "globalIndex": 44,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司租赁一栋公寓作为本公司员工宿舍，租赁期开始日之前支付的租赁付款额为30万元，租赁期开始日尚未支付的租赁付款额的现值为120万元，发生的初始直接费用为5万元，为将租赁资产恢复至租赁条款约定状态预计将发生成本的现值为6万元，已享受的租赁激励为8万元。甲公司该项使用权资产的初始成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "169"
+        },
+        {
+          "key": "B",
+          "text": "153"
+        },
+        {
+          "key": "C",
+          "text": "131"
+        },
+        {
+          "key": "D",
+          "text": "141"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "使用权资产应当按照成本进行初始计量。该成本包括：（1）租赁负债的初始计量金额；（2）在租赁期开始日或之前支付的租赁付款额，存在租赁激励的，扣除已享受的租赁激励相关金额；（3）承租人发生的初始直接费用；（4）承租人为拆卸及移除租赁资产、复原租赁资产所在场地或将租赁资产恢复至租赁条款约定状态预计将发生的成本的现值，该项使用权资产的初始成本=30+120+5+6-8=153（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-045",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "单项选择题",
+      "number": 45,
+      "globalIndex": 45,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司与乙公司签订了使用乙公司一台大型生产设备的5年期合同，合同详细规定了生产设备的型号以及规格。该生产设备主要零件为乙公司根据甲公司生产需求单独定制，若出现故障则必须返厂维修，如需替换设备所需成本高昂。甲公司有权在整个使用期间主导已识别资产的使用目的和使用方式，并有权获得因使用该大型设备所产生的几乎全部经济利益。下列叙述中，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "乙公司在整个使用期间不具有对该设备的实质性替换权"
+        },
+        {
+          "key": "B",
+          "text": "乙公司因设备故障而替换资产的权利属于实质性替换权"
+        },
+        {
+          "key": "C",
+          "text": "该合同中不包含租赁"
+        },
+        {
+          "key": "D",
+          "text": "该合同中不存在已识别的资产"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "乙公司在设备故障时维修和替换的权利不属于实质性替换权，尽管合同规定设备故障时可以进行替换，但是替换设备所需成本高昂，因此乙公司不具有对该设备的实质性替换权，选项 A 正确，选项 B 不正确；该合同存在一定期间（租赁期 5 年）和使用权资产（设备使用权），且乙公司向甲公司转移了已识别资产的使用权，因此该合同中包含租赁，选项 C 不正确；合同中虽然没有明确指定具体设备（如设备编号），但是乙公司根据甲公司需求单独定制了该设备的主要零件，不适合其他客户使用，若该设备出现故障，只能由乙公司修理或更换，且乙公司对该设备不具有实质性替换权，因此该设备是一项已识别资产，选项 D 不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-046",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "单项选择题",
+      "number": 46,
+      "globalIndex": 46,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日，甲公司与乙公司签订租赁合同，从乙公司租入一间商铺，当日取得对该商铺的实际使用权。合同约定，该商铺不可撤销的租赁期为5年，起租日为2026年4月1日，月租金为10万元，于每月月初支付，免租期3个月，在不可撤销的租赁期到期后，\n甲公司拥有 3 年按市场价格行使的续租选择权。从 2026 年 1 月 1 日起算，该办公楼剩余使用寿命为 20 年。假设在不可撤销的租赁期结束时甲公司将行使续租选择权，不考虑其他因素，甲公司对该办公楼使用权资产计提折旧的年限是（ ）年。",
+      "options": [
+        {
+          "key": "A",
+          "text": "5"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "20"
+        },
+        {
+          "key": "D",
+          "text": "4.75"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "承租人合理确定将行使续租选择权的，租赁期应当包括续租选择权涵盖的期间，因此甲公司应按 8 年（5+3）确认租赁期，并按 8 年对该办公楼使用权资产计提折旧，选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-single_choice-047",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "单项选择题",
+      "number": 47,
+      "globalIndex": 47,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "承租人甲公司与出租人乙公司于 2026 年 1 月 1 日签订了为期 5 年的商铺租赁合同。每年年末支付租金 30 万元。甲公司确定租赁内含利率为 6%。在租赁期开始日，甲公司按租赁付款额的现值所确认的租赁负债为 126.37 万元。假定不考虑担保余值预计应支付的款项等其他因素，2026 年 12 月 31 日，租赁负债的账面价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "120"
+        },
+        {
+          "key": "B",
+          "text": "96.37"
+        },
+        {
+          "key": "C",
+          "text": "103.95"
+        },
+        {
+          "key": "D",
+          "text": "118.79"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2026 年 12 月 31 日，甲公司向乙公司支付第一年的租赁付款额 30 万元，其中：7.58 万元（126.37×6%）是当年的利息，22.42 万元（30-7.58）是本金，即租赁负债的账面价值减少 22.42 万元。2026 年 12 月 31 日，租赁负债的账面价值=126.37-22.42=103.95（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-048",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "多项选择题",
+      "number": 48,
+      "globalIndex": 48,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "一项合同要被划分为租赁，必须满足的条件有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "租赁合同存在一定的期间"
+        },
+        {
+          "key": "B",
+          "text": "合同的签订将导致标的资产所有权的变更"
+        },
+        {
+          "key": "C",
+          "text": "租赁合同存在已识别的资产"
+        },
+        {
+          "key": "D",
+          "text": "资产供应方向客户转移对已识别资产使用权的控制"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "一项合同要被划分为租赁，必须满足的条件包括：（1）租赁合同存在一定的期间；（2）租赁合同存在已识别的资产；（3）资产供应方向客户转移对已识别资产使用权的控制。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-049",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "多项选择题",
+      "number": 49,
+      "globalIndex": 49,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "关于短期租赁和低价值资产租赁，下列项目中正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "低价值资产租赁的判定受承租人规模、性质情况的影响"
+        },
+        {
+          "key": "B",
+          "text": "包含购买选择权的租赁不属于短期租赁"
+        },
+        {
+          "key": "C",
+          "text": "承租人可以将短期租赁和低价值资产租赁的租赁付款额，在租赁期内各个期间按照直线法或其他系统合理的方法计入相关资产成本或当期损益"
+        },
+        {
+          "key": "D",
+          "text": "对于短期租赁和低价值资产租赁，承租人可以选择不确认使用权资产和租赁负债"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "低价值资产租赁的判定仅与资产的绝对价值有关，不受承租人规模、性质或其他情况影响，选项 A 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-050",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "多项选择题",
+      "number": 50,
+      "globalIndex": 50,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于租赁的交易或事项中，承租人不能采用简化会计处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "租赁期为 8 个月的办公家具租赁，到期后拥有购买选择权且购买价格明显低于预期市场价格"
+        },
+        {
+          "key": "B",
+          "text": "租赁期为 6 个月的汽车租赁，另包含 8 个月的续租选择权，承租人合理确定将行使续租选择权"
+        },
+        {
+          "key": "C",
+          "text": "低价值软件租赁，用于提高租入服务器的内存"
+        },
+        {
+          "key": "D",
+          "text": "房屋租赁，租赁房屋中包含的低价值家具"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "对于短期租赁（租赁期不超过 12 个月的租赁）和低价值资产租赁（单项租赁资产为全新时价值较低的租赁），均可采用简化会计处理，即不确认使用权资产和租赁负债。选项 A 当选，包含购买选择权的租赁，即使租赁期短于 12 个月，也不属于短期租赁；选项 B 当选，承租人应确认的租赁期为 14 个月（6 个月+8 个月），超过 12 个月，不属于短期租赁；选项 C 当选，由于软件和服务器高度关联，软件不可以单独使用或者与易于获得的其他资源一起使用中获利，不可拆分为单项租赁资产，不满足低价值资产的条件；选项 D 不当选，低价值家具可以单独使用或者与易于获得的其他资源一起使用中获利，可以分拆为单项租赁资产，满足低价值资产的条件，可以采用简化会计处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-051",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "多项选择题",
+      "number": 51,
+      "globalIndex": 51,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列项目中，属于租赁收款额的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "承租人需支付的固定付款额及实质固定付款额，存在租赁激励的，扣除租赁激励相关金额"
+        },
+        {
+          "key": "B",
+          "text": "如果合理确定承租人将行使购买选择权，购买选择权的行权价格"
+        },
+        {
+          "key": "C",
+          "text": "如果合理确定承租人将行使终止租赁选择权，承租人行使终止租赁选择权需支付的款项"
+        },
+        {
+          "key": "D",
+          "text": "由承租人、与承租人有关的一方、与出租人有关的一方以及有经济能力履行担保义务的独立第三方向出租人提供的担保余值"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "租赁收款额包括由承租人、与承租人有关的一方以及有经济能力履行担保义务的独立第三方向出租人提供的担保余值，不含与出租人有关的一方，选项 D 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-052",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "多项选择题",
+      "number": 52,
+      "globalIndex": 52,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列有关被分为经营租赁的转租赁说法中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "中间出租人继续保留与原租赁相关的租赁负债与使用权资产"
+        },
+        {
+          "key": "B",
+          "text": "中间出租人应在转租期间确认转租赁的租赁收入"
+        },
+        {
+          "key": "C",
+          "text": "中间出租人继续确认使用权资产的折旧费用和租赁负债的利息"
+        },
+        {
+          "key": "D",
+          "text": "中间出租人应在转租期内终止确认与原租赁相关且转给租赁承租人的使用权资产"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项 D，被划分为经营租赁的转租赁中，中间出租人应继续保留与原租赁相关的使用权资产。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-053",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "多项选择题",
+      "number": 53,
+      "globalIndex": 53,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于租赁会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "存在租赁激励的，出租人在确定租赁收款额时，应扣除租赁激励相关金额"
+        },
+        {
+          "key": "B",
+          "text": "转租赁分类为融资租赁时，在转租期间，转租出租人既要确认转租赁的融资收益，也要确认原租赁的利息费用"
+        },
+        {
+          "key": "C",
+          "text": "生产商或经销商出租其产品或商品构成融资租赁的，在租赁期开始日应当以租赁收款额按市场利率折现的现值确认收入"
+        },
+        {
+          "key": "D",
+          "text": "经营租赁下出租人提供免租期的，出租人应将租金总额在扣除免租期后的剩余租赁期内，按直线法或其他合理的方法分配租金收入"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "选项 C，如果生产商或经销商出租其产品或商品构成融资租赁，在租赁期开始日应当按照租赁资产公允价值与租赁收款额按市场利率折现的现值两者孰低确认收入。选项 D，经营租赁中，出租人提供免租期的，出租人应将租金总额在不扣除免租期的整个租赁期内，按直线法或其他合理的方法进行分配，免租期内应当确认租金收入。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-054",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "判断题",
+      "number": 54,
+      "globalIndex": 54,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "使用权资产减值准备一旦计提，不得转回。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "在租赁期开始日后，承租人应当按照《企业会计准则第 8 号——资产减值》规定，确定使用权资产是否发生减值，并对已识别的减值损失进行会计处理。使用权资产减值准备一旦计提，不得转回。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-055",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "判断题",
+      "number": 55,
+      "globalIndex": 55,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在确定租赁期和评估不可撤销租赁期间时，如果只有出租人有权终止租赁，则不可撤销的租赁期包括终止租赁选择权所涵盖的期间。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "在确定租赁期和评估不可撤销租赁期间时，企业应根据租赁条款约定确定可强制执行合同的期间。如果承租人和出租人双方均有权在未经另一方许可的情况下终止租赁，且罚金不重大，则该租赁不再可强制执行。如果只有出租人有权终止租赁，则不可撤销的租赁期包括终止租赁选择权所涵盖的期间。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-true_false-056",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "判断题",
+      "number": 56,
+      "globalIndex": 56,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "承租人应分拆合同中包含的租赁和非租赁部分，并根据收入准则中关于交易价格分摊的规定分摊合同对价。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "合同中同时包含租赁和非租赁部分的，承租人和出租人应当将租赁和非租赁部分进行分拆，除非承租人选择采用简化处理。承租人选择分拆的，应当按照各项租赁部分单独价格及非租赁部分的单独价格之和的相对比例分摊合同对价。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock06-multiple_choice-057",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十九章 租赁",
+      "section": "多项选择题",
+      "number": 57,
+      "globalIndex": 57,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "关于售后租回交易，下列说法不正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "售后租回交易中的资产转让不属于销售的，卖方兼承租人应当终止确认所转让的资产，并将收到的现金作为金融负债"
+        },
+        {
+          "key": "B",
+          "text": "售后租回交易中的资产转让属于销售的，承租人应按照租赁期开始日尚未支付的租赁付款额的现值加上承租人发生的初始直接费用计量使用权资产"
+        },
+        {
+          "key": "C",
+          "text": "售后租回交易中的资产转让属于销售的，销售对价低于市场价格的款项应当作为额外融资"
+        },
+        {
+          "key": "D",
+          "text": "售后租回交易中的资产转让属于销售的，销售对价高于市场价格的款项应当作为预付租金"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "售后租回交易中的资产转让不属于销售的，卖方兼承租人不终止确认所转让的资产，并将收到的现金作为金融负债，选项 A 错误；售后租回交易中的资产转让属于销售的，卖方兼承租人应当按原资产账面价值中与租回获得的使用权有关的部分，计量售后租回所形成的使用权资产，选项 B 错误；售后租回交易中的资产转让属于销售的，销售对价低于市场价格的款项作为预付租金，选项 C 错误；售后租回交易中的资产转让属于销售的，销售对价高于市场价格的款项作为买方兼出租人向买方兼承租人提供的额外融资，选项 D 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（6）830355.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（6）830355.md",
+    "pdfIndex": 6,
+    "chapterHint": "押题客观题（6）- 第17-19章",
+    "totalQuestions": 57,
+    "missingAnswers": []
+  }
+}

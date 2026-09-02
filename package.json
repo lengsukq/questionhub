@@ -9,8 +9,9 @@
     "lint": "eslint",
     "test": "vitest run",
     "question-bank:prepare": "tsx scripts/prepare-default-bank.ts",
+    "banks:prepare": "tsx scripts/prepare-banks.ts",
     "question-bank:validate": "tsx scripts/validate-question-bank.ts",
-    "prepare:all": "npm run question-bank:prepare && npm run question-bank:validate"
+    "prepare:all": "npm run question-bank:prepare && npm run banks:prepare && npm run question-bank:validate"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

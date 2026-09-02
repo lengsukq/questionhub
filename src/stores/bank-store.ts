@@ -3,6 +3,48 @@ import { db, listBanks } from "@/lib/db";
 import { importQuestionBank, type ImportResult } from "@/lib/import-question-bank";
 
 const ACTIVE_BANK_KEY = "questionhub.activeBankId";
+const AUTO_BANKS_VERSION_KEY = "questionhub.autoBanksVersion";
+
+// 与 public/data/banks/manifest.json 保持一致
+interface BanksManifestEntry {
+  file: string;
+  name: string;
+}
+const AUTO_BANKS_VERSION = "2026-mayong-9banks-v1";
+
+async function autoImportBanks(): Promise<void> {
+  try {
+    const res = await fetch("/data/banks/manifest.json");
+    if (!res.ok) return;
+    const manifest: BanksManifestEntry[] = await res.json();
+    if (!Array.isArray(manifest) || manifest.length === 0) return;
+
+    const doneVersion = localStorage.getItem(AUTO_BANKS_VERSION_KEY);
+    if (doneVersion === AUTO_BANKS_VERSION) return;
+
+    const existing = await listBanks();
+    const existingNames = new Set(existing.map((b) => b.name));
+
+    for (const entry of manifest) {
+      if (existingNames.has(entry.name)) continue;
+      try {
+        const r = await fetch(`/data/banks/${encodeURIComponent(entry.file)}`);
+        if (!r.ok) continue;
+        const raw = await r.text();
+        const result = await importQuestionBank(raw, entry.name);
+        if (!result.ok) {
+          console.warn(`[autoImport] ${entry.name} 导入失败:`, result.errors);
+        }
+      } catch (e) {
+        console.warn(`[autoImport] ${entry.name} 导入异常:`, e);
+      }
+    }
+
+    localStorage.setItem(AUTO_BANKS_VERSION_KEY, AUTO_BANKS_VERSION);
+  } catch (e) {
+    console.warn("[autoImport] manifest 加载失败:", e);
+  }
+}
 
 interface BankState {
   banks: Awaited<ReturnType<typeof listBanks>>;
@@ -44,6 +86,10 @@ export const useBankStore = create<BankState>((set, get) => ({
         }
         banks = await listBanks();
       }
+
+      // 自动导入 data/banks 下的随版题库（如 9套马勇押题），幂等且以 name 去重
+      await autoImportBanks();
+      banks = await listBanks();
 
       let activeBankId = localStorage.getItem(ACTIVE_BANK_KEY);
       if (!activeBankId || !banks.some((bank) => bank.id === activeBankId)) {

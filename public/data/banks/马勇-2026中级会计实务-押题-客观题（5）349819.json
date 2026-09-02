@@ -1,0 +1,2059 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:49:42.183129+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，不属于企业获得的政府补助的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "政府部门对企业银行贷款利息给予的补贴"
+        },
+        {
+          "key": "B",
+          "text": "政府部门无偿拨付给企业进行技术改造的专项资金"
+        },
+        {
+          "key": "C",
+          "text": "政府部门作为企业所有者投入的资本"
+        },
+        {
+          "key": "D",
+          "text": "政府部门先征后返的增值税"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "选项 C，政府与企业之间的关系是投资者与被投资者之间的关系，属于权益性投资，不属于政府补助。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，企业应当作为政府补助进行会计处理的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "对企业直接减征企业所得税"
+        },
+        {
+          "key": "B",
+          "text": "政府以出资者身份向企业投入资本"
+        },
+        {
+          "key": "C",
+          "text": "企业收到即征即退的增值税"
+        },
+        {
+          "key": "D",
+          "text": "企业收到增值税出口退税"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "选项 A，通常情况下，直接减征、免征、增加计税抵扣额、抵免部分税额等不涉及资产直接转移的经济资源，不属于政府补助；选项 B，政府补助是无偿的，但是政府以投资者身份向企业投入资本，享有相应的所有者权益，属于互惠性交易，不属于政府补助；选项 D，增值税出口退税实际上是政府退回企业事先垫付的进项税，不属于政府补助。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月，甲公司取得政府无偿拨付的技术改造资金 100 万元、增值税出口退税 30 万元、财政贴息 50 万元。不考虑其他因素，甲公司 2026 年 12 月获得的政府补助金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "180"
+        },
+        {
+          "key": "B",
+          "text": "150"
+        },
+        {
+          "key": "C",
+          "text": "100"
+        },
+        {
+          "key": "D",
+          "text": "130"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "甲公司 2026 年 12 月获得的政府补助金额$=100+50=150$（万元）。增值税出口退税本质上是政府退回企业事先垫付的进项税，不属于政府补助。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为执行政府绿色出行，给予乘公交乘客 0.5 元/乘次的票价优惠，公司少收入的票款由政府补贴。2026 年 12 月，甲公交公司实际收到乘客支付票款 800 万元。同时收到政府按乘次给予当月车票补贴 200 万元。不考虑其他因素，甲公司 12 月应确认的营业收入为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "600"
+        },
+        {
+          "key": "B",
+          "text": "200"
+        },
+        {
+          "key": "C",
+          "text": "1 000"
+        },
+        {
+          "key": "D",
+          "text": "800"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "甲公司收到的 200 万元政府补贴实际上与日常经营活动密切相关且构成了甲公司乘车服务对价的组成部分，应当作为收入进行会计处理，因此甲公司 12 月应确认的营业收入$=800+200=1 000$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 2 月，甲公司拟为某环保项目购置一台设备。根据国家政策，甲公司向有关部门提出补助 500 万元的申请。2026 年 4 月 10 日，政府批准了甲公司的申请并拨付 500 万元，该款项于 2026 年 4 月 20 日到账。2026 年 5 月 30 日，甲公司购入该环保设备，取得的增值税专用发票上注明的金额为 860 万元，增值税税额 111.8 万元。甲公司购入设备的当日即投入使用。甲公司对该设备采用年限平均法按 6 年计提折旧，预计净残值为零。假定甲公司采用净额法核算政府补助，不考虑其他因素。甲公司该环保设备 2026 年度应计提的累计折旧金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "35"
+        },
+        {
+          "key": "B",
+          "text": "60"
+        },
+        {
+          "key": "C",
+          "text": "83.61"
+        },
+        {
+          "key": "D",
+          "text": "143.33"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "甲公司该台环保设备 2026 年度应计提的累计折旧金额$=（860-500）/6\\times7/12=35$（万元）。甲公司的会计处理如下：\n\n2026 年 4 月 20 日收到补助款：\n\n借：银行存款 500\n\n贷：递延收益 500\n\n2026 年 5 月 30 日购入设备：\n\n借：固定资产 360\n\n递延收益 500\n\n应交税费—应交增值税（进项税额）111.8\n\n贷：银行存款 971.8\n\n2026 年 12 月 31 日计提折旧：\n\n借：制造费用 35\n\n贷：累计折旧 35",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-006",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年5月，甲公司拟为处于研究阶段的项目购置一台实验设备。根据国家政策，甲公司向有关部门提出补助800万元的申请。2026年6月1日，政府批准了甲公司的申请并拨付800万元，该款项于2026年6月25日到账。2026年6月30日，甲公司购入该实验设备并投入使用，实际支付价款1 800万元（不含增值税税额）。甲公司对该设备采用年限平均法按8年计提折旧，预计净残值为零。采用总额法核算，不考虑其他因素，甲公司因购入和使用该台实验设备对2026年度损益的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "100"
+        },
+        {
+          "key": "B",
+          "text": "50"
+        },
+        {
+          "key": "C",
+          "text": "-62.5"
+        },
+        {
+          "key": "D",
+          "text": "-112.5"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "甲公司取得的与资产相关的政府补助，应当确认为递延收益，自相关资产达到预定可使用状态起，在该资产的使用寿命内平均分摊，分次计入以后各期间损益。甲公司因购入和使用该台实验设备对 2026 年度损益的影响金额$=（-1 800/8+800/8）\\times6/12=-62.5$（万元）。甲公司的会计处理如下：\n\n2026 年 6 月 25 日收到补助款：\n\n借：银行存款 800\n\n贷：递延收益 800\n\n2026 年 6 月 30 日购入设备：\n\n借：固定资产 1 800\n\n贷：银行存款 1 800\n\n2026 年 12 月 31 日计提折旧：\n\n借：研发支出—费用化支出 112.5\n\n贷：累计折旧 112.5【1800/8×6/12】\n\n借：管理费用 112.5\n\n贷：研发支出—费用化支出 112.5\n\n借：递延收益 50【800/8×6/12】\n\n贷：其他收益 50",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-007",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年10月31日，甲公司获得只能用于项目未来研发支出的财政拨款1 000万元，该研发项目预计于2027年12月31日完成。2026年10月31日，甲公司应将收到的该笔财政拨款计入（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "研发支出"
+        },
+        {
+          "key": "B",
+          "text": "递延收益"
+        },
+        {
+          "key": "C",
+          "text": "营业外收入"
+        },
+        {
+          "key": "D",
+          "text": "其他综合收益"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "该财政拨款是用来补助未来期间将发生的费用，所以应先确认为递延收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-008",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月10日，甲公司收到专项财政拨款60万元，用以购买研发部门使用的某特种仪器。2026年6月20日，甲公司购入该仪器后立即投入使用。该仪器预计使用年限为10年，预计净残值为零，采用年限平均法计提折旧。不考虑其他因素，2026年度甲公司应确认的其他收益为（ ）万元（采用总额法）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "3.5"
+        },
+        {
+          "key": "C",
+          "text": "5.5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "本题是与资产相关的政府补助，所以收到时先确认为递延收益，然后在资产使用寿命内分期摊销确认其他收益，所以 2026 年度甲公司应确认的其他收益=60/10×6/12=3（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-009",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为动漫软件开发企业，其增值税享受即征即退政策。2026年12月，甲公司收到当地税务部门即征即退方式返还的2026年度增值税款40万元。假定不考虑其他因素，甲公司实际收到返还的增值税款时，会计处理正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "应计入营业外收入"
+        },
+        {
+          "key": "B",
+          "text": "应计入递延收益"
+        },
+        {
+          "key": "C",
+          "text": "应冲减管理费用"
+        },
+        {
+          "key": "D",
+          "text": "应计入其他收益"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "甲公司收到即征即退方式返还的增值税，属于与收益相关的政府补助，并且是用于补偿已发生的支出，因此应于收到时直接计入当期损益（其他收益）；即征即退的增值税等特殊情况，只能采用总额法，并且该事项与企业日常经营活动相关，因此选项 ABC 均不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-010",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为生产环保材料的高科技企业，下列各项中，甲公司应按政府补助准则进行会计处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "收到增值税出口退税1 000万元"
+        },
+        {
+          "key": "B",
+          "text": "收到科技创新政府奖励800万元"
+        },
+        {
+          "key": "C",
+          "text": "收到失业保险稳岗补贴600万元"
+        },
+        {
+          "key": "D",
+          "text": "因符合研发费用加计扣除政策，增加计税抵扣1 500万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "增值税出口退税实际上是政府退回企业事先垫付的进项税，不属于政府补助，选项 A 不当选；直接减征、免征、增加计税抵扣额、抵免部分税额等不涉及资产直接转移的经济资源，不适用政府补助准则，选项 D 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-011",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2025 年 12 月遭受重大自然灾害，并于 2026 年 1 月收到政府对自然灾害的补偿资金 400 万元，甲公司采用总额法核算政府补助。下列描述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "该政府补助属于与资产相关的政府补助"
+        },
+        {
+          "key": "B",
+          "text": "该政府补助属于与收益相关的政府补助"
+        },
+        {
+          "key": "C",
+          "text": "甲公司应当将收到的 400 万元计入递延收益"
+        },
+        {
+          "key": "D",
+          "text": "甲公司应当将收到的 400 万元直接计入营业外收入"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "甲公司收到的补偿金是政府补偿企业已发生的相关成本费用或损失，因此该补偿金属于与收益相关的政府补助，选项 B 正确；由于甲公司采用总额法核算政府补助，并且该补助与企业日常活动无关，因此应将政府补助直接计入营业外收入，选项 D 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-012",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于政府补助会计处理的表述，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "总额法下收到的自然灾害补贴款应确认为营业外收入"
+        },
+        {
+          "key": "B",
+          "text": "净额法下收到的人才引进奖励金应确认为营业外收入"
+        },
+        {
+          "key": "C",
+          "text": "收到的用于未来购买环保设备的补贴款应确认为递延收益"
+        },
+        {
+          "key": "D",
+          "text": "收到的即征即退增值税应确认为其他收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项 B，净额法下，收到的人才引进奖励金应确认为与日常活动的政府补助，用于补偿已发生的成本费用的，直接冲减管理费用等，用于以后期间将发生的人才引进费用的，应当先计入递延收益，以后期间进行摊销。选项 D，对一般纳税人增值税即征即退只能采用总额法进行会计处理，收到时确认为其他收益，正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-013",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于政府补助的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业从政府取得的经济资源，如果和自身销售商品密切相关，且是企业商品对价的组成部分，不应作为政府补助进行会计处理"
+        },
+        {
+          "key": "B",
+          "text": "企业取得的与资产相关的政府补助，在总额法下应当在购进资产时冲减相关资产账面价值"
+        },
+        {
+          "key": "C",
+          "text": "与资产相关的政府补助如不能合理确定其价值，应按名义金额计入当期损益"
+        },
+        {
+          "key": "D",
+          "text": "与收益相关的政府补助用于补偿企业以后期间的相关成本费用或损失的，直接计入当期损益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "选项 B，企业取得的与资产相关的政府补助，总额法下取得补助资金时确认递延收益，然后在相关资产使用寿命内将递延收益分期转入其他收益或营业外收入，不冲减相关资产账面价值；净额法下应当在购进资产时冲减相关资产账面价值。选项 D，与收益相关的政府补助，用于补偿以后期间的相关成本费用或损失的，收到时应先计入递延收益，并在确认相关费用或损失的期间计入当期损益或冲减相关成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-true_false-014",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "判断题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "政府鼓励企业安置职工就业而给予的奖励款项不属于政府补助。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "政府鼓励企业安置职工就业而给予的奖励款项属于政府补助中的财政拨款。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-true_false-015",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "判断题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于同时包含与资产相关部分和与收益相关部分的政府补助，企业应将其整体归类为与资产相关的政府补助进行会计处理。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "对于同时包含与资产相关部分和与收益相关部分的政府补助，企业应当将其进行分解，区分不同部分分别进行会计处理；难以区分的，企业应当将其整体归类为与收益相关的政府补助进行会计处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-true_false-016",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "判断题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业使用政府补助购买资产，在总额法下相关资产在使用寿命结束前报废的，企业应将尚未分摊的与该资产相关的递延收益余额一次性转入当期损益。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "企业采用总额法核算政府补助，相关资产在使用寿命结束前报废的，应将尚未分摊的与该资产相关的递延收益余额一次性转入当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-true_false-017",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "判断题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "已确认的政府补助需要退回时，存在相关递延收益余额的，应冲减相关递延收益账面余额，超出部分计入当期损益。（ ）\n\n**第十五章 非货币性资产交换**",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "已确认的政府补助需要退回的，应当在需要退回的当期分情况按照以下规定进行会计处理：（1）初始确认时冲减相关资产账面价值的，调整资产账面价值。（2）存在相关递延收益的，冲减相关递延收益账面余额，超出部分计入当期损益。（3）属于其他情况的，直接计入当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-018",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业与非关联方发生的下列各项交易或事项中，应按照非货币性资产交换准则进行会计处理的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "以公允价值为 100 万元的应收账款换入公允价值为 90 万元的固定资产，同时收到补价 10 万元"
+        },
+        {
+          "key": "B",
+          "text": "以公允价值为 100 万元的固定资产换入公允价值为 60 万元的商标权，同时收到补价 40 万元"
+        },
+        {
+          "key": "C",
+          "text": "以公允价值为 55 万元的非企业合并方式下形成的长期股权投资换入公允价值为 60 万元的专利权，同时支付补价 5 万元"
+        },
+        {
+          "key": "D",
+          "text": "通过定向增发公允价值为 900 万元的普通股换入公允价值为 900 万元的办公大楼"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "应收账款属于货币性资产，选项 A 不当选；选项 B，补价比例 $=40\\div100\\times100\\%=40\\%$，超过 $25\\%$，不满足非货币性资产交换的认定条件，不当选；定向增发股票换入资产的，属于权益性交易，不适用非货币性资产交换准则，选项 D 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-019",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于甲公司而言，下列各项交易中，应当按照非货币性资产交换准则进行会计处理的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司以一批产成品交换乙公司一台汽车"
+        },
+        {
+          "key": "B",
+          "text": "甲公司以所持丙公司20%股权（具有重大影响）交换乙公司一批原材料"
+        },
+        {
+          "key": "C",
+          "text": "甲公司以应收丁公司的2 200万元银行承兑汇票交换乙公司一栋办公用房"
+        },
+        {
+          "key": "D",
+          "text": "甲公司以一项专利权交换乙公司一项非专利技术，并以银行存款收取补价，所收取补价占换出专利权公允价值的30%"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "选项 A，企业以存货换取其他企业固定资产、无形资产等，换出存货的企业适用《企业会计准则第 14 号——收入》的规定进行会计处理；选项 C，银行承兑汇票属于货币性资产；选项 D，交换的资产均属于非货币性资产，但涉及的补价比例超过 $25\\%$。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-020",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于甲公司而言，下列各项交易中，应当按照非货币性资产交换准则进行会计处理的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司以其拥有的一栋办公楼交换乙公司30%的股权"
+        },
+        {
+          "key": "B",
+          "text": "甲公司以一项债权投资交换乙公司的一批原材料"
+        },
+        {
+          "key": "C",
+          "text": "甲公司以一批产成品交换乙公司一台生产设备"
+        },
+        {
+          "key": "D",
+          "text": "甲公司以一项专利技术交换乙公司一项非专利技术，并以银行存款收取补价，且补价占换出专利技术公允价值的25%"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "选项 B，甲公司换出的债权投资不属于非货币性资产；选项 C，甲公司换出的产成品（存货），适用收入准则；选项 D，非货币性资产交换涉及补价的比例 $\\ge 25\\%$，不应按非货币性资产交换准则进行会计处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司发生的有关交易或事项如下：（1）购入商品应付乙公司账款2 000万元，以库存商品偿付该欠款的20%，其余以银行存款支付；（2）以持有的公允价值为2 500万元的对子公司（丙公司）投资换取公允价值为2 400万元的丁公司25%股权，补价100万元以现金收取并存入银行；（3）以分期收款结算方式销售大型设备，款项分3年收回；（4）甲公司向戊公司发行自身普通股，取得戊公司对已公司80%股权。上述交易均发生于非关联方之间。不考虑其他因素，下列各项关于甲公司发生的上述交易或事项中，属于非货币性资产交换的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "分期收款销售大型设备"
+        },
+        {
+          "key": "B",
+          "text": "以甲公司普通股取得已公司80%股权"
+        },
+        {
+          "key": "C",
+          "text": "以库存商品和银行存款偿付乙公司款项"
+        },
+        {
+          "key": "D",
+          "text": "以丙公司股权换取丁公司股权并收到部分现金补价"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 A，分期收款销售商品，不属于非货币性资产交换；选项 B，增发股票不属于资产，因此，以增发股票取得的股权，不属于非货币性资产交换；选项 C，属于以资产偿还负债，没有换入资产，不属于非货币性资产交换。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-022",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年3月2日，甲公司以账面价值为350万元的厂房和150万元的专利权，换入乙公司账面价值为300万元的在建房屋和100万元的长期股权投资，不涉及补价。上述资产的公允价值均无法获得。不考虑相关税费及其他因素，甲公司换入在建房屋的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "280"
+        },
+        {
+          "key": "B",
+          "text": "300"
+        },
+        {
+          "key": "C",
+          "text": "350"
+        },
+        {
+          "key": "D",
+          "text": "375"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "甲公司换入在建房屋的入账价值 $=(350+150)\\times300/(300+100)=375$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-023",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为增值税一般纳税人，2026年1月25日以其拥有的一项非专利技术与乙公司生产的一批商品交换。交换日，甲公司换出非专利技术的成本为80万元，累计摊销为15万元，未计提减值准备，公允价值无法可靠计量；假定该非专利技术免增值税，换入商品的账面成本为72万元，未计提跌价准备，公允价值为100万元，增值税税额为13万元，甲公司将其作为存货；甲公司另收到乙公司支付的30万元现金。不考虑其他因素，甲公司对该交易应确认的收益为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "22 万元"
+        },
+        {
+          "key": "C",
+          "text": "65 万元"
+        },
+        {
+          "key": "D",
+          "text": "78 万元"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "该非货币性资产交换具有商业实质，且换出资产的公允价值不能可靠取得，所以以换入资产的公允价值与收到的补价为基础确定换出资产的损益，甲公司对该交易应确认的收益 $=(100+13+30)-(80-15)=78$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-024",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于非货币性资产交换的说法中，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "非货币性资产交换可以涉及少量的货币性资产"
+        },
+        {
+          "key": "B",
+          "text": "非货币性资产交换中，补价占整个资产交换金额的比例应低于 20%"
+        },
+        {
+          "key": "C",
+          "text": "非货币性资产交换具有商业实质的，应当以账面价值计量"
+        },
+        {
+          "key": "D",
+          "text": "非货币性资产交换具有商业实质的，应当以公允价值计量"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "非货币性资产交换准则规定，认定涉及少量货币性资产的交换为非货币性资产交换，通常以补价占整个资产交换金额的比例是否低于 $25\\%$ 作为参考比例，选项 B 错误；非货币性资产交换同时满足下列两个条件的，应当以公允价值计量非货币性资产交换：（1）该项交换具有商业实质；（2）换入资产或换出资产的公允价值能够可靠地计量，选项 CD 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-025",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于不具有商业实质的企业非货币性资产交换的会计处理表述中，不正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "收到补价的，应以换出资产的账面价值减去收到的补价，加上应支付的相关税费，作为换入资产的成本"
+        },
+        {
+          "key": "B",
+          "text": "支付补价的，应以换出资产的账面价值加上支付的补价和应支付的相关税费，作为换入资产的成本"
+        },
+        {
+          "key": "C",
+          "text": "涉及补价的，应当确认损益"
+        },
+        {
+          "key": "D",
+          "text": "不涉及补价的，不应确认损益"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "选项 C，不具有商业实质的非货币性资产交换，应以账面价值为基础计量，无论是否涉及补价均不确认损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-026",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司以一项无形资产换入乙公司公允价值为 640 万元的投资性房地产。甲公司该项无形资产的原价为 800 万元，累计摊销为 100 万元，公允价值无法可靠计量，税务机关核定甲公司换出该项无形资产发生的增值税 48 万元，乙公司换出投资性房地产的增值税为 57.6 万元。资产置换后均不改变原来用途。交换当日，双方已办妥资产所有权的转让手续。假设该项交易不具有商业实质，不考虑其他因素，甲公司换入该项投资性房地产的成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "690.4"
+        },
+        {
+          "key": "B",
+          "text": "800"
+        },
+        {
+          "key": "C",
+          "text": "590.4"
+        },
+        {
+          "key": "D",
+          "text": "640"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "由于该项交易不具有商业实质，故换入投资性房地产的初始入账成本 $=(800-100)+48-57.6=690.4$（万元），选项 A 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-027",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "单项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司以 M 设备换入乙公司 N 设备，另向乙公司支付补价 5 万元，该项交易具有商业实质。交换日，M 设备账面原价为 66 万元，已计提折旧 9 万元，已计提减值准备 8 万元，公允价值无法合理确定；N 设备公允价值为 72 万元。假定不考虑其他因素，该项交换对甲公司当期损益的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "6"
+        },
+        {
+          "key": "C",
+          "text": "11"
+        },
+        {
+          "key": "D",
+          "text": "18"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "该项交换对甲公司当期损益的影响金额 $=72-5-(66-9-8)=18$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-028",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为房地产开发企业，下列各项具有商业实质的资产交换交易中，甲公司应当按照《企业会计准则第 7 号--非货币性资产交换》的规定进行会计处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司以其持有的乙公司 5%股权（未达到重大影响）换取丙公司的一块土地"
+        },
+        {
+          "key": "B",
+          "text": "甲公司以其持有的一项专利权换取戊公司的十台机器设备"
+        },
+        {
+          "key": "C",
+          "text": "甲公司以其一套用于经营出租的公寓换取丁公司 10 万股股票（具有 重大影响）"
+        },
+        {
+          "key": "D",
+          "text": "甲公司以其一栋已开发完成的商品房换取已公司的一块土地"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "选项 A，适用《企业会计准则第 22 号--金融工具确认和计量》准则；选项 D，适用《企业会计准则第 14 号--收入》准则。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-029",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司发生的有关交易或事项如下：（1）以库存原材料偿付所欠乙公司账款的 70%，其余应付账款以银行存款支付；（2）以对子公司（丙公司）的股权投资换取对丁公司 40%股权（重大影响）并收到补价，收到的补价占换出丙公司股权公允价值的 15%；（3）融资租入一台设备，签发银行承兑汇票用于支付设备租赁费；（4）向戊公司发行自身普通股，取得戊公司对乙公司 60%的股权。上述交易或事项均发生于非关联方之间。下列各项关于甲公司发生的上述交易或事项中，不属于非货币性资产交换的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "签发银行承兑汇票支付设备租赁费"
+        },
+        {
+          "key": "B",
+          "text": "以丙公司股权换取丁公司股权并收到补价"
+        },
+        {
+          "key": "C",
+          "text": "以库存原材料和银行存款偿付所欠乙公司款项"
+        },
+        {
+          "key": "D",
+          "text": "发行自身普通股取得乙公司 60%股权"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项 A，银行承兑汇票属于货币资金，不属于非货币性资产交换；选项 B，交易资\n\n产均为非货币性资产，且补价比例小于 25%，属于非货币性资产交换；选项 C，以非货币性资产偿还负债，不属于非货币性资产交换；选项 D，自身普通股不属于企业资产，不属于非货币性资产交换。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-030",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司将其持有的一项投资性房地产与乙公司的一项专利权进行交换，该项交易不涉及补价。假设该项交换具有商业实质，公允价值均能够可靠计量。甲公司该项投资性房地产的账面价值为 1 100 万元，公允价值为 1 200 万元。乙公司该项专利权的账面价值为 1 000 万元，公允价值为 1 200 万元。甲公司在此项交易中为换入资产支付相关税费 60 万元。假设不考虑增值税等因素影响，下列说法中正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司换入的专利权的入账价值为 1 200 万元"
+        },
+        {
+          "key": "B",
+          "text": "甲公司该项交易对损益的影响金额为 100 万元"
+        },
+        {
+          "key": "C",
+          "text": "甲公司该项交易对损益的影响金额为 120 万元"
+        },
+        {
+          "key": "D",
+          "text": "乙公司换入的投资性房地产的入账价值为 1 200 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "甲公司换入该项专利权的入账价值=$1 200+60=1 260$（万元），选项 A 错误；甲公司该项交易对损益的影响金额为换出资产的处置损益=$1 200-1 100=100$（万元），选项 B 正确、选项 C 错误；乙公司换入资产的入账价值=换出资产的公允价值+相关税费=$1 200+0=1 200$（万元），选项 D 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-031",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "不具有商业实质、不涉及补价的单项非货币性资产交换中，影响换入资产入账价值的因素有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "换出资产的账面余额"
+        },
+        {
+          "key": "B",
+          "text": "换出资产的公允价值"
+        },
+        {
+          "key": "C",
+          "text": "换入资产的公允价值"
+        },
+        {
+          "key": "D",
+          "text": "换出资产已计提的减值准备"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "不具有商业实质的非货币性资产交换和公允价值没有关系，选项 BC 错误；不具有商业实质、不涉及补价的非货币性资产交换中，换入资产入账价值=换出资产账面价值+应支付相关税费，选项 AD 均影响换出资产账面价值，选项 AD 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-032",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 7 月 10 日，甲公司以其拥有的一辆作为固定资产核算的轿车换入乙公司一项非专利技术，并支付补价 5 万元，当日，甲公司该轿车原价为 80 万元，累计折旧为 16 万元，公允价值为 60 万元，乙公司该项非专利技术的公允价值为 65 万元，该项交换具有商业实质。不考虑相关税费及其他因素，甲公司进行的下列会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "按 -5 万元确定资产处置损益"
+        },
+        {
+          "key": "B",
+          "text": "按 65 万元确定换入非专利技术的成本"
+        },
+        {
+          "key": "C",
+          "text": "按 -4 万元确定资产处置损益"
+        },
+        {
+          "key": "D",
+          "text": "按 -1 万元确定资产处置损益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "相关会计分录如下：\n\n借：固定资产清理 64\n\n累计折旧 16\n\n贷：固定资产 80\n\n借：无形资产 65\n\n贷：固定资产清理 60\n\n银行存款 5\n\n借：资产处置损益 4\n\n贷：固定资产清理 4",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-033",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十四章 政府补助",
+      "section": "多项选择题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于非货币性资产交换的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "从事相同经营业务的企业之间相互交换其有类似性质和相等价值的商品，以便在不同地区销售，这种同类别的非货币性资产之间的交换不具有商业实质"
+        },
+        {
+          "key": "B",
+          "text": "非货币性资产交换中，具有商业实质的，企业应当按照以公允价值为基础计量的原则进行会计处理"
+        },
+        {
+          "key": "C",
+          "text": "不具有商业实质的非货币性资产交换，应以换出资产的公允价值和应支付的相关税费作 为换入资产的成本"
+        },
+        {
+          "key": "D",
+          "text": "对于以公允价值为基础计量的非货币性资产交换，如果有确凿证据表明换入资产的公允价值更加可靠的，企业应当在终止确认换出资产时，将换入资产的公允价值与换出资产的账面价值之间的差额计入当期损益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "选项 B，以公允价值为基础计量的非货币性资产交换，应当同时满足：（1）该交换具有商业实质；（2）换入资产或换出资产的公允价值能够可靠计量。选项 C，不具有商业实质的非货币性资产交换，和公允价值没有关系，应以换出资产的账面价值和应支付的相关税费作为换入资产的成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-034",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "单项选择题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司与乙公司进行债务重组，重组日，甲公司应收账款账面余额为 1 000 万元，已计提坏账准备 100 万元，其公允价值为 900 万元。乙公司以一项交易性金融资产抵偿上述账款，交易性金融资产公允价值为 900 万元。甲公司为取得交易性金融资产支付相关手续费 2 万元，假定不考虑其他因素。甲公司债务重组取得交易性金融资产的入账价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 000"
+        },
+        {
+          "key": "B",
+          "text": "900"
+        },
+        {
+          "key": "C",
+          "text": "902"
+        },
+        {
+          "key": "D",
+          "text": "960"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "债权人受让的金融资产在初始确认时应当以其公允价值计量，金融资产确认金额与债权终止确认日账面价值之间的差额，计入“投资收益”科目。\n\n甲公司相关会计分录如下：\n\n借：交易性金融资产 900\n\n投资收益 2\n\n坏账准备 100\n\n贷：应收账款 1 000\n\n银行存款 2\n\n综上所述，选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-035",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "单项选择题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司与乙公司进行债务重组，重组日甲公司应收账款账面余额为 1 000 万元，已计提坏账准备 60 万元，其公允价值为 920 万元。经协商，甲公司同意乙公司以其所持有的一项原采用权益法核算的长期股权投资（A 公司）进行偿债，该项股权投资的公允价值为 800 万元。甲公司为取得该项股权投资支付直接相关费用 5 万元，取得该项股权投资后，甲公司对 A 公司能够施加重大影响。假定不考虑其他因素。甲公司债务重组取得长期股权投资的初始投资成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "805"
+        },
+        {
+          "key": "B",
+          "text": "920"
+        },
+        {
+          "key": "C",
+          "text": "925"
+        },
+        {
+          "key": "D",
+          "text": "940"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "债务重组取得对联营或合营企业投资的成本（非金融资产），包括放弃债权的公允价值和可直接归属于该资产的税金等其他成本。长期股权投资的初始投资成本=$920+5=925$（万元），选项 C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-036",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "单项选择题",
+      "number": 36,
+      "globalIndex": 36,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 5 月 15 日，甲公司因购买材料而欠乙公司货款 5 000 万元。2025 年 10 月 1 日，经双方协商进行债务重组，乙公司同意甲公司以 1 600 万股自身普通股抵偿该项债务，普通股每股面值为 1 元，公允价值为每股 3 元。当日，该债权的公允价值为 4 800 万元。2026 年 1 月 1 日，乙公司办结了对甲公司的增资手续，甲公司以银行存款支付相关手续费 1.2 万元。债转股后，乙公司持有的抵债股权占甲公司总股本的 20%。不考虑其他因素，甲公司应确认的投资收益的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "600"
+        },
+        {
+          "key": "B",
+          "text": "100"
+        },
+        {
+          "key": "C",
+          "text": "800"
+        },
+        {
+          "key": "D",
+          "text": "200"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "甲公司应确认的投资收益=$5 000-1 600×3=200$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-single_choice-037",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "单项选择题",
+      "number": 37,
+      "globalIndex": 37,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司向乙公司购买原材料，价格为420万元，款项未付，后因经营不善，无力偿还该部分欠款。经过与乙公司协商，乙公司同意甲公司新增发10万股普通股用以抵偿乙公司60万元债权，甲公司股票每股面值为1元，每股股价为6元。乙公司直接免除甲公司债务180万元，剩余180万元展期至一年后偿还。假定市场利率为6%，剩余债务的公允价值为180万元，不考虑增值税等其他因素，则甲公司应计入投资收益的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "230"
+        },
+        {
+          "key": "B",
+          "text": "50"
+        },
+        {
+          "key": "C",
+          "text": "180"
+        },
+        {
+          "key": "D",
+          "text": "240"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "【解析】债务人应当将所清偿债务的账面价值与转让资产的账面价值以及权益工具和重组债务的确认金额之和的差额，计入其他收益或投资收益（仅涉及金融工具时）；本题中债务人将一部分债务转为权益工具，一部分债务展期至一年后偿还，重组债务未来现金流量现值=180÷（1+6%）=169.81（万元），现金流变化=（180+180-169.81）÷（180+180）=52.83%>10%，构成实质性修改，应终止确认全部债务。所清偿债务账面价值与权益工具确认金额及剩余债务之间的差额，记入“投资收益”科目，甲公司取得的债务重组收益金额=420-10×6-180=180（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-038",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "多项选择题",
+      "number": 38,
+      "globalIndex": 38,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 3 月 31 日，甲公司应收乙公司的一笔贷款 500 万元到期，由于乙公司发生财务困难，该笔贷款预计短期内无法收回。甲公司已对该项债权计提坏账准备 100 万元。当日，甲公司就该债权与乙公司进行协商。下列协商方案中，属于债务重组的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "减免 100 万元债务，其余部分立即以现金偿还"
+        },
+        {
+          "key": "B",
+          "text": "减免 50 万元债务，其余部分延期两年偿还"
+        },
+        {
+          "key": "C",
+          "text": "以公允价值为 500 万元的固定资产偿还"
+        },
+        {
+          "key": "D",
+          "text": "以现金 100 万元和公允价值为 400 万元的无形资产偿还"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "债务重组，是指在不改变交易对手方的情况下，经债权人和债务人协定或法院裁定，就清偿债务的时间、金额或方式等重新达成协议的交易。无论何种原因导致债务人未按原定条件偿还债务，也无论双方是否同意债务人以低于债务的金额偿还债务，只要债权人和债务人就债务条款重新达成了协议，就符合债务重组的定义。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-039",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "多项选择题",
+      "number": 39,
+      "globalIndex": 39,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于债务重组的定义，说法正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业针对一笔租赁应收款修改结算条款，交易对手方没有改变，属于债务重组"
+        },
+        {
+          "key": "B",
+          "text": "企业针对一笔因购销商品而产生的合同负债修改结算条款，交易对手方没有改变，属于债务重组"
+        },
+        {
+          "key": "C",
+          "text": "企业针对一笔预计负债修改结算条款，交易对手方没有改变，属于债务重组"
+        },
+        {
+          "key": "D",
+          "text": "企业针对一笔应付账款修改结算条款，交易对手方没有改变，属于债务重组"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "债务重组涉及的债权和债务是指《企业会计准则第 22 号——金融工具确认和计量》规范的金融工具、租赁应收款和租赁应付款。本题中只有选项 AD 中所涉及的债权债务才属于上述范围。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-040",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "多项选择题",
+      "number": 40,
+      "globalIndex": 40,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司应收乙公司账款的账面余额为 3 000 万元，已计提坏账准备 300 万元。因乙公司经营不善无力偿还，2025 年 12 月 1 日，经双方协商同意，乙公司以其自身 500 万股普通股偿还债务，股票每股面值为 1 元，每股市价为 4 元。股票登记手续已于 2026 年 1 月 10 日办理完毕，甲公司将其作为交易性金融资产核算。当日乙公司股票每股市价仍为 4 元。甲公司发生与股票相关的手续费 10 万元，已经以银行存款支付。不考虑其他因素，下列有关债务重组事项的会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "乙公司确认的资本公积为 1 500 万元"
+        },
+        {
+          "key": "B",
+          "text": "乙公司确认的其他收益为 1 000 万元"
+        },
+        {
+          "key": "C",
+          "text": "甲公司交易性金融资产的入账价值为 2 000 万元"
+        },
+        {
+          "key": "D",
+          "text": "甲公司应确认投资收益-700 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "乙公司确认的资本公积$=(4-1) \\times 500=1 500$（万元），选项 A 当选；以其自身普通股清偿债务，差额应当计入投资收益，其金额$=3 000-2 000=1 000$（万元），选项 B 不当选；手续费 10 万元应计入投资收益，交易性金融资产的入账价值为 2 000 万元（$4 \\times 500$），选项 C 当选；甲公司应该确认的投资收益包括两部分：一是受让金融资产确认金额 2 000 万元和应收账款账面价值 2 700 万元（$3 000-300$）的差额为-700 万元，二是取得交易性金融资产时支付的手续费 10 万元，冲减投资收益。因此，投资收益金额为-710 万元，选项 D 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-041",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "多项选择题",
+      "number": 41,
+      "globalIndex": 41,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 6 月 1 日，甲公司与乙公司签订债务重组协议。双方约定，甲公司以其拥有的一项无形资产抵偿所欠乙公司 165 万元货款，该项无形资产的公允价值为 90 万元，取得成本为 120 万元，已累计摊销 10 万元，相关手续已于当日办妥。不考虑增值税等相关税费及其他因素，下列关于甲公司会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "确认营业外收入 55 万元"
+        },
+        {
+          "key": "B",
+          "text": "减少应付账款 165 万元"
+        },
+        {
+          "key": "C",
+          "text": "确认资产处置损失 20 万元"
+        },
+        {
+          "key": "D",
+          "text": "减少无形资产账面余额 120 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "甲公司的会计分录如下：\n\n借：应付账款 165\n\n累计摊销 10\n\n贷：无形资产 120\n\n其他收益 55\n\n综上，选项 B、D 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-042",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "多项选择题",
+      "number": 42,
+      "globalIndex": 42,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于债务重组会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "债权人取得的存货，应当按照放弃债权的公允价值和使该项资产达到预定可使用状态所发生的可直接归属于该资产的税金、运输费、保险费等作为入账价值"
+        },
+        {
+          "key": "B",
+          "text": "债权人受让非金融资产的，入账价值应当以非金融资产的公允价值进行计量"
+        },
+        {
+          "key": "C",
+          "text": "债务人以金融资产清偿债务，应付债务账面价值与金融资产账面价值的差额计入投资收益"
+        },
+        {
+          "key": "D",
+          "text": "债务人将债务转为权益工具，债务人初始确认权益工具时，应当按照权益工具的公允价值计量，权益工具的公允价值不能可靠计量的，应当按照清偿债务的公允价值计量"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "债权人受让非金融资产的，入账价值应当以放弃债权的公允价值和直接相关税费进行计量，放弃债权的公允价值与账面价值的差额，计入投资收益，选项 B 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-multiple_choice-043",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "多项选择题",
+      "number": 43,
+      "globalIndex": 43,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于债务重组的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "减少债务本金、降低利率、延长偿还期限并减少债务的账面价值等重组方式，属于修改其他条款的债务重组方式"
+        },
+        {
+          "key": "B",
+          "text": "债务重组采用组合方式进行的，对于债权人一般可以认为对全部债权的合同条款作出了实质性修改"
+        },
+        {
+          "key": "C",
+          "text": "债务重组构成权益性交易的，债权人和债务人应确认债务重组相关损益"
+        },
+        {
+          "key": "D",
+          "text": "债务人以固定资产清偿债务，固定资产账面价值与债务账面价值之间的差额应计入资产处置损益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "选项 C，债务重组构成权益性交易的，债权人和债务人不确认债务重组相关损益。选项 D，债务人以固定资产清偿债务的，应将所清偿债务账面价值与转让资产账面价值之间的差额，统一计入其他收益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock05-true_false-044",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十六章 债务重组",
+      "section": "判断题",
+      "number": 44,
+      "globalIndex": 44,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业在报告期间已经开始协商，但在报告期资产负债表日至财务报告批准报出日之间完成的债务重组，属于资产负债表日后调整事项。（ ）\n\n**",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "对于在报告期间已经开始协商，但在报告期资产负债表日后的债务重组，应作为发生的当期事项处理，不属于资产负债表日后调整事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（5）349819.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（5）349819.md",
+    "pdfIndex": 5,
+    "chapterHint": "押题客观题（5）- 第14-16章",
+    "totalQuestions": 44,
+    "missingAnswers": []
+  }
+}

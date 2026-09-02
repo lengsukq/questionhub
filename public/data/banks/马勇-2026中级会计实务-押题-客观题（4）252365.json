@@ -1,0 +1,2417 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:43:16.996049+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司为建造办公楼从银行借入专门借款 2 000 万元，借款期限为 3 年，合同年利率与实际年利率均为 6%。2026 年 2 月 1 日为购买建造材料支付首笔工程款 500 万元。2026 年 3 月 1 日该建造工程正式动工。2026 年 5 月 1 日，因重大安全隐患停工，2026 年 7 月 1 日恢复施工。2026 年 12 月 31 日工程尚未完工。甲公司将专门借款中尚未动用的部分用于固定收益债券短期投资，该短期投资的月收益率为 0.2%。不考虑其他因素，甲公司 2026 年该专门借款应予以资本化的利息金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "77"
+        },
+        {
+          "key": "B",
+          "text": "70"
+        },
+        {
+          "key": "C",
+          "text": "27.5"
+        },
+        {
+          "key": "D",
+          "text": "56"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "2026 年借款费用的资本化期间为 2026 年 3 月至 12 月（共计 10 个月）。甲公司 2026 年该专门借款应予以资本化的利息金额$=2\\ 000\\times6\\%\\times10\\div12-(2\\ 000-500)\\times0.2\\%\\times10=100-30=70$（万元），选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-002",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "多项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 4 月 1 日，甲公司为建造一栋办公楼从银行借入一笔专门借款 6 000 万元，借款期限为 2 年，合同年利率与实际年利率均为 5%。2026 年 4 月 1 日，甲公司开工建造办公楼，并于当日支付首期工程款 5 000 万元。2026 年 6 月 1 日，甲公司支付工程款 1 000 万元。2026 年 7 月 1 日，由于非正常原因导致建造工程停工，于 2026 年 12 月 1 日恢复施工，至年末工程尚未完工。甲公司将专门借款中尚未动用的部分用于固定收益债券短期投资，该短期投资月收益率为 0.1%。不考虑其他因素，下列关于甲公司 2026 年与该专门借款相关的会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "确认资本化金额 98 万元"
+        },
+        {
+          "key": "B",
+          "text": "确认投资收益 2 万元"
+        },
+        {
+          "key": "C",
+          "text": "确认财务费用 125 万元"
+        },
+        {
+          "key": "D",
+          "text": "确认资本化期间为 4 个月"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "借款费用开始资本化的时点为 2026 年 4 月 1 日，2026 年 7 月 1 日至 2026 年 12 月 1 日因非正常原因导致停工 5 个月（已连续超过 3 个月），应暂停借款费用资本化，故甲公司 2026 年借款费用应确认的费用化期间为 5 个月，资本化期间为 4 个月，选项 D 当选；资本化期间专门借款闲置资金产生的收益，应冲减在建工程等相关资产成本，不计入投资收益，选项 B 不当选；2026 年借款费用资本化金额$=6\\ 000\\times5\\%\\times4/12-1\\ 000\\times0.1\\%\\times2=100-2=98$（万元），选项 A 当选；2026 年费用化金额$=6\\ 000\\times5\\%\\times5/12=125$（万元），应计入财务费用，选项 C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司 2026 年 1 月 1 日发行面值总额为 10 000 万元的一般公司债券，取得的款项专门用于建造厂房。该债券系分期付息、到期还本债券，期限为 4 年，票面年利率为 10%，每年 12 月 31 日支付当年利息。该债券实际年利率为 8%，债券发行价格总额为 10 662.10 万元，款项已存入银行。厂房于 2026 年 1 月 1 日开工建造并支付部分工程款，2026 年度累计发生建造工程支出 4 600 万元。经批准，当年甲公司将尚未使用的债券资金投资于国债，取得投资收益 760 万元。至 2026 年 12 月 31 日工程尚未完工，该在建工程 2026 年年末账面余额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "4 692.97"
+        },
+        {
+          "key": "B",
+          "text": "4 906.21"
+        },
+        {
+          "key": "C",
+          "text": "5 452.97"
+        },
+        {
+          "key": "D",
+          "text": "5 600"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "专门借款的借款费用资本化金额$=10\\ 662.10\\times8\\%-760=92.97$（万元），在建工程的账面余额$=4\\ 600+92.97=4\\ 692.97$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为建造固定资产于 2×26 年 1 月 1 日借入 3 年期、年利率为 7%的专门借款 5 400 万元。此外，甲公司在建造固定资产过程中，于 2×26 年 11 月 1 日借入一般借款 2 700 万元，期限 2 年，年利率为 6%。甲公司无其他借款。该工程于当年 1 月 1 日开始建造，当日发生工程支出 4 800 万元，11 月 1 日发生工程支出 2 400 万元，12 月 1 日发生工程支出 2 000 万元，年末工程尚未完工。甲公司 2×26 年一般借款利息资本化的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "28"
+        },
+        {
+          "key": "B",
+          "text": "20"
+        },
+        {
+          "key": "C",
+          "text": "25"
+        },
+        {
+          "key": "D",
+          "text": "22.5"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "一般借款利息资本化金额$=1\\ 800\\times6\\%\\times2/12+900\\times6\\%\\times1/12=22.5$（万元）；\n\n或：一般借款利息资本化金额$=1\\ 800\\times6\\%\\times1/12+2\\ 700\\times6\\%\\times1/12=22.5$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 2 月 18 日，甲公司以自有资金支付了建造厂房的首期工程款，工程于 2026 年 3 月 2 日开始施工，2026 年 6 月 1 日甲公司从银行借入于当日开始计息的专门借款，并于 2026 年 6 月 26 日使用该专门借款支付第二期工程款，则该专门借款利息开始资本化的时点为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年 6 月 26 日"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 3 月 2 日"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 2 月 18 日"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 6 月 1 日"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "借款费用同时满足下列条件的，应予资本化：①为使资产达到预定可使用或可销售状态所必要的购建或者生产活动已经开始（3 月 2 日）；②资产支出已经发生（2 月 18 日）；③借款费用已经发生（6 月 1 日）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-006",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 4 月 20 日，甲公司以当月 1 日自银行取得的专门借款支付了建造办公楼的首期工程物资款，5 月 10 日开始施工，5 月 20 日因发现文物需要发掘保护而暂停施工，7 月 15 日复工兴建。甲公司该笔借款费用开始资本化的时点为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年 4 月 1 日"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 4 月 20 日"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 5 月 10 日"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 7 月 15 日"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "借款费用开始资本化必须同时满足以下三个条件：①为使资产达到预定可使用或者可销售状态所必要的购建或者生产活动已经开始；②资产支出已经发生；③借款费用已经发生。所以开始资本化时点为 2026 年 5 月 10 日。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-007",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业专门借款利息开始资本化后发生的下列各项建造中断事项中，将导致其应暂停借款利息资本化的事项是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因工程质量纠纷造成建造多次中断累计 3 个月"
+        },
+        {
+          "key": "B",
+          "text": "因可预见的冰冻季节造成建造中断连续超过 3 个月"
+        },
+        {
+          "key": "C",
+          "text": "因发生安全事故造成建造中断连续超过 3 个月"
+        },
+        {
+          "key": "D",
+          "text": "因劳务纠纷造成建造中断 2 个月"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "符合资本化条件的资产在购建或者生产过程中发生非正常中断且中断时间连续超过 3 个月的，应当暂停借款费用的资本化。选项 A、D，中断的时间不是连续超过 3 个月，不应暂停借款费用资本化；选项 B，可预见的冰冻季节造成的停工不属于非正常中断，不应暂停借款费用资本化；选项 C，安全事故造成的停工属于非正常中断，且中断时间连续超过 3 个月，应暂停借款费用资本化。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-008",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列导致固定资产建造中断时间连续超过 3 个月的事项，不应暂停借款费用资本化的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "劳务纠纷"
+        },
+        {
+          "key": "B",
+          "text": "安全事故"
+        },
+        {
+          "key": "C",
+          "text": "资金周转困难"
+        },
+        {
+          "key": "D",
+          "text": "可预测的气候影响"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "建造中发生的可预测的气候影响属于正常中断，即使超过了 3 个月，也需要继续资本化，选项 D 符合题意。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-009",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "单项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 2 月 1 日，甲公司为建造一栋厂房向银行取得一笔专门借款。2025 年 3 月 5 日，以该借款支付前期订购的工程物资款。因征地拆迁发生纠纷，该厂房延迟至 2025 年 7 月 1 日才开工兴建，开始支付其他工程款。2026 年 7 月 28 日，该厂房建造完成，达到预定可使用状态。2026 年 7 月 30 日，甲公司办理工程竣工决算，不考虑其他因素，甲公司该笔借款费用的资本化期间为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2025 年 2 月 1 日至 2026 年 7 月 30 日"
+        },
+        {
+          "key": "B",
+          "text": "2025 年 3 月 5 日至 2026 年 7 月 28 日"
+        },
+        {
+          "key": "C",
+          "text": "2025 年 7 月 1 日至 2026 年 7 月 28 日"
+        },
+        {
+          "key": "D",
+          "text": "2025 年 7 月 1 日至 2026 年 7 月 30 日"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2025 年 7 月 1 日，工程开始动工，资产支出和借款费用也已发生，因此这一天为资本化期间开始日；2026 年 7 月 28 日，厂房建造完成，达到预定可使用状态，为停止资本化日。因此资本化期间为 2025 年 7 月 1 日至 2026 年 7 月 28 日。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-010",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "多项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于借款费用的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "银行借款的利息"
+        },
+        {
+          "key": "B",
+          "text": "债券溢价的摊销"
+        },
+        {
+          "key": "C",
+          "text": "债券折价的摊销"
+        },
+        {
+          "key": "D",
+          "text": "发行股票的手续费"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "借款费用是企业因借入资金所付出的代价，包括借款利息、折价或者溢价的摊销、辅助费用以及因外币借款而发生的汇兑差额等。选项 D，发行股票的手续费，是权益性融资费用，\n\n不属于借款费用。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-011",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "多项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在确定借款费用暂停资本化的期间时，应当区别正常中断和非正常中断。下列各项中，属于非正常中断的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "质量纠纷导致的中断"
+        },
+        {
+          "key": "B",
+          "text": "安全事故导致的中断"
+        },
+        {
+          "key": "C",
+          "text": "劳动纠纷导致的中断"
+        },
+        {
+          "key": "D",
+          "text": "资金周转困难导致的中断"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "非正常中断，通常是由于企业管理决策上的原因或者其他不可预见的原因等所导致的中断。例如，企业因与施工方发生了质量纠纷、资金周转困难、发生安全事故、发生劳动纠纷等原因导致的中断。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-true_false-012",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "判断题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业用于建造厂房的专门借款，在借款费用资本化期间，其尚未动用部分存入银行取得的利息，应冲减财务费用。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "借款费用资本化期间，专门借款的闲置资金收益应冲减相关资产成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-true_false-013",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "判断题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在资本化期间内，外币专门借款本金及利息的汇兑差额应予资本化。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-true_false-014",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十一章 借款费用",
+      "section": "判断题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为建造一栋办公楼占用一笔外币一般借款，该笔借款在资本化期间的本金和利息所产生的汇兑差额应当予以资本化。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "在资本化期间内，外币专门借款本金及其利息的汇兑差额应当予以资本化，计入符合资本化条件的资产的成本；除外币专门借款之外的其他外币借款本金及其利息所产生的汇兑差额，应当作为财务费用计入当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-015",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列事项中，不属于或有事项的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "产品质量保证"
+        },
+        {
+          "key": "B",
+          "text": "亏损合同"
+        },
+        {
+          "key": "C",
+          "text": "未来可能发生的经营亏损"
+        },
+        {
+          "key": "D",
+          "text": "弃置义务"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "或有事项是指过去的交易或事项形成的，其结果须由某些未来事项的发生或不发生才能决定的不确定事项。选项 C，是未来可能发生的事项，与过去没有关系，因此不属于或有事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-016",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年12月31日，甲公司涉及的一项产品质量未决诉讼案，败诉的可能性为80%。如果胜诉，不需支付任何费用；如果败诉，需支付赔偿金及诉讼费共计60万元，同时基本确定可从保险公司获得45万元的赔偿。当日，甲公司应确认预计负债的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "15"
+        },
+        {
+          "key": "B",
+          "text": "60"
+        },
+        {
+          "key": "C",
+          "text": "0"
+        },
+        {
+          "key": "D",
+          "text": "48"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "或有事项满足预计负债确认条件应该按照最可能发生金额确认预计负债，对于基本确定能够收到的补偿应该单独确认为一项资产（其他应收款），不得作为预计负债金额的扣减。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-017",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年12月31日，甲公司涉及一项未决诉讼，预计很可能败诉，甲公司若败诉，需承担诉讼费10万元并支付赔款300万元，但基本确定可从保险公司获得60万元的补偿。2026年12月31日，甲公司因该诉讼应确认预计负债的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "240"
+        },
+        {
+          "key": "B",
+          "text": "250"
+        },
+        {
+          "key": "C",
+          "text": "300"
+        },
+        {
+          "key": "D",
+          "text": "310"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "应确认预计负债的金额$=10+300=310$（万元），基本确定可从保险公司获得的 60 万元补偿，应确认为一项资产，通过其他应收款核算，不能冲减预计负债的账面价值。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-018",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于或有事项的会计处理表述中，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "现时义务导致的预计负债，在资产负债表中无需复核"
+        },
+        {
+          "key": "B",
+          "text": "潜在义务导致的或有负债，不能在资产负债表中列为负债"
+        },
+        {
+          "key": "C",
+          "text": "现时义务导致的预计负债，不能在资产负债表中列为负债"
+        },
+        {
+          "key": "D",
+          "text": "或有事项形成的或有资产，应在资产负债表中列为资产"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "企业应当在资产负债表日对预计负债的账面价值进行复核，选项 A 错误；现时义务导致的预计负债，应该在资产负债表中列为负债，选项 C 错误；或有事项形成的或有资产，不符合资产确认条件，因而不能在财务报表中确认，选项 D 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-019",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 31 日，甲公司有一项未决诉讼，预计在 2026 年年度财务报告批准报出日后判决，胜诉的可能性为 60%，若甲公司胜诉，将获得 40 万元至 60 万元的补偿，且这个区间内每个金额发生的可能性相同，不考虑其他因素，该未决诉讼对甲公司 2026 年 12 月 31 日资产负债表中资产项目的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "40"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "50"
+        },
+        {
+          "key": "D",
+          "text": "60"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "或有事项确认为资产的前提条件是基本确定能够收到这项潜在资产并且其金额能够可靠计量。因预计有 $60\\%$ 的可能会获得补偿，未达到基本确定，所以是不能确认资产的。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-020",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司于 2026 年 1 月 1 日成立，承诺产品售后 3 年内向消费者免费提供维修服务，预计保修期内将发生的保修费在销售收入的 3%至 5%之间，且这个区间内每个金额发生的可能性相同。当年甲公司实现的销售收入为 1 000 万元，实际发生的保修费为 15 万元。不考虑其他因素，甲公司 2026 年 12 月 31 日资产负债表预计负债项目的期末余额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "15"
+        },
+        {
+          "key": "B",
+          "text": "25"
+        },
+        {
+          "key": "C",
+          "text": "35"
+        },
+        {
+          "key": "D",
+          "text": "40"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "当年计提预计负债$=1\\,000 \\times (3\\%+5\\%)/2=40$（万元），当年实际发生保修费冲减预计负债 15 万元，所以 2026 年年末资产负债表中预计负债的期末余额$=40-15=25$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 20 日，甲公司与乙公司签订不可撤销合同，合同约定甲公司在 2027 年 2 月 20 日以每件 1 万元的价格向乙公司销售 P 产品 100 件，若不能按期交货，将按合同总价款的 10%向乙公司支付违约金。截止 2026 年 12 月 31 日，P 产品尚未开始生产。由于原材料价格上涨等原因，预计生产每件 P 产品需耗用原材料 0.9 万元、人工费用 0.3 万元、分摊生产用固定资产折旧费 0.1 万元。不考虑其他因素，2026 年 12 月 31 日，甲公司因该合同应确认的预计负债金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "30"
+        },
+        {
+          "key": "B",
+          "text": "20"
+        },
+        {
+          "key": "C",
+          "text": "10"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "该合同为亏损合同，甲公司尚未将 P 产品投入生产，因此合同中无标的资产。甲公司若履行合同预计发生的损失$=(0.9+0.3+0.1) \\times 100-1 \\times 100=30$（万元），甲公司若不履行合同预计支付的违约金$=1 \\times 100 \\times 10\\%=10$（万元），所以甲公司应选择不履行合同。甲公司因该合同应确认的预计负债金额为 10 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-022",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 3 月，甲公司因企业重组决定辞退员工。2026 年 5 月，与职工协商并达成一致意见；2026 年 6 月，该重组计划获得批准并正式对外公告；计划于 2026 年 9 月正式执行。不考虑其他因素，甲公司因该事项确认应付职工薪酬的时间为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年 3 月"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 5 月"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 6 月"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 9 月"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "企业有详细、正式的重组计划并且该重组计划已对外公告时，表明企业承担了重组义务，因此甲公司应于 2026 年 6 月确认应付职工薪酬。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-023",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×26年12月10日，甲公司董事会决定关闭一个事业部。2×26年12月25日，该重组计划获得批准并正式对外公告。该重组义务很可能导致经济利益流出且金额能够可靠计量。下列与该重组有关的各项支出中，甲公司应当确认为预计负债的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "留用员工的岗前培训费"
+        },
+        {
+          "key": "B",
+          "text": "推广公司新形象的营销支出"
+        },
+        {
+          "key": "C",
+          "text": "设备的预计处置损失"
+        },
+        {
+          "key": "D",
+          "text": "不再使用厂房的租赁撤销费"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "企业应当按照与重组有关的直接支出确认预计负债。直接支出是企业重组必须承担的，并且与主体继续进行的活动无关的支出，不包括留用职工的岗前培训、市场推广、新系统和营销网络投入等支出。选项 A、B、C 不属于与重组直接相关的费用，不确认预计负债。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-024",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司由于受国际金融危机的不利影响，决定对乙事业部进行重组，将相关业务转移到其他事业部。经履行相关报批手续，甲公司对外正式公告其重组方案。甲公司根据该重组方案预计很可能发生的下列各项支出中，不应当确认为预计负债的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "自愿遣散费"
+        },
+        {
+          "key": "B",
+          "text": "强制遣散费"
+        },
+        {
+          "key": "C",
+          "text": "剩余职工岗前培训费"
+        },
+        {
+          "key": "D",
+          "text": "不再使用厂房的租赁撤销费"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "企业应当按照与重组有关的直接支出确认预计负债。其中，直接支出是企业重组必须承担的直接支出，并且是与主体继续进行的活动无关的支出，不包括留用职工岗前培训、市场推广、新系统和营销网络投入等支出。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-025",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于或有事项的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "为其他单位提供的债务担保"
+        },
+        {
+          "key": "B",
+          "text": "企业与管理人员签订利润分享计划"
+        },
+        {
+          "key": "C",
+          "text": "未决仲裁"
+        },
+        {
+          "key": "D",
+          "text": "产品质保期内的质量保证"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "或有事项，是指过去的交易或者事项形成的，其结果须由某些未来事项的发生或不发生才能决定的不确定事项。主要包括：未决诉讼或仲裁、债务担保、产品质量保证（含产品安全保证）、承诺、亏损合同、重组义务、环境污染整治等。选项 B，不属于或有事项，满足条件时应确认为应付职工薪酬。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-026",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于或有事项的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "公司发生未决诉讼"
+        },
+        {
+          "key": "B",
+          "text": "单位为其他企业的贷款提供担保"
+        },
+        {
+          "key": "C",
+          "text": "企业以财产作抵押向银行借款"
+        },
+        {
+          "key": "D",
+          "text": "环境污染整治"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "以财产作抵押向银行借款不符合或有事项的特征，因此，选项 C 不属于或有事项。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-027",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于企业或有事项会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因或有事项承担的义务，符合负债定义且满足负债确认条件的，应确认预计负债"
+        },
+        {
+          "key": "B",
+          "text": "因或有事项承担的潜在义务，不应确认为预计负债"
+        },
+        {
+          "key": "C",
+          "text": "因或有事项形成的潜在资产，应单独确认为一项资产"
+        },
+        {
+          "key": "D",
+          "text": "因或有事项预期从第三方获得的补偿，补偿金额很可能收到的，应单独确认为一项资产"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "选项 D，因或有事项预期从第三方获得的补偿，补偿金额基本确定收到的，应单独确认为一项资产。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-028",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，关于企业亏损合同会计处理的表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "有标的资产的亏损合同，应对标的资产进行减值测试，并按减值金额确认预计负债"
+        },
+        {
+          "key": "B",
+          "text": "因亏损合同确认的预计负债，应以履行该合同成本与未能履行该合同而发生的补偿与处罚两者之中的较高者计量"
+        },
+        {
+          "key": "C",
+          "text": "与亏损合同相关的义务可以无条件撤销的，不应确认预计负债"
+        },
+        {
+          "key": "D",
+          "text": "无标的资产的亏损合同相关义务满足预计负债确认条件时，应当确认预计负债"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "待执行合同变为亏损合同，存在标的资产的，首先对标的资产进行减值测试，将减值金额相应的计入资产减值损失中，实际损失的金额超过减值测试的部分的差额确认为预计负债，选项 A 错误；预计负债的计量应当反映退出该合同的最低净成本，即履行该合同成本与未能履行该合同而发生的补偿或处罚两者之中的较低者，选项 B 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-029",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业重组时发生的下列各项支出中，属于与重组有关的直接支出的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "撤销设备租赁合同的违约金"
+        },
+        {
+          "key": "B",
+          "text": "留用职工的培训费"
+        },
+        {
+          "key": "C",
+          "text": "设备的迁移费"
+        },
+        {
+          "key": "D",
+          "text": "遣散员工的安置费"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "与重组有关的直接支出包括支付的辞退员工补偿款及违约金以及不再使用的厂房的租赁撤销费。重组义务的直接支出不包括留用职工岗前培训、市场推广、新系统和营销网络投入、将设备从拟关闭的工厂转移到继续使用的工厂的迁移费等支出。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-true_false-030",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "判断题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业应当在资产负债表日对预计负债的账面价值进行复核，如果有确凿证据表明该账面价值不能真实反映当前最佳估计数，应当按照当前最佳估计数对该账面价值进行调整。（ ）\n\n# 第十三章 收入",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-031",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司以 200 万元的价格向乙公司销售一台成套设备，甲公司承诺如果未来 6 个月内该设备降价，甲公司需要将降价部分的差价退回给乙公司，甲公司预测未来 6 个月内该设备不降价的可能性为 50%，降价 20 万元的可能性为 40%，降价 50 万元的可能性为 10%。2026 年 12 月 31 日甲公司发出该设备，货款暂未收到，乙公司取得商品控制权。不考虑其他因素，甲公司应确认的收入为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "200"
+        },
+        {
+          "key": "C",
+          "text": "187"
+        },
+        {
+          "key": "D",
+          "text": "150"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "当合同产生多个结果时，按照期望值估计可变对价的金额通常是恰当的。可变对价的最佳估计数=$200 \\times 50\\%+180 \\times 40\\%+150 \\times 10\\%=187$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-032",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为其客户建造一栋厂房，合同约定价款为 100 万元，当甲公司不能在合同签订之日起的 120 天内竣工时，须支付 10 万元罚款，该罚款从合同价款中扣除。甲公司对合同结果的估计如下：工程 120 天内完工的概率为 90%，工程超过 120 天完工的概率为 10%。甲公司该合同的交易价格应确定为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "100"
+        },
+        {
+          "key": "C",
+          "text": "99"
+        },
+        {
+          "key": "D",
+          "text": "120"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "由于该合同涉及两种可能结果，按照最可能发生金额估计可变对价金额通常是恰当的，120 天完工的可能性（90%）大于超过 120 天完工的可能性（10%），所以应该确定交易价格 100 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-033",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 5 月，甲公司向客户乙公司销售商品一批，该批商品的标价为 100 万元，由于是成批销售，甲公司给予客户 10%的商业折扣，并在销售合同中规定现金折扣条件为 2/20，N/30，且计算现金折扣时不考虑增值税；当日 A 商品发出，客户收到商品并验收入库。甲公司基于对客户的了解，预计客户 20 天内付款的概率为 60%，20 天后付款的概率为 40%。假定甲公司按照最可能发生金额确定可变对价的最佳估计数，已满足收入确认条件，甲公司当月应确认的收入为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "100"
+        },
+        {
+          "key": "B",
+          "text": "98"
+        },
+        {
+          "key": "C",
+          "text": "90"
+        },
+        {
+          "key": "D",
+          "text": "88.2"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "①商业折扣应从交易价格中扣除；②由于甲公司按照最可能发生金额确定可变对价的最佳估计数，预计客户 20 天内付款的概率为 60%，大于 20 天后付款的概率为 40%，则最佳估计数应基于客户 20 天内付款（即给予客户 2%现金折扣）来计算。所以按照最可能发生金额确定的可变对价最佳估计数=$100 \\times (1-10\\%) \\times (1-2\\%)=88.2$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-034",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司出售 W 产品给客户，若客户全年度累计购买不超过 1 000 件时，每件售价为 100 元；若客户全年度累计购买超过 1 000 件时，则每件价格降为 90 元。2×26 年第一季度，甲公司出售 90 件 W 产品给某一客户，估计该客户全年订购量不会超过 1 000 件；该客户 2×26 年第二季度因扩大业务量，又增购了 600 件 W 产品，累计达 690 件，甲公司估计该客户全年订购量会超过 1 000 件。假设不考虑增值税及其他因素，则甲公司 2×26 年第二季度应确认\n收入的金额为（ ）元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "45 000"
+        },
+        {
+          "key": "B",
+          "text": "60 000"
+        },
+        {
+          "key": "C",
+          "text": "53 100"
+        },
+        {
+          "key": "D",
+          "text": "54 000"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "第一季度确认的收入应冲回 $90 \\times 100=9\\,000$（元），第二季度确认收入= $(600+90) \\times 90-9\\,000=53\\,100$（元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-035",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司向客户销售A产品一批，合同规定：销售价格为1 250万元，必须在交货后的18个月内支付，客户在合同开始时即获得该产品的控制权。在合同开始时点、按相同条款和条件出售相同产品、并于交货时支付货款的价格为1 000万元，该产品的成本为850万元。假定不考虑相关税费，则下列说法中不正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "该合同属于含有重大融资成分的合同"
+        },
+        {
+          "key": "B",
+          "text": "发出商品时，应确认收入1 250万元"
+        },
+        {
+          "key": "C",
+          "text": "该项交易应确认营业成本850万元"
+        },
+        {
+          "key": "D",
+          "text": "交易价格与合同对价的差额，应在合同期间内采用实际利率法进行摊销"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "合同存在重大融资成分的，企业应当按照假定客户在取得商品控制权时即以现金支付的应付金额 1 000 万元确定交易价格，选项 B 不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-036",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 36,
+      "globalIndex": 36,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年5月25日，甲公司与乙客户签订商品销售合同，合同规定：甲公司3个月内向乙公司销售A产品一批，乙公司以1万股丙上市公司股票作为对价在甲公司交货当天支付。合同生效日丙公司股票的公允价值为100元/股。2026年8月24日，甲公司如期交付A产品，乙公司取得控制权，并向甲公司交付1万股丙公司股票，当日公允价值108元/股，甲公司将其作为为交易性金融资产核算。假定不考虑相关税费和其他因素，甲公司会计处理正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026年5月25日确认交易性金融资产100万元"
+        },
+        {
+          "key": "B",
+          "text": "2026年8月24日确认销售收入108万元"
+        },
+        {
+          "key": "C",
+          "text": "2026年8月24日确认交易性金融资产108万元"
+        },
+        {
+          "key": "D",
+          "text": "2026年8月24日确认公允价值变动损益8万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "当企业因转让商品而有权向客户收取的对价是非现金形式时，如实物资产、无形\n\n资产、股权、客户提供的广告服务等，企业通常应当按照非现金对价在合同开始日的公允价值确定交易价格。合同开始日后，非现金对价的公允价值因对价形式而发生变动的，该变动金额不应计入交易价格。甲公司 2026 年 8 月 24 日会计分录：\n\n借：交易性金融资产 108  \n贷：公允价值变动损益 8  \n主营业务收入 100\n\n约定以某公司股票为对价  \n当日股票公允100万元 交易价格为100万元  \n↑\n\n股票公允为108万元  \n8万元不计入交易价格 计入公允价值变动损益  \n↑\n\n合同开始日 ——————————————→ 实际收到非现金对价时",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-037",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 37,
+      "globalIndex": 37,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×26年7月1日，甲公司与客户签订一项合同，向其销售H、K两件商品。合同交易价格为5万元，H、K两件商品的单独售价分别为1.2万元和4.8万元。合同约定，H商品于合同开始日交付，K商品在7月10日交付，当两件商品全部交付之后，甲公司才有权收取全部货款。交付H商品和K商品分别构成单项履约义务，控制权分别在交付时转移给客户。不考虑增值税等相关税费及其他因素。甲公司在交付H商品时应确认（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "合同资产1.2万元"
+        },
+        {
+          "key": "B",
+          "text": "合同资产1万元"
+        },
+        {
+          "key": "C",
+          "text": "应收账款1万元"
+        },
+        {
+          "key": "D",
+          "text": "应收账款1.2万元"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "H 产品应分摊的交易价格 $=5×1.2/(1.2+4.8)=1$（万元）；K 产品应分担的交易价格 $=5×4.8/(1.2+4.8)=4$（万元）。\n\n甲公司在交付 H 产品时：\n\n借：合同资产 1  \n贷：主营业务收入 1\n\n交付 K 产品时：\n\n借：应收账款 5  \n贷：合同资产 1  \n主营业务收入 4",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-038",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 38,
+      "globalIndex": 38,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司与客户签订了一个提供法律咨询服务的合同。假设甲公司完全遵守其合同义务，如果到期前客户终止咨询合同，合同要求客户赔偿甲公司已发生的成本，另加15%的利润率，15%的利润率接近甲公司在类似合同中取得的利润率。下列表述中正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司应在签订合同时确认收入"
+        },
+        {
+          "key": "B",
+          "text": "甲公司应在提供咨询服务合同结束后确认收入"
+        },
+        {
+          "key": "C",
+          "text": "甲公司提供咨询服务属于在某一时点履行的履约义务"
+        },
+        {
+          "key": "D",
+          "text": "甲公司提供咨询服务属于在某一时段内履行的履约义务"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "甲公司提供咨询服务的合同，所提供专业意见与客户的事实和情况相关联，若客户违约，甲公司有权收取成本加 15%的合理利润，表明该合同具有不可替代用途且甲公司具有收取成本加合理利润的权利，应当在一段时间内按照履约进度确认收入，选项 D 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-039",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 39,
+      "globalIndex": 39,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司于 2026 年 8 月接受一项产品安装任务，安装期 6 个月，合同总收入 30 万元，预收款项 4 万元，余款在安装完成时收回，当年实际发生成本 8 万元，预计还将发生成本 16 万元。假定该安装劳务属于在某一时段内履行的履约义务，且根据累计发生的合同成本占合同预计总成本的比例确认履约进度。则甲公司 2026 年度确认收入为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "8"
+        },
+        {
+          "key": "B",
+          "text": "10"
+        },
+        {
+          "key": "C",
+          "text": "24"
+        },
+        {
+          "key": "D",
+          "text": "0"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "甲公司 2026 年度应确认收入 $=30×8/(8+16)=10$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-040",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 40,
+      "globalIndex": 40,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲建筑公司 2026 年 1 月 1 日开始为乙公司建造一栋办公楼，工期 18 个月。至 2026 年 12 月 31 日甲公司“合同结算--收入结转”科目的借方余额为 3 200 万元，“合同结算--价款结算”科目的贷方余额为 3 050 万元。甲公司因此应在 2026 年 12 月 31 日资产负债表列示（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "合同资产 150 万元"
+        },
+        {
+          "key": "B",
+          "text": "合同负债 150 万元"
+        },
+        {
+          "key": "C",
+          "text": "合同资产 3 200 万元"
+        },
+        {
+          "key": "D",
+          "text": "合同负债 3 050 万元"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "同一合同中的合同资产和合同负债应以净额列示，设置合同结算科目的企业，其期末借方余额在资产负债表中应根据流动性分别列示为“合同资产”或“其他非流动资产”，由于 2026 年 12 月 31 日至完工已不超过 1 年，所以合同结算科目的借方余额应列示为合同资产 150 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-041",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 41,
+      "globalIndex": 41,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为一家咨询服务提供商，中了一个向新客户提供咨询服务的标。甲公司为取得合同而发生的成本如下：（1）尽职调查的外部律师费 2 万元；（2）提交标书的差旅费 3 万元（客户不承担）；（3）销售人员佣金 4 万元。假定不考虑其他因素，甲公司应确认的合同取得成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "4"
+        },
+        {
+          "key": "B",
+          "text": "7"
+        },
+        {
+          "key": "C",
+          "text": "6"
+        },
+        {
+          "key": "D",
+          "text": "9"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "企业为取得合同发生的增量成本（不取得合同就不会发生）预期能够收回的，应作为合同取得成本确认为一项资产。（1）以及（2）发生的支出并不能保证甲公司一定取得该合同，所以销售人员佣金应予资本化，其他支出应在发生时计入当期损益，则甲公司应确认的合同取得成本为 4 万元。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-042",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 42,
+      "globalIndex": 42,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司经营连锁面包店。2025 年，甲公司向客户销售了 10 000 张储值卡，每张卡的面值为 100 元，总额为 1 000 000 元。客户可在甲公司经营的任何一家门店使用该储值卡进行消费。根据历史经验，甲公司预期客户购买的储值卡中将有大约相当于储值卡面值金额 5%（即 50 000 元）的部分不会被消费。截至 2026 年 12 月 31 日，客户使用该储值卡消费的金额为 400 000 元。不考虑增值税等相关税费，则甲公司 2026 年应确认收入为（ ）元。（计算结果保留整数）",
+      "options": [
+        {
+          "key": "A",
+          "text": "400 000"
+        },
+        {
+          "key": "B",
+          "text": "421 053"
+        },
+        {
+          "key": "C",
+          "text": "344 828"
+        },
+        {
+          "key": "D",
+          "text": "1 000 000"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "甲公司预期将有权获得与客户未行使的合同权利相关的金额为 50 000 元，该金额应当按照客户行使合同权利的模式按比例确认为收入。因此，甲公司在 2026 年应当确认的收入金额 $=400 000+50 000×400 000÷950 000=421 053$（元），或：$1 000 000×400 000÷950 000=421 053$（元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-single_choice-043",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "单项选择题",
+      "number": 43,
+      "globalIndex": 43,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 9 月 1 日，建筑施工企业甲公司与客户签订一份厂房修建施工合同，该厂房修建工程整体构成单项履约义务，并属于在某一时段内履行的履约义务。合同总金额为 700 万元，预计总成本为 400 万元。截至 2026 年 12 月 31 日，甲公司为履行合同履约义务实际发生成本 160 万元，其履约进度不能合理确定，已经发生的成本预计能够得到补偿。不考虑相关税费和其他因素，甲公司 2026 年应确认的收入为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "400"
+        },
+        {
+          "key": "B",
+          "text": "280"
+        },
+        {
+          "key": "C",
+          "text": "160"
+        },
+        {
+          "key": "D",
+          "text": "420"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "当履约进度不能合理确定时，企业已经发生的成本预计能够得到补偿的，应当按照已经发生的成本金额确认收入，直到履约进度能够合理确定为止。甲公司应确认的收入为160万元，选项C当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-044",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 44,
+      "globalIndex": 44,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业为取得销售合同发生的且由企业承担的下列支出，应在发生时计入当期损益的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "尽职调查发生的费用"
+        },
+        {
+          "key": "B",
+          "text": "投标活动发生的交通费"
+        },
+        {
+          "key": "C",
+          "text": "投标文件制作费"
+        },
+        {
+          "key": "D",
+          "text": "招标文件购买费"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "差旅费、投标费、为准备投标资料发生的相关费用等，这些支出无论是否取得合同均会发生，应当在发生时计入当期损益，除非这些支出明确由客户承担。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-045",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 45,
+      "globalIndex": 45,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于合同履约成本的相关表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "与一份当前或预期取得的合同直接相关"
+        },
+        {
+          "key": "B",
+          "text": "初始确认时摊销期限不超过一年或一个正常营业周期的，应当在资产负债表中列示为存货"
+        },
+        {
+          "key": "C",
+          "text": "已计提的资产减值准备在以后期间不得转回"
+        },
+        {
+          "key": "D",
+          "text": "应采用与该合同履约成本相关的收入确认相同的基础进行摊销并计入当期损益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "该成本与一份当前或预期取得的合同直接相关，是确认为合同履约成本的条件之一，选项A当选；合同履约成本初始确认时摊销期限不超过一年或一个正常营业周期的，在资产负债表中列示为存货，超过一年或一个正常营业周期的，则列示为其他非流动资产，选项B当选；合同履约成本计提的减值准备可以转回，选项C不当选；合同履约成本和合同取得成本都采用与该资产相关的商品收入确认相同的基础进行摊销，计入当期损益，选项D当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-046",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 46,
+      "globalIndex": 46,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司系增值税一般纳税人，适用的增值税税率为 13%。2026 年 12 月 1 日，甲公司以赊销方式向乙公司销售一批成本为 75 万元的商品。开出的增值税专用发票上注明的价款为 80 万元，增值税税额为 10.4 万元，满足销售商品收入确认条件，合同约定乙公司有权在三个月内退货。2026 年 12 月 31 日，甲公司尚未收到上述款项。根据以往经验估计退货率为 12%。下列关于甲公司 2026 年该项业务会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "确认预计负债 9.6 万元"
+        },
+        {
+          "key": "B",
+          "text": "确认营业收入 70.4 万元"
+        },
+        {
+          "key": "C",
+          "text": "确认应收退货成本 9 万元"
+        },
+        {
+          "key": "D",
+          "text": "确认营业成本 66 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "借：应收账款 90.4\n\n贷：主营业务收入 70.4\n\n预计负债 9.6\n\n应交税费--应交增值税（销项税额） 10.4\n\n借：主营业务成本 66\n\n应收退货成本 9\n\n贷：库存商品 75",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-047",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 47,
+      "globalIndex": 47,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于附有质量保证条款的销售的会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "法定要求之外的质量保证，通常应作为单项履约义务"
+        },
+        {
+          "key": "B",
+          "text": "企业提供额外服务的，应当作为单项履约义务"
+        },
+        {
+          "key": "C",
+          "text": "企业销售商品提供的质量保证，均应与商品销售作为一项履约义务"
+        },
+        {
+          "key": "D",
+          "text": "企业提供的质量保证属于向客户保证所销售商品符合既定标准的服务的，应作为或有事项进行会计处理"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "选项C，企业销售商品提供的质量保证，应当评估该质量保证是否属于在向客户保证所销售商品符合既定标准之外所提供的单独服务，如果是提供的额外服务，则应当作为单项履约义务，不与销售商品作为一项履约义务。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-048",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 48,
+      "globalIndex": 48,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项交易或事项中，甲公司的身份是主要责任人的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "为履行与戊公司签署的安保服务协议，甲公司委托丁公司代表其向戊公司提供的服务内容均需甲公司同意"
+        },
+        {
+          "key": "B",
+          "text": "甲公司委托乙公司按其约定的价格销售商品，乙公司未售出商品将退还给甲公司"
+        },
+        {
+          "key": "C",
+          "text": "甲公司从航空公司购买机票并自行定价向旅客出售，未售出的机票不能退还"
+        },
+        {
+          "key": "D",
+          "text": "甲公司在其经营的购物网站上销售由丙公司生产、定价、发货及提供售后服务的商品"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项D，甲公司在其经营的购物网站上销售的商品是由丙公司负责商品的生产、定价、发货及售后服务的，说明甲公司在商品转让给客户之前并未控制该商品，甲公司的身份是代理人。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-049",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 49,
+      "globalIndex": 49,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司是一家著名的足球俱乐部。甲公司 2026 年年初授权乙公司在其设计生产的服装、帽子、水杯以及毛巾等特许产品上使用甲公司球队的名称和图标，授权期间为 5 年。合同约定，甲公司收取的合同对价由两部分组成：（1）200 万元固定金额的使用费；（2）\n每年按照乙公司销售上述商品所取得销售额的 5%计算的提成。乙公司预期甲公司会继续参加国内顶级联赛，并取得优异的成绩。甲公司 2026 年一次性收取乙公司支付的 200 万元固定金额的使用费，乙公司 2026 年销售特许产品已确认收入为 2 000 万元。下列关于甲公司 2026 年有关确认收入的表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司授予的该使用权许可属于在某一时段内履行的履约义务"
+        },
+        {
+          "key": "B",
+          "text": "甲公司收取的 200 万元固定金额的使用费应在收到时一次确认收入"
+        },
+        {
+          "key": "C",
+          "text": "甲公司按照乙公司销售特许商品所取得销售额的 5%计算的提成应当在乙公司的销售实际完成时确认收入"
+        },
+        {
+          "key": "D",
+          "text": "甲公司 2026 年确认收入的金额为 140 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项A，该合同仅包括一项履约义务，即授予使用权许可，甲公司继续参加比赛并取得优异成绩等活动是该许可的组成部分，而并未向客户转让任何可明确区分的商品或服务。由于乙公司能够合理预期甲公司将继续参加比赛，甲公司的成绩将会对其品牌（包括名称和图标等）的价值产生重大影响，而该品牌价值可能会进一步影响乙公司产品的销量，甲公司从事的上述活动并未向乙公司转让任何可明确区分的商品，因此，甲公司授予的该使用权许可，属于在某一时段内履行的履约义务；选项B，甲公司收取的200万元固定金额的使用费应当在5年内平均确认收入；选项C，按照乙公司销售相关商品所取得销售额的5%计算的提成应当在乙公司的销售实际完成时确认收入；选项D，甲公司2026年确认收入的金额=$200/5+2\\ 000×5\\%=140$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-050",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 50,
+      "globalIndex": 50,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于企业负有应客户要求回购商品义务的售后回购交易，下列表述中正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "客户具有行使该要求权的重大经济动因，回购价格低于原售价的，应当将其作为附有销售退回条款的销售交易进行会计处理"
+        },
+        {
+          "key": "B",
+          "text": "客户具有行使该要求权的重大经济动因，回购价格不低于原售价的，应当视为融资交易"
+        },
+        {
+          "key": "C",
+          "text": "客户不具有行使该要求权的重大经济动因，回购价格低于市场价的，应当视为租赁交易"
+        },
+        {
+          "key": "D",
+          "text": "客户不具有行使该要求权的重大经济动因，回购价格低于市场价的，应当将其作为附有销售退回条款的销售交易进行会计处理"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "客户具有行使该要求权重大经济动因，回购价格低于原售价的，应当视为租赁交易，选项A错误；客户不具有行使该要求权重大经济动因，回购价格低于市场价的，应当将其作为附有销售退回条款的销售交易进行会计处理，选项C错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock04-multiple_choice-051",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十二章 或有事项",
+      "section": "多项选择题",
+      "number": 51,
+      "globalIndex": 51,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业采用具有融资性质分期收款方式销售商品时，应按销售合同约定的收款日期分期确认收入"
+        },
+        {
+          "key": "B",
+          "text": "销售合同约定客户支付对价的形式为股票的，企业应当根据合同开始日后股票公允价值的变动调整合同的交易价格"
+        },
+        {
+          "key": "C",
+          "text": "对于在某一时段内履行的履约义务，只有当其履约进度能够合理确定时，才能按照履约进度确认收入"
+        },
+        {
+          "key": "D",
+          "text": "企业向客户授予知识产权许可，并约定按客户使用该知识产权实现的销售额收取特许权使用费的，企业应在客户后续销售实际发生与企业履行相关履约义务二者孰晚的时点确认收入 10 学会计就到之了课堂 **"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "选项 A，企业采用具有融资性质分期收款方式销售商品时，在符合收入确认条件时，按照现销价格确认收入，应收的合同或协议价款与现销价之间的差额，应当在合同或协议期间内，按实际利率法进行摊销。选项 B，销售合同约定客户支付对价的形式为股票的，交易价格应以股票在合同开始日的公允价值确定；合同开始日后，股票公允价值的变动金额不应调整原交易价格。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（4）252365.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（4）252365.md",
+    "pdfIndex": 4,
+    "chapterHint": "押题客观题（4）- 第11-13章",
+    "totalQuestions": 51,
+    "missingAnswers": []
+  }
+}

@@ -1,0 +1,2320 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:43:16.993051+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司对其购入债券的业务管理模式是以收取合同现金流量为目标，该债券的合同条款规定，在特定日期产生的现金流量仅为对本金和以未偿还本金金额为基础的利息的支付。不考虑其他因素，甲公司应将该债券投资分类为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "其他货币资金"
+        },
+        {
+          "key": "B",
+          "text": "以公允价值计量且其变动计入其他综合收益的金融资产"
+        },
+        {
+          "key": "C",
+          "text": "以摊余成本计量的金融资产"
+        },
+        {
+          "key": "D",
+          "text": "以公允价值计量且其变动计入当期损益的金融资产"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "甲公司购入债券的业务管理模式是以收取合同现金流量为目标，同时该债券的合同条款规定，在特定日期产生的现金流量仅为对本金和以未偿还本金金额为基础的利息的支付。满足以摊余成本计量的金融资产确认条件，选项 C 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日，甲公司以银行存款1 100万元购入乙公司当日发行的面值为1 000万元的5年期不可赎回债券，甲公司根据其管理该债券的业务模式和该债券的合同现金流量特征，将其划分为债权投资。该债券票面年利率为10%，每年年末付息，实际年利率为7.53%。2026年12月31日，该债券的公允价值上涨至1 150万元。假定不考虑其他因素，2026年12月31日甲公司该债券投资的账面价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 082.83"
+        },
+        {
+          "key": "B",
+          "text": "1 150"
+        },
+        {
+          "key": "C",
+          "text": "1 182.53"
+        },
+        {
+          "key": "D",
+          "text": "1 200"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "债权投资以摊余成本进行后续计量，2026 年 12 月 31 日甲公司该债券投资的账面价值=1 100+1 100×7.53%-1 000×10%=1 082.83（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日，甲公司以3 133.5万元购入乙公司当日发行的面值总额为3 000万元的债券，甲公司根据其管理该债券的业务模式和该债券的合同现金流量特征，将其作为债权投资核算。该债券期限为5年，票面年利率为5%，实际年利率为4%，每年年末支付利息，到期偿还本金。不考虑增值税相关税费及其他因素，2026年12月31日，甲公司该债券投资的投资收益为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "24.66"
+        },
+        {
+          "key": "B",
+          "text": "125.34"
+        },
+        {
+          "key": "C",
+          "text": "120"
+        },
+        {
+          "key": "D",
+          "text": "150"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "2026 年 12 月 31 日，甲公司该债券投资的投资收益=期初账面余额×实际年利率=3 133.5×4%=125.34（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日，甲公司溢价购入乙公司当日发行的3年期到期一次还本付息债券，甲公司根据其管理该债券的业务模式和该债券的合同现金流量特征，将其作为债权投资进行核算，并于每年年末计提利息。2026年年末，甲公司按照票面利率确认应计利息590万元，利息调整的摊销额为10万元。甲公司2026年末对该债券投资应确认投资收益的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "580"
+        },
+        {
+          "key": "B",
+          "text": "600"
+        },
+        {
+          "key": "C",
+          "text": "10"
+        },
+        {
+          "key": "D",
+          "text": "590"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "因溢价购入该债券，初始确认时“债权投资--利息调整”科目在借方，后续相应的摊销在贷方，所以 2026 年末确认投资收益的金额=590-10=580（万元）。会计分录为：\n借：债权投资--应计利息 590\n贷：投资收益 580\n债权投资--利息调整 10",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年1月1日，甲公司从二级市场购入丙公司面值为200万元的分期付息到期还本债券，支付的总价款为195万元（其中包括已到付息期但尚未领取的利息4万元），另\n支付相关交易费用 1 万元，甲公司根据其管理该债券的业务模式和该债券的合同现金流量特征，将其划分为其他债权投资。该资产入账时应记入“其他债权投资—利息调整”科目的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "4（借方）"
+        },
+        {
+          "key": "B",
+          "text": "4（贷方）"
+        },
+        {
+          "key": "C",
+          "text": "8（借方）"
+        },
+        {
+          "key": "D",
+          "text": "8（贷方）"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "取得金融资产时发生的交易费用计入其他债权投资的成本，会计分录如下：\n借：其他债权投资--成本 200\n应收利息 4\n贷：银行存款 196\n其他债权投资--利息调整 8",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-006",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×26 年 1 月 1 日，甲公司以银行存款 1 100 万元购入乙公司当日发行的 5 年期债券，面值为 1 000 万元，票面年利率为 10%，每年年末支付利息，到期偿还债券面值。甲公司将该债券投资分类为以公允价值计量且其变动计入其他综合收益的金融资产。该债券投资的实际年利率为 7.53%。2×26 年 12 月 31 日，该债券公允价值为 1 095 万元，预期信用损失 20 万元。不考虑其他因素，2×26 年 12 月 31 日，甲公司该债券投资的账面价值为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 095"
+        },
+        {
+          "key": "B",
+          "text": "1 075"
+        },
+        {
+          "key": "C",
+          "text": "1 082.83"
+        },
+        {
+          "key": "D",
+          "text": "1 062.83"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "其他债权投资按照公允价值进行后续计量，计提减值不影响其账面价值，因此 2×26 年 12 月 31 日，甲公司该债券投资的账面价值就等于当日公允价值，即 1 095 万元，选项 A 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-007",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 2 月 3 日，甲公司以银行存款 2 003 万元（其中含相关交易费用 3 万元）从二级市场购入乙公司股票 100 万股，甲公司根据金融资产的业务管理模式，将其作为以公允价值计量且其变动计入当期损益的金融资产核算。2026 年 7 月 10 日，甲公司收到乙公司于当年 5 月 25 日宣告分派的现金股利 40 万元。2026 年 12 月 31 日，上述股票的公允价值为 2 800 万元。不考虑其他因素，该项投资使甲公司 2026 年营业利润增加的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "797"
+        },
+        {
+          "key": "B",
+          "text": "800"
+        },
+        {
+          "key": "C",
+          "text": "837"
+        },
+        {
+          "key": "D",
+          "text": "840"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "取得时成本=2 003-3=2 000（万元），交易费用应确认投资收益-3 万元，股利收入应确认的投资收益为 40 万元，期末应确认公允价值变动损益=2 800-2 000=800（万元），该项投资使甲公司 2026 年营业利润增加的金额=-3+40+800=837（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-008",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，不应计入相关金融资产或金融负债初始入账价值的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "发行长期债券发生的交易费用"
+        },
+        {
+          "key": "B",
+          "text": "取得交易性金融资产发生的交易费用"
+        },
+        {
+          "key": "C",
+          "text": "取得债权投资发生的交易费用"
+        },
+        {
+          "key": "D",
+          "text": "取得以公允价值计量且其变动计入其他综合收益的金融资产发生的交易费用"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "对于以公允价值计量且其变动计入当期损益的金融资产和金融负债，相关交易费用应当直接计入当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-009",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于金融资产后续计量的表述中，不正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "交易性金融资产按照公允价值进行后续计量，公允价值变动计入公允价值变动损益"
+        },
+        {
+          "key": "B",
+          "text": "债权投资按照摊余成本进行后续计量"
+        },
+        {
+          "key": "C",
+          "text": "其他债权投资按照公允价值进行后续计量，公允价值变动计入其他综合收益"
+        },
+        {
+          "key": "D",
+          "text": "其他权益工具投资按照公允价值进行后续计量，公允价值变动计入当期损益"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 D，其他权益工具投资按照公允价值进行后续计量，但后续的公允价值变动计入其他综合收益，不是当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-010",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司发行分期付息、到期一次还本的 5 年期公司债券，实际收到的款项为 18 800 万元，该债券面值总额为 18 000 万元，票面年利率为 5%。利息于每年年末支付，实际年利率为 4%。2026 年 12 月 31 日，甲公司该项应付债券的摊余成本为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "18 000"
+        },
+        {
+          "key": "B",
+          "text": "18 652"
+        },
+        {
+          "key": "C",
+          "text": "18 800"
+        },
+        {
+          "key": "D",
+          "text": "18 948"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "2026 年 12 月 31 日，甲公司该项应付债券的摊余成本=18 800+18 800×4%-18 000×5%=18 652（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-011",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "单项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司将一项以摊余成本计量的金融资产重分类为以公允价值计量且其变动计入其他综合收益的金融资产，重分类日，以摊余成本计量的金融资产的账面余额为 450 万元，已计提减值准备 30 万元，公允价值为 500 万元。假设不考虑其他因素。下列关于重分类日甲公司会计处理的表述中，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "其他债权投资的入账价值为 500 万元"
+        },
+        {
+          "key": "B",
+          "text": "投资收益增加 70 万元"
+        },
+        {
+          "key": "C",
+          "text": "其他综合收益增加 50 万元"
+        },
+        {
+          "key": "D",
+          "text": "信用减值损失增加 20 万元"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "企业将一项以摊余成本计量的金融资产重分类为以公允价值计量且其变动计入其他综合收益的金融资产的，应当按照该金融资产在重分类日的公允价值 500 万元进行计量，原\n\n账面价值与公允价值之间的差额计入其他综合收益，同时，对应结转减值准备。选项 A 当选。假设该债权投资的账面余额 450 万元即为其面值，重分类日，甲公司的会计处理如下：\n\n借：其他债权投资--成本 450\n\n--公允价值变动 50\n\n贷：债权投资--成本 450\n\n其他综合收益 50\n\n借：债权投资减值准备 30\n\n贷：其他综合收益--信用减值准备 30",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-012",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "多项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业将金融资产划分为以摊余成本计量的金融资产时，需要符合的条件有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业管理该金融资产的业务模式是以出售该金融资产为目标"
+        },
+        {
+          "key": "B",
+          "text": "企业管理该金融资产的业务模式是以收取合同现金流量为目标"
+        },
+        {
+          "key": "C",
+          "text": "企业管理该金融资产的业务模式既以收取合同现金流量为目标又以出售该金融资产为目标"
+        },
+        {
+          "key": "D",
+          "text": "该金融资产的合同条款规定，在特定日期产生的现金流量，仅为对本金和以未偿付本金金额为基础的利息的支付"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "金融资产同时符合下列条件的，应当分类为以摊余成本计量的金融资产：\n\n（1）企业管理该金融资产的业务模式是以收取合同现金流量为目标。\n\n（2）该金融资产的合同条款规定，在特定日期产生的现金流量，仅为对本金和以未偿付本金金额为基础的利息的支付。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-013",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "多项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "对于以摊余成本计量的金融资产，下列各项中影响摊余成本的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "已偿还的本金"
+        },
+        {
+          "key": "B",
+          "text": "初始确认金额与到期日金额之间的差额按实际利率法摊销形成的累计摊销额"
+        },
+        {
+          "key": "C",
+          "text": "已计提的累计信用减值准备"
+        },
+        {
+          "key": "D",
+          "text": "取得时所付价款中包含的应收未收利息"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "金融资产的摊余成本，是指该金融资产的初始确认金额经下列调整后的结果：\n\n（1）扣除已偿还的本金；（2）加上或减去采用实际利率法将该初始确认金额与到期日金额之间的差额进行摊销形成的累计摊销额；（3）扣除计提的累计信用减值准备。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-014",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "多项选择题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业对下列金融资产进行初始计量时，应将发生的相关交易费用计入初始确认金额的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "债权投资"
+        },
+        {
+          "key": "B",
+          "text": "其他权益工具投资"
+        },
+        {
+          "key": "C",
+          "text": "其他债权投资"
+        },
+        {
+          "key": "D",
+          "text": "交易性金融资产"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C"
+        ],
+        "display": "ABC"
+      },
+      "explanation": "选项 D，取得交易性金融资产发生的交易费用应当记入“投资收益”科目借方。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-015",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "多项选择题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于其他权益工具投资的会计处理中，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "持有期间确认的现金股利，应计入其他综合收益"
+        },
+        {
+          "key": "B",
+          "text": "终止确认时，应将持有期间确认的公允价值累计变动额转入留存收益"
+        },
+        {
+          "key": "C",
+          "text": "持有期间确认的公允价值变动，应计入其他综合收益"
+        },
+        {
+          "key": "D",
+          "text": "取得投资时发生的交易费用，应计入投资收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "其他权益工具投资持有期间确认的现金股利，应计入投资收益，选项 A 不当选；取得投资时发生的交易费用，应计入其他权益工具投资成本，选项 D 不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-016",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "多项选择题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于企业持有的交易性金融资产会计处理表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "取得交易性金融资产的手续费，计入投资收益"
+        },
+        {
+          "key": "B",
+          "text": "处置时实际收到的金额与交易性金融资产账面价值之间的差额计入当期损益"
+        },
+        {
+          "key": "C",
+          "text": "该金融资产的公允价值变动计入投资收益"
+        },
+        {
+          "key": "D",
+          "text": "持有交易性金融资产期间享有被投资单位宣告发放的现金股利计入投资收益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "选项 C，交易性金融资产的公允价值变动应计入公允价值变动损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-017",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "多项选择题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于金融资产的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "对于指定为以公允价值计量且其变动计入其他综合收益的非交易性权益工具投资，无需计提减值准备"
+        },
+        {
+          "key": "B",
+          "text": "企业持有以公允价值计量且其变动计入当期损益的金融资产的时间超过一年后，应将其重分类为以公允价值计量且其变动计入其他综合收益的金融资产"
+        },
+        {
+          "key": "C",
+          "text": "企业将以摊余成本计量的金融资产重分类为以公允价值计量且其变动计入当期损益的金融资产，应当按金融资产在重分类日的公允价值进行计量"
+        },
+        {
+          "key": "D",
+          "text": "企业以摊余成本计量的金融资产应于初始确认时计算其实际利率，并在预期存续期间内保持不变"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "选项 B，金融资产的重分类并不是以持有时间作为标准，而是应当以企业持有该金融资产的业务模式和该金融资产的合同现金流量特征作为分类标准。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-018",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "多项选择题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，关于应付债券的表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "应付债券应按实际利率计算利息费用"
+        },
+        {
+          "key": "B",
+          "text": "到期一次还本付息的债券每期确认的利息费用会增加债券的摊余成本"
+        },
+        {
+          "key": "C",
+          "text": "满足资本化条件的利息费用应计入在建工程等相关资产的成本"
+        },
+        {
+          "key": "D",
+          "text": "不满足资本化条件的利息费用计入财务费用"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-true_false-019",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "判断题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "在特定条件下，企业可以将以公允价值计量且其变动计入当期损益的金融负债重分类为以摊余成本计量的金融负债。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "企业对金融负债的分类一经确定，不得变更。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-true_false-020",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第八章 金融资产和金融负债",
+      "section": "判断题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "折价发行的公司债券每期摊销利息调整会减少应付债券的摊余成本。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "折价发行的公司债券每期摊销利息调整时会增加应付债券的摊余成本。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-021",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "单项选择题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为增值税一般纳税人，其生产的产品适用的增值税税率为 13%。2026年6月30日，甲公司将单位成本为0.8万元的100件产品作为福利发放给职工，该产品的公允价值和计税价格均为1万元/件。2026年6月30日，甲公司因该事项计入应付职工薪酬的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "113"
+        },
+        {
+          "key": "B",
+          "text": "100"
+        },
+        {
+          "key": "C",
+          "text": "80"
+        },
+        {
+          "key": "D",
+          "text": "90.4"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "甲公司因该事项计入应付职工薪酬的金额$=100×1×(1+13\\%)=113$（万元），选项 A 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-022",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "单项选择题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为增值税一般纳税人，适用的增值税税率为13%。2×26年12月31日，甲公司以其生产的50台空调作为节日福利发放给公司总部管理人员。每台空调的不含税售价为0.6万元，成本为0.4万元。不考虑其他因素，该事项对甲公司2×26年营业利润的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "—20"
+        },
+        {
+          "key": "B",
+          "text": "—33.9"
+        },
+        {
+          "key": "C",
+          "text": "—23.9"
+        },
+        {
+          "key": "D",
+          "text": "30"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "甲公司以自产产品作为非货币性福利发放给总部管理人员应视同销售，按照产品的公允价值和相关税费计入管理费用，应确认管理费用的金额$=50×0.6×(1+13\\%)=33.9$（万元）；甲公司需对该批产品确认主营业务收入 30 万元（$50×0.6$），结转主营业务成本 20 万元（$50×0.4$），影响营业利润的金额$=30-20=10$（万元）。该事项对甲公司 $2×26$ 年营业利润的影响金额$=-33.9+10=-23.9$（万元），选项 C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-023",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "单项选择题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×26年1月1日，甲公司实施对管理层的一项奖金计划。该计划规定，如果甲公司2×26年度实现的净利润超过2 000万元，其超过部分的20%将作为奖金发放给管理层。2×26年度甲公司实现净利润2 500万元。甲公司实施该奖金计划影响的财务报表项目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "营业外支出"
+        },
+        {
+          "key": "B",
+          "text": "管理费用"
+        },
+        {
+          "key": "C",
+          "text": "资本公积"
+        },
+        {
+          "key": "D",
+          "text": "其他综合收益"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "甲公司实施的奖金计划属于短期利润分享计划，受益对象为甲公司的管理层，所以应将其计入管理费用，金额$=(2500-2000)×20\\%=100$（万元）。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-024",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "单项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项因设定受益计划产生的职工薪酬成本中，除非计入资产成本，应当计入其他综合收益的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "精算利得和损失"
+        },
+        {
+          "key": "B",
+          "text": "结算利得或损失"
+        },
+        {
+          "key": "C",
+          "text": "当期服务成本和过去服务成本"
+        },
+        {
+          "key": "D",
+          "text": "计划资产的利息收益"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "设定受益计划应计入其他综合收益的部分包括：（1）精算利得和损失；（2）计划资产回报，扣除包括在设定受益计划净负债或净资产的利息净额中的金额；（3）资产上限影响的变动，扣除包括在设定受益计划净负债或净资产的利息净额中的金额。计入当期损益的部分包括（1）当期服务成本；（2）过去服务成本；（3）结算利得和损失；（4）设定受益计划净负债或净资产的利息净额。选项 B、C 和 D 应计入当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-025",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "多项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，企业应通过应付职工薪酬核算的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "作为福利发放给职工的自产产品"
+        },
+        {
+          "key": "B",
+          "text": "支付给职工的业绩奖金"
+        },
+        {
+          "key": "C",
+          "text": "支付给职工的辞退补偿"
+        },
+        {
+          "key": "D",
+          "text": "支付给职工的加班费"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "职工薪酬，是指企业为获得职工提供的服务或解除劳动关系而给予的各种形式的报酬或补偿。职工薪酬包括短期薪酬、离职后福利、辞退福利和其他长期职工福利。选项 A、B、C、D 均应通过应付职工薪酬核算。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-026",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "多项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，企业应作为职工薪酬核算的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "职工教育经费"
+        },
+        {
+          "key": "B",
+          "text": "非货币性福利"
+        },
+        {
+          "key": "C",
+          "text": "长期残疾福利"
+        },
+        {
+          "key": "D",
+          "text": "累积带薪缺勤"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "职工薪酬是指企业为获得职工提供的服务或解除劳动关系而给予各种形式的报酬或补偿，包括职工在职期间和离职后提供给职工的全部货币性薪酬和非货币性福利。企业提供给职工配偶、子女或其他被赡养人的福利等，也属于职工薪酬。以上选项均正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-027",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "多项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，企业应作为短期薪酬进行会计处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "由企业负担的职工医疗保险费"
+        },
+        {
+          "key": "B",
+          "text": "向职工发放的高温补贴"
+        },
+        {
+          "key": "C",
+          "text": "由企业负担的职工住房公积金"
+        },
+        {
+          "key": "D",
+          "text": "向职工发放的工资"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "短期薪酬是指企业在职工提供相关服务的年度报告期间结束后 12 个月内需要全部予以支付的职工薪酬，因解除与职工的劳动关系给予的补偿除外，故本题选择 ABCD。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-028",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "多项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2×26年，甲公司发生与职工薪酬有关的交易或事项如下：（1）以甲公司生产的产品作为福利发放给职工，该产品的生产成本为1 500万元，市场价格为1 800万元；（2）为职工缴纳200万元的“五险一金”；（3）根据职工入职期限，分别可以享受5至15天的年休假，当年未用完的带薪休假权利予以取消。甲公司职工平均日工资为120元/人；（4）对管理人员实施2×26年度的利润分享计划，按当年度利润实现情况，相关管理人员可分享利润500万元。不考虑其他因素，下列各项关于甲公司2×26年与职工薪酬有关会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "以产品作为福利发放给职工按产品的生产成本计入相关成本费用"
+        },
+        {
+          "key": "B",
+          "text": "为职工缴纳的“五险一金”按照职工所在岗位分别确认为相关成本费用"
+        },
+        {
+          "key": "C",
+          "text": "对于职工未享受的休假权利无须进行会计处理"
+        },
+        {
+          "key": "D",
+          "text": "管理人员应分享的利润确认为当期费用计入损益"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "以产品作为福利发放给职工，应当按照产品的公允价值和相关税费计入相关成本费用，选项 A 不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-029",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "多项选择题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项在职职工的薪酬中，企业应当根据受益对象分配计入有关资产成本或当期损益的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "基本医疗保险费"
+        },
+        {
+          "key": "B",
+          "text": "职工工资"
+        },
+        {
+          "key": "C",
+          "text": "职工福利费"
+        },
+        {
+          "key": "D",
+          "text": "住房公积金"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "选项 A、B、C、D，均应当按照受益对象计入相关资产成本或当期损益。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-030",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "多项选择题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于企业职工薪酬会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "营销人员的辞退补偿应当计入管理费用"
+        },
+        {
+          "key": "B",
+          "text": "内退职工的工资应当计入营业外支出"
+        },
+        {
+          "key": "C",
+          "text": "生活困难职工的补助应当计入营业外支出"
+        },
+        {
+          "key": "D",
+          "text": "产品生产工人的工资应当计入生产成本"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "企业确认的因辞退福利产生的职工薪酬，应一次性计入管理费用，选项 A 正确；实施职工内部退休计划的，在其正式退休日期之前应当比照辞退福利处理，在其正式退休日期之后应当按照离职后福利处理，选项 B 错误；生活困难职工的补助应根据职工的受益对象计入当期损益或资产成本中，选项 C 错误；产品生产工人的工资应当计入产品生产成本，选项 D 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-031",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第九章 职工薪酬",
+      "section": "多项选择题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于职工薪酬的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "实施职工内部退休计划的企业，应将支付给内退职工的工资在职工内退后分期计入损益"
+        },
+        {
+          "key": "B",
+          "text": "长期残疾福利水平取决于职工提供服务期间长短的，企业应在职工提供服务的期间确认应付长期残疾福利义务"
+        },
+        {
+          "key": "C",
+          "text": "企业应当将重新计量设定受益计划净负债或净资产所产生的变动计入其他综合收益，并且在后续会计期间不允许转回至损益"
+        },
+        {
+          "key": "D",
+          "text": "设定受益计划存在盈余的，企业应当以设定受益计划的盈余和资产上限两项的孰高者计量设定受益计划净资产"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C"
+        ],
+        "display": "BC"
+      },
+      "explanation": "选项 A，实施职工内部退休计划的企业，应将支付给内退职工的工资一次性计入当期损益，不能在职工内退后分期确认。选项 D，设定受益计划存在盈余的，企业应当以设定受益计划的盈余和资产上限两项的孰低者计量设定受益计划净资产。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-032",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项交易或事项中，属于股份支付的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "股份有限公司向其股东分派股票股利"
+        },
+        {
+          "key": "B",
+          "text": "股份有限公司向其高管授予现金股票增值权"
+        },
+        {
+          "key": "C",
+          "text": "债务人将债务转为权益工具"
+        },
+        {
+          "key": "D",
+          "text": "企业合并中合并方向被合并方股东定向增发股票作为合并对价"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "企业向其股东分派的股票股利属于权益性交易，不属于股份支付，选项 A 不正确；债务人将债务转为权益工具目的是偿债，并不是为了获取其提供的服务不属于股份支付，选项 C 不正确；企业合并中合并方向被合并方股东定向增发股票作为合并对价，属于企业合并，不属于股份支付，选项 D 不正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-033",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司通过二级市场回购股份，以授予限制性股票的方式对员工进行股权激励。2025年9月15日，甲公司股东大会通过股权激励方案，确定授予价格，并授权董事会确定具体人员和股份数量；11月28日，董事会确定具体人员和股份数量，并与员工签订认股协议；12月10日，员工向甲公司支付认购款。2026年1月25日，甲公司办理股权登记手续。不考虑其他因素，甲公司该股权激励授予日为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2025年9月15日"
+        },
+        {
+          "key": "B",
+          "text": "2025年11月28日"
+        },
+        {
+          "key": "C",
+          "text": "2025年12月10日"
+        },
+        {
+          "key": "D",
+          "text": "2026年1月25日"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "授予日是指股份支付协议获得批准的日期，其中，“获得批准”，指的是企业与职工或其他方就股份支付协议条款和条件已达成一致，并获得了股东大会或类似机构的批准。实务中，常见上市公司股东大会审议通过股权激励方案，并确定了授予价格，但未确定拟授予股份的激励对象及股份数量，股东大会授权董事会后续确定具体激励对象及股份数量，在此情况下，授予日为董事会后续确定具体激励对象及股份数量，并将经批准的股权激励方案的具体条款或条件与员工进行沟通并达成一致的日期，选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-034",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，应当作为以现金结算的股份支付进行会计处理的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "以低于市价向员工出售限制性股票的计划"
+        },
+        {
+          "key": "B",
+          "text": "授予高管人员低于市价购买公司股票的期权计划"
+        },
+        {
+          "key": "C",
+          "text": "公司承诺达到业绩条件时向员工无对价定向发行股票的计划"
+        },
+        {
+          "key": "D",
+          "text": "授予研发人员以预期股价相对于基准日股价的上涨幅度为基础支付奖励款的计划"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "选项 A、B 和 C，是企业为获取职工服务而以股份或其他权益工具作为对价进行结算的交易，属于以权益结算的股份支付；选项 D，是企业为获取服务而承担的以股份或其他权益工具为基础计算的交付现金义务的交易，属于以现金结算的股份支付。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-035",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "A 公司为国内上市公司。2025 年 1 月 1 日，A 公司向其 50 名管理人员每人授予 10 万份股票期权，股份支付协议规定，这些管理人员从 2025 年 1 月 1 日起在公司连续服务满 3 年，即可以每股 4 元的价格购买 10 万股 A 公司普通股股票。A 公司估计每份股票期权在授予日的公允价值为 15 元。2025 年有 10 名管理人员离开 A 公司，A 公司估计 3 年中离开的管理人员的比例将达到 25%；2026 年又有 5 名管理人员离开 A 公司，A 公司将估计 3 年中管理人员离职的比例修正为 35%。不考虑其他因素，A 公司 2026 年因该项股份支付应计入管理费用的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 375"
+        },
+        {
+          "key": "B",
+          "text": "2 750"
+        },
+        {
+          "key": "C",
+          "text": "6 000"
+        },
+        {
+          "key": "D",
+          "text": "4 000"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "A 公司 2025 年因该项股份支付应计入管理费用的金额=$50×(1-25\\%)×10×15×1/3=1875$（万元），2026 年因该项股份支付应计入管理费用的金额=$50×(1-35\\%)×10×15×2/3-1875=1375$（万元），选项 A 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-036",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 36,
+      "globalIndex": 36,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2025 年 1 月 1 日，甲公司向 50 名高管人员每人授予 2 万份股票期权，这些人员从被授予股票期权之日起连续服务满 2 年，即可按每股 8 元的价格购买甲公司 2 万股普通股股票（每股面值 1 元）。该期权在授予日的公允价值为每股 12 元。2026 年 10 月 20 日，甲公司从二级市场以每股 16 元的价格回购本公司普通股股票 100 万股，拟用于高管人员股权激励。在等待期内，甲公司没有高管人员离职。2026 年 12 月 31 日，高管人员全部行权，当日甲公司普通股市场价格为每股 20 元。2026 年 12 月 31 日，甲公司因高管人员行权应确认股本溢价的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "300"
+        },
+        {
+          "key": "B",
+          "text": "400"
+        },
+        {
+          "key": "C",
+          "text": "500"
+        },
+        {
+          "key": "D",
+          "text": "1 200"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "行权时收到的款项=$50×2×8=800$（万元），冲减的“资本公积—其他资本公积”=$50×2×12=1200$（万元），冲减的库存股=$100×16=1600$（万元），行权应确认的股本溢价=$800+1200-1600=400$（万元）。\n\n借：银行存款 800\n资本公积—其他资本公积 1 200\n贷：库存股 1 600\n资本公积—股本溢价 400",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-037",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 37,
+      "globalIndex": 37,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司系国内 A 股上市公司。为稳定公司中高层管理人员，甲公司于 2025 年 1 月 1 日向其 60 名中高层管理人员每人授予 8 万份股票期权。股份支付协议规定，接受激励的中高层管理人员从 2025 年 1 月 1 日起在公司连续服务满 3 年，即可以每股 6 元的价格购买 8 万股甲公司定向增发的普通股股票，从而获益。甲公司估计每份股票期权在授予日的公允价值为 12 元。2025 年有 4 名管理人员离开甲公司，甲公司估计 3 年中离开的管理人员的比例将达到 20%；2026 年又有 5 名管理人员离开甲公司，甲公司将估计 3 年中管理人员离职比例修正为 25%。不考虑其他因素，甲公司 2026 年因该项股份支付而记入“资本公积--其他资本公积”科目的金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 504"
+        },
+        {
+          "key": "B",
+          "text": "1 536"
+        },
+        {
+          "key": "C",
+          "text": "2 880"
+        },
+        {
+          "key": "D",
+          "text": "1 344"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "2025 年累计确认记入“资本公积—其他资本公积”科目的金额=$60×(1-20\\%)×8×12×1/3=1536$（万元）；2026 年累计确认记入“资本公积—其他资本公积”科目的金额=$60×(1-25\\%)×8×12×2/3=2880$（万元），2026 年当期应确认记入“资本公积—其他资本公积”的金额=$2880-1536=1344$（万元），选项 D 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-038",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 38,
+      "globalIndex": 38,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 1 月 1 日，甲公司向其 50 名管理人员授予每人 1 万份现金股票增值权，约定这些人员从 2026 年 1 月 1 日起连续服务满 3 年且公司三年净利润分别达到 500 万元、1 000 万元、1 500 万元，则可在 2028 年年末按照股价的增长幅度获得现金。2026 年 12 月 31\n日，甲公司股票市价为每股 30 元，每份现金股票增值权的公允价值为 10 元。甲公司当年有 8 名管理人员离职，预计未来 2 年还将有 15 名管理人员离职。2026 年，甲公司实现净利润 720 万元，预计未来两年均能达到净利润目标。假定不考虑其他因素，该项股份支付对甲公司 2026 年营业利润的影响金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "140"
+        },
+        {
+          "key": "B",
+          "text": "270"
+        },
+        {
+          "key": "C",
+          "text": "90"
+        },
+        {
+          "key": "D",
+          "text": "116.67"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "该项股份支付对甲公司 2026 年营业利润的影响金额=$(50-8-15)×1×10×1/3=90$（万元），选项 C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-039",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 39,
+      "globalIndex": 39,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "乙公司系国内 A 股上市公司，为稳定公司高层管理人员，于 2025 年 1 月 1 日向其 20 名高层管理人员每人授予 1 万份现金股票增值权。根据股份支付协议规定，这些高层管理人员自 2025 年 1 月 1 日起必须在该公司连续服务满 4 年，服务期满后即可按照当时股价的增长幅度获得现金，该现金股票增值权应在 2029 年 6 月 30 日之前行使完毕。2025 年 12 月 31 日，每份现金股票增值权的公允价值为 40 元，当年有 1 名高层管理人员离开乙公司，乙公司估计未来 3 年中将有 3 名高层管理人员离开。2026 年 12 月 31 日，每份现金股票增值权的公允价值为 46 元，当年又有 1 名高层管理人员离开乙公司，乙公司估计 4 年中离开的高层管理人员将达到 3 人。不考虑其他因素，乙公司 2026 年 12 月 31 日因该项股权激励应确认的“应付职工薪酬”金额为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "185"
+        },
+        {
+          "key": "B",
+          "text": "180"
+        },
+        {
+          "key": "C",
+          "text": "231"
+        },
+        {
+          "key": "D",
+          "text": "321"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "2025 年应确认“应付职工薪酬”的金额=$(20-1-3)×1×40×1/4=160$（万元），2026 年应确认“应付职工薪酬”的金额=$(20-3)×1×46×2/4-160=231$（万元），选项 C 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-single_choice-040",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "单项选择题",
+      "number": 40,
+      "globalIndex": 40,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为国内 A 股上市公司，股东大会于 2024 年 12 月 24 日审议通过一项股份支付计划，该股份支付计划向其 30 名管理人员每人授予 1 万份股票期权，要求这些管理人员从 2025 年 1 月 1 日起在该公司连续服务 3 年，即可以 2 元/股的价格购买 1 万股甲公司定向增发的普通股股票。甲公司估计该股票期权在 2024 年 12 月 24 日的公允价值为每份 18 元。2025 年有 4 名管理人员离开甲公司，甲公司估计 3 年中离职的管理人员比例将达到 20%；2026 年又有 3 名管理人员离开甲公司，甲公司将 3 年中管理人员的估计离职比例修正为 30%。2026 年年初，甲公司将授予日股票期权的公允价值修正为每份 16 元。不考虑其他因素，甲公司 2026 年应确认的成本费用为（ ）万元。",
+      "options": [
+        {
+          "key": "A",
+          "text": "80"
+        },
+        {
+          "key": "B",
+          "text": "108"
+        },
+        {
+          "key": "C",
+          "text": "132"
+        },
+        {
+          "key": "D",
+          "text": "252"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "企业以减少股份支付公允价值总额的方式或其他不利于职工的方式修改条款和条件，企业仍应继续对取得的服务进行会计处理，如同该变更从未发生，除非取消了部分或全部已授予的权益工具，则甲公司 2025 年应确认的成本费用=$30×(1-20\\%)×1×18×1/3=144$（万元），甲公司 2026 年应确认的成本费用=$30×(1-30\\%)×1×18×2/3-144=108$（万元），选项 B 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-041",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "多项选择题",
+      "number": 41,
+      "globalIndex": 41,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于股份支付工具类型的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "限制性股票"
+        },
+        {
+          "key": "B",
+          "text": "股票期权"
+        },
+        {
+          "key": "C",
+          "text": "模拟股票"
+        },
+        {
+          "key": "D",
+          "text": "现金股票增值权"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "股份支付的类型主要划分为两大类，分别是以权益结算的股份支付和以现金结算的股份支付，其中以权益结算的股份支付最常用的工具有限制性股票和股票期权两类，以现金结算的股份支付最常用的工具有模拟股票和现金股票增值权两类，选项 A、B、C、D 均当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-042",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "多项选择题",
+      "number": 42,
+      "globalIndex": 42,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，影响企业对股份支付预计可行权情况作出估计的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "市场条件 学会会计就到之了课堂"
+        },
+        {
+          "key": "B",
+          "text": "非市场条件"
+        },
+        {
+          "key": "C",
+          "text": "非可行权条件"
+        },
+        {
+          "key": "D",
+          "text": "服务期限条件"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "市场条件和非可行权条件得到满足，不影响企业对预计可行权情况的估计，选项 B 和 D 正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-043",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "多项选择题",
+      "number": 43,
+      "globalIndex": 43,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "乙公司、丙公司和丁公司均为甲公司的子公司。甲公司及其相关子公司经各自董事会批准，于 $2\\times26$ 年 1 月 1 日对甲公司以及相关子公司管理人员或员工进行激励：（1）甲公司以自身普通股授予乙公司管理人员；（2）丙公司按照上年实现净利润的 5%分配给在职员工；（3）丁公司以自身普通股授予其管理人员；（4）甲公司以其生产的产品分配给在职员工。下列各项关于甲公司及其相关子公司对其管理人员或员工进行激励的安排中，应按股份支付会计准则进行会计处理的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲公司以其生产的产品分配给员工"
+        },
+        {
+          "key": "B",
+          "text": "丙公司按上年净利润的 5%分配给员工"
+        },
+        {
+          "key": "C",
+          "text": "甲公司以自身普通股授予乙公司管理人员"
+        },
+        {
+          "key": "D",
+          "text": "丁公司以自身普通股授予其管理人员"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "选项 A，属于非货币性福利，按职工薪酬准则进行会计处理；选项 B，属于利润分享计划，按职工薪酬准则进行会计处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-044",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "多项选择题",
+      "number": 44,
+      "globalIndex": 44,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲公司为上市公司，2023 年 1 月 1 日，甲公司向其 200 名高级管理人员每人授予 1 万股股票期权，这些高级管理人员从 2023 年 1 月 1 日起在甲公司连续服务 3 年，即可以每股 5 元的价格购买 1 万股甲公司股票。甲公司估计该期权在授予日的公允价值为 10 元。截至 2025 年 12 月 31 日，共有 20 名高级管理人员离职。2026 年 1 月 10 日，剩余的高级管理人员全部行权，甲公司向其发行 180 万股普通股股票（每股面值为 1 元），甲公司共收到银行存款 900 万元。不考虑其他因素，下列各项关于甲公司在行权日的会计处理中，表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "应付职工薪酬减少 1 500 万元"
+        },
+        {
+          "key": "B",
+          "text": "资本公积—其他资本公积减少 1 800 万元"
+        },
+        {
+          "key": "C",
+          "text": "资本公积—股本溢价增加 2 520 万元"
+        },
+        {
+          "key": "D",
+          "text": "股本增加 180 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "本题考查的知识点为权益结算的股份支付，不涉及应付职工薪酬的核算，选项 A 不当选；行权日，股本增加 180 万元，资本公积—其他资本公积减少额=（200-20）×1×10×3/3=1 800（万元），资本公积—股本溢价增加额=900+1 800-180=2 520（万元），选项 B、C、D 当选。\n行权日，甲公司相关会计分录如下：\n借：银行存款 900\n资本公积—其他资本公积 1 800\n贷：股本 180\n资本公积—股本溢价 2 520",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-045",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "多项选择题",
+      "number": 45,
+      "globalIndex": 45,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于附等待期的股份支付会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "以权益结算的股份支付，相关权益性工具的公允价值在授予日后不再调整"
+        },
+        {
+          "key": "B",
+          "text": "附市场条件的股份支付，应在市场及非市场条件均满足时确认相关成本费用"
+        },
+        {
+          "key": "C",
+          "text": "现金结算的股份支付在授予日不作会计处理，权益结算的股份支付应予处理"
+        },
+        {
+          "key": "D",
+          "text": "业绩条件为非市场条件的股份支付，等待期内应根据后续信息调整对可行权情况的估计"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "D"
+        ],
+        "display": "AD"
+      },
+      "explanation": "选项 B，只要满足非市场条件，企业就应当确认相关成本费用；选项 C，除立即可行权的股份支付外，现金结算的股份支付以及权益结算的股份支付在授予日均不做处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-multiple_choice-046",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "多项选择题",
+      "number": 46,
+      "globalIndex": 46,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于股份支付的表述中，不正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "企业以发行自身权益工具为对价取得对联营企业的投资，属于股份支付"
+        },
+        {
+          "key": "B",
+          "text": "对于可行权条件为业绩条件的股份支付，只要职工满足了所有非市场条件，企业就应当确认已取得的服务费用"
+        },
+        {
+          "key": "C",
+          "text": "授予职工以权益结算的股份支付，企业应在每个资产负债表日按照权益工具当日的公允价值，将当期取得的服务计入相关资产成本或当期费用"
+        },
+        {
+          "key": "D",
+          "text": "对于授予后立即可行权的换取职工提供服务的以权益结算的股份支付，企业应在授予日按照权益工具的公允价值，将取得的服务计入相关资产成本或当期费用，同时计入资本公积中的其他资本公积"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C"
+        ],
+        "display": "AC"
+      },
+      "explanation": "选项 A，股份支付是指企业为获取职工和其他方提供的服务而授予权益工具或者承担以权益工具为基础确定的负债的交易，企业以发行自身权益工具为对价取得对联营企业的投资不以获取职工和其他方服务为目的，不符合股份支付的定义。选项 C，授予职工以权益结算的股份支付，企业应在等待期内的每个资产负债表日按照权益工具在授予日的公允价值，将当期取得的服务计入相关资产成本或当期费用。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-true_false-047",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "判断题",
+      "number": 47,
+      "globalIndex": 47,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "以回购本公司股份作为股权激励职工的，属于以现金结算的股份支付。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "以回购本公司股份作为股权激励职工的，属于以权益结算的股份支付。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-true_false-048",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "判断题",
+      "number": 48,
+      "globalIndex": 48,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "母公司向其子公司高级管理人员授予其本身的权益工具，且子公司没有结算义务，则母公司应作为权益结算的股份支付进行会计处理，子公司应作为现金结算的股份支付进行会计处理。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "母公司向其子公司高级管理人员授予其本身的权益工具，且子公司没有结算义务，则母公司与子公司均应作为权益结算的股份支付进行会计处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock03-true_false-049",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第十章 股份支付",
+      "section": "判断题",
+      "number": 49,
+      "globalIndex": 49,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "企业集团内的母公司以上市子公司的股票授予本公司高管作为股权激励的，母公司在个别财务报表中应将其作为以权益结算的股份支付进行会计处理。（ ）\n\n10 学会计就到之了课堂\n\n**",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "企业集团内发生的股份支付交易中，母公司以子公司权益工具结算的，应作为现金结算的股份支付处理。\n\n学会会计就到之了课堂",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（3）263526.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（3）263526.md",
+    "pdfIndex": 3,
+    "chapterHint": "押题客观题（3）- 第08-10章",
+    "totalQuestions": 49,
+    "missingAnswers": []
+  }
+}

@@ -1,0 +1,1517 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-02T11:49:42.343426+00:00",
+  "subjects": [
+    {
+      "id": "accounting",
+      "name": "中级会计实务",
+      "year": 2026,
+      "exam": "中级会计资格考试"
+    }
+  ],
+  "groups": [],
+  "questions": [
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-001",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 1,
+      "globalIndex": 1,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于政府财务会计要素的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "预算结余"
+        },
+        {
+          "key": "B",
+          "text": "预算收入"
+        },
+        {
+          "key": "C",
+          "text": "净资产"
+        },
+        {
+          "key": "D",
+          "text": "预算支出"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "政府财务会计要素包括资产、负债、净资产、收入和费用。选项 ABD，属于政府预算会计要素。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-002",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 2,
+      "globalIndex": 2,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "《政府会计准则—基本准则》确立了“双功能”“双基础”“双报告”的政府会计核算模式，其中“双报告”指的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "预算报告和财务报告"
+        },
+        {
+          "key": "B",
+          "text": "决算报告和财务报告"
+        },
+        {
+          "key": "C",
+          "text": "绩效报告和预算报告"
+        },
+        {
+          "key": "D",
+          "text": "预算报告和决算报告"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "“双报告”指的是政府会计主体应当编制决算报告和财务报告。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-003",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 3,
+      "globalIndex": 3,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，在财政直接支付方式下，事业单位收到相关支付凭证时，按照支付凭证所列金额，在财务会计核算中，应贷记的会计科目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "经营收入"
+        },
+        {
+          "key": "B",
+          "text": "其他收入"
+        },
+        {
+          "key": "C",
+          "text": "事业收入"
+        },
+        {
+          "key": "D",
+          "text": "财政拨款收入"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "在财政直接支付方式下，事业单位在收到相关支付凭证时，按照支付凭证所列金额，在财务会计中借记“单位管理费用”等科目，贷记“财政拨款收入”科目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-004",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 4,
+      "globalIndex": 4,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "某事业单位收到同级财政部门批复的财政授权支付方式下分月用款计划及相关支付凭证，该支付凭证所列金额为 256 000 元。下列各项中，事业单位在财务会计中的会计处理正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "借：资金结存 256 000\n贷：财政拨款收入 256 000"
+        },
+        {
+          "key": "B",
+          "text": "借：零余额账户用款额度 256 000\n贷：事业收入 256 000"
+        },
+        {
+          "key": "C",
+          "text": "借：零余额账户用款额度 256 000\n贷：财政拨款收入 256 000"
+        },
+        {
+          "key": "D",
+          "text": "借：资金结存 256 000\n贷：事业收入 256 000"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "在财政授权支付方式下，单位收到相关支付凭证时，根据支付凭证所列数额，在预算会计中借记“资金结存--零余额账户用款额度”科目，贷记“财政拨款预算收入”科目；同时在财务会计中借记“零余额账户用款额度”科目，贷记“财政拨款收入”科目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-005",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 5,
+      "globalIndex": 5,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，关于事业单位“零余额账户用款额度”科目的表述正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "该科目年末应无余额"
+        },
+        {
+          "key": "B",
+          "text": "该科目属于负债科目"
+        },
+        {
+          "key": "C",
+          "text": "借方登记收到财政直接支付到账额度"
+        },
+        {
+          "key": "D",
+          "text": "贷方登记财政授权支付到账额度"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "该科目借方登记收到授权支付到账额度，贷方登记支用的零余额用款额度，期末借方余额反映事业单位尚未支用的零余额用款额度。年度终了，事业单位应当依据代理银行提供的对账单作注销额度的相关账务处理，所以“零余额账户用款额度”科目年末应无余额。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-006",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 6,
+      "globalIndex": 6,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "某事业单位经财政部门审核后以财政直接支付方式向自来水公司支付水费，在财务会计模式下应贷记的会计科目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "事业收入"
+        },
+        {
+          "key": "B",
+          "text": "财政拨款预算收入"
+        },
+        {
+          "key": "C",
+          "text": "财政拨款收入"
+        },
+        {
+          "key": "D",
+          "text": "零余额账户用款额度"
+        }
+      ],
+      "answer": {
+        "value": "C",
+        "display": "C"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-007",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 7,
+      "globalIndex": 7,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "财政授权支付下，关于事业单位支付事业用途相关的印刷费，财务会计处理正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "借：业务活动费用\n贷：零余额账户用款额度"
+        },
+        {
+          "key": "B",
+          "text": "借：事业支出\n贷：资金结存"
+        },
+        {
+          "key": "C",
+          "text": "借：业务活动费用\n贷：财政拨款收入"
+        },
+        {
+          "key": "D",
+          "text": "借：事业支出\n贷：财政拨款预算收入"
+        }
+      ],
+      "answer": {
+        "value": "A",
+        "display": "A"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-008",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 8,
+      "globalIndex": 8,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，事业单位预算会计应通过“事业预算收入”科目核算的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "从同级政府其他部门取得的横向转拨财政款"
+        },
+        {
+          "key": "B",
+          "text": "开展专业业务活动取得的收入"
+        },
+        {
+          "key": "C",
+          "text": "从上级财政部门取得的经费拨款"
+        },
+        {
+          "key": "D",
+          "text": "从同级政府财政部门取得的各类财政拨款"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "选项 AC，属于非同级财政拨款（预算）收入；选项 D，属于财政拨款（预算）收入。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-009",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 9,
+      "globalIndex": 9,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "年末，事业单位应将“其他结余”科目余额和“经营结余”科目贷方余额转入的会计科目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "专用基金"
+        },
+        {
+          "key": "B",
+          "text": "本年盈余分配"
+        },
+        {
+          "key": "C",
+          "text": "专用结余"
+        },
+        {
+          "key": "D",
+          "text": "非财政拨款结余分配"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "年末，事业单位应将“其他结余”科目余额和“经营结余”科目贷方余额转入“非财政拨款结余分配”科目。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-010",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 10,
+      "globalIndex": 10,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，事业单位预算会计按规定提取专用结余应借记的会计科目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "非财政拨款结余"
+        },
+        {
+          "key": "B",
+          "text": "非财政拨款结余分配"
+        },
+        {
+          "key": "C",
+          "text": "非财政拨款结转"
+        },
+        {
+          "key": "D",
+          "text": "财政拨款结转"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "会计分录为：\n\n借：非财政拨款结余分配\n\n贷：专用结余",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-011",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 11,
+      "globalIndex": 11,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "“事业预算收入”当期发生额中“专项资金”部分应结转入（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "其他结余"
+        },
+        {
+          "key": "B",
+          "text": "非财政拨款结转"
+        },
+        {
+          "key": "C",
+          "text": "财政拨款结转"
+        },
+        {
+          "key": "D",
+          "text": "经营结余"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "事业预算收入中的专项资金收入部分应转入非财政拨款结转，而其中的非专项资金部分则应转入其他结余。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-012",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 12,
+      "globalIndex": 12,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年末，某事业单位完成财政拨款收支结转后，对财政拨款各明细项目进行综合分析，根据有关规定将一项目结余资金80万元转入财政拨款结余。不考虑其他因素，该事业单位应编制的会计分录是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "借：财政拨款结余 800 000\n贷：财政拨款结转 800 000"
+        },
+        {
+          "key": "B",
+          "text": "借：累计结余 800 000\n贷：财政拨款结余 800 000"
+        },
+        {
+          "key": "C",
+          "text": "借：财政拨款结余 800 000\n贷：累计盈余 800 000"
+        },
+        {
+          "key": "D",
+          "text": "借：财政拨款结转 800 000\n贷：财政拨款结余 800 000"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-013",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "单项选择题",
+      "number": 13,
+      "globalIndex": 13,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "事业单位已结项非财政拨款专项资金，按规定留归本单位使用的剩余资金应转入的科目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "财政拨款结余"
+        },
+        {
+          "key": "B",
+          "text": "非财政拨款结余"
+        },
+        {
+          "key": "C",
+          "text": "专用结余"
+        },
+        {
+          "key": "D",
+          "text": "非财政拨款结余分配"
+        }
+      ],
+      "answer": {
+        "value": "B",
+        "display": "B"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-014",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "多项选择题",
+      "number": 14,
+      "globalIndex": 14,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，关于政府会计核算模式表述正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "政府会计主体应当编制决算报告和财务报告"
+        },
+        {
+          "key": "B",
+          "text": "政府会计由预算会计和财务会计构成"
+        },
+        {
+          "key": "C",
+          "text": "政府预算会计实行权责发生制，国务院另有规定的，从其规定"
+        },
+        {
+          "key": "D",
+          "text": "对于现金收支业务，在采用财务会计核算的同时应当进行预算会计核算"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B"
+        ],
+        "display": "AB"
+      },
+      "explanation": "预算会计实行收付实现制，国务院另有规定的，从其规定；财务会计实行权责发生制；对于纳入部门预算管理的现金收支业务，在采用财务会计核算的同时应当进行预算会计核算；所以选项 CD 错误。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-015",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "多项选择题",
+      "number": 15,
+      "globalIndex": 15,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于政府会计中资产计量属性的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "公允价值"
+        },
+        {
+          "key": "B",
+          "text": "可变现净值"
+        },
+        {
+          "key": "C",
+          "text": "历史成本"
+        },
+        {
+          "key": "D",
+          "text": "名义金额"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "C",
+          "D"
+        ],
+        "display": "ACD"
+      },
+      "explanation": "政府会计资产的计量属性主要包括历史成本、重置成本、现值、公允价值和名义金额，可变现净值不属于政府会计资产的计量属性。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-016",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "多项选择题",
+      "number": 16,
+      "globalIndex": 16,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于政府预算会计要素的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "预算结余"
+        },
+        {
+          "key": "B",
+          "text": "预算收入"
+        },
+        {
+          "key": "C",
+          "text": "净资产"
+        },
+        {
+          "key": "D",
+          "text": "预算支出"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "D"
+        ],
+        "display": "ABD"
+      },
+      "explanation": "选项 C，净资产是财务会计要素。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-017",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "多项选择题",
+      "number": 17,
+      "globalIndex": 17,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，属于政府负债的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "发行的地方政府债券"
+        },
+        {
+          "key": "B",
+          "text": "政府举借的外国政府贷款"
+        },
+        {
+          "key": "C",
+          "text": "发行的国债"
+        },
+        {
+          "key": "D",
+          "text": "政府举借的国际组织贷款"
+        }
+      ],
+      "answer": {
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "ABCD"
+      },
+      "explanation": "政府负债包括代表政府发行的国债（选项C）、地方政府债券（选项A），举借的国际金融组织贷款（选项D）和外国政府贷款（选项B）、其他政府债务以及或有债务等。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-018",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "多项选择题",
+      "number": 18,
+      "globalIndex": 18,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026年12月，某事业单位收到同级财政部门批复的分月用款计划及相关支付凭证，采用财政授权支付的方式支付劳务费8万元，年末，收到代理银行提供的对账单，注销未使用的财政授权支付额度2万元，下列各项表述中正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "“零余额账户用款额度”科目年末余额为 2 万元"
+        },
+        {
+          "key": "B",
+          "text": "“零余额账户用款额度”科目年末余额为零"
+        },
+        {
+          "key": "C",
+          "text": "“财政应返还额度”科目年末余额为零"
+        },
+        {
+          "key": "D",
+          "text": "“财政应返还额度”科目年末余额为 2 万元"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-019",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "多项选择题",
+      "number": 19,
+      "globalIndex": 19,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "实行国库集中支付的事业单位，对于应收财政下年度返还的资金额度，应当借记的会计科目是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "零余额账户用款额度"
+        },
+        {
+          "key": "B",
+          "text": "资金结存——零余额账户用款额度"
+        },
+        {
+          "key": "C",
+          "text": "财政应返还额度"
+        },
+        {
+          "key": "D",
+          "text": "资金结存——财政应返还额度"
+        }
+      ],
+      "answer": {
+        "value": [
+          "C",
+          "D"
+        ],
+        "display": "CD"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-020",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "判断题",
+      "number": 20,
+      "globalIndex": 20,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "行政事业单位对于收到的按规定应上缴财政的货币资金，进行财务会计核算的同时还应进行预算会计核算。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "对于单位受托代理的现金以及应上缴财政的现金等现金收支业务，由于不纳入部门预算管理，只进行财务会计处理，不需要进行预算会计处理。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-021",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "判断题",
+      "number": 21,
+      "globalIndex": 21,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "事业单位当年经营预算收入扣除经营支出后的余额，无论是正数还是负数，最终均参与非财政拨款结余分配。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "如果经营结余是负数，说明经营结余有借方余额，经营结余的借方余额不进行结转分配。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-022",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "判断题",
+      "number": 22,
+      "globalIndex": 22,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "事业单位无权参与被投资单位的财务和经营政策决策的，长期股权投资应当采用成本法进行核算。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "事业单位无权决定被投资单位的财务和经营政策或无权参与被投资单位的财务和经营政策决策的，长期股权投资应当采用成本法进行核算。本题表述正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-023",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十四章 政府会计",
+      "section": "判断题",
+      "number": 23,
+      "globalIndex": 23,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "政府会计主体对于文物资源本体的修复修缮等相关保护支出，应当在发生时计入相关文物资源的成本。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "政府会计主体对于文物资源本体的修复修缮等相关保护支出，应当在发生时计入当期费用。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-024",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "单项选择题",
+      "number": 24,
+      "globalIndex": 24,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列关于民间非营利组织会计的说法中，不正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "该组织为公益目的或者其他非营利目的而成立"
+        },
+        {
+          "key": "B",
+          "text": "资源提供者向该组织投入资源不取得经济回报"
+        },
+        {
+          "key": "C",
+          "text": "资源提供者对该组织的财产不保留或享有任何财产权利"
+        },
+        {
+          "key": "D",
+          "text": "资源提供者对该组织的财产保留且享有部分财产权利"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "适用民间非营利组织会计制度的民间非营利组织应当同时具备以下特征：（1）为公益目的或者其他非营利目的成立；（2）资源提供者向该组织投入资源不取得经济回报；（3）资源提供者对该组织的财产不保留或享有任何财产权利。选项D不正确，当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-single_choice-025",
+      "subjectId": "accounting",
+      "type": "single_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "单项选择题",
+      "number": 25,
+      "globalIndex": 25,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项关于民间非营利组织接受捐赠会计处理的表述中，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "捐赠承诺应确认为捐赠收入"
+        },
+        {
+          "key": "B",
+          "text": "接受服务捐赠，应直接按照服务的公允价值确认为捐赠收入"
+        },
+        {
+          "key": "C",
+          "text": "收到指定具体受益人的捐赠资产，应确认为限定性捐赠收入"
+        },
+        {
+          "key": "D",
+          "text": "如果捐赠方没有提供有关凭据，受赠的固定资产应以其公允价值作为入账价值"
+        }
+      ],
+      "answer": {
+        "value": "D",
+        "display": "D"
+      },
+      "explanation": "由于捐赠承诺不满足非交换交易收入的确认条件，民间非营利组织对于捐赠承诺，不应予以确认，但可以在会计报表附注中作相关披露，选项A不当选；对于民间非营利组织接受的服务捐赠，如果捐赠方提供了发票等有关凭据，且凭据上标明的金额能够反映受赠服务的公允价值，民间非营利组织应当按照凭据金额入账，其他情况不予确认，选项B不当选；收到指定具体受益人的捐赠资产属于受托代理业务，应确认受托代理资产，选项C不当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-026",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "多项选择题",
+      "number": 26,
+      "globalIndex": 26,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "2026 年 12 月 10 日，甲民间非营利组织按照与乙企业签订的一份捐赠协议，向乙企业指定的一所贫困小学捐赠电脑 50 台，该组织收到乙企业捐赠的电脑时进行的下列会计处理中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "确认固定资产"
+        },
+        {
+          "key": "B",
+          "text": "确认受托代理资产"
+        },
+        {
+          "key": "C",
+          "text": "确认捐赠收入"
+        },
+        {
+          "key": "D",
+          "text": "确认受托代理负债"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "甲民间非营利组织在该项业务当中，只是起到中介人的作用，应作为受托代理业务核算。收到受托代理资产时，应该确认受托代理资产和受托代理负债。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-027",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "多项选择题",
+      "number": 27,
+      "globalIndex": 27,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "下列各项中，民间非营利组织应确认捐赠收入的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "接受志愿者无偿提供的服务（未提供有关凭据）"
+        },
+        {
+          "key": "B",
+          "text": "收到捐赠人未限定用途的物资"
+        },
+        {
+          "key": "C",
+          "text": "收到捐赠人的捐赠承诺函"
+        },
+        {
+          "key": "D",
+          "text": "收到捐赠人限定了用途的现金"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "D"
+        ],
+        "display": "BD"
+      },
+      "explanation": "选项A，对于民间非营利组织接受的服务捐赠，如果捐赠方提供了发票等有关凭据，且凭据上标明的金额能够反映受赠服务的公允价值，民间非营利组织应当按照凭据金额入账，其他情况不予确认；选项C，捐赠承诺不满足非交换交易收入的确认条件，民间非营利组织对于捐赠承诺，不予确认。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-multiple_choice-028",
+      "subjectId": "accounting",
+      "type": "multiple_choice",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "多项选择题",
+      "number": 28,
+      "globalIndex": 28,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲基金会系民间非营利组织。2026 年 12 月 1 日，甲基金会与乙公司签订了一份捐赠协议。协议约定，乙公司向甲基金会捐赠 100 万元，用于购买防疫物资以资助社区的防疫工作。2026 年 12 月 10 日，甲基金会收到乙公司捐赠的 100 万元，并于当日购买 80 万元防疫物资发放给有关社区。2026 年 12 月 31 日，甲基金会与乙公司签订补充协议，结余的 20 万元捐赠款由甲基金会自由支配。不考虑其他因素，下列各项关于甲基金会对捐赠收入会计处理的表述中，正确的有（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "2026 年 12 月 31 日，确认限定性净资产 100 万元"
+        },
+        {
+          "key": "B",
+          "text": "2026 年 12 月 10 日，收到捐款时确认捐赠收入 100 万元"
+        },
+        {
+          "key": "C",
+          "text": "2026 年 12 月 10 日，购买防疫物资时确认业务活动成本 80 万元"
+        },
+        {
+          "key": "D",
+          "text": "2026 年 12 月 1 日，无需进行账务处理"
+        }
+      ],
+      "answer": {
+        "value": [
+          "B",
+          "C",
+          "D"
+        ],
+        "display": "BCD"
+      },
+      "explanation": "甲基金会的相关会计处理如下：\n12月1日，不满足捐赠收入的确认条件，不需要进行账务处理。\n12月10日，收到捐赠款时：\n借：银行存款等 100\n贷：捐赠收入--限定性收入 100\n12月10日，购买防疫物资时：\n借：业务活动成本--限定性费用 80\n贷：银行存款 80\n\n12月31日，限制性捐赠收入的限制在确认收入的当期得以完全解除，转为非限定性捐赠收入：\n借：捐赠收入—限定性收入 20\n贷：捐赠收入——非限定性收入 20\n12月31日，期末结转收入：\n借：捐赠收入—限定性收入 80\n——非限定性收入 20\n贷：限定性净资产 80\n非限定性净资产 20\n借：限定性净资产 80\n贷：业务活动成本——限定性费用 80\n综上，选项 B、C、D 当选。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-029",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "判断题",
+      "number": 29,
+      "globalIndex": 29,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "民间非营利组织对其受托代理的无形资产，如果资产凭据上标明的金额与其公允价值相差较大，应以该资产的公允价值作为入账价值。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "",
+      "explanationStatus": "source_not_provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-030",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "判断题",
+      "number": 30,
+      "globalIndex": 30,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "甲基金会与乙企业签订一份协议，约定乙企业通过甲基金会向丙希望小学捐款 30 万元，甲基金会在收到乙企业汇来的捐赠款时应确认捐赠收入。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "甲基金会在该事项中起到中介作用，没有权力改变 30 万元的用途或者变更受益人，该事项属于其受托代理业务，不应确认捐赠收入。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-031",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "判断题",
+      "number": 31,
+      "globalIndex": 31,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "民间非营利组织对于捐赠承诺，应作为捐赠收入予以确认。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "由于捐赠承诺不满足非交换交易收入的确认条件，民间非营利组织对于捐赠承诺，不应予以确认，但可以在会计报表附注中作相关披露。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-032",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "判断题",
+      "number": 32,
+      "globalIndex": 32,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "民间非营利组织接受捐赠的固定资产，捐赠方没有提供相关凭据的，应以公允价值计量。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "民间非营利组织接受捐赠的固定资产，如果没有提供有关凭据的，受赠方应当按照其公允价值作为入账价值。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-033",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "判断题",
+      "number": 33,
+      "globalIndex": 33,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "民间非营利组织的限定性净资产的限制即使已经完全解除，也不应当对净资产进行重新分类。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "如果限定性净资产的限制已经完全解除，应当对其进行重分类，将其转入非限定性净资产。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-034",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "判断题",
+      "number": 34,
+      "globalIndex": 34,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "民间非营利组织对于其接受的服务捐赠，应按服务的公允价值确定为捐赠收入。",
+      "options": [],
+      "answer": {
+        "value": false,
+        "display": "错误"
+      },
+      "explanation": "民间非营利组织对于其接受的服务捐赠，如果捐赠方提供了有关凭据且凭据能够反映受赠服务的公允价值，则按照凭据金额入账。其他情况，服务捐赠不予确认。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    },
+    {
+      "id": "accounting-mock_exam-mayong2026-mock09-true_false-035",
+      "subjectId": "accounting",
+      "type": "true_false",
+      "unit": "mock_exam",
+      "chapter": "第二十五章 民间非营利组织会计",
+      "section": "判断题",
+      "number": 35,
+      "globalIndex": 35,
+      "groupId": null,
+      "subQuestionIndex": null,
+      "stem": "民间非营利组织的理事会或类似权力机构对净资产的使用所作的限定性决策，属于民间非营利组织内部管理上对资产使用所作的限制，不属于所界定的限定性净资产。",
+      "options": [],
+      "answer": {
+        "value": true,
+        "display": "正确"
+      },
+      "explanation": "民间非营利组织的理事会或类似权力机构对净资产的使用所作的限定性决策、决议或拨款限额等，属于民间非营利组织内部管理上对资产使用所作的限制，不属于所界定的限定性净资产，因为这种限制是该组织可以自行决定撤销或变更的。本题表述正确。",
+      "explanationStatus": "provided",
+      "analysisTips": "",
+      "knowledgePoints": [],
+      "difficulty": null,
+      "assets": [],
+      "source": {
+        "questionPdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf"
+      },
+      "quality": {
+        "needsReview": false
+      }
+    }
+  ],
+  "metadata": {
+    "sourcePdf": "马勇-2026中级会计实务-押题-客观题（9）101835.pdf",
+    "sourceMd": "马勇-2026中级会计实务-押题-客观题（9）101835.md",
+    "pdfIndex": 9,
+    "chapterHint": "押题客观题（9）- 第24-25章",
+    "totalQuestions": 35,
+    "missingAnswers": []
+  }
+}
