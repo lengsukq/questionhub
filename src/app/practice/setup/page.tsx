@@ -412,11 +412,13 @@ function SetupPageInner() {
               <Button
                 size="lg"
                 className="w-full justify-center shadow-xl"
-                disabled={matchedCount === 0 || starting || selectedBankIds.length === 0}
+                disabled={matchedCount === 0 || selectedBankIds.length === 0}
+                loading={starting}
+                loadingText="正在生成练习并进入…"
                 onClick={startPractice}
               >
                 <Sparkles className="h-5 w-5" />
-                {starting ? "生成练习中…" : `立即开始（${matchedCount} 题）`}
+                立即开始（{matchedCount} 题）
                 <ArrowRight className="h-5 w-5" />
               </Button>
 

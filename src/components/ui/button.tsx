@@ -1,5 +1,6 @@
 import { forwardRef, type ButtonHTMLAttributes } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
+import { Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
@@ -38,17 +39,52 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {}
+    VariantProps<typeof buttonVariants> {
+  loading?: boolean;
+  loadingText?: string;
+}
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, type = "button", ...props }, ref) => (
-    <button
-      ref={ref}
-      type={type}
-      className={cn(buttonVariants({ variant, size }), className)}
-      {...props}
-    />
-  ),
+  (
+    {
+      className,
+      variant,
+      size,
+      type = "button",
+      loading = false,
+      loadingText,
+      disabled,
+      children,
+      ...props
+    },
+    ref,
+  ) => {
+    const iconSize = size === "sm" ? "h-3.5 w-3.5" : size === "lg" ? "h-5 w-5" : "h-4 w-4";
+
+    return (
+      <button
+        ref={ref}
+        type={type}
+        disabled={disabled || loading}
+        aria-busy={loading}
+        className={cn(
+          buttonVariants({ variant, size }),
+          loading && "opacity-80 cursor-wait",
+          className,
+        )}
+        {...props}
+      >
+        {loading ? (
+          <>
+            <Loader2 className={cn("animate-spin shrink-0", iconSize)} />
+            {loadingText ? <span>{loadingText}</span> : children}
+          </>
+        ) : (
+          children
+        )}
+      </button>
+    );
+  },
 );
 Button.displayName = "Button";
 

@@ -24,6 +24,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
 import { Sheet } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { toast } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
 
 type ImportPhase = "idle" | "parsing" | "parsed" | "importing" | "done" | "error";
@@ -93,6 +94,7 @@ export default function BanksPage() {
       if (result.ok) {
         setImportedName(result.bank?.name ?? fileName);
         setPhase("done");
+        toast.success(`「${result.bank?.name ?? fileName}」导入成功`);
       } else {
         setPhase("error");
         setImportError(result.errors.join("；") || "导入失败");
@@ -107,9 +109,13 @@ export default function BanksPage() {
     setLoadingFile(entry.file);
     try {
       const res = await importBuiltinBank(entry.file, entry.name);
-      if (!res.ok) {
-        window.alert(`导入失败: ${res.errors.join("；")}`);
+      if (res.ok) {
+        toast.success(`已添加「${entry.name}」`);
+      } else {
+        toast.error(`导入失败: ${res.errors.join("；")}`);
       }
+    } catch (e) {
+      toast.error(e instanceof Error ? e.message : "添加题库失败");
     } finally {
       setLoadingFile(null);
     }
@@ -118,16 +124,24 @@ export default function BanksPage() {
   const handleImportAllBuiltin = async () => {
     const res = await importAllBuiltinBanks();
     if (res.success > 0) {
-      // 导入成功反馈
+      toast.success(`成功导入 ${res.success} 套系统题库`);
+    } else if (res.failed > 0) {
+      toast.error("部分题库导入失败，请检查网络连接");
     }
+  };
+
+  const handleSelectBank = (bank: (typeof banks)[number]) => {
+    setActiveBank(bank.id);
+    toast.success(`已切换为当前题库：${bank.name}`);
   };
 
   const handleRemove = async (bankId: string) => {
     if (!window.confirm("确定删除该题库吗？该题库下的学习记录将一并删除。")) return;
     try {
       await removeBank(bankId);
+      toast.info("题库已删除");
     } catch (error) {
-      window.alert(error instanceof Error ? error.message : String(error));
+      toast.error(error instanceof Error ? error.message : String(error));
     }
   };
 
@@ -268,7 +282,7 @@ export default function BanksPage() {
                       ) : (
                         <>
                           <button
-                            onClick={() => setActiveBank(bank.id)}
+                            onClick={() => handleSelectBank(bank)}
                             className="squircle-press flex items-center gap-1 rounded-xl border border-ios-blue/30 bg-ios-blue/5 px-3 py-1.5 text-[12px] font-bold text-ios-blue hover:bg-ios-blue/10 active:scale-95 cursor-pointer"
                           >
                             设为当前题库
@@ -329,21 +343,13 @@ export default function BanksPage() {
               <Button
                 variant="secondary"
                 size="sm"
-                disabled={importingAll}
+                loading={importingAll}
+                loadingText={`正在批量导入 (${importProgress?.current}/${importProgress?.total})…`}
                 onClick={() => void handleImportAllBuiltin()}
                 className="shrink-0 self-start sm:self-auto"
               >
-                {importingAll ? (
-                  <>
-                    <Loader2 className="h-3.5 w-3.5 animate-spin text-ios-blue" />
-                    正在批量导入 ({importProgress?.current}/{importProgress?.total})…
-                  </>
-                ) : (
-                  <>
-                    <Download className="h-3.5 w-3.5 text-ios-blue" />
-                    一键导入全部 ({manifest.length} 套)
-                  </>
-                )}
+                <Download className="h-3.5 w-3.5 text-ios-blue" />
+                一键导入全部 ({manifest.length} 套)
               </Button>
             </div>
 
@@ -391,7 +397,7 @@ export default function BanksPage() {
                           <span className="text-[12px] font-bold text-ios-blue">使用中</span>
                         ) : (
                           <button
-                            onClick={() => matchedBank && setActiveBank(matchedBank.id)}
+                            onClick={() => matchedBank && handleSelectBank(matchedBank)}
                             className="text-[12px] font-bold text-ios-blue hover:underline cursor-pointer"
                           >
                             设为当前

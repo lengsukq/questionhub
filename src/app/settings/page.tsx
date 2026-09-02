@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useBankStore } from "@/stores/bank-store";
 import { clearUserData, resetAllData, db } from "@/lib/db";
+import { toast } from "@/components/ui/toast";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
 import { Segmented } from "@/components/ui/segmented";
@@ -48,32 +49,37 @@ export default function SettingsPage() {
   }, [activeBankId]);
 
   const exportData = async () => {
-    const [banksData, attempts, stats] = await Promise.all([
-      db.banks.toArray(),
-      db.attempts.toArray(),
-      db.questionStats.toArray(),
-    ]);
-    const blob = new Blob(
-      [
-        JSON.stringify(
-          {
-            exportedAt: new Date().toISOString(),
-            banks: banksData,
-            attempts,
-            questionStats: stats,
-          },
-          null,
-          2,
-        ),
-      ],
-      { type: "application/json" },
-    );
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `题集学习数据_${new Date().toISOString().slice(0, 10)}.json`;
-    link.click();
-    URL.revokeObjectURL(url);
+    try {
+      const [banksData, attempts, stats] = await Promise.all([
+        db.banks.toArray(),
+        db.attempts.toArray(),
+        db.questionStats.toArray(),
+      ]);
+      const blob = new Blob(
+        [
+          JSON.stringify(
+            {
+              exportedAt: new Date().toISOString(),
+              banks: banksData,
+              attempts,
+              questionStats: stats,
+            },
+            null,
+            2,
+          ),
+        ],
+        { type: "application/json" },
+      );
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `题集学习数据_${new Date().toISOString().slice(0, 10)}.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+      toast.success("学习数据备份文件已导出");
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "导出失败");
+    }
   };
 
   const handleClearUserData = async () => {
@@ -83,9 +89,13 @@ export default function SettingsPage() {
       )
     )
       return;
-    await clearUserData();
-    await loadStats();
-    window.alert("学习记录已清空");
+    try {
+      await clearUserData();
+      await loadStats();
+      toast.success("学习记录已清空");
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "清空失败");
+    }
   };
 
   const handleResetAll = async () => {

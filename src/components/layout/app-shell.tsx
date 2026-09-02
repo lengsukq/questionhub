@@ -6,6 +6,8 @@ import { Loader2, AlertCircle, RefreshCw, FileUp, Sparkles } from "lucide-react"
 import { useBankStore } from "@/stores/bank-store";
 import { TabBar } from "@/components/layout/tab-bar";
 import { Sidebar } from "@/components/layout/sidebar";
+import { RouteProgress } from "@/components/layout/route-progress";
+import { ToastContainer } from "@/components/ui/toast";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -70,6 +72,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     return (
       <div className="relative flex min-h-dvh items-center justify-center p-6 bg-ios-background">
         <div className="ambient-bg" />
+        <RouteProgress />
+        <ToastContainer />
         <Card className="flex w-full max-w-md flex-col items-center p-8 text-center shadow-2xl">
           <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-tr from-ios-blue to-ios-indigo text-white shadow-lg shadow-ios-blue/25">
             <Sparkles className="h-8 w-8" />
@@ -83,20 +87,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <Button
               size="lg"
               className="w-full justify-center shadow-lg"
-              disabled={importingAll}
+              loading={importingAll}
+              loadingText={`正在导入 (${importProgress?.current}/${importProgress?.total})…`}
               onClick={() => void importAllBuiltinBanks()}
             >
-              {importingAll ? (
-                <>
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                  正在导入 ({importProgress?.current}/{importProgress?.total})…
-                </>
-              ) : (
-                <>
-                  <Sparkles className="h-4 w-4" />
-                  一键导入 9 套系统精选题库
-                </>
-              )}
+              <Sparkles className="h-4 w-4" />
+              一键导入 9 套系统精选题库
             </Button>
 
             <Button
@@ -118,6 +114,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative flex min-h-dvh w-full bg-ios-background overflow-x-hidden">
       <div className="ambient-bg" />
+      <RouteProgress />
+      <ToastContainer />
 
       {/* PC 桌面端侧边栏 */}
       {!isPracticeFlow && <Sidebar />}

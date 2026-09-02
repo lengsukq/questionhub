@@ -9,6 +9,7 @@ import {
   ChevronRight,
   Flame,
   Library,
+  Loader2,
   Play,
   Repeat,
   Sparkles,
@@ -19,6 +20,7 @@ import { useBankStore } from "@/stores/bank-store";
 import { getActiveSession, getDueStats, type PracticeSessionRecord } from "@/lib/db";
 import { createPracticeSession } from "@/lib/session-utils";
 import { getDailyTrend, getTodayStats, type DayStat } from "@/lib/queries";
+import { toast } from "@/components/ui/toast";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
@@ -57,7 +59,12 @@ export default function HomePage() {
   }, [refresh]);
 
   const startRandomPractice = async () => {
-    if (!activeBankId || loadingQuick) return;
+    if (loadingQuick) return;
+    if (!activeBankId) {
+      toast.info("请先选择或导入题库");
+      router.push("/banks");
+      return;
+    }
     setLoadingQuick(true);
     try {
       const session = await createPracticeSession({
@@ -68,7 +75,8 @@ export default function HomePage() {
         order: "random",
       });
       router.push(`/practice/${session.id}`);
-    } finally {
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "创建练习失败");
       setLoadingQuick(false);
     }
   };
@@ -177,12 +185,17 @@ export default function HomePage() {
                   subtitle="按章系统攻关"
                 />
               </Link>
-              <button onClick={startRandomPractice} disabled={loadingQuick} className="block text-left w-full">
+              <button
+                onClick={startRandomPractice}
+                disabled={loadingQuick}
+                className="block text-left w-full cursor-pointer"
+              >
                 <QuickActionCard
                   icon={Sparkles}
                   color="purple"
                   title="随机热身"
-                  subtitle={loadingQuick ? "出题中…" : "10 题随机练习"}
+                  subtitle={loadingQuick ? "正在出题跳转…" : "10 题随机练习"}
+                  loading={loadingQuick}
                 />
               </button>
               <Link href="/review?tab=wrong" className="block">
@@ -320,11 +333,13 @@ function QuickActionCard({
   color,
   title,
   subtitle,
+  loading = false,
 }: {
   icon: typeof Library;
   color: "blue" | "purple" | "red" | "orange";
   title: string;
   subtitle: string;
+  loading?: boolean;
 }) {
   const colorMap = {
     blue: "bg-ios-blue/10 text-ios-blue border-ios-blue/20",
@@ -336,19 +351,27 @@ function QuickActionCard({
   return (
     <Card
       variant="interactive"
-      className="flex h-[112px] flex-col justify-between p-4"
+      className={cn(
+        "flex h-[112px] flex-col justify-between p-4 transition-all duration-200",
+        loading && "ring-2 ring-ios-purple/40 bg-ios-purple/5 opacity-90",
+      )}
     >
       <span
         className={cn(
-          "flex h-9 w-9 items-center justify-center rounded-2xl border shadow-xs",
+          "flex h-9 w-9 items-center justify-center rounded-2xl border shadow-xs transition-all",
           colorMap[color],
         )}
       >
-        <Icon className="h-5 w-5" />
+        {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Icon className="h-5 w-5" />}
       </span>
       <div>
-        <p className="text-[14px] font-bold text-ios-label">{title}</p>
-        <p className="text-[11px] text-ios-label-secondary">{subtitle}</p>
+        <p className="text-[14px] font-bold text-ios-label flex items-center gap-1.5">
+          {title}
+          {loading && <span className="inline-block h-1.5 w-1.5 rounded-full bg-ios-purple animate-ping" />}
+        </p>
+        <p className={cn("text-[11px] transition-colors", loading ? "text-ios-purple font-medium" : "text-ios-label-secondary")}>
+          {subtitle}
+        </p>
       </div>
     </Card>
   );

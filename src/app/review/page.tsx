@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import {
   Bookmark,
   ChevronRight,
+  Loader2,
   Play,
   Repeat,
   Sparkles,
@@ -17,6 +18,7 @@ import {
   type PracticeSessionRecord,
   type QuestionStatRecord,
 } from "@/lib/db";
+import { toast } from "@/components/ui/toast";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
 import { Segmented } from "@/components/ui/segmented";
@@ -61,6 +63,7 @@ function ReviewPageInner() {
   const [stats, setStats] = useState<QuestionStatRecord[]>([]);
   const [dueCutoff, setDueCutoff] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [startingAll, setStartingAll] = useState(false);
 
   const refresh = useCallback(async () => {
     if (!bankId) return;
@@ -92,23 +95,29 @@ function ReviewPageInner() {
   }, [stats, tab, dueCutoff]);
 
   const startReview = async () => {
-    if (!bankId || items.length === 0) return;
-    const mode = tab === "wrong" ? "wrong" : tab === "favorite" ? "favorite" : "due";
-    const config = {
-      bankId,
-      mode: mode as PracticeSessionRecord["mode"],
-      title: TAB_LABELS[tab],
-      count: items.length,
-      order: "source" as const,
-    };
-    const questionIds = new Set(items.map((item) => item.questionId));
-    const allQuestions = await db.questions.where("bankId").equals(bankId).toArray();
-    const matched = allQuestions.filter((q) => questionIds.has(q.originalId));
-    const session = await createPracticeSessionWithRefs(
-      config,
-      matched.map((q) => ({ bankId, questionId: q.originalId })),
-    );
-    router.push(`/practice/${session.id}`);
+    if (!bankId || items.length === 0 || startingAll) return;
+    setStartingAll(true);
+    try {
+      const mode = tab === "wrong" ? "wrong" : tab === "favorite" ? "favorite" : "due";
+      const config = {
+        bankId,
+        mode: mode as PracticeSessionRecord["mode"],
+        title: TAB_LABELS[tab],
+        count: items.length,
+        order: "source" as const,
+      };
+      const questionIds = new Set(items.map((item) => item.questionId));
+      const allQuestions = await db.questions.where("bankId").equals(bankId).toArray();
+      const matched = allQuestions.filter((q) => questionIds.has(q.originalId));
+      const session = await createPracticeSessionWithRefs(
+        config,
+        matched.map((q) => ({ bankId, questionId: q.originalId })),
+      );
+      router.push(`/practice/${session.id}`);
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "开始复习失败");
+      setStartingAll(false);
+    }
   };
 
   return (
@@ -155,6 +164,8 @@ function ReviewPageInner() {
               size="lg"
               className="w-full sm:w-auto shadow-md"
               onClick={startReview}
+              loading={startingAll}
+              loadingText={`正在组卷 (${items.length} 题)…`}
               disabled={loading}
             >
               <Play className="h-4 w-4" fill="currentColor" />
@@ -234,7 +245,8 @@ function ReviewCardItem({
         [{ bankId, questionId: stat.questionId }],
       );
       onStart(session);
-    } finally {
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "开始单题练习失败");
       setStarting(false);
     }
   };
@@ -243,7 +255,10 @@ function ReviewCardItem({
     <Card
       variant="interactive"
       onClick={startSingle}
-      className="flex items-start gap-3.5 p-4.5 transition-all cursor-pointer"
+      className={cn(
+        "flex items-start gap-3.5 p-4.5 transition-all cursor-pointer",
+        starting && "ring-2 ring-ios-blue/40 bg-ios-blue/5 opacity-80",
+      )}
     >
       <span
         className={cn(
@@ -253,7 +268,9 @@ function ReviewCardItem({
           tab === "due" && "border-ios-purple/20 bg-ios-purple/10 text-ios-purple",
         )}
       >
-        {tab === "wrong" ? (
+        {starting ? (
+          <Loader2 className="h-5 w-5 animate-spin text-ios-blue" />
+        ) : tab === "wrong" ? (
           <XCircle className="h-5 w-5" />
         ) : tab === "favorite" ? (
           <Bookmark className="h-5 w-5" fill="currentColor" />

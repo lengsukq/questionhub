@@ -33,6 +33,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Sheet } from "@/components/ui/sheet";
 import { Textarea } from "@/components/ui/textarea";
+import { toast } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
 import type { SelfRating } from "@/types/question-bank";
 
@@ -73,8 +74,10 @@ function PracticePageInner() {
   const [selection, setSelection] = useState<unknown>(null);
   const [revealed, setRevealed] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [finishing, setFinishing] = useState(false);
   const [noteOpen, setNoteOpen] = useState(false);
   const [noteText, setNoteText] = useState("");
+  const [savingNote, setSavingNote] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [navSheetOpen, setNavSheetOpen] = useState(false);
 
@@ -187,11 +190,17 @@ function PracticePageInner() {
   }, [session, currentQuestion, submitting, hasAnswered, isSubjective, selection]);
 
   const handleNext = useCallback(async () => {
-    if (!session) return;
+    if (!session || finishing) return;
     const nextIndex = index + 1;
     if (nextIndex >= questions.length) {
-      await completeSession(session.id);
-      router.replace(`/practice/${session.id}/result`);
+      setFinishing(true);
+      try {
+        await completeSession(session.id);
+        router.replace(`/practice/${session.id}/result`);
+      } catch (err) {
+        toast.error(err instanceof Error ? err.message : "结算练习失败");
+        setFinishing(false);
+      }
       return;
     }
     await db.sessions.update(session.id, { currentIndex: nextIndex });
@@ -199,7 +208,7 @@ function PracticePageInner() {
     setSelection(null);
     setRevealed(false);
     questionStartRef.current = Date.now();
-  }, [session, index, questions.length, router]);
+  }, [session, finishing, index, questions.length, router]);
 
   const handlePrev = useCallback(async () => {
     if (index === 0 || !session) return;
@@ -260,6 +269,11 @@ function PracticePageInner() {
       else next.delete(key);
       return next;
     });
+    if (fav) {
+      toast.success("已加入重点收藏夹");
+    } else {
+      toast.info("已从收藏夹移除");
+    }
   };
 
   const openNote = () => {
@@ -272,9 +286,17 @@ function PracticePageInner() {
   };
 
   const saveNote = async () => {
-    if (!currentQuestion) return;
-    await setNote(currentQuestion.bankId, currentQuestion.originalId, noteText);
-    setNoteOpen(false);
+    if (!currentQuestion || savingNote) return;
+    setSavingNote(true);
+    try {
+      await setNote(currentQuestion.bankId, currentQuestion.originalId, noteText);
+      toast.success("笔记已保存");
+      setNoteOpen(false);
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "保存笔记失败");
+    } finally {
+      setSavingNote(false);
+    }
   };
 
   // 绑定键盘快捷键
@@ -468,7 +490,9 @@ function PracticePageInner() {
               <Button
                 size="default"
                 className="flex-1"
-                disabled={selection === null || submitting}
+                disabled={selection === null}
+                loading={submitting}
+                loadingText="正在提交…"
                 onClick={() => void handleSubmit()}
               >
                 <Send className="h-4 w-4" />
@@ -481,6 +505,8 @@ function PracticePageInner() {
                 size="default"
                 className="flex-1"
                 disabled={submitting}
+                loading={isLast && finishing}
+                loadingText="正在结算报告…"
                 onClick={() => void handleNext()}
               >
                 {isLast ? "完成练习" : "下一题"}
@@ -520,7 +546,13 @@ function PracticePageInner() {
           rows={6}
           className="mb-4"
         />
-        <Button className="w-full" size="lg" onClick={saveNote}>
+        <Button
+          className="w-full justify-center"
+          size="lg"
+          loading={savingNote}
+          loadingText="正在保存笔记…"
+          onClick={saveNote}
+        >
           保存笔记
         </Button>
       </Sheet>
