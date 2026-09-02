@@ -27,7 +27,7 @@ type ThemeMode = "system" | "light" | "dark";
 export default function SettingsPage() {
   const router = useRouter();
   const { theme, setTheme, resolvedTheme } = useTheme();
-  const { banks, activeBankId, refreshBanks } = useBankStore();
+  const { banks, activeBankId, resetForReload } = useBankStore();
   const activeBank = banks.find((bank) => bank.id === activeBankId);
 
   const [statsText, setStatsText] = useState("");
@@ -76,8 +76,7 @@ export default function SettingsPage() {
   const handleResetAll = async () => {
     if (!window.confirm("确定重置应用吗？将删除所有题库和学习记录，恢复初始状态。此操作不可恢复。")) return;
     await resetAllData();
-    localStorage.removeItem("questionhub.activeBankId");
-    await refreshBanks();
+    resetForReload();
     window.location.href = "/";
   };
 

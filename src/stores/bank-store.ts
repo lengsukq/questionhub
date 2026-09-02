@@ -86,6 +86,7 @@ interface BankState {
   importBank: (rawJson: string, name: string) => Promise<ImportResult>;
   setActiveBank: (bankId: string) => void;
   removeBank: (bankId: string) => Promise<void>;
+  resetForReload: () => void;
 }
 
 export const useBankStore = create<BankState>((set, get) => ({
@@ -169,6 +170,12 @@ export const useBankStore = create<BankState>((set, get) => ({
   setActiveBank: (bankId) => {
     localStorage.setItem(ACTIVE_BANK_KEY, bankId);
     set({ activeBankId: bankId });
+  },
+
+  resetForReload: () => {
+    localStorage.removeItem(AUTO_BANKS_VERSION_KEY);
+    localStorage.removeItem(ACTIVE_BANK_KEY);
+    set({ banks: [], activeBankId: null, ready: false, loading: false, error: null });
   },
 
   removeBank: async (bankId) => {
