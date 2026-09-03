@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
-import { Delete, GripVertical, X } from "lucide-react";
+import { Delete, Eye, EyeOff, GripVertical, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface FloatingCalculatorProps {
@@ -25,6 +25,7 @@ const STANDARD_WIDTH = 280;
 const SCIENTIFIC_WIDTH = 320;
 const MODE_STORAGE_KEY = "qh-calc-mode";
 const SIZE_STORAGE_KEY = "qh-calc-size";
+const TRANSPARENT_STORAGE_KEY = "qh-calc-transparent";
 
 const SIZE_SCALE: Record<CalcSize, number> = {
   compact: 0.9,
@@ -103,6 +104,14 @@ function loadCalcSize(): CalcSize {
   }
 }
 
+function loadTransparent(): boolean {
+  try {
+    return window.localStorage.getItem(TRANSPARENT_STORAGE_KEY) === "true";
+  } catch {
+    return false;
+  }
+}
+
 export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
   const [current, setCurrent] = useState("");
   const [previous, setPrevious] = useState<number | null>(null);
@@ -111,10 +120,23 @@ export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
   const [justEvaluated, setJustEvaluated] = useState(false);
   const [mode, setMode] = useState<CalcMode>(loadMode);
   const [calcSize, setCalcSize] = useState<CalcSize>(loadCalcSize);
+  const [isTransparent, setIsTransparent] = useState<boolean>(loadTransparent);
   const [angleMode, setAngleMode] = useState<"deg" | "rad">("deg");
   const [position, setPosition] = useState<{ left: number; top: number } | null>(
     null,
   );
+
+  const toggleTransparent = useCallback(() => {
+    setIsTransparent((prev) => {
+      const next = !prev;
+      try {
+        window.localStorage.setItem(TRANSPARENT_STORAGE_KEY, String(next));
+      } catch {
+        // 隐私模式下忽略持久化失败
+      }
+      return next;
+    });
+  }, []);
 
   const panelRef = useRef<HTMLDivElement>(null);
   const dragState = useRef<{
@@ -526,14 +548,20 @@ export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
       role="dialog"
       aria-label="浮动计算器"
       className={cn(
-        "fixed z-40 rounded-[24px] border shadow-2xl animate-fade-in-up bg-white/40 backdrop-blur-md dark:bg-[#12141d]/40",
-        "border-white/60 shadow-black/10 dark:border-white/10 dark:shadow-black/50",
+        "fixed z-40 rounded-[24px] border shadow-2xl animate-fade-in-up transition-[opacity,background-color,backdrop-filter] duration-200",
+        isTransparent
+          ? "bg-white/35 dark:bg-[#12141d]/40 backdrop-blur-none border-black/10 dark:border-white/15 shadow-lg opacity-70 md:hover:opacity-100"
+          : "bg-white/85 dark:bg-[#12141d]/85 backdrop-blur-xl border-white/60 dark:border-white/10 shadow-black/10 dark:shadow-black/50",
       )}
-      style={{ width: panelWidth, ...(position ? { left: position.left, top: position.top } : undefined) }}
+      style={{
+        width: panelWidth,
+        maxWidth: "calc(100vw - 16px)",
+        ...(position ? { left: position.left, top: position.top } : undefined),
+      }}
     >
       {/* 拖拽标题栏 */}
       <div
-        className="flex cursor-grab touch-none items-center gap-1 px-3 pt-3 pb-1 select-none active:cursor-grabbing"
+        className="flex cursor-grab touch-none items-center gap-1.5 px-3 pt-3 pb-1 select-none active:cursor-grabbing"
         onPointerDown={(e) => {
           e.currentTarget.setPointerCapture(e.pointerId);
           handleDragStart(e.pointerId, e.clientX, e.clientY);
@@ -544,9 +572,67 @@ export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
         onPointerUp={(e) => handleDragEnd(e.pointerId)}
         onPointerCancel={(e) => handleDragEnd(e.pointerId)}
       >
-        <GripVertical className="h-4 w-4 shrink-0 text-ios-label-tertiary" />
-        <span className="text-[12px] font-bold text-ios-label-secondary">计算器 · 可拖动</span>
+        <GripVertical className="h-3.5 w-3.5 shrink-0 text-ios-label-tertiary" />
+        <span className="text-[12px] font-bold text-ios-label-secondary">计算器</span>
         <div className="flex-1" />
+
+        {/* 模式切换：精简胶囊分段 */}
+        <div
+          className="flex items-center rounded-full bg-black/[0.06] p-0.5 dark:bg-white/10 text-[11px]"
+          onPointerDown={(e) => e.stopPropagation()}
+        >
+          <button
+            type="button"
+            onClick={() => switchMode("standard")}
+            aria-pressed={mode === "standard"}
+            aria-label="切换为普通模式"
+            className={cn(
+              "rounded-full px-2 py-0.5 font-bold transition-all",
+              mode === "standard"
+                ? "bg-white text-ios-label shadow-xs dark:bg-white/25 dark:text-white"
+                : "text-ios-label-tertiary hover:text-ios-label",
+            )}
+          >
+            普通
+          </button>
+          <button
+            type="button"
+            onClick={() => switchMode("scientific")}
+            aria-pressed={mode === "scientific"}
+            aria-label="切换为科学模式"
+            className={cn(
+              "rounded-full px-2 py-0.5 font-bold transition-all",
+              mode === "scientific"
+                ? "bg-white text-ios-label shadow-xs dark:bg-white/25 dark:text-white"
+                : "text-ios-label-tertiary hover:text-ios-label",
+            )}
+          >
+            科学
+          </button>
+        </div>
+
+        {/* 小眼睛：透视看题切换 */}
+        <button
+          type="button"
+          onClick={toggleTransparent}
+          onPointerDown={(e) => e.stopPropagation()}
+          aria-pressed={isTransparent}
+          aria-label={isTransparent ? "关闭透视模式" : "开启透视看题（半透明）"}
+          title={isTransparent ? "恢复不透明" : "透视看题（半透明）"}
+          className={cn(
+            "flex h-7 w-7 items-center justify-center rounded-full transition-colors",
+            isTransparent
+              ? "bg-ios-blue/20 text-ios-blue dark:bg-ios-blue/30"
+              : "text-ios-label-secondary hover:bg-black/5 hover:text-ios-label dark:hover:bg-white/10",
+          )}
+        >
+          {isTransparent ? (
+            <EyeOff className="h-3.5 w-3.5" />
+          ) : (
+            <Eye className="h-3.5 w-3.5" />
+          )}
+        </button>
+
         {/* 大小切换：小 / 中 / 大循环 */}
         <button
           type="button"
@@ -560,6 +646,8 @@ export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
         >
           {SIZE_LABEL[calcSize]}
         </button>
+
+        {/* 关闭按钮 */}
         <button
           type="button"
           onClick={onClose}
@@ -582,31 +670,6 @@ export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
         >
           {display}
         </div>
-      </div>
-
-      {/* 普通 / 科学模式切换 */}
-      <div className="mx-3 mb-2 grid grid-cols-2 gap-1 rounded-2xl bg-black/[0.04] p-1 dark:bg-white/10">
-        {(
-          [
-            { key: "standard", label: "普通" },
-            { key: "scientific", label: "科学" },
-          ] as const
-        ).map((item) => (
-          <button
-            key={item.key}
-            type="button"
-            onClick={() => switchMode(item.key)}
-            aria-pressed={mode === item.key}
-            className={cn(
-              "h-8 rounded-xl text-[13px] font-bold transition-all",
-              mode === item.key
-                ? "bg-white text-ios-label shadow-sm dark:bg-white/20 dark:text-white"
-                : "text-ios-label-secondary hover:text-ios-label",
-            )}
-          >
-            {item.label}
-          </button>
-        ))}
       </div>
 
       {/* 科学函数区 */}
