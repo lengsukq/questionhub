@@ -230,13 +230,15 @@ function createEmptyStat(bankId: string, questionId: string): QuestionStatRecord
   };
 }
 
-export async function completeSession(sessionId: string): Promise<void> {
+export async function completeSession(sessionId: string, durationMs?: number): Promise<void> {
   const now = Date.now();
   const session = await db.sessions.get(sessionId);
+  const finalDuration =
+    durationMs ?? session?.durationMs ?? (now - (session?.startedAt ?? now));
   await db.sessions.update(sessionId, {
     status: "completed",
     completedAt: now,
-    durationMs: now - (session?.startedAt ?? now),
+    durationMs: finalDuration,
   });
 }
 

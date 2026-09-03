@@ -10,8 +10,12 @@ const SECONDS_PER_MINUTE = 60;
 
 export function formatDuration(ms: number): string {
   const totalSeconds = Math.max(0, Math.floor(ms / MS_PER_SECOND));
-  const minutes = Math.floor(totalSeconds / SECONDS_PER_MINUTE);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / SECONDS_PER_MINUTE);
   const seconds = totalSeconds % SECONDS_PER_MINUTE;
+  if (hours > 0) {
+    return `${hours} 小时 ${minutes} 分 ${String(seconds).padStart(2, "0")} 秒`;
+  }
   if (minutes === 0) return `${seconds} 秒`;
   return `${minutes} 分 ${String(seconds).padStart(2, "0")} 秒`;
 }

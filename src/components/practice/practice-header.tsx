@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, Clock, LayoutGrid } from "lucide-react";
 import { ConfirmSheet } from "@/components/ui/confirm-sheet";
@@ -8,8 +8,10 @@ import { ConfirmSheet } from "@/components/ui/confirm-sheet";
 interface PracticeHeaderProps {
   currentIndex: number;
   total: number;
-  /** 会话开始时间戳：计时器在内部独立 tick，避免每秒带动整个练习页重渲染 */
-  startedAt: number;
+  /** 会话开始时间戳（作为 fallback） */
+  startedAt?: number;
+  /** 获取最新活跃做题毫秒数的函数：避免每秒重渲染带动整个练习页 */
+  getDurationMs?: () => number;
   onOpenNavigator?: () => void;
   title?: string;
 }
@@ -18,6 +20,7 @@ export function PracticeHeader({
   currentIndex,
   total,
   startedAt,
+  getDurationMs,
   onOpenNavigator,
   title,
 }: PracticeHeaderProps) {
@@ -57,7 +60,7 @@ export function PracticeHeader({
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 rounded-full border border-white/60 bg-ios-surface/80 px-3 py-1 text-[12px] font-semibold tabular-nums text-ios-label-secondary shadow-2xs backdrop-blur-md dark:border-white/10 dark:bg-ios-surface/60">
             <Clock className="h-3.5 w-3.5 text-ios-blue" />
-            <ElapsedTimer startedAt={startedAt} />
+            <ElapsedTimer startedAt={startedAt} getDurationMs={getDurationMs} />
           </div>
 
           {onOpenNavigator && (
@@ -93,22 +96,53 @@ export function PracticeHeader({
   );
 }
 
+function formatElapsed(totalSeconds: number): string {
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  if (hours > 0) {
+    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  }
+  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
 /** 独立计时器：state 内聚在此组件，每秒只重渲染自己 */
-function ElapsedTimer({ startedAt }: { startedAt: number }) {
-  const [elapsed, setElapsed] = useState(() =>
-    Math.max(0, Math.floor((Date.now() - startedAt) / 1000)),
-  );
+function ElapsedTimer({
+  startedAt,
+  getDurationMs,
+}: {
+  startedAt?: number;
+  getDurationMs?: () => number;
+}) {
+  const getElapsed = useCallback(() => {
+    if (getDurationMs) {
+      return Math.max(0, Math.floor(getDurationMs() / 1000));
+    }
+    if (startedAt) {
+      return Math.max(0, Math.floor((Date.now() - startedAt) / 1000));
+    }
+    return 0;
+  }, [getDurationMs, startedAt]);
+
+  const [elapsed, setElapsed] = useState(getElapsed);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setElapsed(Math.max(0, Math.floor((Date.now() - startedAt) / 1000)));
+      if (typeof document === "undefined" || document.visibilityState === "visible") {
+        setElapsed(getElapsed());
+      }
     }, 1000);
-    return () => clearInterval(timer);
-  }, [startedAt]);
 
-  const minutes = Math.floor(elapsed / 60);
-  const seconds = elapsed % 60;
-  return (
-    <span>{`${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`}</span>
-  );
+    const handleVisibilityChange = () => {
+      setElapsed(getElapsed());
+    };
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      clearInterval(timer);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [getElapsed]);
+
+  return <span>{formatElapsed(elapsed)}</span>;
 }

@@ -83,7 +83,103 @@ function PracticePageInner() {
   const [navSheetOpen, setNavSheetOpen] = useState(false);
   const [calcOpen, setCalcOpen] = useState(false);
 
-  const questionStartRef = useRef(0);
+  /** 会话总活跃时长跟踪（毫秒）：仅记录页面处于前台打开的有效时长 */
+  const activeDurationRef = useRef<{
+    accumulatedMs: number;
+    activeStart: number | null;
+  }>({
+    accumulatedMs: 0,
+    activeStart: null,
+  });
+
+  /** 单题活跃做题时长跟踪（毫秒）：切后台时同样暂停 */
+  const questionActiveRef = useRef<{
+    accumulatedMs: number;
+    activeStart: number | null;
+  }>({
+    accumulatedMs: 0,
+    activeStart: null,
+  });
+
+  const getCurrentDurationMs = useCallback(() => {
+    const { accumulatedMs, activeStart } = activeDurationRef.current;
+    const isVisible =
+      typeof document !== "undefined" && document.visibilityState === "visible";
+    const activeDelta =
+      isVisible && activeStart !== null ? Math.max(0, Date.now() - activeStart) : 0;
+    return accumulatedMs + activeDelta;
+  }, []);
+
+  const getQuestionDurationMs = useCallback(() => {
+    const { accumulatedMs, activeStart } = questionActiveRef.current;
+    const isVisible =
+      typeof document !== "undefined" && document.visibilityState === "visible";
+    const activeDelta =
+      isVisible && activeStart !== null ? Math.max(0, Date.now() - activeStart) : 0;
+    return Math.min(Math.max(500, accumulatedMs + activeDelta), 600000);
+  }, []);
+
+  const resetQuestionTimer = useCallback(() => {
+    const isVisible =
+      typeof document !== "undefined" && document.visibilityState === "visible";
+    questionActiveRef.current = {
+      accumulatedMs: 0,
+      activeStart: isVisible ? Date.now() : null,
+    };
+  }, []);
+
+  // 页面切后台自动暂停，切回前台恢复，离开时同步存盘
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      const now = Date.now();
+      if (document.visibilityState === "hidden") {
+        if (activeDurationRef.current.activeStart !== null) {
+          activeDurationRef.current.accumulatedMs += Math.max(
+            0,
+            now - activeDurationRef.current.activeStart,
+          );
+          activeDurationRef.current.activeStart = null;
+        }
+        if (questionActiveRef.current.activeStart !== null) {
+          questionActiveRef.current.accumulatedMs += Math.max(
+            0,
+            now - questionActiveRef.current.activeStart,
+          );
+          questionActiveRef.current.activeStart = null;
+        }
+        if (sessionId) {
+          void db.sessions.update(sessionId, {
+            durationMs: activeDurationRef.current.accumulatedMs,
+          });
+        }
+      } else {
+        activeDurationRef.current.activeStart = now;
+        questionActiveRef.current.activeStart = now;
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    // 每 15 秒定期写入数据库，防止移动端异常杀进程导致用时完全未存
+    const syncInterval = setInterval(() => {
+      if (sessionId && document.visibilityState === "visible") {
+        void db.sessions.update(sessionId, {
+          durationMs: getCurrentDurationMs(),
+        });
+      }
+    }, 15000);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      clearInterval(syncInterval);
+      if (sessionId) {
+        void db.sessions.update(sessionId, {
+          durationMs: getCurrentDurationMs(),
+        });
+      }
+    };
+  }, [sessionId, getCurrentDurationMs]);
+
   /** 跳题进度持久化节流：合并 800ms 内的多次跳转，只写最后一次 */
   const persistIndexTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const persistCurrentIndex = useCallback(
@@ -143,7 +239,40 @@ function PracticePageInner() {
         ),
       );
       setIndex(startIndex);
-      questionStartRef.current = Date.now();
+
+      // 题目用时统计与异常恢复：校准由于旧版全量日历时间导致虚高的 1000+ 分钟
+      const sumAttemptsMs = attemptList.reduce((acc, a) => {
+        const valid = Math.min(Math.max(0, a.durationMs || 0), 600000);
+        return acc + valid;
+      }, 0);
+
+      // 若历史 durationMs 异常过大（例如超过 2 小时且远大于做题累加），则以题目累加为准校准
+      const isCorrupted =
+        sessionRecord.durationMs != null &&
+        sessionRecord.durationMs > 7200000 &&
+        sessionRecord.durationMs > sumAttemptsMs + 3600000;
+
+      const initialDurationMs =
+        sessionRecord.durationMs != null && !isCorrupted
+          ? Math.max(0, sessionRecord.durationMs)
+          : sumAttemptsMs;
+
+      const isVisible =
+        typeof document !== "undefined" && document.visibilityState === "visible";
+
+      activeDurationRef.current = {
+        accumulatedMs: initialDurationMs,
+        activeStart: isVisible ? Date.now() : null,
+      };
+
+      questionActiveRef.current = {
+        accumulatedMs: 0,
+        activeStart: isVisible ? Date.now() : null,
+      };
+
+      if (sessionRecord.durationMs !== initialDurationMs) {
+        void db.sessions.update(sessionId, { durationMs: initialDurationMs });
+      }
     })();
     return () => {
       cancelled = true;
@@ -168,7 +297,7 @@ function PracticePageInner() {
 
     setSubmitting(true);
     try {
-      const durationMs = Date.now() - questionStartRef.current;
+      const durationMs = getQuestionDurationMs();
       const bankId = currentQuestion.bankId;
       const result = await submitAnswer(
         session,
@@ -177,6 +306,7 @@ function PracticePageInner() {
         selection,
         durationMs,
       );
+      void db.sessions.update(session.id, { durationMs: getCurrentDurationMs() });
       const key = questionKey(bankId, currentQuestion.originalId);
       setAttempts((map) => {
         const next = new Map(map);
@@ -195,7 +325,16 @@ function PracticePageInner() {
     } finally {
       setSubmitting(false);
     }
-  }, [session, currentQuestion, submitting, hasAnswered, isSubjective, selection]);
+  }, [
+    session,
+    currentQuestion,
+    submitting,
+    hasAnswered,
+    isSubjective,
+    selection,
+    getQuestionDurationMs,
+    getCurrentDurationMs,
+  ]);
 
   const handleNext = useCallback(async () => {
     if (!session || finishing) return;
@@ -203,7 +342,8 @@ function PracticePageInner() {
     if (nextIndex >= questions.length) {
       setFinishing(true);
       try {
-        await completeSession(session.id);
+        const finalDurationMs = getCurrentDurationMs();
+        await completeSession(session.id, finalDurationMs);
         router.replace(`/practice/${session.id}/result`);
       } catch (err) {
         toast.error(err instanceof Error ? err.message : "结算练习失败");
@@ -216,8 +356,17 @@ function PracticePageInner() {
     setIndex(nextIndex);
     setSelection(null);
     setRevealed(false);
-    questionStartRef.current = Date.now();
-  }, [session, finishing, index, questions.length, router, persistCurrentIndex]);
+    resetQuestionTimer();
+  }, [
+    session,
+    finishing,
+    index,
+    questions.length,
+    router,
+    persistCurrentIndex,
+    getCurrentDurationMs,
+    resetQuestionTimer,
+  ]);
 
   const handlePrev = useCallback(() => {
     if (index === 0 || !session) return;
@@ -226,16 +375,17 @@ function PracticePageInner() {
     setIndex(prevIndex);
     setSelection(null);
     setRevealed(false);
-    questionStartRef.current = Date.now();
-  }, [index, session, persistCurrentIndex]);
+    resetQuestionTimer();
+  }, [index, session, persistCurrentIndex, resetQuestionTimer]);
 
   const handleSelfRate = async (rating: SelfRating) => {
     if (!session || !currentQuestion || submitting) return;
     setSubmitting(true);
     try {
-      const durationMs = Date.now() - questionStartRef.current;
+      const durationMs = getQuestionDurationMs();
       const bankId = currentQuestion.bankId;
       await selfRateSubjective(session, currentQuestion, bankId, rating, durationMs);
+      void db.sessions.update(session.id, { durationMs: getCurrentDurationMs() });
       const key = questionKey(bankId, currentQuestion.originalId);
       setAttempts((map) => {
         const next = new Map(map);
@@ -263,7 +413,7 @@ function PracticePageInner() {
     setSelection(null);
     setRevealed(false);
     setNavSheetOpen(false);
-    questionStartRef.current = Date.now();
+    resetQuestionTimer();
     persistCurrentIndex(session.id, newIndex);
   };
 
@@ -341,6 +491,7 @@ function PracticePageInner() {
         currentIndex={index}
         total={questions.length}
         startedAt={session.startedAt}
+        getDurationMs={getCurrentDurationMs}
         title={session.title}
         onOpenNavigator={() => setNavSheetOpen(true)}
       />
