@@ -3,6 +3,13 @@ import { db, listBanks } from "@/lib/db";
 import { importQuestionBank, type ImportResult } from "@/lib/import-question-bank";
 
 const ACTIVE_BANK_KEY = "questionhub.activeBankId";
+const BUILTIN_MANIFEST_PATH = "/data/banks/manifest.json";
+const BUILTIN_FALLBACK_ORIGIN = "https://quest.lengsu.top";
+
+export interface ImportFailure {
+  name: string;
+  reason: string;
+}
 
 export interface BanksManifestEntry {
   file: string;
@@ -27,10 +34,22 @@ interface BankState {
   refreshBanks: () => Promise<void>;
   importBank: (rawJson: string, name: string) => Promise<ImportResult>;
   importBuiltinBank: (file: string, name: string) => Promise<ImportResult>;
-  importAllBuiltinBanks: (onProgress?: (current: number, total: number) => void) => Promise<{ success: number; failed: number }>;
+  importAllBuiltinBanks: (
+    onProgress?: (current: number, total: number) => void,
+  ) => Promise<{ success: number; failed: number; failures: ImportFailure[] }>;
   setActiveBank: (bankId: string) => void;
   removeBank: (bankId: string) => Promise<void>;
   resetForReload: () => void;
+}
+
+/**
+ * 内置题库下载：本地优先，失败回退远程镜像。
+ * 三处调用共用，域名与路径收敛到模块顶部常量。
+ */
+async function fetchBuiltinFile(path: string): Promise<Response> {
+  const local = await fetch(path);
+  if (local.ok) return local;
+  return fetch(`${BUILTIN_FALLBACK_ORIGIN}${path}`);
 }
 
 export const useBankStore = create<BankState>((set, get) => ({
@@ -67,27 +86,20 @@ export const useBankStore = create<BankState>((set, get) => ({
     }
   },
 
-  // 2. 按需获取系统自带题库清单
+  // 2. 按需获取系统自带题库清单（失败时透出错误，不再吞成空清单）
   loadManifest: async () => {
     if (get().manifest.length > 0) return get().manifest;
 
-    try {
-      let res = await fetch("/data/banks/manifest.json");
-      if (!res.ok) {
-        // 尝试远程回退地址
-        res = await fetch("https://quest.lengsu.top/data/banks/manifest.json");
-      }
-      if (res.ok) {
-        const list: BanksManifestEntry[] = await res.json();
-        if (Array.isArray(list)) {
-          set({ manifest: list });
-          return list;
-        }
-      }
-    } catch (e) {
-      console.warn("[loadManifest] 加载系统题库清单失败:", e);
+    const res = await fetchBuiltinFile(BUILTIN_MANIFEST_PATH);
+    if (!res.ok) {
+      throw new Error(`系统题库清单下载失败（${res.status}），请检查网络后重试`);
     }
-    return [];
+    const list: BanksManifestEntry[] = await res.json();
+    if (!Array.isArray(list)) {
+      throw new Error("系统题库清单格式异常，请稍后重试");
+    }
+    set({ manifest: list });
+    return list;
   },
 
   refreshBanks: async () => {
@@ -115,12 +127,8 @@ export const useBankStore = create<BankState>((set, get) => ({
   // 3. 导入单个系统自带题库
   importBuiltinBank: async (file, name) => {
     try {
-      let r = await fetch(`/data/banks/${encodeURIComponent(file)}`);
-      if (!r.ok) {
-        // 远程回退
-        r = await fetch(`https://quest.lengsu.top/data/banks/${encodeURIComponent(file)}`);
-      }
-      if (!r.ok) {
+      const response = await fetchBuiltinFile(`/data/banks/${encodeURIComponent(file)}`);
+      if (!response.ok) {
         return {
           ok: false,
           errors: [`无法下载题库文件: ${file}`],
@@ -129,7 +137,7 @@ export const useBankStore = create<BankState>((set, get) => ({
           typeCounts: {},
         };
       }
-      const raw = await r.text();
+      const raw = await response.text();
       const result = await importQuestionBank(raw, name);
       if (result.ok && result.bank) {
         await get().refreshBanks();
@@ -149,10 +157,10 @@ export const useBankStore = create<BankState>((set, get) => ({
     }
   },
 
-  // 4. 一键导入所有系统自带题库（带实时进度）
+  // 4. 一键导入所有系统自带题库（带实时进度，失败项携带原因）
   importAllBuiltinBanks: async (onProgress) => {
     const manifest = await get().loadManifest();
-    if (manifest.length === 0) return { success: 0, failed: 0 };
+    if (manifest.length === 0) return { success: 0, failed: 0, failures: [] };
 
     set({ importingAll: true, importProgress: { current: 0, total: manifest.length } });
 
@@ -160,7 +168,7 @@ export const useBankStore = create<BankState>((set, get) => ({
     const existingNames = new Set(existing.map((b) => b.name));
 
     let success = 0;
-    let failed = 0;
+    const failures: ImportFailure[] = [];
 
     for (let i = 0; i < manifest.length; i++) {
       const entry = manifest[i];
@@ -173,21 +181,23 @@ export const useBankStore = create<BankState>((set, get) => ({
       }
 
       try {
-        let r = await fetch(`/data/banks/${encodeURIComponent(entry.file)}`);
-        if (!r.ok) {
-          r = await fetch(`https://quest.lengsu.top/data/banks/${encodeURIComponent(entry.file)}`);
+        const response = await fetchBuiltinFile(`/data/banks/${encodeURIComponent(entry.file)}`);
+        if (!response.ok) {
+          failures.push({ name: entry.name, reason: `下载失败（${response.status}）` });
+          continue;
         }
-        if (r.ok) {
-          const raw = await r.text();
-          const res = await importQuestionBank(raw, entry.name);
-          if (res.ok) success++;
-          else failed++;
+        const raw = await response.text();
+        const result = await importQuestionBank(raw, entry.name);
+        if (result.ok) {
+          success++;
         } else {
-          failed++;
+          failures.push({ name: entry.name, reason: result.errors.join("；") || "导入失败" });
         }
-      } catch (e) {
-        console.warn(`[importAll] 导入 ${entry.name} 失败:`, e);
-        failed++;
+      } catch (error) {
+        failures.push({
+          name: entry.name,
+          reason: error instanceof Error ? error.message : String(error),
+        });
       }
     }
 
@@ -198,7 +208,7 @@ export const useBankStore = create<BankState>((set, get) => ({
     }
 
     set({ importingAll: false, importProgress: null });
-    return { success, failed };
+    return { success, failed: failures.length, failures };
   },
 
   setActiveBank: (bankId) => {

@@ -7,6 +7,10 @@ interface ProgressProps {
   size?: "sm" | "default" | "lg";
 }
 
+/** 进度条边界（与 aria-valuemin/max 共用） */
+const PROGRESS_MIN = 0;
+const PROGRESS_MAX = 100;
+
 /** 现代圆润进度条，value 为 0-100 */
 export function Progress({
   value,
@@ -14,7 +18,7 @@ export function Progress({
   indicatorClassName,
   size = "default",
 }: ProgressProps) {
-  const clamped = Math.max(0, Math.min(100, value));
+  const clamped = Math.max(PROGRESS_MIN, Math.min(PROGRESS_MAX, value));
 
   const sizeClasses = {
     sm: "h-1.5",
@@ -26,8 +30,8 @@ export function Progress({
     <div
       role="progressbar"
       aria-valuenow={Math.round(clamped)}
-      aria-valuemin={0}
-      aria-valuemax={100}
+      aria-valuemin={PROGRESS_MIN}
+      aria-valuemax={PROGRESS_MAX}
       className={cn(
         "relative w-full overflow-hidden rounded-full bg-ios-surface-tertiary/70 shadow-inner",
         sizeClasses[size],

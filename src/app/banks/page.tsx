@@ -17,15 +17,22 @@ import {
   Trash2,
   Upload,
 } from "lucide-react";
-import { useBankStore, type BanksManifestEntry } from "@/stores/bank-store";
+import { useBankStore, type BanksManifestEntry, type ImportFailure } from "@/stores/bank-store";
 import { parseAndValidate, type ValidationReport } from "@/lib/import-question-bank";
 import type { QuestionBankInput } from "@/lib/question-bank-schema";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
 import { Sheet } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { ConfirmSheet } from "@/components/ui/confirm-sheet";
 import { toast } from "@/components/ui/toast";
+import { QUESTION_TYPE_LABELS } from "@/types/question-bank";
 import { cn } from "@/lib/utils";
+
+/** 导入文件名后缀：展示名去掉 .json */
+const IMPORT_FILE_SUFFIX_PATTERN = /\.json$/i;
+/** 校验提示最大展示条数 */
+const MAX_VISIBLE_WARNINGS = 20;
 
 type ImportPhase = "idle" | "parsing" | "parsed" | "importing" | "done" | "error";
 
@@ -52,11 +59,27 @@ export default function BanksPage() {
   const [importError, setImportError] = useState("");
   const [importedName, setImportedName] = useState("");
   const [loadingFile, setLoadingFile] = useState<string | null>(null);
+  const [manifestError, setManifestError] = useState("");
+  const [removeTarget, setRemoveTarget] = useState<{ id: string; name: string } | null>(null);
+  const [removing, setRemoving] = useState(false);
+  const [importFailures, setImportFailures] = useState<ImportFailure[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // 加载系统题库清单
+  // 加载系统题库清单：失败透出重试，不再静默显示空列表
   useEffect(() => {
-    void loadManifest();
+    let cancelled = false;
+    void loadManifest()
+      .then(() => {
+        if (!cancelled) setManifestError("");
+      })
+      .catch((error: unknown) => {
+        if (!cancelled) {
+          setManifestError(error instanceof Error ? error.message : String(error));
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
   }, [loadManifest]);
 
   const existingBankNames = new Set(banks.map((b) => b.name));
@@ -90,7 +113,7 @@ export default function BanksPage() {
     setPhase("importing");
     try {
       const rawJson = await fileInputRef.current.files[0].text();
-      const result = await importBank(rawJson, fileName.replace(/\.json$/i, "") || "导入题库");
+      const result = await importBank(rawJson, fileName.replace(IMPORT_FILE_SUFFIX_PATTERN, "") || "导入题库");
       if (result.ok) {
         setImportedName(result.bank?.name ?? fileName);
         setPhase("done");
@@ -122,11 +145,18 @@ export default function BanksPage() {
   };
 
   const handleImportAllBuiltin = async () => {
-    const res = await importAllBuiltinBanks();
-    if (res.success > 0) {
-      toast.success(`成功导入 ${res.success} 套系统题库`);
-    } else if (res.failed > 0) {
-      toast.error("部分题库导入失败，请检查网络连接");
+    try {
+      const res = await importAllBuiltinBanks();
+      setImportFailures(res.failures);
+      if (res.success > 0) {
+        toast.success(`成功导入 ${res.success} 套系统题库`);
+      }
+      if (res.failed > 0) {
+        toast.error(`有 ${res.failed} 套导入失败，详见列表`);
+      }
+    } catch (error) {
+      setManifestError(error instanceof Error ? error.message : String(error));
+      toast.error("系统题库清单加载失败，无法批量导入");
     }
   };
 
@@ -135,14 +165,23 @@ export default function BanksPage() {
     toast.success(`已切换为当前题库：${bank.name}`);
   };
 
-  const handleRemove = async (bankId: string) => {
-    if (!window.confirm("确定删除该题库吗？该题库下的学习记录将一并删除。")) return;
+  const handleRemove = async () => {
+    if (!removeTarget || removing) return;
+    setRemoving(true);
     try {
-      await removeBank(bankId);
-      toast.info("题库已删除");
+      await removeBank(removeTarget.id);
+      toast.info(`「${removeTarget.name}」已删除`);
+      setRemoveTarget(null);
     } catch (error) {
       toast.error(error instanceof Error ? error.message : String(error));
+    } finally {
+      setRemoving(false);
     }
+  };
+
+  const openImport = () => {
+    resetImport();
+    setImportOpen(true);
   };
 
   const resetImport = () => {
@@ -163,8 +202,7 @@ export default function BanksPage() {
           <Button
             size="sm"
             onClick={() => {
-              resetImport();
-              setImportOpen(true);
+              openImport();
             }}
           >
             <Plus className="h-4 w-4" />
@@ -289,7 +327,7 @@ export default function BanksPage() {
                           </button>
 
                           <button
-                            onClick={() => handleRemove(bank.id)}
+                            onClick={() => setRemoveTarget({ id: bank.id, name: bank.name })}
                             className="squircle-press flex items-center gap-1 rounded-xl p-1.5 text-[12px] text-ios-red/80 hover:bg-ios-red/10 hover:text-ios-red cursor-pointer"
                             title="删除题库"
                           >
@@ -304,10 +342,7 @@ export default function BanksPage() {
 
               {/* 快捷导入自定义卡片 */}
               <button
-                onClick={() => {
-                  resetImport();
-                  setImportOpen(true);
-                }}
+                onClick={openImport}
                 className="squircle-press flex min-h-[190px] flex-col items-center justify-center gap-3 rounded-[24px] border-2 border-dashed border-ios-blue/30 bg-ios-blue/5 p-6 text-center text-ios-blue transition-all hover:border-ios-blue/60 hover:bg-ios-blue/10 cursor-pointer"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-ios-blue/10">
@@ -325,6 +360,40 @@ export default function BanksPage() {
         </section>
 
         {/* 2. 系统精选自带题库 */}
+        {manifestError && manifest.length === 0 && (
+          <section className="rounded-[20px] border border-ios-red/30 bg-ios-red/5 p-5">
+            <p className="text-[14px] font-bold text-ios-red">系统题库清单加载失败</p>
+            <p className="mt-1 text-[12px] text-ios-label-secondary">{manifestError}</p>
+            <Button
+              variant="secondary"
+              size="sm"
+              className="mt-3"
+              onClick={() => {
+                setManifestError("");
+                void loadManifest().catch((error: unknown) => {
+                  setManifestError(error instanceof Error ? error.message : String(error));
+                });
+              }}
+            >
+              重新加载
+            </Button>
+          </section>
+        )}
+        {importFailures.length > 0 && (
+          <section className="rounded-[20px] border border-ios-orange/30 bg-ios-orange/5 p-5">
+            <p className="text-[14px] font-bold text-ios-orange">
+              有 {importFailures.length} 套系统题库导入失败
+            </p>
+            <ul className="mt-2 space-y-1 text-[12px] text-ios-label-secondary">
+              {importFailures.map((failure) => (
+                <li key={failure.name}>
+                  <span className="font-semibold text-ios-label">{failure.name}</span>
+                  ：{failure.reason}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         {manifest.length > 0 && (
           <section className="space-y-4 pt-4 border-t border-ios-separator/40">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
@@ -496,7 +565,7 @@ export default function BanksPage() {
                     key={type}
                     className="rounded-xl border border-white/60 bg-ios-surface/80 px-3 py-1.5 text-[12px] font-semibold text-ios-label dark:border-white/10"
                   >
-                    {typeLabel(type)}: <span className="text-ios-blue font-bold">{count}</span> 题
+                    {questionTypeLabel(type)}: <span className="text-ios-blue font-bold">{count}</span> 题
                   </span>
                 ))}
               </div>
@@ -511,7 +580,7 @@ export default function BanksPage() {
                 <details className="mt-2 text-[12px] text-ios-label-secondary">
                   <summary className="cursor-pointer font-medium text-ios-orange">展开查看详情</summary>
                   <ul className="mt-2 max-h-36 space-y-1 overflow-y-auto pl-4 list-disc">
-                    {report.warnings.slice(0, 20).map((w, idx) => (
+                    {report.warnings.slice(0, MAX_VISIBLE_WARNINGS).map((w, idx) => (
                       <li key={idx}>{w}</li>
                     ))}
                   </ul>
@@ -573,18 +642,24 @@ export default function BanksPage() {
           </div>
         )}
       </Sheet>
+
+      <ConfirmSheet
+        open={removeTarget !== null}
+        title="删除该题库？"
+        description={`「${removeTarget?.name ?? ""}」及旗下学习记录将一并删除，此操作不可恢复。`}
+        confirmLabel="删除题库"
+        danger
+        confirming={removing}
+        onClose={() => setRemoveTarget(null)}
+        onConfirm={() => void handleRemove()}
+      />
     </div>
   );
 }
 
-function typeLabel(type: string): string {
-  const labels: Record<string, string> = {
-    single_choice: "单选题",
-    multiple_choice: "多选题",
-    true_false: "判断题",
-    short_answer: "简答题",
-    comprehensive: "综合题",
-    calculation_analysis: "计算分析题",
-  };
-  return labels[type] ?? type;
+/** 题型中文名：统一复用全局映射，未知类型回退原文 */
+function questionTypeLabel(type: string): string {
+  return (QUESTION_TYPE_LABELS as Record<string, string>)[type] ?? type;
 }
+
+

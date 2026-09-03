@@ -2,7 +2,7 @@ import { CheckCircle2, Info, XCircle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { isSubjectiveType } from "@/lib/grading";
 import type { AttemptRecord, QuestionRecord } from "@/lib/db";
-import type { Question } from "@/types/question-bank";
+import type { ExplanationStatus, Question } from "@/types/question-bank";
 
 interface ExplanationCardProps {
   question: QuestionRecord;
@@ -69,24 +69,19 @@ export function ExplanationCard({
   );
 }
 
-function DetailExplanation({ question }: { question: QuestionRecord }) {
-  if (question.explanationStatus === "source_not_provided") {
-    return (
-      <Card className="p-4">
-        <div className="flex items-center gap-2 text-[13px] font-medium text-ios-label-tertiary">
-          <Info className="h-4 w-4" />
-          原题库未收录独立文字解析
-        </div>
-      </Card>
-    );
-  }
+const MISSING_EXPLANATION_COPY: Partial<Record<ExplanationStatus, string>> = {
+  source_not_provided: "原题库未收录独立文字解析",
+  ocr_failed: "原题库包含解析，但当前文本未能完整识别",
+};
 
-  if (question.explanationStatus === "ocr_failed") {
+function DetailExplanation({ question }: { question: QuestionRecord }) {
+  const missingCopy = MISSING_EXPLANATION_COPY[question.explanationStatus];
+  if (missingCopy) {
     return (
       <Card className="p-4">
         <div className="flex items-center gap-2 text-[13px] font-medium text-ios-label-tertiary">
           <Info className="h-4 w-4" />
-          原题库包含解析，但当前文本未能完整识别
+          {missingCopy}
         </div>
       </Card>
     );
@@ -107,13 +102,15 @@ function DetailExplanation({ question }: { question: QuestionRecord }) {
   );
 }
 
+const ANSWER_KEY_SEPARATOR = "、";
+
 function formatAnswerText(question: Question): string {
   const { type, answer } = question;
   if (type === "true_false") {
     return answer.display ? String(answer.display) : answer.value ? "正确" : "错误";
   }
   if (Array.isArray(answer.value)) {
-    return answer.display ? String(answer.display) : answer.value.join("、");
+    return answer.display ? String(answer.display) : answer.value.join(ANSWER_KEY_SEPARATOR);
   }
   return answer.display ? String(answer.display) : String(answer.value);
 }

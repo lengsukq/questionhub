@@ -4,6 +4,23 @@ import { cn } from "@/lib/utils";
 import type { AttemptRecord, QuestionRecord } from "@/lib/db";
 import { questionKey } from "@/lib/db";
 
+type NavigatorStatus = "correct" | "incorrect" | "subjective" | "unanswered";
+
+const NAVIGATOR_TONE_MAP: Record<NavigatorStatus, string> = {
+  correct: "border-ios-green bg-ios-green/15 text-ios-green shadow-xs",
+  incorrect: "border-ios-red bg-ios-red/15 text-ios-red shadow-xs",
+  subjective: "border-ios-purple bg-ios-purple/15 text-ios-purple shadow-xs",
+  unanswered:
+    "border-ios-separator/60 bg-ios-surface/60 text-ios-label-secondary hover:border-ios-blue/40 hover:bg-ios-surface",
+};
+
+function navigatorStatus(attempt?: AttemptRecord): NavigatorStatus {
+  if (attempt?.correctness === "correct") return "correct";
+  if (attempt?.correctness === "incorrect") return "incorrect";
+  if (attempt?.correctness === "ungraded") return "subjective";
+  return "unanswered";
+}
+
 interface QuestionNavigatorProps {
   questions: QuestionRecord[];
   attempts: Map<string, AttemptRecord>;
@@ -43,36 +60,25 @@ export function QuestionNavigator({
 
       {/* 题号网格 */}
       <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-5 gap-2.5">
-        {questions.map((q, idx) => {
-          const attempt = attempts.get(questionKey(q.bankId, q.originalId));
-          const isCurrent = idx === currentIndex;
-          const isCorrect = attempt?.correctness === "correct";
-          const isIncorrect = attempt?.correctness === "incorrect";
-          const isSubjective = attempt?.correctness === "ungraded";
-          const isAnswered = Boolean(attempt);
+        {questions.map((question, position) => {
+          const status = navigatorStatus(
+            attempts.get(questionKey(question.bankId, question.originalId)),
+          );
+          const isCurrent = position === currentIndex;
 
           return (
             <button
-              key={questionKey(q.bankId, q.originalId)}
+              key={questionKey(question.bankId, question.originalId)}
               type="button"
-              onClick={() => onSelectIndex(idx)}
+              onClick={() => onSelectIndex(position)}
               className={cn(
                 "squircle-press relative flex h-11 items-center justify-center rounded-2xl border-2 font-bold text-[13px] tabular-nums transition-all duration-200 cursor-pointer",
-                // 当前题高亮
                 isCurrent &&
                   "ring-2 ring-ios-blue ring-offset-2 ring-offset-ios-background scale-105 z-10",
-                // 各状态着色
-                isCorrect &&
-                  "border-ios-green bg-ios-green/15 text-ios-green shadow-xs",
-                isIncorrect &&
-                  "border-ios-red bg-ios-red/15 text-ios-red shadow-xs",
-                isSubjective &&
-                  "border-ios-purple bg-ios-purple/15 text-ios-purple shadow-xs",
-                !isAnswered &&
-                  "border-ios-separator/60 bg-ios-surface/60 text-ios-label-secondary hover:border-ios-blue/40 hover:bg-ios-surface",
+                NAVIGATOR_TONE_MAP[status],
               )}
             >
-              {idx + 1}
+              {position + 1}
             </button>
           );
         })}

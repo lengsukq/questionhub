@@ -59,18 +59,21 @@ export default function AnalyticsPage() {
       const stat = statMap.get(q.originalId);
       if (!stat || stat.attemptCount === 0) continue;
       answeredCount += 1;
+      // 按题去重：以最近一次作答是否答对判定当前掌握状态，
+      // 避免用累计答对次数（correctCount）导致正确率超过 100%
+      const isMastered = stat.lastCorrectness === "correct";
       if (
         q.type === "short_answer" ||
         q.type === "comprehensive" ||
         q.type === "calculation_analysis"
       ) {
         subjectiveDone += 1;
-      } else {
-        correctCount += stat.correctCount;
+      } else if (isMastered) {
+        correctCount += 1;
       }
       const entry = typeMap.get(q.type) ?? { done: 0, correct: 0 };
       entry.done += 1;
-      entry.correct += stat.correctCount;
+      if (isMastered) entry.correct += 1;
       typeMap.set(q.type, entry);
     }
 
@@ -98,7 +101,8 @@ export default function AnalyticsPage() {
       const stat = statMap.get(q.originalId);
       if (stat && stat.attemptCount > 0) {
         entry.answered += 1;
-        entry.correct += stat.correctCount;
+        // 按题去重：以最近一次作答判定，避免累计答对次数撑大分子
+        if (stat.lastCorrectness === "correct") entry.correct += 1;
       }
       map.set(key, entry);
     }

@@ -1,12 +1,15 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChevronLeft, Clock, LayoutGrid } from "lucide-react";
+import { ConfirmSheet } from "@/components/ui/confirm-sheet";
 
 interface PracticeHeaderProps {
   currentIndex: number;
   total: number;
-  elapsedText: string;
+  /** 会话开始时间戳：计时器在内部独立 tick，避免每秒带动整个练习页重渲染 */
+  startedAt: number;
   onOpenNavigator?: () => void;
   title?: string;
 }
@@ -14,17 +17,12 @@ interface PracticeHeaderProps {
 export function PracticeHeader({
   currentIndex,
   total,
-  elapsedText,
+  startedAt,
   onOpenNavigator,
   title,
 }: PracticeHeaderProps) {
   const router = useRouter();
-
-  const handleExit = () => {
-    if (window.confirm("确定退出当前练习吗？已答进度将自动保存。")) {
-      router.push("/");
-    }
-  };
+  const [exitOpen, setExitOpen] = useState(false);
 
   const progressPercent = ((currentIndex + 1) / Math.max(1, total)) * 100;
 
@@ -34,7 +32,7 @@ export function PracticeHeader({
         {/* 左侧返回 */}
         <div className="flex items-center gap-3">
           <button
-            onClick={handleExit}
+            onClick={() => setExitOpen(true)}
             aria-label="退出练习"
             className="squircle-press flex h-9 w-9 items-center justify-center rounded-xl border border-white/60 bg-ios-surface/80 text-ios-label-secondary shadow-sm hover:border-ios-blue/30 hover:bg-ios-surface hover:text-ios-blue active:scale-95 dark:border-white/10 dark:bg-ios-surface/60"
           >
@@ -59,7 +57,7 @@ export function PracticeHeader({
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 rounded-full border border-white/60 bg-ios-surface/80 px-3 py-1 text-[12px] font-semibold tabular-nums text-ios-label-secondary shadow-2xs backdrop-blur-md dark:border-white/10 dark:bg-ios-surface/60">
             <Clock className="h-3.5 w-3.5 text-ios-blue" />
-            <span>{elapsedText}</span>
+            <ElapsedTimer startedAt={startedAt} />
           </div>
 
           {onOpenNavigator && (
@@ -75,6 +73,15 @@ export function PracticeHeader({
         </div>
       </div>
 
+      <ConfirmSheet
+        open={exitOpen}
+        title="退出当前练习？"
+        description="已答进度将自动保存，可随时从首页继续。"
+        confirmLabel="退出练习"
+        onClose={() => setExitOpen(false)}
+        onConfirm={() => router.push("/")}
+      />
+
       {/* 顶部进度条 */}
       <div className="mx-auto mt-2 h-1 max-w-6xl overflow-hidden rounded-full bg-ios-surface-tertiary/60">
         <div
@@ -83,5 +90,25 @@ export function PracticeHeader({
         />
       </div>
     </header>
+  );
+}
+
+/** 独立计时器：state 内聚在此组件，每秒只重渲染自己 */
+function ElapsedTimer({ startedAt }: { startedAt: number }) {
+  const [elapsed, setElapsed] = useState(() =>
+    Math.max(0, Math.floor((Date.now() - startedAt) / 1000)),
+  );
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setElapsed(Math.max(0, Math.floor((Date.now() - startedAt) / 1000)));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [startedAt]);
+
+  const minutes = Math.floor(elapsed / 60);
+  const seconds = elapsed % 60;
+  return (
+    <span>{`${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`}</span>
   );
 }

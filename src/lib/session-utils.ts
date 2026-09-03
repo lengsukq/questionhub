@@ -9,21 +9,59 @@ import {
   type PracticeSessionRecord,
   type QuestionStatRecord,
 } from "@/lib/db";
-import { gradeQuestion } from "@/lib/grading";
-import { nextReviewInDays } from "@/lib/review-schedule";
+import { gradeQuestion, type UserAnswer } from "@/lib/grading";
+import { nextReviewAt } from "@/lib/review-schedule";
 import { selectQuestions } from "@/lib/bank-utils";
 import type { Question, SelfRating } from "@/types/question-bank";
+import type { QuestionRecord } from "@/lib/db";
+
+/** 可持久化题目：题库记录自带 originalId，练习中的 Question 需兼容旧字段 */
+export type PersistableQuestion = QuestionRecord | (Question & { originalId?: string });
+
+/** 会话 id 长度（nanoid） */
+const SESSION_ID_LENGTH = 12;
+/** 连续答对 N 次后移出错题本 */
+const WRONG_BOOK_CLEAR_STREAK = 2;
 
 export interface CreateSessionInput extends PracticeConfig {
   mode: PracticeMode;
   title: string;
+  /** 直接指定题目引用（复习页错题/收藏/到期组卷用），与筛选配置二选一 */
+  refs?: Array<{ bankId: string; questionId: string }>;
 }
 
-function getQuestionPersistId(question: Question): string {
-  return (question as { originalId?: string }).originalId ?? question.id;
+function getQuestionPersistId(question: PersistableQuestion): string {
+  return "originalId" in question && question.originalId
+    ? question.originalId
+    : question.id;
 }
 
 export async function createPracticeSession(input: CreateSessionInput): Promise<PracticeSessionRecord> {
+  // 直接 refs 组卷（复习页）：跳过全库筛选，校验空结果
+  if (input.refs) {
+    if (input.refs.length === 0) {
+      throw new Error("没有符合条件的题目，请调整练习范围");
+    }
+    const session: PracticeSessionRecord = {
+      id: nanoid(SESSION_ID_LENGTH),
+      bankId: input.bankId,
+      title: input.title,
+      mode: input.mode,
+      config: {
+        bankId: input.bankId,
+        bankIds: input.bankIds,
+        count: input.refs.length,
+        order: input.order,
+      },
+      questionRefs: input.refs,
+      currentIndex: 0,
+      status: "active",
+      startedAt: Date.now(),
+    };
+    await db.sessions.add(session);
+    return session;
+  }
+
   const bankIds = input.bankIds && input.bankIds.length > 0 ? input.bankIds : [input.bankId];
   const allQuestions =
     bankIds.length === 1
@@ -33,7 +71,7 @@ export async function createPracticeSession(input: CreateSessionInput): Promise<
   const count = Math.min(input.count, refs.length);
 
   const session: PracticeSessionRecord = {
-    id: nanoid(12),
+    id: nanoid(SESSION_ID_LENGTH),
     bankId: input.bankId,
     title: input.title,
     mode: input.mode,
@@ -67,9 +105,9 @@ export interface AnswerSubmission {
 
 export async function submitAnswer(
   session: PracticeSessionRecord,
-  question: Question,
+  question: PersistableQuestion,
   bankId: string,
-  userAnswer: unknown,
+  userAnswer: UserAnswer,
   durationMs: number,
 ): Promise<AnswerSubmission> {
   const { correctness } = gradeQuestion(question, userAnswer);
@@ -105,8 +143,8 @@ export async function selfRateSubjective(
 interface SaveAttemptInput {
   sessionId: string;
   bankId: string;
-  question: Question;
-  userAnswer: unknown;
+  question: PersistableQuestion;
+  userAnswer: UserAnswer;
   correctness: AttemptRecord["correctness"];
   durationMs: number;
   selfRating?: SelfRating;
@@ -134,7 +172,7 @@ async function saveAttempt(input: SaveAttemptInput): Promise<void> {
 }
 
 async function updateStat(
-  question: Question,
+  question: PersistableQuestion,
   bankId: string,
   correctness: AttemptRecord["correctness"],
   selfRating: SelfRating | undefined,
@@ -151,23 +189,24 @@ async function updateStat(
   } else if (correctness === "correct") {
     stat.correctCount += 1;
     stat.streak = previousStreak + 1;
-    if (stat.streak >= 2) stat.isWrongBook = false;
+    if (stat.streak >= WRONG_BOOK_CLEAR_STREAK) stat.isWrongBook = false;
   } else {
-    // 主观题自评
+    // 主观题自评：0 不会 / 1 模糊视为未掌握，2 掌握计入连击
     stat.subjectiveCount += 1;
-    if (selfRating !== undefined && selfRating <= 1) {
+    if (selfRating === 0 || selfRating === 1) {
       stat.streak = 0;
       stat.isWrongBook = true;
-    } else if (selfRating !== undefined && selfRating === 2) {
+    } else if (selfRating === 2) {
       stat.streak = previousStreak + 1;
-      if (stat.streak >= 2) stat.isWrongBook = false;
+      if (stat.streak >= WRONG_BOOK_CLEAR_STREAK) stat.isWrongBook = false;
     }
   }
 
   stat.attemptCount += 1;
   stat.lastCorrectness = correctness;
   stat.lastAnsweredAt = now;
-  stat.nextReviewAt = now + nextReviewInDays(correctness, selfRating, previousStreak) * 86400_000;
+  // 对齐到日期边界：与 queries 按天分桶一致，避免 23:00 作答漂移成两天
+  stat.nextReviewAt = nextReviewAt(correctness, selfRating, previousStreak, now);
 
   await db.questionStats.put(stat);
 }
@@ -193,15 +232,20 @@ function createEmptyStat(bankId: string, questionId: string): QuestionStatRecord
 
 export async function completeSession(sessionId: string): Promise<void> {
   const now = Date.now();
+  const session = await db.sessions.get(sessionId);
   await db.sessions.update(sessionId, {
     status: "completed",
     completedAt: now,
-    durationMs: now - ((await db.sessions.get(sessionId))?.startedAt ?? now),
+    durationMs: now - (session?.startedAt ?? now),
   });
 }
 
 export async function getAttemptsForSession(sessionId: string): Promise<AttemptRecord[]> {
-  return db.attempts.where("sessionId").equals(sessionId).toArray();
+  // 走 [sessionId+submittedAt] 复合索引，按提交顺序返回
+  return db.attempts
+    .where("[sessionId+submittedAt]")
+    .between([sessionId, 0], [sessionId, Number.POSITIVE_INFINITY])
+    .toArray();
 }
 
 export async function toggleFavorite(bankId: string, questionId: string): Promise<boolean> {

@@ -137,17 +137,33 @@ export interface ImportResult {
   typeCounts: Partial<Record<QuestionType, number>>;
 }
 
+/** 导入 JSON 体积上限（20MB）：移动端全量读入内存前先拦截，避免 OOM 白屏 */
+export const MAX_IMPORT_JSON_BYTES = 20 * 1024 * 1024;
+/** 分片写入大小：大题库按批 bulkPut，避免单个超大事务阻塞主线程 */
+const IMPORT_CHUNK_SIZE = 500;
+
 /**
  * 将解析通过、含软校验报告的题库写入 IndexedDB。
  * @param rawJson  原始 JSON 文本
  * @param name     题库显示名
  * @param bankId   指定题库 id（默认题库固定为 "default"）
+ * @param onProgress 分片写入进度回调（已写入题数，总题数）
  */
 export async function importQuestionBank(
   rawJson: string,
   name: string,
   bankId = `bank-${nanoid(8)}`,
+  onProgress?: (written: number, total: number) => void,
 ): Promise<ImportResult> {
+  if (rawJson.length * 2 > MAX_IMPORT_JSON_BYTES) {
+    return {
+      ok: false,
+      warnings: [],
+      errors: [`题库文件过大（约 ${(rawJson.length / 1024 / 1024).toFixed(1)}MB），请拆分成 20MB 以内再导入`],
+      questionCount: 0,
+      typeCounts: {},
+    };
+  }
   const report = parseAndValidate(rawJson);
   if (!report.ok || !report.data) {
     return {
@@ -180,7 +196,11 @@ export async function importQuestionBank(
 
   await db.transaction("rw", [db.banks, db.questions], async () => {
     await db.banks.put(bank);
-    await db.questions.bulkPut(questionRecords);
+    // 分片写入：让出主线程，避免大题库一次 bulkPut 卡死移动端
+    for (let i = 0; i < questionRecords.length; i += IMPORT_CHUNK_SIZE) {
+      await db.questions.bulkPut(questionRecords.slice(i, i + IMPORT_CHUNK_SIZE));
+      onProgress?.(Math.min(i + IMPORT_CHUNK_SIZE, questionRecords.length), questionRecords.length);
+    }
   });
 
   return {

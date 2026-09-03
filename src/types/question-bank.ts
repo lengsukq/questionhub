@@ -14,6 +14,24 @@ export type Correctness = "correct" | "incorrect" | "partial" | "ungraded";
 
 export type SelfRating = 0 | 1 | 2;
 
+export interface SelfRatingOption {
+  value: SelfRating;
+  label: string;
+  hint: string;
+}
+
+/** 自评选项：JSX 按钮组与结果文案共用，不再散落 0/1/2 魔法数字 */
+export const SELF_RATING_OPTIONS: SelfRatingOption[] = [
+  { value: 0, label: "不会", hint: "0分" },
+  { value: 1, label: "模糊", hint: "部分命中" },
+  { value: 2, label: "掌握", hint: "熟练掌握" },
+];
+
+export function selfRatingLabel(rating: SelfRating | undefined): string {
+  if (rating === undefined) return "未自评";
+  return SELF_RATING_OPTIONS[rating].label;
+}
+
 export type ContentStatus =
   | "imported"
   | "review_pending"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
 import {
@@ -20,6 +20,7 @@ import { toast } from "@/components/ui/toast";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
 import { Segmented } from "@/components/ui/segmented";
+import { ConfirmSheet } from "@/components/ui/confirm-sheet";
 import { cn } from "@/lib/utils";
 
 type ThemeMode = "system" | "light" | "dark";
@@ -31,8 +32,13 @@ export default function SettingsPage() {
   const activeBank = banks.find((bank) => bank.id === activeBankId);
 
   const [statsText, setStatsText] = useState("");
+  const [clearOpen, setClearOpen] = useState(false);
+  const [clearing, setClearing] = useState(false);
+  const [resetOpen, setResetOpen] = useState(false);
+  const [resetting, setResetting] = useState(false);
 
-  const themeMode: ThemeMode = theme === "system" ? "system" : (theme as ThemeMode);
+  const themeMode: ThemeMode =
+    theme === "light" || theme === "dark" || theme === "system" ? theme : "system";
 
   const loadStats = async () => {
     const [attemptCount, statCount] = await Promise.all([
@@ -83,31 +89,31 @@ export default function SettingsPage() {
   };
 
   const handleClearUserData = async () => {
-    if (
-      !window.confirm(
-        "确定清空所有学习记录（答题历史、错题本、收藏夹、笔记）吗？题库文件将保留。此操作不可恢复。",
-      )
-    )
-      return;
+    if (clearing) return;
+    setClearing(true);
     try {
       await clearUserData();
       await loadStats();
       toast.success("学习记录已清空");
+      setClearOpen(false);
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "清空失败");
+    } finally {
+      setClearing(false);
     }
   };
 
   const handleResetAll = async () => {
-    if (
-      !window.confirm(
-        "确定重置整个应用吗？将删除所有题库及做题记录，恢复至出厂初始状态。此操作不可恢复。",
-      )
-    )
-      return;
-    await resetAllData();
-    resetForReload();
-    window.location.href = "/";
+    if (resetting) return;
+    setResetting(true);
+    try {
+      await resetAllData();
+      resetForReload();
+      window.location.href = "/";
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "重置失败");
+      setResetting(false);
+    }
   };
 
   return (
@@ -159,12 +165,12 @@ export default function SettingsPage() {
             <SettingRow
               icon={<Trash2 className="h-4 w-4 text-ios-orange" />}
               label="清空学习进度（保留题库）"
-              onClick={handleClearUserData}
+              onClick={() => setClearOpen(true)}
             />
             <SettingRow
               icon={<Trash2 className="h-4 w-4 text-ios-red" />}
               label="重置应用至初始状态（含题库）"
-              onClick={handleResetAll}
+              onClick={() => setResetOpen(true)}
               danger
             />
           </div>
@@ -186,6 +192,27 @@ export default function SettingsPage() {
             chevron
           />
         </Card>
+
+      <ConfirmSheet
+        open={clearOpen}
+        title="清空学习记录？"
+        description="将删除答题历史、错题本、收藏夹与笔记，题库文件保留，此操作不可恢复。"
+        confirmLabel="清空记录"
+        danger
+        confirming={clearing}
+        onClose={() => setClearOpen(false)}
+        onConfirm={() => void handleClearUserData()}
+      />
+      <ConfirmSheet
+        open={resetOpen}
+        title="重置整个应用？"
+        description="将删除所有题库及做题记录，恢复至出厂初始状态，此操作不可恢复。"
+        confirmLabel="重置应用"
+        danger
+        confirming={resetting}
+        onClose={() => setResetOpen(false)}
+        onConfirm={() => void handleResetAll()}
+      />
 
         {/* 关于 */}
         <Card className="p-6">
@@ -216,7 +243,7 @@ function SettingRow({
   chevron,
   danger,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   value?: string;
   onClick?: () => void;

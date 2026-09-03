@@ -4,7 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-// 全局路由过渡进度条
+// 全局路由过渡进度条：START→MID→NEAR 三段模拟
+const ROUTE_PROGRESS_START = 25;
+const ROUTE_PROGRESS_MID = 65;
+const ROUTE_PROGRESS_NEAR = 85;
+const ROUTE_PROGRESS_DONE = 100;
+const ROUTE_FINISH_FADE_MS = 300;
+const ROUTE_MID_TICK_MS = 120;
+const ROUTE_NEAR_TICK_MS = 350;
+
 export function RouteProgress() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -29,12 +37,12 @@ export function RouteProgress() {
       prevRouteRef.current = { pathname, search: currentSearch };
       clearAllTimers();
       const t1 = setTimeout(() => {
-        setProgress(100);
+        setProgress(ROUTE_PROGRESS_DONE);
       }, 0);
       const t2 = setTimeout(() => {
         setActive(false);
         setProgress(0);
-      }, 300);
+      }, ROUTE_FINISH_FADE_MS);
       timersRef.current.push(t1, t2);
     }
   }, [pathname, searchParams]);
@@ -58,9 +66,9 @@ export function RouteProgress() {
         if (href !== window.location.pathname + window.location.search) {
           clearAllTimers();
           setActive(true);
-          setProgress(25);
-          const t1 = setTimeout(() => setProgress((p) => (p > 0 && p < 80 ? 65 : p)), 120);
-          const t2 = setTimeout(() => setProgress((p) => (p > 0 && p < 90 ? 85 : p)), 350);
+          setProgress(ROUTE_PROGRESS_START);
+          const t1 = setTimeout(() => setProgress((p) => (p > 0 && p < 80 ? ROUTE_PROGRESS_MID : p)), ROUTE_MID_TICK_MS);
+          const t2 = setTimeout(() => setProgress((p) => (p > 0 && p < 90 ? ROUTE_PROGRESS_NEAR : p)), ROUTE_NEAR_TICK_MS);
           timersRef.current.push(t1, t2);
         }
       }
@@ -83,7 +91,7 @@ export function RouteProgress() {
       <div
         className={cn(
           "h-full bg-gradient-to-r from-ios-blue via-ios-indigo to-ios-purple shadow-[0_0_8px_rgba(0,122,255,0.7)] transition-all duration-300 ease-out",
-          progress === 100 ? "opacity-0 duration-200" : "opacity-100",
+          progress === ROUTE_PROGRESS_DONE ? "opacity-0 duration-200" : "opacity-100",
         )}
         style={{ width: `${progress}%` }}
       />

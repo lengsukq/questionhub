@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 题库构建产物：由 data/banks 经 npm run banks:prepare 生成，无需入库
+/public/data/banks

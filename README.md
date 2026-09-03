@@ -32,7 +32,7 @@
 ```bash
 npm install
 
-# 准备默认题库（从 data/ 校验并复制到 public/data/）
+# 准备默认题库（从 data/ 校验并复制到 public/data/，Vercel 构建时自动执行）
 npm run banks:prepare
 
 # 开发
@@ -53,9 +53,9 @@ npm start
 ## 项目结构
 
 ```text
-data/banks/*.json              # 默认题库源文件（9 套马勇押题）
-public/data/banks/*.json   # 构建产物（运行时加载）
-public/data/banks/manifest.json # 题库清单
+data/banks/*.json              # 默认题库源文件（9 套马勇押题，唯一来源）
+public/data/banks/*.json   # 构建产物（运行时加载，git 忽略，构建时由 npm run banks:prepare 生成）
+public/data/banks/manifest.json # 题库清单（同上，构建时生成）
 public/manifest.webmanifest    # PWA 清单
 public/sw.js                   # Service Worker
 scripts/                       # 题库准备/校验/图标生成脚本

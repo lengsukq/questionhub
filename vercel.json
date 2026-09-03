@@ -1,0 +1,4 @@
+{
+  "$schema": "https://openapi.vercel.com/v1/vercel.json",
+  "buildCommand": "npm run banks:prepare && next build"
+}

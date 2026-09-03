@@ -42,15 +42,22 @@ export function nextSubjectiveMasteryCount(selfRating: SelfRating, current = 0):
 }
 
 /**
- * 计算下次复习时间戳。
+ * 计算下次复习时间戳（对齐到日期边界，避免精确时刻漂移）。
+ * 例如今天 23:00 答错，"1 天后"应为明天 0 点到期，而不是后天 23:00。
  * 返回 null 表示不需要进入复习队列（尚未作答）。
  */
 export function nextReviewAt(
   correctness: Correctness,
   selfRating?: SelfRating,
   consecutiveCorrect = 0,
+  fromTimestamp = Date.now(),
 ): number {
-  return Date.now() + nextReviewInDays(correctness, selfRating, consecutiveCorrect) * 86400_000;
+  const dayStart = new Date(fromTimestamp);
+  dayStart.setHours(0, 0, 0, 0);
+  return (
+    dayStart.getTime() +
+    nextReviewInDays(correctness, selfRating, consecutiveCorrect) * 86400_000
+  );
 }
 
 export const SELF_RATING_LABELS: Record<SelfRating, string> = {

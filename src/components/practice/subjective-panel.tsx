@@ -3,7 +3,17 @@
 import { CheckCircle2, Eye, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import type { SelfRating } from "@/types/question-bank";
+import {
+  SELF_RATING_OPTIONS,
+  selfRatingLabel,
+  type SelfRating,
+} from "@/types/question-bank";
+
+const SELF_RATING_TONE: Record<SelfRating, string> = {
+  0: "border-ios-red/30 hover:border-ios-red hover:bg-ios-red/10 text-ios-red",
+  1: "border-ios-orange/30 hover:border-ios-orange hover:bg-ios-orange/10 text-ios-orange",
+  2: "border-ios-green/30 hover:border-ios-green hover:bg-ios-green/10 text-ios-green",
+};
 
 interface SubjectivePanelProps {
   hasAnswered: boolean;
@@ -60,33 +70,18 @@ export function SubjectivePanel({
 
           {!hasAnswered ? (
             <div className="mt-4 grid grid-cols-3 gap-2.5">
-              <Button
-                variant="secondary"
-                size="default"
-                disabled={submitting}
-                className="border-ios-red/30 hover:border-ios-red hover:bg-ios-red/10 text-ios-red"
-                onClick={() => onRate(0)}
-              >
-                不会 (0分)
-              </Button>
-              <Button
-                variant="secondary"
-                size="default"
-                disabled={submitting}
-                className="border-ios-orange/30 hover:border-ios-orange hover:bg-ios-orange/10 text-ios-orange"
-                onClick={() => onRate(1)}
-              >
-                模糊 (部分)
-              </Button>
-              <Button
-                variant="secondary"
-                size="default"
-                disabled={submitting}
-                className="border-ios-green/30 hover:border-ios-green hover:bg-ios-green/10 text-ios-green"
-                onClick={() => onRate(2)}
-              >
-                掌握 (答对)
-              </Button>
+              {SELF_RATING_OPTIONS.map((option) => (
+                <Button
+                  key={option.value}
+                  variant="secondary"
+                  size="default"
+                  disabled={submitting}
+                  className={SELF_RATING_TONE[option.value]}
+                  onClick={() => onRate(option.value)}
+                >
+                  {option.label} ({option.hint})
+                </Button>
+              ))}
             </div>
           ) : (
             <div className="mt-3 flex items-center gap-2 rounded-xl bg-ios-surface-secondary p-3">
@@ -100,11 +95,4 @@ export function SubjectivePanel({
       )}
     </div>
   );
-}
-
-function selfRatingLabel(rating?: SelfRating): string {
-  if (rating === 0) return "不会 (0分)";
-  if (rating === 1) return "模糊 (部分命中)";
-  if (rating === 2) return "熟练掌握";
-  return "未自评";
 }

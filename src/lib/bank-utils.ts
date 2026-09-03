@@ -1,6 +1,9 @@
 import type { QuestionRecord, PracticeConfig } from "@/lib/db";
 import type { QuestionType, QuestionUnit } from "@/types/question-bank";
 
+/** 章节复合键分隔符：编码与解码共用一处 */
+const CHAPTER_KEY_SEPARATOR = "::";
+
 export interface ChapterStats {
   chapter: string;
   count: number;
@@ -36,7 +39,7 @@ export function computeBankStats(
     subjectMap.set(question.subjectId, (subjectMap.get(question.subjectId) ?? 0) + 1);
     typeMap.set(question.type, (typeMap.get(question.type) ?? 0) + 1);
     unitMap.set(question.unit, (unitMap.get(question.unit) ?? 0) + 1);
-    const chapterKey = `${question.subjectId}::${question.unit}::${question.chapter}`;
+    const chapterKey = [question.subjectId, question.unit, question.chapter].join(CHAPTER_KEY_SEPARATOR);
     chapterMap.set(chapterKey, (chapterMap.get(chapterKey) ?? 0) + 1);
   }
 
@@ -57,7 +60,7 @@ export function computeBankStats(
     .sort((a, b) => b.count - a.count);
 
   const chapters = [...chapterMap.entries()].map(([key, count]) => {
-    const [, unit, chapter] = key.split("::");
+    const [, unit, chapter] = key.split(CHAPTER_KEY_SEPARATOR);
     return { unit: unit as QuestionUnit, chapter, count };
   });
 
@@ -94,7 +97,7 @@ export function selectQuestions(
   }
 
   const ordered =
-    config.order === "random" ? shuffle(candidates) : [...candidates].sort((a, b) => (a.globalIndex ?? 0) - (b.globalIndex ?? 0));
+    config.order === "random" ? shuffle(candidates) : sortBySourceOrder(candidates);
 
   const picked = ordered.slice(0, config.count);
   return {
@@ -110,4 +113,9 @@ function shuffle<T>(items: T[]): T[] {
     [result[i], result[j]] = [result[j], result[i]];
   }
   return result;
+}
+
+/** 原题库顺序：按 globalIndex 升序，未编号题目沉底 */
+function sortBySourceOrder(questions: QuestionRecord[]): QuestionRecord[] {
+  return [...questions].sort((a, b) => (a.globalIndex ?? 0) - (b.globalIndex ?? 0));
 }

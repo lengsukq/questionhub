@@ -14,10 +14,10 @@ import {
 import { useBankStore } from "@/stores/bank-store";
 import {
   db,
-  getQuestion,
-  type PracticeSessionRecord,
+  getQuestionsByIds,
   type QuestionStatRecord,
 } from "@/lib/db";
+import { createPracticeSession } from "@/lib/session-utils";
 import { toast } from "@/components/ui/toast";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
@@ -49,6 +49,12 @@ export default function ReviewPage() {
   );
 }
 
+interface ReviewQuestionMeta {
+  stem: string;
+  type: QuestionType;
+  chapter: string;
+}
+
 function ReviewPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -61,6 +67,7 @@ function ReviewPageInner() {
   });
 
   const [stats, setStats] = useState<QuestionStatRecord[]>([]);
+  const [questionMeta, setQuestionMeta] = useState<Map<string, ReviewQuestionMeta>>(new Map());
   const [dueCutoff, setDueCutoff] = useState(0);
   const [loading, setLoading] = useState(false);
   const [startingAll, setStartingAll] = useState(false);
@@ -68,10 +75,32 @@ function ReviewPageInner() {
   const refresh = useCallback(async () => {
     if (!bankId) return;
     setLoading(true);
-    setDueCutoff(Date.now());
+    const now = Date.now();
+    setDueCutoff(now);
     try {
       const allStats = await db.questionStats.where("bankId").equals(bankId).toArray();
       setStats(allStats);
+      // 一次 bulkGet 拉取三个 Tab 可能用到的全部题面，避免每个卡片单独查询（N+1）
+      const candidates = allStats.filter(
+        (stat) =>
+          stat.isWrongBook ||
+          stat.isFavorite ||
+          (stat.nextReviewAt !== null && stat.nextReviewAt <= now),
+      );
+      const meta = new Map<string, ReviewQuestionMeta>();
+      if (candidates.length > 0) {
+        const records = await getQuestionsByIds(
+          candidates.map((stat) => ({ bankId, questionId: stat.questionId })),
+        );
+        for (const record of records) {
+          meta.set(record.originalId, {
+            stem: record.stem,
+            type: record.type,
+            chapter: record.chapter,
+          });
+        }
+      }
+      setQuestionMeta(meta);
     } finally {
       setLoading(false);
     }
@@ -99,20 +128,15 @@ function ReviewPageInner() {
     setStartingAll(true);
     try {
       const mode = tab === "wrong" ? "wrong" : tab === "favorite" ? "favorite" : "due";
-      const config = {
+      // 直接 refs 组卷：items 已是目标统计，无需再全量拉题过滤
+      const session = await createPracticeSession({
         bankId,
-        mode: mode as PracticeSessionRecord["mode"],
+        mode,
         title: TAB_LABELS[tab],
         count: items.length,
-        order: "source" as const,
-      };
-      const questionIds = new Set(items.map((item) => item.questionId));
-      const allQuestions = await db.questions.where("bankId").equals(bankId).toArray();
-      const matched = allQuestions.filter((q) => questionIds.has(q.originalId));
-      const session = await createPracticeSessionWithRefs(
-        config,
-        matched.map((q) => ({ bankId, questionId: q.originalId })),
-      );
+        order: "source",
+        refs: items.map((item) => ({ bankId, questionId: item.questionId })),
+      });
       router.push(`/practice/${session.id}`);
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "开始复习失败");
@@ -190,7 +214,8 @@ function ReviewPageInner() {
                 bankId={bankId}
                 tab={tab}
                 index={idx}
-                onStart={(session) => router.push(`/practice/${session.id}`)}
+                meta={questionMeta.get(stat.questionId)}
+                onStart={(sessionId) => router.push(`/practice/${sessionId}`)}
               />
             ))}
           </div>
@@ -204,47 +229,34 @@ function ReviewCardItem({
   stat,
   bankId,
   tab,
+  meta,
   onStart,
 }: {
   stat: QuestionStatRecord;
   bankId: string;
   tab: ReviewTab;
   index?: number;
-  onStart: (session: PracticeSessionRecord) => void;
+  meta?: ReviewQuestionMeta;
+  onStart: (sessionId: string) => void;
 }) {
-  const [stem, setStem] = useState("");
-  const [type, setType] = useState<QuestionType>("single_choice");
-  const [chapter, setChapter] = useState("");
   const [starting, setStarting] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    void getQuestion(bankId, stat.questionId).then((question) => {
-      if (cancelled || !question) return;
-      setStem(question.stem);
-      setType(question.type);
-      setChapter(question.chapter);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [bankId, stat.questionId]);
+  const stem = meta?.stem ?? "";
+  const type: QuestionType = meta?.type ?? "single_choice";
+  const chapter = meta?.chapter ?? "";
 
   const startSingle = async () => {
     if (starting) return;
     setStarting(true);
     try {
-      const session = await createPracticeSessionWithRefs(
-        {
-          bankId,
-          mode: tab === "favorite" ? "favorite" : "wrong",
-          title: tab === "favorite" ? "收藏题单练" : "错题单练",
-          count: 1,
-          order: "source",
-        },
-        [{ bankId, questionId: stat.questionId }],
-      );
-      onStart(session);
+      const session = await createPracticeSession({
+        bankId,
+        mode: tab === "favorite" ? "favorite" : "wrong",
+        title: tab === "favorite" ? "收藏题单练" : "错题单练",
+        count: 1,
+        order: "source",
+        refs: [{ bankId, questionId: stat.questionId }],
+      });
+      onStart(session.id);
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "开始单题练习失败");
       setStarting(false);
@@ -322,29 +334,4 @@ function EmptyState({ tab }: { tab: ReviewTab }) {
       </p>
     </Card>
   );
-}
-
-async function createPracticeSessionWithRefs(
-  config: {
-    bankId: string;
-    mode: PracticeSessionRecord["mode"];
-    title: string;
-    count: number;
-    order: "source";
-  },
-  refs: Array<{ bankId: string; questionId: string }>,
-): Promise<PracticeSessionRecord> {
-  const session: PracticeSessionRecord = {
-    id: crypto.randomUUID().slice(0, 12),
-    bankId: config.bankId,
-    title: config.title,
-    mode: config.mode,
-    config: { bankId: config.bankId, count: refs.length, order: config.order },
-    questionRefs: refs,
-    currentIndex: 0,
-    status: "active",
-    startedAt: Date.now(),
-  };
-  await db.sessions.add(session);
-  return session;
 }

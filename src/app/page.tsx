@@ -17,7 +17,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { useBankStore } from "@/stores/bank-store";
-import { getActiveSession, getDueStats, type PracticeSessionRecord } from "@/lib/db";
+import { getActiveSession, getDueCount, type PracticeSessionRecord } from "@/lib/db";
 import { createPracticeSession } from "@/lib/session-utils";
 import { getDailyTrend, getTodayStats, type DayStat } from "@/lib/queries";
 import { toast } from "@/components/ui/toast";
@@ -40,14 +40,18 @@ export default function HomePage() {
 
   const refresh = useCallback(async () => {
     if (!activeBankId) return;
-    const [session, due, today, trendData] = await Promise.all([
-      getActiveSession(),
-      getDueStats(activeBankId),
-      getTodayStats(activeBankId),
-      getDailyTrend(activeBankId),
+    // 多题库混练时副题库的做题也会统计进来：按会话实际参与的 bankIds 聚合
+    const session = await getActiveSession();
+    const statsBankIds = session?.config.bankIds?.length
+      ? session.config.bankIds
+      : [activeBankId];
+    const [dueCountValue, today, trendData] = await Promise.all([
+      getDueCount(statsBankIds),
+      getTodayStats(statsBankIds),
+      getDailyTrend(statsBankIds),
     ]);
     setActiveSession(session ?? null);
-    setDueCount(due.length);
+    setDueCount(dueCountValue);
     setTodayStats(today);
     setTrend(trendData);
   }, [activeBankId]);

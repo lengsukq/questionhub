@@ -2,14 +2,33 @@
 
 import { Check, CheckCircle2, X, XCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { parseTrueFalse, toggleMultiKey, type UserAnswer } from "@/lib/grading";
 import type { QuestionRecord } from "@/lib/db";
+import type { AnswerValue } from "@/types/question-bank";
 
 interface OptionListProps {
   question: QuestionRecord;
-  selection: unknown;
+  selection: UserAnswer;
   hasAnswered: boolean;
-  userAnswer?: unknown;
-  onSelect: (value: unknown) => void;
+  userAnswer?: UserAnswer;
+  onSelect: (value: UserAnswer) => void;
+}
+
+/** 判题后四态：用户是否选 × 是否正确答案（单选/判断共用一张表） */
+const GRADED_TONE_MAP = {
+  hit: "border-ios-green bg-ios-green/10 text-ios-green shadow-sm",
+  miss: "border-ios-red bg-ios-red/10 text-ios-red shadow-sm",
+  leaked: "border-ios-green/50 bg-ios-green/5",
+  idle: "border-ios-separator/40 bg-ios-surface/40 opacity-60",
+} as const;
+
+type GradedTone = keyof typeof GRADED_TONE_MAP;
+
+function gradedTone(isUserChoice: boolean, isCorrectChoice: boolean): GradedTone {
+  if (isUserChoice && isCorrectChoice) return "hit";
+  if (isUserChoice) return "miss";
+  if (isCorrectChoice) return "leaked";
+  return "idle";
 }
 
 export function OptionList({
@@ -22,7 +41,7 @@ export function OptionList({
   if (question.type === "true_false") {
     return (
       <TrueFalseOptions
-        answer={question.answer.value as boolean}
+        answer={parseTrueFalse(question.answer.value) ?? false}
         hasAnswered={hasAnswered}
         userAnswer={userAnswer}
         selection={selection}
@@ -37,11 +56,7 @@ export function OptionList({
   const handleOptionClick = (key: string) => {
     if (hasAnswered) return;
     if (question.type === "multiple_choice") {
-      const current = Array.isArray(selection) ? [...selection] : [];
-      const next = current.includes(key)
-        ? current.filter((k) => k !== key)
-        : [...current, key];
-      onSelect(next);
+      onSelect(toggleMultiKey(toKeyArray(selection), key));
     } else {
       onSelect(key);
     }
@@ -68,17 +83,8 @@ export function OptionList({
                 isSelected &&
                   "border-ios-blue bg-ios-blue/8 shadow-md shadow-ios-blue/10 dark:bg-ios-blue/15",
               ],
-              // 判题后状态
-              hasAnswered && [
-                isUserChoice && isCorrectChoice &&
-                  "border-ios-green bg-ios-green/10 text-ios-green shadow-sm",
-                isUserChoice && !isCorrectChoice &&
-                  "border-ios-red bg-ios-red/10 text-ios-red shadow-sm",
-                !isUserChoice && isCorrectChoice &&
-                  "border-ios-green/50 bg-ios-green/5",
-                !isUserChoice && !isCorrectChoice &&
-                  "border-ios-separator/40 bg-ios-surface/40 opacity-60",
-              ],
+              // 判题后状态（四态收敛到 GRADED_TONE_MAP）
+              hasAnswered && [GRADED_TONE_MAP[gradedTone(isUserChoice, isCorrectChoice)]],
             )}
           >
             {/* 选项字母圆标 */}
@@ -135,16 +141,16 @@ function TrueFalseOptions({
 }: {
   answer: boolean;
   hasAnswered: boolean;
-  userAnswer: unknown;
-  selection: unknown;
-  onSelect: (value: boolean) => void;
+  userAnswer: UserAnswer;
+  selection: UserAnswer;
+  onSelect: (value: UserAnswer) => void;
 }) {
   const options = [
     { value: true, label: "正确" },
     { value: false, label: "错误" },
   ];
 
-  const currentVal = hasAnswered ? (userAnswer as boolean) : (selection as boolean);
+  const currentVal = parseTrueFalse(hasAnswered ? userAnswer : selection);
 
   return (
     <div className="grid grid-cols-2 gap-3 pt-3">
@@ -166,14 +172,9 @@ function TrueFalseOptions({
                 isSelected && "border-ios-blue bg-ios-blue/10 text-ios-blue shadow-md",
               ],
               hasAnswered && [
-                isUserChoice && isCorrectChoice &&
-                  "border-ios-green bg-ios-green/10 text-ios-green",
-                isUserChoice && !isCorrectChoice &&
-                  "border-ios-red bg-ios-red/10 text-ios-red",
-                !isUserChoice && isCorrectChoice &&
-                  "border-ios-green/50 bg-ios-green/5 text-ios-green",
-                !isUserChoice && !isCorrectChoice &&
-                  "border-ios-separator/40 bg-ios-surface/40 opacity-60",
+                // 判断题已选态自带文字色，修正态仅叠加边框与底色
+                GRADED_TONE_MAP[gradedTone(isUserChoice, isCorrectChoice)],
+                !isUserChoice && isCorrectChoice && "text-ios-green",
               ],
             )}
           >
@@ -187,7 +188,7 @@ function TrueFalseOptions({
   );
 }
 
-function toKeyArray(value: unknown): string[] {
+function toKeyArray(value: AnswerValue | UserAnswer | undefined): string[] {
   if (Array.isArray(value)) return value.map((item) => String(item).toUpperCase());
   if (typeof value === "string") return [value.toUpperCase()];
   return [];

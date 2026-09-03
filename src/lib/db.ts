@@ -1,4 +1,5 @@
 import Dexie, { type Table } from "dexie";
+import type { UserAnswer } from "@/lib/grading";
 import type {
   Correctness,
   Question,
@@ -70,7 +71,7 @@ export interface AttemptRecord {
   sessionId: string;
   bankId: string;
   questionId: string;
-  userAnswer: unknown;
+  userAnswer: UserAnswer;
   correctness: Correctness;
   selfRating?: SelfRating;
   durationMs: number;
@@ -100,6 +101,12 @@ export function questionKey(bankId: string, questionId: string): string {
   return `${bankId}:${questionId}`;
 }
 
+/** 单题库 id 或多题库 id 统一归一化为空数组时直接返回空结果 */
+export function normalizeBankIds(bankId: string | string[]): string[] {
+  const ids = Array.isArray(bankId) ? bankId : [bankId];
+  return [...new Set(ids.filter(Boolean))];
+}
+
 class QuestionHubDB extends Dexie {
   banks!: Table<BankRecord, string>;
   questions!: Table<QuestionRecord, string>;
@@ -115,6 +122,17 @@ class QuestionHubDB extends Dexie {
       sessions: "id, bankId, status, startedAt",
       attempts: "id, sessionId, bankId, questionId, submittedAt",
       questionStats: "id, bankId, questionId, isWrongBook, isFavorite, nextReviewAt",
+    });
+    // v2：新增复合索引，替代高频 filter 全表扫描（attempts 上万后首页/趋势不再扫全表）。
+    // 保留全部 v1 单字段索引，保证旧查询与已安装客户端平稳升级。
+    this.version(2).stores({
+      banks: "id",
+      questions: "id, bankId, subjectId, unit, chapter, type",
+      sessions: "id, bankId, status, startedAt, [bankId+status+startedAt], [status+startedAt]",
+      attempts:
+        "id, sessionId, bankId, questionId, submittedAt, [sessionId+submittedAt], [bankId+submittedAt], [bankId+questionId]",
+      questionStats:
+        "id, bankId, questionId, isWrongBook, isFavorite, nextReviewAt, [bankId+nextReviewAt]",
     });
   }
 }
@@ -158,22 +176,56 @@ export async function getStat(
   return db.questionStats.get(questionKey(bankId, questionId));
 }
 
-export async function getActiveSession(): Promise<PracticeSessionRecord | undefined> {
-  const sessions = await db.sessions
-    .where("status")
-    .equals("active")
-    .reverse()
-    .sortBy("startedAt");
-  return sessions[0];
+/** 仅拉取给定题目引用对应的学习统计（练习页收藏状态用，避免全库 toArray） */
+export async function getStatsByRefs(
+  refs: Array<{ bankId: string; questionId: string }>,
+): Promise<QuestionStatRecord[]> {
+  if (refs.length === 0) return [];
+  const keys = refs.map((ref) => questionKey(ref.bankId, ref.questionId));
+  const records = await db.questionStats.bulkGet(keys);
+  return records.filter((record): record is QuestionStatRecord => record !== undefined);
 }
 
-export async function getDueStats(bankId: string): Promise<QuestionStatRecord[]> {
+export async function getActiveSession(): Promise<PracticeSessionRecord | undefined> {
+  // 走 [status+startedAt] 复合索引倒序取，保证拿到最近开始的活跃会话
+  const session = await db.sessions
+    .where("[status+startedAt]")
+    .between(["active", 0], ["active", Number.POSITIVE_INFINITY])
+    .reverse()
+    .first();
+  return session ?? undefined;
+}
+
+/** 到期复习（支持多题库）：nextReviewAt 落在 (-∞, now] 区间，走复合索引范围查询 */
+export async function getDueStats(bankIds: string | string[]): Promise<QuestionStatRecord[]> {
+  const ids = normalizeBankIds(bankIds);
+  if (ids.length === 0) return [];
   const now = Date.now();
-  return db.questionStats
-    .where("bankId")
-    .equals(bankId)
-    .filter((stat) => stat.nextReviewAt !== null && stat.nextReviewAt <= now)
-    .toArray();
+  const lists = await Promise.all(
+    ids.map((bankId) =>
+      db.questionStats
+        .where("[bankId+nextReviewAt]")
+        .between([bankId, 0], [bankId, now])
+        .toArray(),
+    ),
+  );
+  return lists.flat();
+}
+
+/** 到期题数（首页徽标用，只 count 不拉记录） */
+export async function getDueCount(bankIds: string | string[]): Promise<number> {
+  const ids = normalizeBankIds(bankIds);
+  if (ids.length === 0) return 0;
+  const now = Date.now();
+  const counts = await Promise.all(
+    ids.map((bankId) =>
+      db.questionStats
+        .where("[bankId+nextReviewAt]")
+        .between([bankId, 0], [bankId, now])
+        .count(),
+    ),
+  );
+  return counts.reduce((sum, count) => sum + count, 0);
 }
 
 /** 清空所有用户数据（保留题库），用于"重置学习记录" */

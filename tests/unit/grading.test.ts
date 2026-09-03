@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { gradeQuestion, normalizeKeys } from "@/lib/grading";
-import { nextReviewInDays } from "@/lib/review-schedule";
+import { gradeQuestion, normalizeKeys, parseTrueFalse, toggleMultiKey } from "@/lib/grading";
+import { nextReviewAt, nextReviewInDays } from "@/lib/review-schedule";
 import type { Question } from "@/types/question-bank";
 
 function makeQuestion(overrides: Partial<Question>): Question {
@@ -82,13 +82,25 @@ describe("判题引擎 gradeQuestion", () => {
     expect(gradeQuestion(question, false).correctness).toBe("incorrect");
   });
 
-  it("判断题：不通过字符串判题", () => {
+  it("判断题：不通过中文字符串判题", () => {
     const question = makeQuestion({
       type: "true_false",
       answer: { value: false, display: "错误" },
     });
-    // 字符串 "错误" 不应被当作答案，Boolean("错误") 为 true，与答案 false 不匹配
+    // "错误" 不是明确的 true/false 等价表达，严格映射返回 null，一律判错
     expect(gradeQuestion(question, "错误").correctness).toBe("incorrect");
+  });
+
+  it("判断题：接受明确的等价表达", () => {
+    const question = makeQuestion({
+      type: "true_false",
+      answer: { value: true, display: "正确" },
+    });
+    expect(gradeQuestion(question, "TRUE").correctness).toBe("correct");
+    expect(gradeQuestion(question, 1).correctness).toBe("correct");
+    expect(gradeQuestion(question, 0).correctness).toBe("incorrect");
+    expect(gradeQuestion(question, 2).correctness).toBe("incorrect");
+    expect(gradeQuestion(question, null).correctness).toBe("incorrect");
   });
 
   it("主观题：一律返回 ungraded", () => {
@@ -135,5 +147,50 @@ describe("间隔复习规则 nextReviewInDays", () => {
 
   it("主观题自评掌握（2）→ 7 天后", () => {
     expect(nextReviewInDays("ungraded", 2)).toBe(7);
+  });
+});
+
+describe("判断题严格映射 parseTrueFalse", () => {
+  it("布尔与数字映射", () => {
+    expect(parseTrueFalse(true)).toBe(true);
+    expect(parseTrueFalse(0)).toBe(false);
+    expect(parseTrueFalse(2)).toBeNull();
+  });
+
+  it("歧义输入返回 null", () => {
+    expect(parseTrueFalse("错误")).toBeNull();
+    expect(parseTrueFalse("对")).toBeNull();
+    expect(parseTrueFalse(null)).toBeNull();
+    expect(parseTrueFalse(undefined)).toBeNull();
+  });
+});
+
+describe("复习时间 nextReviewAt", () => {
+  it("对齐到日期边界：23:00 答错，1 天后为次日 0 点", () => {
+    const late = new Date(2026, 8, 3, 23, 0, 0).getTime();
+    const expected = new Date(2026, 8, 4, 0, 0, 0).getTime();
+    expect(nextReviewAt("incorrect", undefined, 0, late)).toBe(expected);
+  });
+
+  it("天数规则与 nextReviewInDays 一致", () => {
+    const from = new Date(2026, 8, 3, 10, 0, 0).getTime();
+    const dayStart = new Date(2026, 8, 3, 0, 0, 0).getTime();
+    expect(nextReviewAt("correct", undefined, 1, from)).toBe(dayStart + 14 * 86400_000);
+  });
+});
+
+describe("多选 toggleMultiKey", () => {
+  it("未选中则加入", () => {
+    expect(toggleMultiKey(["A"], "B")).toEqual(["A", "B"]);
+  });
+
+  it("已选中则移除", () => {
+    expect(toggleMultiKey(["A", "B"], "A")).toEqual(["B"]);
+  });
+
+  it("不变更原数组", () => {
+    const current = ["A"];
+    toggleMultiKey(current, "B");
+    expect(current).toEqual(["A"]);
   });
 });

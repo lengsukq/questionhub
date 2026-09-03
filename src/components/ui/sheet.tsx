@@ -4,6 +4,10 @@ import { useEffect, useRef, type ReactNode } from "react";
 import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+/** 弹窗默认最大宽度与高度（dvh 适配移动端浏览器栏伸缩） */
+const DEFAULT_SHEET_MAX_WIDTH = "max-w-lg";
+const SHEET_MAX_HEIGHT_CLASS = "max-h-[88dvh]";
+
 interface SheetProps {
   open: boolean;
   onClose: () => void;
@@ -22,7 +26,7 @@ export function Sheet({
   description,
   children,
   className,
-  maxWidth = "max-w-lg",
+  maxWidth = DEFAULT_SHEET_MAX_WIDTH,
 }: SheetProps) {
   const sheetRef = useRef<HTMLDivElement>(null);
 
@@ -58,7 +62,8 @@ export function Sheet({
       <div
         ref={sheetRef}
         className={cn(
-          "relative z-10 flex max-h-[88dvh] w-full flex-col overflow-hidden bg-ios-surface/95 backdrop-blur-2xl shadow-2xl transition-all duration-300",
+          "relative z-10 flex w-full flex-col overflow-hidden bg-ios-surface/95 backdrop-blur-2xl shadow-2xl transition-all duration-300",
+          SHEET_MAX_HEIGHT_CLASS,
           // Mobile 样式（底部大圆角抽屉）
           "rounded-t-[32px] border-t border-white/80 dark:border-white/10 dark:bg-ios-surface/90",
           // Pad / PC 样式（居中大圆角模态框）

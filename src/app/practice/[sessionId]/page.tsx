@@ -1,20 +1,21 @@
 "use client";
 
-import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import {
   Bookmark,
+  Calculator,
   ChevronLeft,
   ChevronRight,
   Edit3,
   Keyboard,
-  LayoutGrid,
   Send,
 } from "lucide-react";
 import {
   db,
   getQuestionsByIds,
   getStat,
+  getStatsByRefs,
   questionKey,
   type AttemptRecord,
   type PracticeSessionRecord,
@@ -28,7 +29,7 @@ import {
   submitAnswer,
   toggleFavorite,
 } from "@/lib/session-utils";
-import { isSubjectiveType } from "@/lib/grading";
+import { isSubjectiveType, type UserAnswer } from "@/lib/grading";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Sheet } from "@/components/ui/sheet";
@@ -43,6 +44,7 @@ import { OptionList } from "@/components/practice/option-list";
 import { SubjectivePanel } from "@/components/practice/subjective-panel";
 import { ExplanationCard } from "@/components/practice/explanation-card";
 import { QuestionNavigator } from "@/components/practice/question-navigator";
+import { FloatingCalculator } from "@/components/practice/floating-calculator";
 import { usePracticeKeyboard } from "@/components/practice/use-practice-keyboard";
 
 export default function PracticePage() {
@@ -71,17 +73,35 @@ function PracticePageInner() {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
 
   const [index, setIndex] = useState(0);
-  const [selection, setSelection] = useState<unknown>(null);
+  const [selection, setSelection] = useState<UserAnswer>(null);
   const [revealed, setRevealed] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [finishing, setFinishing] = useState(false);
   const [noteOpen, setNoteOpen] = useState(false);
   const [noteText, setNoteText] = useState("");
   const [savingNote, setSavingNote] = useState(false);
-  const [elapsed, setElapsed] = useState(0);
   const [navSheetOpen, setNavSheetOpen] = useState(false);
+  const [calcOpen, setCalcOpen] = useState(false);
 
   const questionStartRef = useRef(0);
+  /** 跳题进度持久化节流：合并 800ms 内的多次跳转，只写最后一次 */
+  const persistIndexTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const persistCurrentIndex = useCallback(
+    (sessionIdToSave: string, nextIndex: number) => {
+      if (persistIndexTimerRef.current) clearTimeout(persistIndexTimerRef.current);
+      persistIndexTimerRef.current = setTimeout(() => {
+        void db.sessions.update(sessionIdToSave, { currentIndex: nextIndex });
+      }, 800);
+    },
+    [],
+  );
+
+  // 卸载时刷掉最后一次节流写入，避免进度丢失
+  useEffect(() => {
+    return () => {
+      if (persistIndexTimerRef.current) clearTimeout(persistIndexTimerRef.current);
+    };
+  }, []);
 
   // 初始化会话与题目
   useEffect(() => {
@@ -90,16 +110,10 @@ function PracticePageInner() {
       const sessionRecord = await db.sessions.get(sessionId);
       if (cancelled || !sessionRecord) return;
 
-      const bankIds =
-        sessionRecord.config.bankIds && sessionRecord.config.bankIds.length > 0
-          ? sessionRecord.config.bankIds
-          : [sessionRecord.bankId];
-
+      // 收藏状态按本次会话题目懒加载：只 bulkGet refs，避免大题库全量 toArray
       const [attemptList, statList] = await Promise.all([
         getAttemptsForSession(sessionId),
-        bankIds.length === 1
-          ? db.questionStats.where("bankId").equals(bankIds[0]).toArray()
-          : db.questionStats.where("bankId").anyOf(bankIds).toArray(),
+        getStatsByRefs(sessionRecord.questionRefs),
       ]);
       const questionList = await getQuestionsByIds(sessionRecord.questionRefs);
       if (cancelled) return;
@@ -136,12 +150,6 @@ function PracticePageInner() {
     };
   }, [sessionId, searchParams]);
 
-  // 计时器
-  useEffect(() => {
-    const timer = setInterval(() => setElapsed((v) => v + 1), 1000);
-    return () => clearInterval(timer);
-  }, []);
-
   const currentQuestion = questions[index];
   const currentAttempt = currentQuestion
     ? attempts.get(questionKey(currentQuestion.bankId, currentQuestion.originalId))
@@ -149,7 +157,7 @@ function PracticePageInner() {
   const isSubjective = currentQuestion ? isSubjectiveType(currentQuestion.type) : false;
   const hasAnswered = Boolean(currentAttempt);
 
-  const handleSelect = useCallback((value: unknown) => {
+  const handleSelect = useCallback((value: UserAnswer) => {
     if (hasAnswered) return;
     setSelection(value);
   }, [hasAnswered]);
@@ -203,22 +211,23 @@ function PracticePageInner() {
       }
       return;
     }
-    await db.sessions.update(session.id, { currentIndex: nextIndex });
+    // 进度写入节流：快速连点只持久化最后一次，结算/提交时由事务保证
+    persistCurrentIndex(session.id, nextIndex);
     setIndex(nextIndex);
     setSelection(null);
     setRevealed(false);
     questionStartRef.current = Date.now();
-  }, [session, finishing, index, questions.length, router]);
+  }, [session, finishing, index, questions.length, router, persistCurrentIndex]);
 
-  const handlePrev = useCallback(async () => {
+  const handlePrev = useCallback(() => {
     if (index === 0 || !session) return;
     const prevIndex = index - 1;
-    await db.sessions.update(session.id, { currentIndex: prevIndex });
+    persistCurrentIndex(session.id, prevIndex);
     setIndex(prevIndex);
     setSelection(null);
     setRevealed(false);
     questionStartRef.current = Date.now();
-  }, [index, session]);
+  }, [index, session, persistCurrentIndex]);
 
   const handleSelfRate = async (rating: SelfRating) => {
     if (!session || !currentQuestion || submitting) return;
@@ -255,7 +264,7 @@ function PracticePageInner() {
     setRevealed(false);
     setNavSheetOpen(false);
     questionStartRef.current = Date.now();
-    void db.sessions.update(session.id, { currentIndex: newIndex });
+    persistCurrentIndex(session.id, newIndex);
   };
 
   const handleToggleFavorite = async () => {
@@ -309,13 +318,8 @@ function PracticePageInner() {
     onNext: () => void handleNext(),
     onPrev: () => void handlePrev(),
     isNoteOpen: noteOpen,
+    isCalcOpen: calcOpen,
   });
-
-  const elapsedText = useMemo(() => {
-    const minutes = Math.floor(elapsed / 60);
-    const seconds = elapsed % 60;
-    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
-  }, [elapsed]);
 
   if (!session || !currentQuestion) {
     return (
@@ -336,7 +340,7 @@ function PracticePageInner() {
       <PracticeHeader
         currentIndex={index}
         total={questions.length}
-        elapsedText={elapsedText}
+        startedAt={session.startedAt}
         title={session.title}
         onOpenNavigator={() => setNavSheetOpen(true)}
       />
@@ -461,14 +465,20 @@ function PracticePageInner() {
               <Edit3 className="h-5 w-5" />
             </button>
 
-            {/* 移动端答题卡按钮 */}
+            {/* 计算器按钮 */}
             <button
-              onClick={() => setNavSheetOpen(true)}
-              aria-label="查看答题卡"
-              className="squircle-press flex h-11 w-11 items-center justify-center rounded-2xl border border-white/60 bg-ios-surface/80 text-ios-label-secondary hover:text-ios-label active:scale-95 lg:hidden dark:border-white/10 dark:bg-ios-surface/50"
-              title="查看答题卡"
+              onClick={() => setCalcOpen((prev) => !prev)}
+              aria-label="打开计算器"
+              aria-pressed={calcOpen}
+              className={cn(
+                "squircle-press flex h-11 w-11 items-center justify-center rounded-2xl border transition-all active:scale-95",
+                calcOpen
+                  ? "border-ios-blue/40 bg-ios-blue/15 text-ios-blue shadow-sm"
+                  : "border-white/60 bg-ios-surface/80 text-ios-label-secondary hover:text-ios-label dark:border-white/10 dark:bg-ios-surface/50",
+              )}
+              title="计算器"
             >
-              <LayoutGrid className="h-5 w-5" />
+              <Calculator className="h-5 w-5" />
             </button>
           </div>
 
@@ -516,6 +526,9 @@ function PracticePageInner() {
           </div>
         </div>
       </div>
+
+      {/* 浮动计算器（半透明可拖动，题目保持可见） */}
+      <FloatingCalculator open={calcOpen} onClose={() => setCalcOpen(false)} />
 
       {/* 移动端答题卡 Sheet */}
       <Sheet

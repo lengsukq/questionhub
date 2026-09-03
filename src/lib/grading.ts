@@ -50,11 +50,12 @@ export function gradeQuestion(question: Question, userAnswer: unknown): GradeRes
       };
     }
     case "true_false": {
-      // UI 的"正确/错误"映射为 true/false，不通过字符串判题
-      const user = Boolean(userAnswer);
-      const correct = Boolean(question.answer.value);
+      // 严格映射：只接受布尔值与常见等价表达，避免 Boolean("错误") === true 这类隐式转换坑
+      const user = parseTrueFalse(userAnswer);
+      const correct = parseTrueFalse(question.answer.value);
+      const isMatch = user !== null && correct !== null && user === correct;
       return {
-        correctness: user === correct ? "correct" : "incorrect",
+        correctness: isMatch ? "correct" : "incorrect",
         normalizedUserAnswer: user,
         normalizedCorrectAnswer: correct,
       };
@@ -70,6 +71,30 @@ export function gradeQuestion(question: Question, userAnswer: unknown): GradeRes
   }
 }
 
+/** 用户作答：单选为选项 key，判断为布尔，多选为 key 数组，未选为 null（替代裸 unknown） */
+export type UserAnswer = string | boolean | string[] | null | undefined;
+
 export function isSubjectiveType(type: QuestionType): boolean {
   return type === "short_answer" || type === "comprehensive" || type === "calculation_analysis";
+}
+
+/** 多选 toggle：选中则移除，未选中则加入（选项列表与键盘快捷键共用） */
+export function toggleMultiKey(current: string[], key: string): string[] {
+  return current.includes(key) ? current.filter((item) => item !== key) : [...current, key];
+}
+
+/** 判断题答案严格映射：只接受布尔值与明确的 true/false 等价表达，未知输入返回 null（调用方判错） */
+export function parseTrueFalse(value: unknown): boolean | null {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "number") {
+    if (value === 1) return true;
+    if (value === 0) return false;
+    return null;
+  }
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    if (["true", "t", "y", "yes", "1"].includes(normalized)) return true;
+    if (["false", "f", "n", "no", "0"].includes(normalized)) return false;
+  }
+  return null;
 }
