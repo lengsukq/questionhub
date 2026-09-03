@@ -242,3 +242,36 @@ export async function resetAllData(): Promise<void> {
   await db.delete();
   await db.open();
 }
+
+/** 重置指定题库的随机刷题进度（保留收藏与笔记，仅清除掌握状态） */
+export async function resetRandomProgress(bankIds: string | string[]): Promise<number> {
+  const ids = normalizeBankIds(bankIds);
+  if (ids.length === 0) return 0;
+  const stats =
+    ids.length === 1
+      ? await db.questionStats.where("bankId").equals(ids[0]).toArray()
+      : await db.questionStats.where("bankId").anyOf(ids).toArray();
+  if (stats.length === 0) return 0;
+  let resetCount = 0;
+  await db.transaction("rw", db.questionStats, async () => {
+    for (const stat of stats) {
+      const needsReset =
+        stat.attemptCount > 0 || stat.correctCount > 0 || stat.wrongCount > 0 || stat.isWrongBook;
+      if (!needsReset) continue;
+      resetCount++;
+      await db.questionStats.put({
+        ...stat,
+        attemptCount: 0,
+        correctCount: 0,
+        wrongCount: 0,
+        subjectiveCount: 0,
+        lastCorrectness: null,
+        lastAnsweredAt: null,
+        streak: 0,
+        isWrongBook: false,
+        nextReviewAt: null,
+      });
+    }
+  });
+  return resetCount;
+}

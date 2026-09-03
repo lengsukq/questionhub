@@ -1,4 +1,4 @@
-import type { QuestionRecord, PracticeConfig } from "@/lib/db";
+import type { QuestionRecord, PracticeConfig, QuestionStatRecord } from "@/lib/db";
 import type { QuestionType, QuestionUnit } from "@/types/question-bank";
 
 /** 章节复合键分隔符：编码与解码共用一处 */
@@ -70,6 +70,27 @@ export function computeBankStats(
 export interface QuestionSelection {
   refs: Array<{ bankId: string; questionId: string }>;
   matchedCount: number;
+}
+
+/** 随机挑战去重键：题库 id + 原始题目 id */
+export function randomPoolKey(bankId: string, questionId: string): string {
+  return `${bankId}:${questionId}`;
+}
+
+/**
+ * 随机挑战候选池：做对且已掌握的题目不再抽中，未做过与错题保留。
+ * 纯函数便于单测，线上由 createPracticeSession 用 bulkGet 组装 statMap 后调用。
+ */
+export function filterRandomPool(
+  allQuestions: QuestionRecord[],
+  statByKey: Map<string, Pick<QuestionStatRecord, "attemptCount" | "isWrongBook">>,
+): QuestionRecord[] {
+  return allQuestions.filter((question) => {
+    const stat = statByKey.get(randomPoolKey(question.bankId, question.originalId));
+    if (!stat) return true;
+    if (stat.attemptCount === 0) return true;
+    return stat.isWrongBook;
+  });
 }
 
 /**

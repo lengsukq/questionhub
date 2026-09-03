@@ -71,6 +71,7 @@ function PracticePageInner() {
   const [questions, setQuestions] = useState<QuestionRecord[]>([]);
   const [attempts, setAttempts] = useState<Map<string, AttemptRecord>>(new Map());
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
+  const [wrongMap, setWrongMap] = useState<Map<string, { wrongCount: number; isWrong: boolean }>>(new Map());
 
   const [index, setIndex] = useState(0);
   const [selection, setSelection] = useState<UserAnswer>(null);
@@ -238,6 +239,14 @@ function PracticePageInner() {
             .map((stat) => questionKey(stat.bankId, stat.questionId)),
         ),
       );
+      setWrongMap(
+        new Map(
+          statList.map((stat) => [
+            questionKey(stat.bankId, stat.questionId),
+            { wrongCount: stat.wrongCount, isWrong: stat.isWrongBook },
+          ]),
+        ),
+      );
       setIndex(startIndex);
 
       // 题目用时统计与异常恢复：校准由于旧版全量日历时间导致虚高的 1000+ 分钟
@@ -308,6 +317,16 @@ function PracticePageInner() {
       );
       void db.sessions.update(session.id, { durationMs: getCurrentDurationMs() });
       const key = questionKey(bankId, currentQuestion.originalId);
+      setWrongMap((prev) => {
+        const next = new Map(prev);
+        const cur = next.get(key) ?? { wrongCount: 0, isWrong: false };
+        if (result.correctness === "incorrect") {
+          next.set(key, { wrongCount: cur.wrongCount + 1, isWrong: true });
+        } else if (result.correctness === "correct") {
+          next.set(key, { wrongCount: cur.wrongCount, isWrong: false });
+        }
+        return next;
+      });
       setAttempts((map) => {
         const next = new Map(map);
         next.set(key, {
@@ -387,6 +406,16 @@ function PracticePageInner() {
       await selfRateSubjective(session, currentQuestion, bankId, rating, durationMs);
       void db.sessions.update(session.id, { durationMs: getCurrentDurationMs() });
       const key = questionKey(bankId, currentQuestion.originalId);
+      setWrongMap((prev) => {
+        const next = new Map(prev);
+        const cur = next.get(key) ?? { wrongCount: 0, isWrong: false };
+        if (rating === 0 || rating === 1) {
+          next.set(key, { wrongCount: cur.wrongCount + 1, isWrong: true });
+        } else {
+          next.set(key, { wrongCount: cur.wrongCount, isWrong: false });
+        }
+        return next;
+      });
       setAttempts((map) => {
         const next = new Map(map);
         next.set(key, {
@@ -501,7 +530,11 @@ function PracticePageInner() {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           {/* 左侧主答题区 */}
           <div className="space-y-4 lg:col-span-8">
-            <QuestionCard question={currentQuestion} />
+            <QuestionCard
+              question={currentQuestion}
+              wrongCount={wrongMap.get(questionKey(currentQuestion.bankId, currentQuestion.originalId))?.wrongCount}
+              isWrong={Boolean(wrongMap.get(questionKey(currentQuestion.bankId, currentQuestion.originalId))?.isWrong)}
+            />
 
             {!isSubjective && (
               <OptionList

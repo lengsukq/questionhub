@@ -11,7 +11,7 @@ import {
 } from "@/lib/db";
 import { gradeQuestion, type UserAnswer } from "@/lib/grading";
 import { nextReviewAt } from "@/lib/review-schedule";
-import { selectQuestions } from "@/lib/bank-utils";
+import { filterRandomPool, selectQuestions } from "@/lib/bank-utils";
 import type { Question, SelfRating } from "@/types/question-bank";
 import type { QuestionRecord } from "@/lib/db";
 
@@ -67,7 +67,24 @@ export async function createPracticeSession(input: CreateSessionInput): Promise<
     bankIds.length === 1
       ? await db.questions.where("bankId").equals(bankIds[0]).toArray()
       : await db.questions.where("bankId").anyOf(bankIds).toArray();
-  const { refs, matchedCount } = selectQuestions(allQuestions, input);
+
+  let effectiveQuestions = allQuestions;
+  if (input.mode === "random" && !input.refs) {
+    const keys = allQuestions.map((q) => questionKey(q.bankId, q.originalId));
+    const statList = keys.length > 0 ? await db.questionStats.bulkGet(keys) : [];
+    const statMap = new Map(
+      statList.filter((s): s is QuestionStatRecord => Boolean(s)).map((s) => [s.id, s]),
+    );
+    effectiveQuestions = filterRandomPool(allQuestions, statMap);
+  }
+
+  const { refs, matchedCount } = selectQuestions(effectiveQuestions, input);
+  if (matchedCount === 0 && input.mode === "random" && !input.refs) {
+    const original = selectQuestions(allQuestions, input);
+    if (original.matchedCount > 0) {
+      throw new Error("ALL_MASTERED");
+    }
+  }
   const count = Math.min(input.count, refs.length);
 
   const session: PracticeSessionRecord = {

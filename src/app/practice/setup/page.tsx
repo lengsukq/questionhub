@@ -2,9 +2,9 @@
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowRight, Check, Layers, ListOrdered, Shuffle, Sparkles } from "lucide-react";
+import { ArrowRight, Check, Layers, ListOrdered, RotateCcw, Shuffle, Sparkles } from "lucide-react";
 import { useBankStore } from "@/stores/bank-store";
-import { listQuestionsByBankIds, type QuestionRecord } from "@/lib/db";
+import { listQuestionsByBankIds, resetRandomProgress, type QuestionRecord } from "@/lib/db";
 import { createPracticeSession } from "@/lib/session-utils";
 import { PageHeader } from "@/components/layout/page-header";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -66,6 +66,8 @@ function SetupPageInner() {
   const [order, setOrder] = useState<"source" | "random">("source");
   const [starting, setStarting] = useState(false);
   const [error, setError] = useState("");
+  const [allMastered, setAllMastered] = useState(false);
+  const [resetting, setResetting] = useState(false);
 
   useEffect(() => {
     if (selectedBankIds.length === 0 && initialBankIds.length > 0) {
@@ -159,8 +161,29 @@ function SetupPageInner() {
       });
       router.push(`/practice/${session.id}`);
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
+      if (err instanceof Error && err.message === "ALL_MASTERED") {
+        setAllMastered(true);
+        setError("");
+      } else {
+        setError(err instanceof Error ? err.message : String(err));
+      }
       setStarting(false);
+    }
+  };
+
+  const handleResetRandomProgress = async () => {
+    if (selectedBankIds.length === 0 || resetting) return;
+    setResetting(true);
+    try {
+      await resetRandomProgress(selectedBankIds);
+      setAllMastered(false);
+      setError("");
+      const items = await listQuestionsByBankIds(selectedBankIds);
+      setQuestions(items);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setResetting(false);
     }
   };
 
@@ -404,6 +427,26 @@ function SetupPageInner() {
             {error && (
               <div className="rounded-2xl border border-ios-red/30 bg-ios-red/10 p-4 text-[13px] text-ios-red">
                 {error}
+              </div>
+            )}
+
+            {allMastered && (
+              <div className="rounded-2xl border border-ios-green/30 bg-ios-green/8 p-4 text-[13px] leading-relaxed text-ios-label">
+                <p className="font-bold text-ios-green">随机挑战已全部通关</p>
+                <p className="mt-1 text-ios-label-secondary">
+                  做对的题目不会再重复出现，可重置所选题库的做题记录后重新挑战（收藏与笔记会保留）。
+                </p>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="mt-3"
+                  loading={resetting}
+                  loadingText="正在重置…"
+                  onClick={() => void handleResetRandomProgress()}
+                >
+                  <RotateCcw className="h-4 w-4" />
+                  重置所选 {selectedBankIds.length} 个题库的记录
+                </Button>
               </div>
             )}
 

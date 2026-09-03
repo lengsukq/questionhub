@@ -17,9 +17,10 @@ import {
   XCircle,
 } from "lucide-react";
 import { useBankStore } from "@/stores/bank-store";
-import { getActiveSession, getDueCount, type PracticeSessionRecord } from "@/lib/db";
+import { getActiveSession, getDueCount, resetRandomProgress, type PracticeSessionRecord } from "@/lib/db";
 import { createPracticeSession } from "@/lib/session-utils";
 import { getDailyTrend, getTodayStats, type DayStat } from "@/lib/queries";
+import { Sheet } from "@/components/ui/sheet";
 import { toast } from "@/components/ui/toast";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -37,6 +38,8 @@ export default function HomePage() {
   const [todayStats, setTodayStats] = useState({ answered: 0, correct: 0 });
   const [trend, setTrend] = useState<DayStat[]>([]);
   const [loadingQuick, setLoadingQuick] = useState(false);
+  const [allMasteredOpen, setAllMasteredOpen] = useState(false);
+  const [resetting, setResetting] = useState(false);
 
   const refresh = useCallback(async () => {
     if (!activeBankId) return;
@@ -80,8 +83,27 @@ export default function HomePage() {
       });
       router.push(`/practice/${session.id}`);
     } catch (err) {
-      toast.error(err instanceof Error ? err.message : "创建练习失败");
+      if (err instanceof Error && err.message === "ALL_MASTERED") {
+        setAllMasteredOpen(true);
+      } else {
+        toast.error(err instanceof Error ? err.message : "创建练习失败");
+      }
       setLoadingQuick(false);
+    }
+  };
+
+  const handleResetRandomProgress = async () => {
+    if (!activeBankId || resetting) return;
+    setResetting(true);
+    try {
+      const count = await resetRandomProgress(activeBankId);
+      setAllMasteredOpen(false);
+      toast.success(count > 0 ? `已重置 ${count} 道题的刷题记录，可重新随机挑战` : "暂无可重置的刷题记录");
+      void refresh();
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "重置失败");
+    } finally {
+      setResetting(false);
     }
   };
 
@@ -328,6 +350,41 @@ export default function HomePage() {
           </Card>
         </div>
       </div>
+
+      {/* 随机池已刷完：提示 + 重置当前题库做题记录 */}
+      <Sheet
+        open={allMasteredOpen}
+        onClose={() => setAllMasteredOpen(false)}
+        title="随机挑战已全部通关"
+        description={`当前题库${activeBank ? `《${activeBank.name}》` : ""}中未做错的题目已全部答对，随机池暂无可抽题目`}
+      >
+        <div className="space-y-4">
+          <div className="rounded-2xl border border-ios-green/30 bg-ios-green/8 p-4 text-[13px] leading-relaxed text-ios-label">
+            做对的题目不会再重复出现，答错的题目仍会回到随机池并标记“错过 N
+            次”。想从头再刷一遍，可重置该题库的做题记录（收藏与笔记会保留）。
+          </div>
+          <div className="flex gap-3">
+            <Button
+              variant="secondary"
+              size="lg"
+              className="flex-1 justify-center"
+              onClick={() => setAllMasteredOpen(false)}
+            >
+              稍后再说
+            </Button>
+            <Button
+              size="lg"
+              className="flex-1 justify-center"
+              variant="danger"
+              loading={resetting}
+              loadingText="正在重置…"
+              onClick={() => void handleResetRandomProgress()}
+            >
+              重置该题库记录
+            </Button>
+          </div>
+        </div>
+      </Sheet>
     </div>
   );
 }
