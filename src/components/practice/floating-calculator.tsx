@@ -430,11 +430,11 @@ export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
       role="dialog"
       aria-label="浮动计算器"
       className={cn(
-        "fixed z-40 rounded-[24px] border shadow-2xl backdrop-blur-2xl transition-colors animate-fade-in-up",
+        "fixed z-40 rounded-[24px] border shadow-2xl animate-fade-in-up transition-all duration-300",
         "border-white/60 shadow-black/10 dark:border-white/10 dark:shadow-black/50",
         translucent
-          ? "bg-white/65 dark:bg-[#12141d]/60"
-          : "bg-white/95 dark:bg-[#12141d]/95",
+          ? "bg-white/40 backdrop-blur-md dark:bg-[#12141d]/40"
+          : "bg-white/95 backdrop-blur-2xl dark:bg-[#12141d]/95",
       )}
       style={{ width: panelWidth, ...(position ? { left: position.left, top: position.top } : undefined) }}
     >
@@ -462,8 +462,9 @@ export function FloatingCalculator({ open, onClose }: FloatingCalculatorProps) {
           type="button"
           onClick={() => setTranslucent((prev) => !prev)}
           onPointerDown={(e) => e.stopPropagation()}
-          aria-label={translucent ? "降低透明度" : "提高透明度"}
-          title={translucent ? "更不透明" : "更透明"}
+          aria-label={translucent ? "切换为不透明" : "切换为半透明"}
+          aria-pressed={translucent}
+          title={translucent ? "切换为不透明" : "切换为半透明"}
           className="flex h-7 w-7 items-center justify-center rounded-full text-ios-label-secondary transition-colors hover:bg-black/5 hover:text-ios-label dark:hover:bg-white/10"
         >
           {translucent ? <EyeOff className="h-3.5 w-3.5" /> : <Eye className="h-3.5 w-3.5" />}
