@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useSyncExternalStore, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -18,7 +19,11 @@ interface SheetProps {
   maxWidth?: string;
 }
 
-/** 响应式弹窗/抽屉（Mobile 底部滑出抽屉，Pad/PC 居中大圆角模态框） */
+/**
+ * 响应式弹窗/抽屉（Mobile 底部滑出抽屉，Pad/PC 居中大圆角模态框）。
+ * 经 Portal 直挂 document.body，避免被祖先 stacking context
+ *（如 sticky + z-index 的 header）困住而盖不过底部操作栏。
+ */
 export function Sheet({
   open,
   onClose,
@@ -29,6 +34,12 @@ export function Sheet({
   maxWidth = DEFAULT_SHEET_MAX_WIDTH,
 }: SheetProps) {
   const sheetRef = useRef<HTMLDivElement>(null);
+  // SSR 安全的挂载标记：首屏服务端渲染为 false，客户端挂载后才允许建 Portal
+  const mounted = useSyncExternalStore(
+    () => () => undefined,
+    () => true,
+    () => false,
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -43,11 +54,11 @@ export function Sheet({
     };
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!open || !mounted) return null;
 
-  return (
+  return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-end justify-center md:items-center p-0 md:p-4"
+      className="fixed inset-0 z-50 flex items-end justify-center p-0 md:items-center md:p-4"
       role="dialog"
       aria-modal="true"
     >
@@ -62,7 +73,7 @@ export function Sheet({
       <div
         ref={sheetRef}
         className={cn(
-          "relative z-10 flex w-full flex-col overflow-hidden bg-ios-surface/95 backdrop-blur-2xl shadow-2xl transition-all duration-300",
+          "relative z-10 flex w-full flex-col overflow-hidden bg-ios-surface/95 shadow-2xl backdrop-blur-2xl transition-all duration-300",
           SHEET_MAX_HEIGHT_CLASS,
           // Mobile 样式（底部大圆角抽屉）
           "rounded-t-[32px] border-t border-white/80 dark:border-white/10 dark:bg-ios-surface/90",
@@ -103,6 +114,7 @@ export function Sheet({
           {children}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

@@ -30,7 +30,8 @@ export function PracticeHeader({
   const progressPercent = ((currentIndex + 1) / Math.max(1, total)) * 100;
 
   return (
-    <header className="glass-header sticky top-0 z-30 px-4 pt-3 pb-2 safe-top transition-all">
+    <>
+      <header className="glass-header sticky top-0 z-30 px-4 pt-3 pb-2 safe-top transition-all">
       <div className="mx-auto flex max-w-6xl items-center justify-between">
         {/* 左侧返回 */}
         <div className="flex items-center gap-3">
@@ -76,15 +77,6 @@ export function PracticeHeader({
         </div>
       </div>
 
-      <ConfirmSheet
-        open={exitOpen}
-        title="退出当前练习？"
-        description="已答进度将自动保存，可随时从首页继续。"
-        confirmLabel="退出练习"
-        onClose={() => setExitOpen(false)}
-        onConfirm={() => router.push("/")}
-      />
-
       {/* 顶部进度条 */}
       <div className="mx-auto mt-2 h-1 max-w-6xl overflow-hidden rounded-full bg-ios-surface-tertiary/60">
         <div
@@ -93,6 +85,16 @@ export function PracticeHeader({
         />
       </div>
     </header>
+
+      <ConfirmSheet
+        open={exitOpen}
+        title="退出当前练习？"
+        description="已答进度将自动保存，可随时从首页继续。"
+        confirmLabel="退出练习"
+        onClose={() => setExitOpen(false)}
+        onConfirm={() => router.push("/")}
+      />
+    </>
   );
 }
 
